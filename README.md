@@ -38,3 +38,16 @@ WRANGLER_CACHE_DIR=/tmp/wrangler-cache npx wrangler pages deploy site --project-
 - `data/ea581-lines.json` comes from HieroJax and stays under GPL-3.0.
 - `site/fonts/`: Noto Sans Egyptian Hieroglyphs v2.002, SIL OFL 1.1 (see `site/fonts/OFL.txt`).
 - Kanji numbers come from Kanji in Order (KanjiVG, CC BY-SA 3.0).
+
+## Two-layer derivations (notation v1)
+
+Sign combinations are written as two linked trees in the shared standard
+`notes/SUBLEXICAL-DERIVATIONS-v1.md` (drafted with Syntax · Semantics · Interface; approved by Grant Golland, 2026-11-21):
+layer A is the layout (quadrat, headless), layer B the typed sign function (complements, determinatives as heads, endings).
+
+- `data/derivations/rahman.drv` holds the bracket source of truth: 26 derivations from Md. Ridwanur Rahman's
+  *Ancient Egyptian Hieroglyph as the Pictorial Scrutiny of Modern Linguistics*.
+- `python3 tools/derivations.py` checks arity, shared leaf ids, heads, walks and reorder labels, and reports layer
+  mismatches. It exits non-zero on any error and writes `rahman.json` beside the source.
+- `notes/rahman-map.md` maps the book's chapters and claims, with page numbers. Speculative parts are flagged and left underived.
+- Pages: `derivations` (the formalism), `notation` (the standard), `rahman` (book claims vs derivations).

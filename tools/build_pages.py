@@ -8,9 +8,11 @@ P = json.load(open(ROOT / 'data/pilot-census.json', encoding='utf8'))
 K = json.load(open(ROOT / 'data/kanji-arity-reference.json', encoding='utf8'))
 KANJI = 'https://kanji-morphology.pages.dev/'
 REPO = 'https://github.com/crimsonflower420/Hieroglyph-Operators'
+import pages_two_layer as TL
 
 NAV = [('index', 'トップ', 'Top'), ('concept', '考え方', 'Concept'), ('operators', '演算子', 'Operators'),
-       ('pilot', 'パイロット調査', 'Pilot'), ('sources', '出典', 'Sources')]
+       ('derivations', '二層の導出', 'Derivations'), ('notation', '記法', 'Notation'),
+       ('pilot', 'パイロット調査', 'Pilot'), ('rahman', 'ラフマン再読', 'Rahman'), ('sources', '出典', 'Sources')]
 
 def bi(ja, en, tag='span', cls=''):
     c = f' {cls}' if cls else ''
@@ -112,10 +114,17 @@ index = f'''
 <p>{bi(
  f"石碑全体（{sc['quadrats']}方形、節点{sc['nodes']}）では、横の結合の割合が、横書きの行では{pct(hor_h,n_h)}、縦書きの列では{pct(hor_v,n_v)}になる。演算子の内訳は行の向きとともに変わる。方形が語の構造よりも紙面の配置に従っていることと合う（推測）。",
  f"Over the whole stela ({sc['quadrats']} quadrats, {sc['nodes']} nodes), horizontal joins are {pct(hor_h,n_h)} of nodes in the horizontal lines and {pct(hor_v,n_v)} in the vertical columns. The operator mix moves with line direction, which fits the idea that quadrats follow page layout more than word structure (inference).")}</p>
+<h2>{bi("二層の導出", "Two-layer derivations")}</h2>
+<p>{bi(
+ f"記号の組み合わせを、配置の木（層 A）と記号のはたらきの木（層 B）の二つで書き、葉の番号でつなぐ。書式は共有の<a href=\"notation\">記法 v1</a>である。最初の適用として、ラフマンの本に出てくる組み合わせを{len(TL.DS)}件の導出にし、標準の参考書と照らし合わせた（<a href=\"rahman\">ラフマン再読</a>）。",
+ f"Sign combinations are written as two trees, a layout tree (layer A) and a sign-function tree (layer B), linked by leaf ids, in the shared <a href=\"notation\">notation v1</a>. As a first application, the combinations in Rahman's book were written as {len(TL.DS)} derivations and checked against the standard references (<a href=\"rahman\">Rahman re-read</a>).")}</p>
 <div class="cards">
 <a class="card" href="concept"><strong>{bi("考え方", "Concept")}</strong><span>{bi("漢字から引き継げるものと、引き継げないもの。", "What carries over from kanji, and what does not.")}</span></a>
 <a class="card" href="operators"><strong>{bi("演算子", "Operators")}</strong><span>{bi("Unicode の書式制御文字と Manuel de Codage の記号。", "The Unicode format controls and the Manuel de Codage signs.")}</span></a>
 <a class="card" href="pilot"><strong>{bi("パイロット調査", "Pilot")}</strong><span>{bi("EA 581 の50方形：項数・深さ・演算子の頻度。", "50 quadrats from EA 581: arity, depth, operator counts.")}</span></a>
+<a class="card" href="derivations"><strong>{bi("二層の導出", "Two-layer derivations")}</strong><span>{bi("配置の層と機能の層。演算子、検査、歩き。", "Layout layer and function layer: operators, checks, walks.")}</span></a>
+<a class="card" href="notation"><strong>{bi("記法", "Notation")}</strong><span>{bi("共有規格 v1 とヒエログリフでの具体化。", "Shared standard v1 and its hieroglyph profile.")}</span></a>
+<a class="card" href="rahman"><strong>{bi("ラフマン再読", "Rahman re-read")}</strong><span>{bi("本書の組み合わせを二層の導出で書き、標準と照らす。", "The book's combinations as two-layer derivations, checked against the standard.")}</span></a>
 <a class="card" href="sources"><strong>{bi("出典", "Sources")}</strong><span>{bi("一次資料、コーパス、ライセンス。", "Primary sources, corpora, licences.")}</span></a>
 </div>
 <div class="flag spec">{bi(
@@ -166,12 +175,21 @@ concept = f'''
  f"パイロット調査の数字もこれと合う。EA 581 では、横の結合の割合が横書きの行で{pct(hor_h,n_h)}、縦書きの列で{pct(hor_v,n_v)}である。同じ文章の中で、行の形が演算子の選び方を変えている（推論）。",
  f"The pilot numbers fit this. On EA 581, horizontal joins make up {pct(hor_h,n_h)} of nodes in horizontal lines and {pct(hor_v,n_v)} in vertical columns. Within one text, the shape of the line changes which operators are used (inference).")}</p>
 
+<h2>{bi("5. 二つの層：配置とはたらき", "5. Two layers: layout and function")}</h2>
+<p>{bi(
+ "方形の木は配置を書くだけで、記号が何をしているか（表音・補音・限定符・語尾）は書かない。そこで、同じ記号の上に第二の木を立てる。層 A は配置で主要部をもたず、層 B は型付きのはたらきで、限定符を主要部とする。二つは葉の番号でつながる。漢字のサイトの「意符・音符」の区別に近いのは層 B の方である（推論）。",
+ "A quadrat tree records arrangement only; it says nothing about what the signs do (phonogram, complement, determinative, ending). So a second tree is built over the same signs. Layer A is layout and has no heads; layer B is typed function, with the determinative as head. The two are linked by leaf ids. The kanji site's semantic/phonetic distinction is closer to layer B (inference).")}</p>
+<p>{bi(
+ "二つの層はしばしば食い違う。方形は機能の構成素を横切ることがあり（例：nfrt、クレオパトラ）、書き順と読み順が離れることもある（敬意による転置）。後者は、漢字のサイトの「書き順と歩き順」の語彙でいう reorder の型に当たる。詳しくは<a href=\"derivations\">二層の導出</a>と<a href=\"rahman\">ラフマン再読</a>を見よ。",
+ "The two layers often disagree. A quadrat can cut across function constituents (e.g. nfrt, Cleopatra), and writing order can part from reading order (honorific transposition). The latter is the reorder type in the kanji site's vocabulary of written order vs walk order. See <a href=\"derivations\">Two-layer derivations</a> and <a href=\"rahman\">Rahman re-read</a>.")}</p>
+
 <h2>{bi("まとめ", "Summary")}</h2>
 <div class="table-scroll"><table>
 <tr><th>{bi("層", "Layer")}</th><th>{bi("漢字", "Kanji")}</th><th>{bi("ヒエログリフ", "Hieroglyphs")}</th></tr>
 <tr><td>{bi("画の並び", "Stroke order")}</td><td>{bi("規範がある", "Prescribed")}</td><td>{bi("記念碑体では規範の証拠なし。ヒエラティックに手がかり", "No evidence of a norm in the monumental script; leads in hieratic")}</td></tr>
 <tr><td>{bi("演算子の木", "Operator tree")}</td><td>{bi("字の内部構造", "Inner structure of a character")}</td><td>{bi("方形の配置（Unicode・MdC で符号化できる）", "Layout of a quadrat (encodable in Unicode and MdC)")}</td></tr>
 <tr><td>{bi("読む向き", "Reading direction")}</td><td>{bi("字の中では固定", "Fixed inside a character")}</td><td>{bi("行ごとに変わる。顔は行の始まりを向く", "Varies by line; faces look to the line's start")}</td></tr>
+<tr><td>{bi("はたらきの層", "Function layer")}</td><td>{bi("意符・音符", "Semantic and phonetic components")}</td><td>{bi("表音・補音・限定符（主要部）・語尾。配置とは別の木", "Phonograms, complements, determinatives (heads), endings: a tree apart from layout")}</td></tr>
 <tr><td>{bi("単位", "Unit")}</td><td>{bi("ほぼ形態素", "Roughly a morpheme")}</td><td>{bi("配置の単位で、語とは一致しない", "A layout unit, not aligned with words")}</td></tr>
 </table></div>
 <div class="flag">{bi(
@@ -418,6 +436,7 @@ SRC = [
   ('Ramses Online.', 'https://ramses.ulg.ac.be/'),
  ]),
 ]
+SRC.append((bi('二層の導出とラフマン再読', 'Two-layer derivations and the Rahman re-read'), TL.SOURCES_EXTRA))
 src_html = ''
 for head, items in SRC:
     src_html += f'<h2>{head}</h2><ul>' + ''.join(f'<li>{t}' + (f' <a href="{u}">{u}</a>' if u else '') + '</li>' for t, u in items) + '</ul>'
@@ -436,6 +455,9 @@ sources = f'''
 PAGES = [('index', 'トップ', 'Top', index), ('concept', '考え方', 'Concept', concept),
          ('operators', '演算子', 'Operators', operators), ('pilot', 'パイロット調査', 'Pilot', pilot),
          ('sources', '出典', 'Sources', sources)]
+_der, _nota, _rah = TL.pages(bi)
+PAGES += [('derivations', '二層の導出', 'Two-layer derivations', _der), ('notation', '記法', 'Notation', _nota),
+          ('rahman', 'ラフマン再読', 'Rahman re-read', _rah)]
 for slug, tj, te, body in PAGES:
     (ROOT / 'site' / f'{slug}.html').write_text(page(slug, tj, te, body), encoding='utf8')
 print('built', [p[0] for p in PAGES])

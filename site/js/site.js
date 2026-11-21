@@ -29,3 +29,8 @@
     matchMedia('(prefers-color-scheme: dark)').addEventListener('change', applyTheme);
   });
 })();
+/* On narrow screens the nav scrolls sideways; keep the current page in view. */
+document.addEventListener('DOMContentLoaded', function () {
+  var ul = document.querySelector('nav.primary ul'), cur = document.querySelector('nav.primary [aria-current]');
+  if (ul && cur && ul.scrollWidth > ul.clientWidth) ul.scrollLeft = Math.max(0, cur.parentNode.offsetLeft - ul.clientWidth / 2 + cur.offsetWidth / 2);
+});

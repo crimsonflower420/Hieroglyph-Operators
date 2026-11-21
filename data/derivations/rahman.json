@@ -1,0 +1,1895 @@
+{
+ "standard": "SUBLEXICAL-DERIVATIONS-v1",
+ "generated_by": "tools/derivations.py",
+ "derivations": [
+  {
+   "id": "d01",
+   "title.ja": "pꜣ「この・その」：補音の付いた二子音記号",
+   "title.en": "pꜣ 'this, the': a biliteral with a phonetic complement",
+   "book": "37",
+   "cat": "COMPL",
+   "signs_list": [
+    {
+     "id": "n1",
+     "code": "G40",
+     "value": "pꜣ",
+     "glyph": "𓅮"
+    },
+    {
+     "id": "n2",
+     "code": "G1",
+     "value": "ꜣ",
+     "glyph": "𓄿"
+    }
+   ],
+   "A": "[LINE2 n1 n2]",
+   "B": "[CMPL2 n1:PHON2 n2:COMPL]",
+   "B_alt": null,
+   "read_list": [
+    "n1",
+    "n2"
+   ],
+   "walk_write": [
+    "n1",
+    "n2"
+   ],
+   "reorder": "-",
+   "status": "HYPOTHESIS",
+   "mismatch": [],
+   "mismatch_alt": [],
+   "claim.ja": "本書は、この綴りの「本来の発音」を /pɑ:-ɑ:/、「書物上の発音」を /pɑ:/ とし、省略と同化の例として扱う（p. 37）。",
+   "claim.en": "The book gives /pɑ:-ɑ:/ as the 'authentic pronunciation' of this spelling and /pɑ:/ as the 'bookish' one, as a case of elision and assimilation (p. 37).",
+   "std.ja": "標準の文法では、G1 は G40（pꜣ）の第二子音 ꜣ を重ねて示す補音であり、二度は読まない（Gardiner 1957、記号表 G40・G1）。",
+   "std.en": "Standard grammars take G1 as a phonetic complement repeating the ꜣ already contained in G40 (pꜣ); it is not read twice (Gardiner 1957, sign list G40, G1).",
+   "note.ja": "層 B では CMPL2 が PHON2 と COMPL を一つの PHON にまとめる。補音は音を足さない、というのが標準の見方である。本書が付け加わる音を読む点は、標準の参考書と食い違う。",
+   "note.en": "In layer B, CMPL2 folds PHON2 + COMPL into one PHON. On the standard view a complement adds no sound; the book's extra sound differs from the standard references.",
+   "refs_list": [
+    "Gardiner 1957",
+    "Allen 2010"
+   ],
+   "quadrats": [
+    "𓅮",
+    "𓄿"
+   ],
+   "cartouche": false
+  },
+  {
+   "id": "d02",
+   "title.ja": "pꜣ（動詞「〜したことがある」）：前後から補う補音",
+   "title.en": "pꜣ (verb 'to have done'): complements on both sides",
+   "book": "37",
+   "cat": "COMPL",
+   "signs_list": [
+    {
+     "id": "n1",
+     "code": "Q3",
+     "value": "p",
+     "glyph": "𓊪"
+    },
+    {
+     "id": "n2",
+     "code": "G40",
+     "value": "pꜣ",
+     "glyph": "𓅮"
+    },
+    {
+     "id": "n3",
+     "code": "G1",
+     "value": "ꜣ",
+     "glyph": "𓄿"
+    }
+   ],
+   "A": "[LINE3 n1 n2 n3]",
+   "B": "[CMPL3 n1:COMPL n2:PHON2 n3:COMPL]",
+   "B_alt": null,
+   "read_list": [
+    "n1",
+    "n2",
+    "n3"
+   ],
+   "walk_write": [
+    "n1",
+    "n2",
+    "n3"
+   ],
+   "reorder": "-",
+   "status": "HYPOTHESIS",
+   "mismatch": [],
+   "mismatch_alt": [],
+   "claim.ja": "本書は助動詞 'had' にあたる語とし、本来の発音を /p-pɑ:-ɑ:/、書物上の発音を /p-pɑ:/ とする（p. 37）。",
+   "claim.en": "The book glosses it as the auxiliary 'had', with authentic pronunciation /p-pɑ:-ɑ:/ and bookish /p-pɑ:/ (p. 37).",
+   "std.ja": "標準では Q3（p）と G1（ꜣ）がともに G40 の補音で、語は pꜣ「（過去に）〜したことがある」である（Gardiner 1957、記号表 G40）。",
+   "std.en": "On the standard reading Q3 (p) and G1 (ꜣ) both complement G40, and the word is pꜣ 'to have done (in the past)' (Gardiner 1957, sign list G40).",
+   "note.ja": "補音が多子音記号の前にも後ろにも付く例。CMPL3 は三つの娘をとり、PHON2 がちょうど一つでなければ検査に通らない。",
+   "note.en": "A complement can stand before as well as after the multiliteral. CMPL3 takes three daughters and fails the checker unless exactly one is PHON2/PHON3.",
+   "refs_list": [
+    "Gardiner 1957"
+   ],
+   "quadrats": [
+    "𓊪",
+    "𓅮",
+    "𓄿"
+   ],
+   "cartouche": false
+  },
+  {
+   "id": "d03",
+   "title.ja": "ḥb「祭り」：W3 を補音の先に置く綴り",
+   "title.en": "ḥb 'festival': W3 after its complements",
+   "book": "37",
+   "cat": "COMPL",
+   "signs_list": [
+    {
+     "id": "n1",
+     "code": "V28",
+     "value": "ḥ",
+     "glyph": "𓎛"
+    },
+    {
+     "id": "n2",
+     "code": "D58",
+     "value": "b",
+     "glyph": "𓃀"
+    },
+    {
+     "id": "n3",
+     "code": "W3",
+     "value": "ḥb",
+     "glyph": "𓎱"
+    }
+   ],
+   "A": "[LINE3 n1 n2 n3]",
+   "B": "[CMPL3 n1:COMPL n2:COMPL n3:PHON2]",
+   "B_alt": "[CLOSE [SPELL2 n1:PHON1 n2:PHON1] n3:DET_H]",
+   "read_list": [
+    "n1",
+    "n2",
+    "n3"
+   ],
+   "walk_write": [
+    "n1",
+    "n2",
+    "n3"
+   ],
+   "reorder": "-",
+   "status": "HYPOTHESIS; choice between B and B_alt OPEN",
+   "mismatch": [],
+   "mismatch_alt": [],
+   "claim.ja": "本書は本来の発音を /hb-hb/、書物上の発音を /hb/ とする（p. 37）。",
+   "claim.en": "The book gives /hb-hb/ as authentic and /hb/ as bookish (p. 37).",
+   "std.ja": "Gardiner は W3（雪花石膏の鉢）を ḥb の表語・限定符・音価 ḥb として挙げる（記号表 W3）。V28 と D58 はその補音とも、W3 を限定符とする綴りとも読める。",
+   "std.en": "Gardiner lists W3 (alabaster basin) as ideogram, determinative and phonogram ḥb (sign list W3). V28 and D58 can be read as its complements, or as a spelling closed by W3 as determinative.",
+   "note.ja": "配置は一つでも、機能の層には二つの木が立つ。どちらを採るかは未決（OPEN）である。二重の音は、どちらの木からも出てこない。",
+   "note.en": "One layout, two candidate function trees; which one holds is OPEN. Neither tree yields a doubled sound.",
+   "refs_list": [
+    "Gardiner 1957"
+   ],
+   "quadrats": [
+    "𓎛",
+    "𓃀",
+    "𓎱"
+   ],
+   "cartouche": false
+  },
+  {
+   "id": "d04",
+   "title.ja": "Šw（シュー神）：補音と神の限定符",
+   "title.en": "Šw (the god Shu): complement plus god determinative",
+   "book": "37",
+   "cat": "DET",
+   "signs_list": [
+    {
+     "id": "n1",
+     "code": "H6",
+     "value": "šw",
+     "glyph": "𓆄"
+    },
+    {
+     "id": "n2",
+     "code": "G43",
+     "value": "w",
+     "glyph": "𓅱"
+    },
+    {
+     "id": "n3",
+     "code": "A40",
+     "value": "神",
+     "glyph": "𓀭"
+    }
+   ],
+   "A": "[LINE3 n1 n2 n3]",
+   "B": "[CLOSE [CMPL2 n1:PHON2 n2:COMPL] n3:DET_H]",
+   "B_alt": null,
+   "read_list": [
+    "n1",
+    "n2",
+    "n3"
+   ],
+   "walk_write": [
+    "n1",
+    "n2",
+    "n3"
+   ],
+   "reorder": "-",
+   "status": "HYPOTHESIS",
+   "mismatch": [],
+   "mismatch_alt": [],
+   "claim.ja": "本書は意味を「神」とし、本来の発音 /ʃw-w/、書物上の発音 /ʃw/ を挙げる（p. 37）。",
+   "claim.en": "The book glosses it 'god', with authentic /ʃw-w/ and bookish /ʃw/ (p. 37).",
+   "std.ja": "標準では、羽根 H6 が šw、G43 がその補音、A40（座る神）が限定符で、語は神名シュー（Šw）である（Gardiner 1957、記号表 H6・A40）。",
+   "std.en": "On the standard reading the feather H6 is šw, G43 its complement and A40 (seated god) the determinative; the word is the god's name Shu (Gardiner 1957, sign list H6, A40).",
+   "note.ja": "「神」という語釈は、限定符 A40 の部類を語そのものの意味と取ったものと見える（推測）。層 B では A40 が主要部（_H）である。",
+   "note.en": "The gloss 'god' looks like the class of the determinative A40 taken as the word's meaning (inference). In layer B, A40 is the head (_H).",
+   "refs_list": [
+    "Gardiner 1957"
+   ],
+   "quadrats": [
+    "𓆄",
+    "𓅱",
+    "𓀭"
+   ],
+   "cartouche": false
+  },
+  {
+   "id": "d05",
+   "title.ja": "mri「望む」：縦に重ねた補音と、手を口にあてる人の限定符",
+   "title.en": "mri 'to desire': a stacked complement and the hand-to-mouth determinative",
+   "book": "37, 56",
+   "cat": "DET",
+   "signs_list": [
+    {
+     "id": "n1",
+     "code": "U7",
+     "value": "mr",
+     "glyph": "𓌻"
+    },
+    {
+     "id": "n2",
+     "code": "D21",
+     "value": "r",
+     "glyph": "𓂋"
+    },
+    {
+     "id": "n3",
+     "code": "A2",
+     "value": "口にかかわる動作",
+     "glyph": "𓀁"
+    }
+   ],
+   "A": "[LINE2 [⿱ n1 n2] n3]",
+   "B": "[CLOSE [CMPL2 n1:PHON2 n2:COMPL] n3:DET_H]",
+   "B_alt": null,
+   "read_list": [
+    "n1",
+    "n2",
+    "n3"
+   ],
+   "walk_write": [
+    "n1",
+    "n2",
+    "n3"
+   ],
+   "reorder": "-",
+   "status": "HYPOTHESIS",
+   "mismatch": [],
+   "mismatch_alt": [],
+   "claim.ja": "本書は p. 37 で本来の発音を /mr-r/ とし、p. 56 では同じ綴りを /mr-r/ と「人」の複合語として示す。",
+   "claim.en": "On p. 37 the book gives /mr-r/ as the authentic pronunciation; on p. 56 it presents the same spelling as a compound of /mr-r/ and 'man'.",
+   "std.ja": "標準では U7（鍬、mr）、補音 D21（r）、限定符 A2 の綴りである（Gardiner 1957、記号表 U7・A2）。",
+   "std.en": "Standard: U7 (hoe, mr), complement D21 (r), determinative A2 (Gardiner 1957, sign list U7, A2).",
+   "note.ja": "配置の縦の結合［U7 ⿱ D21］は、機能の層の CMPL2 とちょうど同じ記号を束ねる。この例では二つの層が一致する。",
+   "note.en": "The layout's vertical join [U7 ⿱ D21] bundles exactly the signs of the function layer's CMPL2. Here the two layers agree.",
+   "refs_list": [
+    "Gardiner 1957"
+   ],
+   "quadrats": [
+    "𓌻𓐰𓂋",
+    "𓀁"
+   ],
+   "cartouche": false
+  },
+  {
+   "id": "d06",
+   "title.ja": "sḏm「聞く」：三子音記号と補音",
+   "title.en": "sḏm 'to hear': a triliteral with its complement",
+   "book": "38",
+   "cat": "COMPL",
+   "signs_list": [
+    {
+     "id": "n1",
+     "code": "F21",
+     "value": "sḏm",
+     "glyph": "𓄔"
+    },
+    {
+     "id": "n2",
+     "code": "G17",
+     "value": "m",
+     "glyph": "𓅓"
+    }
+   ],
+   "A": "[LINE2 n1 n2]",
+   "B": "[CMPL2 n1:PHON3 n2:COMPL]",
+   "B_alt": null,
+   "read_list": [
+    "n1",
+    "n2"
+   ],
+   "walk_write": [
+    "n1",
+    "n2"
+   ],
+   "reorder": "-",
+   "status": "HYPOTHESIS",
+   "mismatch": [],
+   "mismatch_alt": [],
+   "claim.ja": "本書は本来の発音を /sdm-m/、書物上の発音を /sdm/ とする（p. 38）。",
+   "claim.en": "The book gives /sdm-m/ as authentic and /sdm/ as bookish (p. 38).",
+   "std.ja": "耳 F21 が sḏm、梟 G17 が末子音 m の補音である（Gardiner 1957、記号表 F21）。",
+   "std.en": "The ear F21 is sḏm; the owl G17 complements its last consonant m (Gardiner 1957, sign list F21).",
+   "note.ja": "d01 と同じ形で、多子音記号が三子音になっただけである。",
+   "note.en": "Same shape as d01, with a triliteral in place of the biliteral.",
+   "refs_list": [
+    "Gardiner 1957"
+   ],
+   "quadrats": [
+    "𓄔",
+    "𓅓"
+   ],
+   "cartouche": false
+  },
+  {
+   "id": "d07",
+   "title.ja": "スネフェル（Snfrw）：カルトゥーシュの中の補音",
+   "title.en": "Sneferu (Snfrw): a complement inside a cartouche",
+   "book": "34",
+   "cat": "COMPL",
+   "signs_list": [
+    {
+     "id": "n1",
+     "code": "S29",
+     "value": "s",
+     "glyph": "𓋴"
+    },
+    {
+     "id": "n2",
+     "code": "F35",
+     "value": "nfr",
+     "glyph": "𓄤"
+    },
+    {
+     "id": "n3",
+     "code": "D21",
+     "value": "r",
+     "glyph": "𓂋"
+    },
+    {
+     "id": "n4",
+     "code": "G43",
+     "value": "w",
+     "glyph": "𓅱"
+    }
+   ],
+   "A": "[CARTOUCHE [LINE4 n1 n2 n3 n4]]",
+   "B": "[SPELL3 n1:PHON1 [CMPL2 n2:PHON3 n3:COMPL] n4:PHON1]",
+   "B_alt": null,
+   "read_list": [
+    "n1",
+    "n2",
+    "n3",
+    "n4"
+   ],
+   "walk_write": [
+    "n1",
+    "n2",
+    "n3",
+    "n4"
+   ],
+   "reorder": "-",
+   "status": "HYPOTHESIS",
+   "mismatch": [],
+   "mismatch_alt": [],
+   "claim.ja": "本書は各記号の音を /s/、/nfr/、/r/、/w/ とし、この名で三子音記号は F35 だけだと述べる（p. 34）。",
+   "claim.en": "The book gives the signs as /s/, /nfr/, /r/, /w/ and notes that F35 is the only triliteral in the name (p. 34).",
+   "std.ja": "標準の読みは Snfrw で、D21 は nfr の末子音 r の補音である（Gardiner 1957、記号表 F35）。",
+   "std.en": "The standard reading is Snfrw; D21 complements the final r of nfr (Gardiner 1957, sign list F35).",
+   "note.ja": "本書の記号の同定は標準と一致する。違いは /s-nfr-r-w/ と r を二度読む点だけである。本書の図では記号が一列に並んでいるため、配置は LINE4 とした。",
+   "note.en": "The book's sign identifications match the standard; the only difference is reading r twice (/s-nfr-r-w/). The book's figure sets the signs in one row, so the layout is LINE4.",
+   "refs_list": [
+    "Gardiner 1957"
+   ],
+   "quadrats": [
+    "𓋴",
+    "𓄤",
+    "𓂋",
+    "𓅱"
+   ],
+   "cartouche": true
+  },
+  {
+   "id": "d08",
+   "title.ja": "ḥr「顔」：表語であることを示す一本線",
+   "title.en": "ḥr 'face': the stroke that marks a logogram",
+   "book": "33",
+   "cat": "LOGO",
+   "signs_list": [
+    {
+     "id": "n1",
+     "code": "D2",
+     "value": "ḥr",
+     "glyph": "𓁷"
+    },
+    {
+     "id": "n2",
+     "code": "Z1",
+     "value": "表語の印",
+     "glyph": "𓏤"
+    }
+   ],
+   "A": "[⿱ n1 n2]",
+   "B": "[LOGO n1:LOGO n2:STROKE]",
+   "B_alt": null,
+   "read_list": [
+    "n1",
+    "n2"
+   ],
+   "walk_write": [
+    "n1",
+    "n2"
+   ],
+   "reorder": "-",
+   "status": "HYPOTHESIS",
+   "mismatch": [],
+   "mismatch_alt": [],
+   "claim.ja": "本書は、顔の記号が「恐怖」の語では音 ḥr だけを表し、「顔」の語では表語になると述べる（p. 33、Kinnaer を引く）。",
+   "claim.en": "The book says the face sign stands purely for its sound ḥr in the word 'dread' and is an ideogram in the word 'face' (p. 33, citing Kinnaer).",
+   "std.ja": "Gardiner は「顔」ḥr の綴りを D2 と一本線 Z1 とし、Z1 を表語の印とする（記号表 D2・Z1）。",
+   "std.en": "Gardiner gives ḥr 'face' as D2 with the stroke Z1, the stroke marking ideographic use (sign list D2, Z1).",
+   "note.ja": "本書の図にも線は見えるが、本文は線の役割に触れていない。層 B では Z1 は STROKE の役割をもつ葉で、主要部ではない。",
+   "note.en": "The stroke is visible in the book's figure but the text does not discuss it. In layer B, Z1 is a STROKE leaf, not a head.",
+   "refs_list": [
+    "Gardiner 1957"
+   ],
+   "quadrats": [
+    "𓁷𓐰𓏤"
+   ],
+   "cartouche": false
+  },
+  {
+   "id": "d09",
+   "title.ja": "dpt「舟」：音の綴りを限定符が閉じる",
+   "title.en": "dpt 'boat': a sound spelling closed by a determinative",
+   "book": "26",
+   "cat": "DET",
+   "signs_list": [
+    {
+     "id": "n1",
+     "code": "D46",
+     "value": "d",
+     "glyph": "𓂧"
+    },
+    {
+     "id": "n2",
+     "code": "Q3",
+     "value": "p",
+     "glyph": "𓊪"
+    },
+    {
+     "id": "n3",
+     "code": "X1",
+     "value": "t",
+     "glyph": "𓏏"
+    },
+    {
+     "id": "n4",
+     "code": "P1",
+     "value": "舟",
+     "glyph": "𓊛"
+    }
+   ],
+   "A": "[LINE3 [⿱ n1 n2] n3 n4]",
+   "B": "[CLOSE [SPELL3 n1:PHON1 n2:PHON1 n3:PHON1] n4:DET_H]",
+   "B_alt": null,
+   "read_list": [
+    "n1",
+    "n2",
+    "n3",
+    "n4"
+   ],
+   "walk_write": [
+    "n1",
+    "n2",
+    "n3",
+    "n4"
+   ],
+   "reorder": "-",
+   "status": "HYPOTHESIS",
+   "mismatch": [],
+   "mismatch_alt": [],
+   "claim.ja": "本書は Millmore を引き、舟の絵を加えるのは人名 Depet と読み違えないためだと説明する（p. 26）。",
+   "claim.en": "Citing Millmore, the book explains that the boat picture is added so the word is not mistaken for the personal name Depet (p. 26).",
+   "std.ja": "d-p-t の綴りを限定符 P1 が閉じる、という分析は標準の扱いと合う（Gardiner 1957、記号表 P1）。",
+   "std.en": "Reading it as a d-p-t spelling closed by the determinative P1 agrees with the standard treatment (Gardiner 1957, sign list P1).",
+   "note.ja": "型付きの規則 WORD + DET → WORD_closed の最も素直な例である。主要部は P1 である。",
+   "note.en": "The plainest case of the typed rule WORD + DET → WORD_closed. The head is P1.",
+   "refs_list": [
+    "Gardiner 1957"
+   ],
+   "quadrats": [
+    "𓂧𓐰𓊪",
+    "𓏏",
+    "𓊛"
+   ],
+   "cartouche": false
+  },
+  {
+   "id": "d10",
+   "title.ja": "nfrt「美しい（女）」：配置の列と機能のまとまりが交差する",
+   "title.en": "nfrt 'beautiful (woman)': a layout column that cuts across the function grouping",
+   "book": "42–43",
+   "cat": "INFL",
+   "signs_list": [
+    {
+     "id": "n1",
+     "code": "F35",
+     "value": "nfr",
+     "glyph": "𓄤"
+    },
+    {
+     "id": "n2",
+     "code": "I9",
+     "value": "f",
+     "glyph": "𓆑"
+    },
+    {
+     "id": "n3",
+     "code": "D21",
+     "value": "r",
+     "glyph": "𓂋"
+    },
+    {
+     "id": "n4",
+     "code": "X1",
+     "value": "t",
+     "glyph": "𓏏"
+    },
+    {
+     "id": "n5",
+     "code": "B1",
+     "value": "女",
+     "glyph": "𓁐"
+    }
+   ],
+   "A": "[LINE3 n1 [⿳ n2 n3 n4] n5]",
+   "B": "[CLOSE [INFL2 [CMPL3 n1:PHON3 n2:COMPL n3:COMPL] n4:FEM] n5:DET_H]",
+   "B_alt": null,
+   "read_list": [
+    "n1",
+    "n2",
+    "n3",
+    "n4",
+    "n5"
+   ],
+   "walk_write": [
+    "n1",
+    "n2",
+    "n3",
+    "n4",
+    "n5"
+   ],
+   "reorder": "-",
+   "status": "HYPOTHESIS",
+   "mismatch": [
+    {
+     "op": "CMPL3",
+     "leaves": [
+      "n1",
+      "n2",
+      "n3"
+     ]
+    }
+   ],
+   "mismatch_alt": [],
+   "claim.ja": "本書は Loy を引き、nfrt に女の限定符を加えると「美しい女」になると述べる。同じ nfrt に冠や牝牛の記号を付けた例も Kinnaer から挙げる（pp. 42–43）。",
+   "claim.en": "Citing Loy, the book says adding the woman determinative to nfrt gives 'beautiful woman', and cites Kinnaer for the same nfrt with a crown or a cow (pp. 42–43).",
+   "std.ja": "I9（f）と D21（r）は nfr の補音、X1 は女性語尾 -t、B1 は限定符である（Gardiner 1957、記号表 F35・B1）。",
+   "std.en": "I9 (f) and D21 (r) complement nfr, X1 is the feminine ending -t, B1 is a determinative (Gardiner 1957, sign list F35, B1).",
+   "note.ja": "図では f・r・t が一つの縦の列［⿳］に積まれる。機能の層では f・r は nfr とまとまり、t は語尾として外に出る。配置の構成素と機能の構成素は一致しない（検査器が MISMATCH を出す）。限定符を替えると語の部類が替わる、という本書の観察は、層 B の主要部の入れ替えとして書ける。",
+   "note.en": "In the figure f, r and t sit in one vertical column [⿳]. In the function layer f and r go with nfr, while t stands outside as the ending. The layout constituent and the function constituent do not coincide (the checker reports MISMATCH). The book's point that changing the determinative changes the word's class can be written as swapping the head in layer B.",
+   "refs_list": [
+    "Gardiner 1957"
+   ],
+   "quadrats": [
+    "𓄤",
+    "𓆑𓐰𓂋𓐰𓏏",
+    "𓁐"
+   ],
+   "cartouche": false
+  },
+  {
+   "id": "d11",
+   "title.ja": "mwt「母」：本書のいう「複合」と限定符",
+   "title.en": "mwt 'mother': the book's 'compound' and the determinative",
+   "book": "55",
+   "cat": "DET",
+   "signs_list": [
+    {
+     "id": "n1",
+     "code": "G14",
+     "value": "mwt",
+     "glyph": "𓅐"
+    },
+    {
+     "id": "n2",
+     "code": "X1",
+     "value": "t",
+     "glyph": "𓏏"
+    },
+    {
+     "id": "n3",
+     "code": "B1",
+     "value": "女",
+     "glyph": "𓁐"
+    }
+   ],
+   "A": "[LINE2 [INS_te n1 n2] n3]",
+   "B": "[CLOSE [INFL2 n1:LOGO n2:FEM] n3:DET_H]",
+   "B_alt": null,
+   "read_list": [
+    "n1",
+    "n2",
+    "n3"
+   ],
+   "walk_write": [
+    "n1",
+    "n2",
+    "n3"
+   ],
+   "reorder": "-",
+   "status": "HYPOTHESIS",
+   "mismatch": [],
+   "mismatch_alt": [],
+   "claim.ja": "本書は、表音の部分 /mw-t/ と表語「女」を合わせた「複合語」で「母」になるとし、こうした複合は右端の表語が語の部類を決めるので内心的だと述べる（p. 55）。",
+   "claim.en": "The book calls this a compound of a phonetic part /mw-t/ and the ideogram 'woman', giving 'mother', and says such compounds are endocentric because the rightmost ideogram fixes the word's class (p. 55).",
+   "std.ja": "標準の文法では B1 は語の要素ではなく限定符であり、複合語とは呼ばない（Gardiner 1957、記号表 B1・G14）。",
+   "std.en": "Standard grammars treat B1 as a determinative, not a member of a compound (Gardiner 1957, sign list B1, G14).",
+   "note.ja": "呼び名は違うが、「右端の表語が部類を決める」という本書の観察は、規格 v1 で限定符を主要部（_H）とすることとほぼ同じ内容である。X1 は図で G14 の右上の隅に置かれているので、差し込み INS_te とした。",
+   "note.en": "The labels differ, but the book's 'rightmost ideogram fixes the class' says much the same as v1 marking the determinative as head (_H). X1 sits at G14's top-end corner in the figure, hence INS_te.",
+   "refs_list": [
+    "Gardiner 1957"
+   ],
+   "quadrats": [
+    "𓅐𓐴𓏏",
+    "𓁐"
+   ],
+   "cartouche": false
+  },
+  {
+   "id": "d12",
+   "title.ja": "iꜣwt「老年」：差し込みが語尾を音の綴りに縫い込む",
+   "title.en": "iꜣwt 'old age': an insertion stitches the ending into the sound spelling",
+   "book": "55",
+   "cat": "DET",
+   "signs_list": [
+    {
+     "id": "n1",
+     "code": "M17",
+     "value": "i",
+     "glyph": "𓇋"
+    },
+    {
+     "id": "n2",
+     "code": "G1",
+     "value": "ꜣ",
+     "glyph": "𓄿"
+    },
+    {
+     "id": "n3",
+     "code": "G43",
+     "value": "w",
+     "glyph": "𓅱"
+    },
+    {
+     "id": "n4",
+     "code": "X1",
+     "value": "t",
+     "glyph": "𓏏"
+    },
+    {
+     "id": "n5",
+     "code": "A19",
+     "value": "老人",
+     "glyph": "𓀗"
+    }
+   ],
+   "A": "[LINE4 n1 n2 [INS_te n3 n4] n5]",
+   "B": "[CLOSE [INFL2 [SPELL3 n1:PHON1 n2:PHON1 n3:PHON1] n4:FEM] n5:DET_H]",
+   "B_alt": null,
+   "read_list": [
+    "n1",
+    "n2",
+    "n3",
+    "n4",
+    "n5"
+   ],
+   "walk_write": [
+    "n1",
+    "n2",
+    "n3",
+    "n4",
+    "n5"
+   ],
+   "reorder": "-",
+   "status": "HYPOTHESIS",
+   "mismatch": [
+    {
+     "op": "SPELL3",
+     "leaves": [
+      "n1",
+      "n2",
+      "n3"
+     ]
+    }
+   ],
+   "mismatch_alt": [],
+   "claim.ja": "本書は /Iɑ:wt/ に「老人」の表語を加えた複合語で「老年」になるとする（p. 55）。",
+   "claim.en": "The book treats /Iɑ:wt/ plus the ideogram 'old man' as a compound meaning 'old age' (p. 55).",
+   "std.ja": "標準では i-ꜣ-w の綴り、女性語尾 -t、限定符 A19 の語 iꜣwt である（Gardiner 1957、記号表 A19）。",
+   "std.en": "Standard: the spelling i-ꜣ-w, feminine ending -t and determinative A19, giving iꜣwt (Gardiner 1957, sign list A19).",
+   "note.ja": "配置では t が w の隅に差し込まれて一つの方形になる。機能の層では w は i・ꜣ とともに音の綴りに属し、t は語尾である。d10 と同じく、二つの層の構成素がずれる。",
+   "note.en": "In the layout t is inserted into w's corner, making one quadrat. In the function layer w belongs to the sound spelling with i and ꜣ, while t is the ending. As in d10, the constituents of the two layers fall apart.",
+   "refs_list": [
+    "Gardiner 1957"
+   ],
+   "quadrats": [
+    "𓇋",
+    "𓄿",
+    "𓅱𓐴𓏏",
+    "𓀗"
+   ],
+   "cartouche": false
+  },
+  {
+   "id": "d13",
+   "title.ja": "ḥsi「歌う」：二子音記号を両側から補う",
+   "title.en": "ḥsi 'to sing': a biliteral complemented from both sides",
+   "book": "56",
+   "cat": "DET",
+   "signs_list": [
+    {
+     "id": "n1",
+     "code": "V28",
+     "value": "ḥ",
+     "glyph": "𓎛"
+    },
+    {
+     "id": "n2",
+     "code": "W14",
+     "value": "ḥs",
+     "glyph": "𓎿"
+    },
+    {
+     "id": "n3",
+     "code": "S29",
+     "value": "s",
+     "glyph": "𓋴"
+    },
+    {
+     "id": "n4",
+     "code": "A2",
+     "value": "口にかかわる動作",
+     "glyph": "𓀁"
+    }
+   ],
+   "A": "[LINE4 n1 n2 n3 n4]",
+   "B": "[CLOSE [CMPL3 n1:COMPL n2:PHON2 n3:COMPL] n4:DET_H]",
+   "B_alt": null,
+   "read_list": [
+    "n1",
+    "n2",
+    "n3",
+    "n4"
+   ],
+   "walk_write": [
+    "n1",
+    "n2",
+    "n3",
+    "n4"
+   ],
+   "reorder": "-",
+   "status": "HYPOTHESIS",
+   "mismatch": [],
+   "mismatch_alt": [],
+   "claim.ja": "本書は /h-hs-s/ と「人」の複合で「歌う」とする（p. 56）。",
+   "claim.en": "The book treats /h-hs-s/ plus 'man' as a compound meaning 'to sing' (p. 56).",
+   "std.ja": "標準では W14（壺、ḥs）を V28（ḥ）と S29（s）が補い、A2 が限定符である（Gardiner 1957、記号表 W14）。",
+   "std.en": "Standard: W14 (jar, ḥs) complemented by V28 (ḥ) and S29 (s), with A2 as determinative (Gardiner 1957, sign list W14).",
+   "note.ja": "d02 と同じ両側の補音の形に、限定符による閉じが重なる。",
+   "note.en": "The two-sided complement of d02, closed by a determinative.",
+   "refs_list": [
+    "Gardiner 1957"
+   ],
+   "quadrats": [
+    "𓎛",
+    "𓎿",
+    "𓋴",
+    "𓀁"
+   ],
+   "cartouche": false
+  },
+  {
+   "id": "d14",
+   "title.ja": "sn「兄弟」：補音と男の限定符",
+   "title.en": "sn 'brother': complement and male determinative",
+   "book": "40–41",
+   "cat": "DET",
+   "signs_list": [
+    {
+     "id": "n1",
+     "code": "T22",
+     "value": "sn",
+     "glyph": "𓌢"
+    },
+    {
+     "id": "n2",
+     "code": "N35",
+     "value": "n",
+     "glyph": "𓈖"
+    },
+    {
+     "id": "n3",
+     "code": "A1",
+     "value": "男",
+     "glyph": "𓀀"
+    }
+   ],
+   "A": "[LINE2 [⿱ n1 n2] n3]",
+   "B": "[CLOSE [CMPL2 n1:PHON2 n2:COMPL] n3:DET_H]",
+   "B_alt": null,
+   "read_list": [
+    "n1",
+    "n2",
+    "n3"
+   ],
+   "walk_write": [
+    "n1",
+    "n2",
+    "n3"
+   ],
+   "reorder": "-",
+   "status": "HYPOTHESIS",
+   "mismatch": [],
+   "mismatch_alt": [],
+   "claim.ja": "本書は Loy を引き、sn「兄弟」を示す（p. 40）。男性の語は男の形の限定符をとる、と述べる（p. 41）。",
+   "claim.en": "Citing Loy, the book gives sn 'brother' (p. 40) and says masculine words take male determinatives (p. 41).",
+   "std.ja": "T22（矢じり、sn）に補音 N35、限定符 A1 である（Gardiner 1957、記号表 T22）。",
+   "std.en": "T22 (arrowhead, sn) with complement N35 and determinative A1 (Gardiner 1957, sign list T22).",
+   "note.ja": "d15・d16 と組にして読むと、語尾と主要部だけが替わり、残りは変わらない。",
+   "note.en": "Read with d15 and d16: only the ending and the head change; the rest stays.",
+   "refs_list": [
+    "Gardiner 1957"
+   ],
+   "quadrats": [
+    "𓌢𓐰𓈖",
+    "𓀀"
+   ],
+   "cartouche": false
+  },
+  {
+   "id": "d15",
+   "title.ja": "snw「兄弟たち」：複数語尾と複数の線",
+   "title.en": "snw 'brothers': plural ending and plural strokes",
+   "book": "40",
+   "cat": "INFL",
+   "signs_list": [
+    {
+     "id": "n1",
+     "code": "T22",
+     "value": "sn",
+     "glyph": "𓌢"
+    },
+    {
+     "id": "n2",
+     "code": "N35",
+     "value": "n",
+     "glyph": "𓈖"
+    },
+    {
+     "id": "n3",
+     "code": "G43",
+     "value": "w",
+     "glyph": "𓅱"
+    },
+    {
+     "id": "n4",
+     "code": "A1",
+     "value": "男",
+     "glyph": "𓀀"
+    },
+    {
+     "id": "n5",
+     "code": "Z2",
+     "value": "複数",
+     "glyph": "𓏥"
+    }
+   ],
+   "A": "[LINE4 [⿱ n1 n2] n3 n4 n5]",
+   "B": "[PL [CLOSE [INFL2 [CMPL2 n1:PHON2 n2:COMPL] n3:PL] n4:DET_H] n5:PL]",
+   "B_alt": null,
+   "read_list": [
+    "n1",
+    "n2",
+    "n3",
+    "n4",
+    "n5"
+   ],
+   "walk_write": [
+    "n1",
+    "n2",
+    "n3",
+    "n4",
+    "n5"
+   ],
+   "reorder": "-",
+   "status": "HYPOTHESIS; identification of the stroke sign as Z2 from a small figure",
+   "mismatch": [],
+   "mismatch_alt": [],
+   "claim.ja": "本書は Loy を引き、複数形 snw を示し、w が複数の線とともに補助的に使われると述べる（p. 40）。",
+   "claim.en": "Citing Loy, the book gives the plural snw and says w is used as an assistant sign along with the plural strokes (p. 40).",
+   "std.ja": "-w は男性複数の語尾、Z2 は複数の印である（Gardiner 1957、記号表 Z2・G43）。",
+   "std.en": "-w is the masculine plural ending and Z2 the plural marker (Gardiner 1957, sign list Z2, G43).",
+   "note.ja": "複数が二度、別の場所で示される。語尾 w は限定符の前、線 Z2 は後ろにある。層 B では内側の PL と外側の PL の二つの節点になる。",
+   "note.en": "Plurality is marked twice, in two places: the ending w before the determinative, the strokes Z2 after it. Layer B has two PL nodes, inner and outer.",
+   "refs_list": [
+    "Gardiner 1957"
+   ],
+   "quadrats": [
+    "𓌢𓐰𓈖",
+    "𓅱",
+    "𓀀",
+    "𓏥"
+   ],
+   "cartouche": false
+  },
+  {
+   "id": "d16",
+   "title.ja": "snt「姉妹」：女性語尾と女の限定符",
+   "title.en": "snt 'sister': feminine ending and female determinative",
+   "book": "40–41",
+   "cat": "INFL",
+   "signs_list": [
+    {
+     "id": "n1",
+     "code": "T22",
+     "value": "sn",
+     "glyph": "𓌢"
+    },
+    {
+     "id": "n2",
+     "code": "N35",
+     "value": "n",
+     "glyph": "𓈖"
+    },
+    {
+     "id": "n3",
+     "code": "X1",
+     "value": "t",
+     "glyph": "𓏏"
+    },
+    {
+     "id": "n4",
+     "code": "B1",
+     "value": "女",
+     "glyph": "𓁐"
+    }
+   ],
+   "A": "[LINE3 [⿱ n1 n2] n3 n4]",
+   "B": "[CLOSE [INFL2 [CMPL2 n1:PHON2 n2:COMPL] n3:FEM] n4:DET_H]",
+   "B_alt": null,
+   "read_list": [
+    "n1",
+    "n2",
+    "n3",
+    "n4"
+   ],
+   "walk_write": [
+    "n1",
+    "n2",
+    "n3",
+    "n4"
+   ],
+   "reorder": "-",
+   "status": "HYPOTHESIS",
+   "mismatch": [],
+   "mismatch_alt": [],
+   "claim.ja": "本書は、女性の語は女の形の限定符の前に /t/ をもつと述べ、snt「姉妹」を挙げる（p. 41）。",
+   "claim.en": "The book says feminine words have /t/ before a female determinative and gives snt 'sister' (p. 41).",
+   "std.ja": "標準の説明と一致する（Gardiner 1957、記号表 X1・B1）。",
+   "std.en": "This matches the standard account (Gardiner 1957, sign list X1, B1).",
+   "note.ja": "d14 から d16 へは、INFL2 を一段はさみ、主要部を A1 から B1 に替えるだけで移れる。",
+   "note.en": "d14 becomes d16 by adding one INFL2 node and swapping the head from A1 to B1.",
+   "refs_list": [
+    "Gardiner 1957"
+   ],
+   "quadrats": [
+    "𓌢𓐰𓈖",
+    "𓏏",
+    "𓁐"
+   ],
+   "cartouche": false
+  },
+  {
+   "id": "d17",
+   "title.ja": "nṯrw「神々」：表語に複数の印",
+   "title.en": "nṯrw 'gods': a logogram with the plural marker",
+   "book": "40",
+   "cat": "INFL",
+   "signs_list": [
+    {
+     "id": "n1",
+     "code": "R8",
+     "value": "nṯr",
+     "glyph": "𓊹"
+    },
+    {
+     "id": "n2",
+     "code": "Z3A",
+     "value": "複数",
+     "glyph": "𓏫"
+    }
+   ],
+   "A": "[LINE2 n1 n2]",
+   "B": "[PL n1:LOGO n2:PL]",
+   "B_alt": null,
+   "read_list": [
+    "n1",
+    "n2"
+   ],
+   "walk_write": [
+    "n1",
+    "n2"
+   ],
+   "reorder": "-",
+   "status": "HYPOTHESIS; Z3A identification provisional",
+   "mismatch": [],
+   "mismatch_alt": [],
+   "claim.ja": "本書は R8 だけで「神」、複数の印を加えて「神々」とする（p. 40）。",
+   "claim.en": "The book gives R8 alone as 'god' and R8 with the plural marker as 'gods' (p. 40).",
+   "std.ja": "標準の説明と一致する。R8 を三度書く複数の書き方もある（Gardiner 1957、記号表 R8）。",
+   "std.en": "This matches the standard account; plural can also be written by repeating R8 three times (Gardiner 1957, sign list R8).",
+   "note.ja": "印の記号は図が小さく、Z3A と同定したのは仮である。",
+   "note.en": "The marker is identified as Z3A from a small figure; the identification is provisional.",
+   "refs_list": [
+    "Gardiner 1957"
+   ],
+   "quadrats": [
+    "𓊹",
+    "𓏫"
+   ],
+   "cartouche": false
+  },
+  {
+   "id": "d18",
+   "title.ja": "sḏm.f と sḏm.n.f：接尾代名詞と n",
+   "title.en": "sḏm.f and sḏm.n.f: suffix pronoun and n",
+   "book": "48",
+   "cat": "INFL",
+   "signs_list": [
+    {
+     "id": "n1",
+     "code": "F21",
+     "value": "sḏm",
+     "glyph": "𓄔"
+    },
+    {
+     "id": "n2",
+     "code": "G17",
+     "value": "m",
+     "glyph": "𓅓"
+    },
+    {
+     "id": "n3",
+     "code": "N35",
+     "value": "n",
+     "glyph": "𓈖"
+    },
+    {
+     "id": "n4",
+     "code": "I9",
+     "value": "f",
+     "glyph": "𓆑"
+    }
+   ],
+   "A": "[LINE4 n1 n2 n3 n4]",
+   "B": "[SUFF [INFL2 [CMPL2 n1:PHON3 n2:COMPL] n3:INFL] n4:SUFF]",
+   "B_alt": null,
+   "read_list": [
+    "n1",
+    "n2",
+    "n3",
+    "n4"
+   ],
+   "walk_write": [
+    "n1",
+    "n2",
+    "n3",
+    "n4"
+   ],
+   "reorder": "-",
+   "status": "HYPOTHESIS",
+   "mismatch": [],
+   "mismatch_alt": [],
+   "claim.ja": "本書は Loy を引き、動詞の単純形 /sdmf/ を「考える」かもしれないとして現在時制に置き、n を加えた /sdm-n-f/ を過去とする（p. 48）。",
+   "claim.en": "Citing Loy, the book takes the simple verb form /sdmf/ as possibly 'to think', present tense, and /sdm-n-f/ with added n as past (p. 48).",
+   "std.ja": "標準では sḏm は「聞く」であり、sḏm.f は接尾代名詞 .f「彼」をとる活用形、sḏm.n.f は完了・過去の形である（Gardiner 1957、Allen 2010）。",
+   "std.en": "Standard: sḏm means 'hear'; sḏm.f is a suffix-conjugation form with .f 'he', and sḏm.n.f the perfect/past form (Gardiner 1957; Allen 2010).",
+   "note.ja": "語釈「考える」は標準と食い違う。n の役割（過去・完了）についての本書の説明は標準と合う。sḏm.f は B から INFL2 と n3 を除いた木である。",
+   "note.en": "The gloss 'to think' differs from the standard; the book's account of n (past/perfect) agrees. sḏm.f is the same tree as B without INFL2 and n3.",
+   "refs_list": [
+    "Gardiner 1957",
+    "Allen 2010"
+   ],
+   "quadrats": [
+    "𓄔",
+    "𓅓",
+    "𓈖",
+    "𓆑"
+   ],
+   "cartouche": false
+  },
+  {
+   "id": "d19",
+   "title.ja": "ḥwt-nṯr「神殿」：敬意による転置",
+   "title.en": "ḥwt-nṯr 'temple': honorific transposition",
+   "book": "40",
+   "cat": "TRANSPOSE",
+   "signs_list": [
+    {
+     "id": "n1",
+     "code": "R8",
+     "value": "nṯr",
+     "glyph": "𓊹"
+    },
+    {
+     "id": "n2",
+     "code": "O6",
+     "value": "ḥwt",
+     "glyph": "𓉗"
+    },
+    {
+     "id": "n3",
+     "code": "X1",
+     "value": "t",
+     "glyph": "𓏏"
+    },
+    {
+     "id": "n4",
+     "code": "O1",
+     "value": "家",
+     "glyph": "𓉐"
+    }
+   ],
+   "A": "[LINE3 n1 n2 [⿱ n3 n4]]",
+   "B": "[CLOSE [GEN [INFL2 n2:LOGO n3:FEM] n1:LOGO] n4:DET_H]",
+   "B_alt": null,
+   "read_list": [
+    "n2",
+    "n3",
+    "n1",
+    "n4"
+   ],
+   "walk_write": [
+    "n1",
+    "n2",
+    "n3",
+    "n4"
+   ],
+   "reorder": "TRANSPOSE(honorific)",
+   "status": "HYPOTHESIS; role of O1 provisional",
+   "mismatch": [
+    {
+     "op": "GEN",
+     "leaves": [
+      "n2",
+      "n3",
+      "n1"
+     ]
+    },
+    {
+     "op": "INFL2",
+     "leaves": [
+      "n2",
+      "n3"
+     ]
+    }
+   ],
+   "mismatch_alt": [],
+   "claim.ja": "本書は Kinnaer を引き、属格では所有者が後に来るが、所有者が神や王なら最初の名詞の前に書き、文法上は後に来る、と述べる（p. 40）。読みは /ntr-hw-t-pr/ と書き順のままである。",
+   "claim.en": "Citing Kinnaer, the book says the possessor follows in the genitive, but a god or king as possessor is written before the first noun while grammatically coming after (p. 40). Its reading is /ntr-hw-t-pr/, in written order.",
+   "std.ja": "Gardiner はこれを敬意による転置とし、純粋に書記上のものとする。読みは話し言葉の順の ḥwt-nṯr である（Gardiner 1957 §57）。Peust 2007 はこの現象を詳しく扱う。",
+   "std.en": "Gardiner treats this as honorific transposition, purely graphic; it is read in spoken order, ḥwt-nṯr (Gardiner 1957, §57). Peust 2007 treats the phenomenon at length.",
+   "note.ja": "規格 v1 の既定 (b) にしたがい、木は一つで、転置は線形化の上で WALK_write ≠ WALK_read として記す。移動 (a) は使わない。本書の規則の説明は標準と合う。合わないのは、本書の読みが書き順のままである点である。O1 を限定符とするのは仮である。",
+   "note.en": "Following v1 default (b): one tree, with the reorder marked on the linearization as WALK_write ≠ WALK_read; no movement (a). The book's statement of the rule agrees with the standard; its reading, which keeps written order, does not. O1 as determinative is provisional.",
+   "refs_list": [
+    "Gardiner 1957",
+    "Peust 2007",
+    "Hierolyte"
+   ],
+   "quadrats": [
+    "𓊹",
+    "𓉗",
+    "𓏏𓐰𓉐"
+   ],
+   "cartouche": false
+  },
+  {
+   "id": "d20",
+   "title.ja": "プトレマイオスの称号「永遠に生きる、プタハに愛された」：転置と文字の向き",
+   "title.en": "Ptolemy's epithet 'ever-living, beloved of Ptah': transposition and sign orientation",
+   "book": "65–66, 84",
+   "cat": "TRANSPOSE",
+   "signs_list": [
+    {
+     "id": "n1",
+     "code": "Q3",
+     "value": "p",
+     "glyph": "𓊪"
+    },
+    {
+     "id": "n2",
+     "code": "X1",
+     "value": "t",
+     "glyph": "𓏏"
+    },
+    {
+     "id": "n3",
+     "code": "V4",
+     "value": "wꜣ",
+     "glyph": "𓍯"
+    },
+    {
+     "id": "n4",
+     "code": "E23",
+     "value": "l",
+     "glyph": "𓃭"
+    },
+    {
+     "id": "n5",
+     "code": "Aa15",
+     "value": "m",
+     "glyph": "𓐝"
+    },
+    {
+     "id": "n6",
+     "code": "M17",
+     "value": "i",
+     "glyph": "𓇋"
+    },
+    {
+     "id": "n7",
+     "code": "M17",
+     "value": "i",
+     "glyph": "𓇋"
+    },
+    {
+     "id": "n8",
+     "code": "S29",
+     "value": "s",
+     "glyph": "𓋴"
+    },
+    {
+     "id": "n9",
+     "code": "S34",
+     "value": "ꜥnḫ",
+     "glyph": "𓋹"
+    },
+    {
+     "id": "n10",
+     "code": "I10",
+     "value": "ḏ",
+     "glyph": "𓆓"
+    },
+    {
+     "id": "n11",
+     "code": "X1",
+     "value": "t",
+     "glyph": "𓏏"
+    },
+    {
+     "id": "n12",
+     "code": "N16",
+     "value": "土地",
+     "glyph": "𓇾"
+    },
+    {
+     "id": "n13",
+     "code": "Q3",
+     "value": "p",
+     "glyph": "𓊪"
+    },
+    {
+     "id": "n14",
+     "code": "X1",
+     "value": "t",
+     "glyph": "𓏏"
+    },
+    {
+     "id": "n15",
+     "code": "V28",
+     "value": "ḥ",
+     "glyph": "𓎛"
+    },
+    {
+     "id": "n16",
+     "code": "U7",
+     "value": "mr",
+     "glyph": "𓌻"
+    },
+    {
+     "id": "n17",
+     "code": "M17",
+     "value": "i",
+     "glyph": "𓇋"
+    },
+    {
+     "id": "n18",
+     "code": "M17",
+     "value": "i",
+     "glyph": "𓇋"
+    }
+   ],
+   "A": "[CARTOUCHE [LINE11 [⿱ n1 n2] n3 [⿱ n4 n5] [⿰ n6 n7] n8 n9 [⿳ n10 n11 n12] [⿱ n13 n14] n15 n16 [⿰ n17 n18]]]",
+   "B": "[PHRASE3 [SPELL8 n1:PHON1 n2:PHON1 n3:PHON2 n4:PHON1 n5:PHON1 n6:PHON1 n7:PHON1 n8:PHON1] [ATTR n9:LOGO [CLOSE [SPELL2 n10:PHON1 n11:PHON1] n12:DET_H]] [GEN [INFL3 n16:PHON2 n17:INFL n18:INFL] [SPELL3 n13:PHON1 n14:PHON1 n15:PHON1]]]",
+   "B_alt": null,
+   "read_list": [
+    "n1",
+    "n2",
+    "n3",
+    "n4",
+    "n5",
+    "n6",
+    "n7",
+    "n8",
+    "n9",
+    "n10",
+    "n11",
+    "n12",
+    "n16",
+    "n17",
+    "n18",
+    "n13",
+    "n14",
+    "n15"
+   ],
+   "walk_write": [
+    "n1",
+    "n2",
+    "n3",
+    "n4",
+    "n5",
+    "n6",
+    "n7",
+    "n8",
+    "n9",
+    "n10",
+    "n11",
+    "n12",
+    "n13",
+    "n14",
+    "n15",
+    "n16",
+    "n17",
+    "n18"
+   ],
+   "reorder": "TRANSPOSE(honorific)",
+   "status": "HYPOTHESIS; N16 vs N17 in ḏt not distinguishable in the figure (OPEN); figure orientation OPEN",
+   "mismatch": [],
+   "mismatch_alt": [],
+   "claim.ja": "本書は Loy を引き、ロゼッタ・ストーンのカルトゥーシュを /ptwlmjs-ɑnx-ʤttɑ:-pth-mrj/「プトレマイオス、永遠に生きる、プタハに愛された」と読む（pp. 65–66, 84）。",
+   "claim.en": "Citing Loy, the book reads the Rosetta Stone cartouche as /ptwlmjs-ɑnx-ʤttɑ:-pth-mrj/, 'Ptolemy, the ever-living, beloved of Ptah' (pp. 65–66, 84).",
+   "std.ja": "書き順では Ptḥ が mry の前に来るが、読みは mry Ptḥ「プタハに愛された」である。神名を前に書く敬意の転置で、Gardiner は mry Imn を例に挙げる（Gardiner 1957 §57）。",
+   "std.en": "Ptḥ is written before mry but read mry Ptḥ 'beloved of Ptah': honorific transposition of the god's name; Gardiner gives mry Imn as an example (Gardiner 1957, §57).",
+   "note.ja": "本書の音写は書き順の pth-mrj を保ち、訳は話し言葉の順になっている。書き順と読み順の差は、まさに WALK_write ≠ WALK_read で記すものである。別の点として、本書の図では記号列は右から左に読まねばならないのに、動物の記号は左を向いている。ここでは標準の読みにしたがって並べ直し、向きの不一致は未決（OPEN）として記す。",
+   "note.en": "The book's transcription keeps the written order pth-mrj while its translation follows spoken order; that gap is exactly what WALK_write ≠ WALK_read records. Separately, in the book's figure the sequence must be read right to left while the animal signs face left; we follow the standard reading and record the orientation mismatch as OPEN.",
+   "refs_list": [
+    "Gardiner 1957",
+    "Rosetta Stone (BM EA 24)"
+   ],
+   "quadrats": [
+    "𓊪𓐰𓏏",
+    "𓍯",
+    "𓃭𓐰𓐝",
+    "𓇋𓐱𓇋",
+    "𓋴",
+    "𓋹",
+    "𓆓𓐰𓏏𓐰𓇾",
+    "𓊪𓐰𓏏",
+    "𓎛",
+    "𓌻",
+    "𓇋𓐱𓇋"
+   ],
+   "cartouche": true
+  },
+  {
+   "id": "d21",
+   "title.ja": "ラメセス（Rꜥ-ms-sw）：神名が先でも転置ではない例",
+   "title.en": "Ramesses (Rꜥ-ms-sw): god first, but no transposition",
+   "book": "33–34",
+   "cat": "TRANSPOSE",
+   "signs_list": [
+    {
+     "id": "n1",
+     "code": "N5",
+     "value": "Rꜥ",
+     "glyph": "𓇳"
+    },
+    {
+     "id": "n2",
+     "code": "F31",
+     "value": "ms",
+     "glyph": "𓄟"
+    },
+    {
+     "id": "n3",
+     "code": "S29",
+     "value": "s",
+     "glyph": "𓋴"
+    },
+    {
+     "id": "n4",
+     "code": "S29",
+     "value": "s(w)",
+     "glyph": "𓋴"
+    }
+   ],
+   "A": "[LINE4 n1 n2 n3 n4]",
+   "B": "[NAME3 n1:LOGO [CMPL2 n2:PHON2 n3:COMPL] n4:PHON1]",
+   "B_alt": null,
+   "read_list": [
+    "n1",
+    "n2",
+    "n3",
+    "n4"
+   ],
+   "walk_write": [
+    "n1",
+    "n2",
+    "n3",
+    "n4"
+   ],
+   "reorder": "-",
+   "status": "HYPOTHESIS",
+   "mismatch": [],
+   "mismatch_alt": [],
+   "claim.ja": "本書は、現代のアルファベット式の綴り /rɑ:msɑs/ を「誤り」とし、正しくは太陽・F31・S29・S29 の /rɑ-ms-s-s/ だと述べる（pp. 33–34）。",
+   "claim.en": "The book calls a modern alphabetic spelling /rɑ:msɑs/ wrong and gives sun, F31, S29, S29, /rɑ-ms-s-s/, as correct (pp. 33–34).",
+   "std.ja": "正しい綴りについての本書の指摘は標準と合う。名は Rꜥ-ms-sw「ラーが彼を生んだ者」と読む（Gardiner 1957）。",
+   "std.en": "The book's point about the correct spelling agrees with the standard. The name reads Rꜥ-ms-sw 'Ra is the one who bore him' (Gardiner 1957).",
+   "note.ja": "神名が先頭に書かれていても、それだけで転置とはならない。Rꜥ はこの名の文の主語なので、読みでも先頭にあると考え、WALK_write = WALK_read とした（推測）。d19・d20 と並べると、転置が木の性質ではなく歩き方の性質であることが見える。",
+   "note.en": "A god's name written first is not by itself a transposition. Rꜥ is the subject of the name's sentence, so we take it to be first in reading too and record WALK_write = WALK_read (inference). Set beside d19 and d20, this shows transposition as a property of the walk, not of the tree.",
+   "refs_list": [
+    "Gardiner 1957"
+   ],
+   "quadrats": [
+    "𓇳",
+    "𓄟",
+    "𓋴",
+    "𓋴"
+   ],
+   "cartouche": false
+  },
+  {
+   "id": "d22",
+   "title.ja": "nswt-bjtj「上下エジプトの王」：2×2 の方形と二つの称号",
+   "title.en": "nswt-bjtj 'King of Upper and Lower Egypt': a 2×2 quadrat and two titles",
+   "book": "81",
+   "cat": "TRANSPOSE",
+   "signs_list": [
+    {
+     "id": "n1",
+     "code": "M23",
+     "value": "sw(t)",
+     "glyph": "𓇓"
+    },
+    {
+     "id": "n2",
+     "code": "L2",
+     "value": "bjt",
+     "glyph": "𓆤"
+    },
+    {
+     "id": "n3",
+     "code": "X1",
+     "value": "t",
+     "glyph": "𓏏"
+    },
+    {
+     "id": "n4",
+     "code": "X1",
+     "value": "t",
+     "glyph": "𓏏"
+    }
+   ],
+   "A": "[⿱ [⿰ n1 n2] [⿰ n3 n4]]",
+   "B": "[COORD [INFL2 n1:LOGO n3:INFL] [INFL2 n2:LOGO n4:INFL]]",
+   "B_alt": null,
+   "read_list": [
+    "n1",
+    "n3",
+    "n2",
+    "n4"
+   ],
+   "walk_write": [
+    "n1",
+    "n2",
+    "n3",
+    "n4"
+   ],
+   "reorder": "TRANSPOSE(graphic)",
+   "status": "HYPOTHESIS; reorder type OPEN",
+   "mismatch": [
+    {
+     "op": "INFL2",
+     "leaves": [
+      "n1",
+      "n3"
+     ]
+    },
+    {
+     "op": "INFL2",
+     "leaves": [
+      "n2",
+      "n4"
+     ]
+    }
+   ],
+   "mismatch_alt": [],
+   "claim.ja": "本書はこの組を /swtnt-nt/「南と北の王」と読む（p. 81）。",
+   "claim.en": "The book reads the group as /swtnt-nt/, 'King of the South and North' (p. 81).",
+   "std.ja": "標準の読みは nswt-bjtj である。nswt は n(y)-swt「スゲに属する者」から来ると説明され、スゲ M23 を n より先に書く。この並びを Allen は転置とみなしうるとし、Poe は書記上の転置と呼ぶ（Allen 2010、Poe）。",
+   "std.en": "The standard reading is nswt-bjtj. nswt is explained from n(y)-swt 'he of the sedge', with the sedge M23 written before n; Allen suggests this may be a transposition, Poe calls it graphic (Allen 2010; Poe).",
+   "note.ja": "方形の書き順（上段の左右、次に下段の左右）では M23・L2・X1・X1 となるが、読みは M23・X1（nswt）、L2・X1（bjtj）である。配置の構成素［M23 ⿰ L2］と機能の構成素｛M23, X1｝は交差する。転置の種類は、敬意か書記上かが未決（OPEN）なので graphic とした。",
+   "note.en": "The quadrat's writing walk (top row left to right, then bottom row) gives M23, L2, X1, X1; the reading is M23·X1 (nswt), L2·X1 (bjtj). The layout constituent [M23 ⿰ L2] crosses the function constituent {M23, X1}. Whether the reorder is honorific or graphic is OPEN; it is labelled graphic here.",
+   "refs_list": [
+    "Allen 2010",
+    "Poe",
+    "Gardiner 1957",
+    "Hierolyte"
+   ],
+   "quadrats": [
+    "𓇓𓐱𓆤𓐰𓏏𓐱𓏏"
+   ],
+   "cartouche": false
+  },
+  {
+   "id": "d23",
+   "title.ja": "nswt「上エジプトの王」と、本書のいう「切り詰め」",
+   "title.en": "nswt 'King of Upper Egypt' and the book's 'clipping'",
+   "book": "53, 84",
+   "cat": "ABBR",
+   "signs_list": [
+    {
+     "id": "n1",
+     "code": "M23",
+     "value": "sw(t)",
+     "glyph": "𓇓"
+    }
+   ],
+   "A": "n1",
+   "B": "[ABBR n1:LOGO]",
+   "B_alt": null,
+   "read_list": [
+    "n1"
+   ],
+   "walk_write": [
+    "n1"
+   ],
+   "reorder": "-",
+   "status": "HYPOTHESIS; section reference for Gardiner's remark not re-checked",
+   "mismatch": [],
+   "mismatch_alt": [],
+   "claim.ja": "本書は、/swtn/ が /sw/ になるのを形態論の「切り詰め（clipping）」の例とし、英語の doctor → doc になぞらえる（p. 53）。",
+   "claim.en": "The book treats /swtn/ becoming /sw/ as morphological clipping, comparing English doctor → doc (p. 53).",
+   "std.ja": "Gardiner は、王にかかわる句で略した書き方がよく見られると述べ、スゲ一つで nsw を書く例を挙げる（Gardiner 1957 §57 の周辺）。語そのものは nswt のままで、短くなるのは書き方である。",
+   "std.en": "Gardiner notes that abbreviated writings are frequent in royal phrases, with a single sedge for nsw (Gardiner 1957, around §57). The word stays nswt; only the writing is shorter.",
+   "note.ja": "層 B に一項の演算子 ABBR を置き、記号一つから語全体を指す。本書は語の切り詰めと見るが、標準の見方では切り詰められるのは書き方である。この違いは二層に分けると書き分けられる。",
+   "note.en": "Layer B uses a one-place operator ABBR that maps one sign to the whole word. The book sees clipping of the word; on the standard view what is clipped is the writing. Two layers keep the difference visible.",
+   "refs_list": [
+    "Gardiner 1957",
+    "Hierolyte"
+   ],
+   "quadrats": [
+    "𓇓"
+   ],
+   "cartouche": false
+  },
+  {
+   "id": "d24",
+   "title.ja": "pr-ꜥꜣ「大きな家（ファラオ）」：上下に重ねた二つの表語",
+   "title.en": "pr-ꜥꜣ 'Great House (pharaoh)': two logograms stacked",
+   "book": "84",
+   "cat": "LOGO",
+   "signs_list": [
+    {
+     "id": "n1",
+     "code": "O1",
+     "value": "pr",
+     "glyph": "𓉐"
+    },
+    {
+     "id": "n2",
+     "code": "O29",
+     "value": "ꜥꜣ",
+     "glyph": "𓉻"
+    }
+   ],
+   "A": "[⿱ n1 n2]",
+   "B": "[ATTR n1:LOGO n2:LOGO]",
+   "B_alt": null,
+   "read_list": [
+    "n1",
+    "n2"
+   ],
+   "walk_write": [
+    "n1",
+    "n2"
+   ],
+   "reorder": "-",
+   "status": "HYPOTHESIS",
+   "mismatch": [],
+   "mismatch_alt": [],
+   "claim.ja": "本書は、ファラオの本来のヒエログリフ表記は /pr-ɑ:/「大きな家」であり、はじめは王宮を指したと述べる（p. 84）。",
+   "claim.en": "The book says the real hieroglyphic expression for pharaoh is /pr-ɑ:/ 'Great House', first used of the palace (p. 84).",
+   "std.ja": "標準の説明と一致する。O29 は補音 D36 を伴って書かれることも多い（Gardiner 1957、記号表 O29）。",
+   "std.en": "This matches the standard account; O29 is often written with the complement D36 (Gardiner 1957, sign list O29).",
+   "note.ja": "一つの方形が二語の句をちょうど覆う。配置の ⿱ と機能の ATTR が同じ二つの葉を束ねる。",
+   "note.en": "One quadrat covers a two-word phrase exactly; the layout ⿱ and the function ATTR bundle the same two leaves.",
+   "refs_list": [
+    "Gardiner 1957"
+   ],
+   "quadrats": [
+    "𓉐𓐰𓉻"
+   ],
+   "cartouche": false
+  },
+  {
+   "id": "d25",
+   "title.ja": "方形の読み順（パピルスの一節）：上が先、の規則",
+   "title.en": "Reading order in quadrats (a papyrus excerpt): the top-first rule",
+   "book": "60–61",
+   "cat": "LAYOUT",
+   "signs_list": [
+    {
+     "id": "n1",
+     "code": "?",
+     "value": "植物の記号",
+     "glyph": ""
+    },
+    {
+     "id": "n2",
+     "code": "O34",
+     "value": "z",
+     "glyph": "𓊃"
+    },
+    {
+     "id": "n3",
+     "code": "V31",
+     "value": "k",
+     "glyph": "𓎡"
+    },
+    {
+     "id": "n4",
+     "code": "V28",
+     "value": "ḥ",
+     "glyph": "𓎛"
+    },
+    {
+     "id": "n5",
+     "code": "G43",
+     "value": "w",
+     "glyph": "𓅱"
+    },
+    {
+     "id": "n6",
+     "code": "I10",
+     "value": "ḏ",
+     "glyph": "𓆓"
+    },
+    {
+     "id": "n7",
+     "code": "X1",
+     "value": "t",
+     "glyph": "𓏏"
+    }
+   ],
+   "A": "[LINE5 n1 [⿱ n2 n3] n4 n5 [⿱ n6 n7]]",
+   "B": "OPEN",
+   "B_alt": null,
+   "read_list": [
+    "n1",
+    "n2",
+    "n3",
+    "n4",
+    "n5",
+    "n6",
+    "n7"
+   ],
+   "walk_write": [
+    "n1",
+    "n2",
+    "n3",
+    "n4",
+    "n5",
+    "n6",
+    "n7"
+   ],
+   "reorder": "-",
+   "status": "HYPOTHESIS; sign n1 unidentified; layer B OPEN",
+   "mismatch": [],
+   "mismatch_alt": [],
+   "claim.ja": "本書は Bruaw から番号付きの例を引き、積み重ねた記号は読む向きに、次に下へと読み、上の記号が先に来ると述べる（pp. 60–61）。",
+   "claim.en": "The book takes a numbered example from Bruaw and says stacked signs are read in the reading direction and then downward, signs above taking precedence (pp. 60–61).",
+   "std.ja": "上を先に読むという規則は標準の説明と合う。",
+   "std.en": "The top-first rule agrees with the standard account.",
+   "note.ja": "本書の番号 1–7 は、配置の木を左から、縦の結合では上から辿った葉の並びとちょうど一致する。つまりこの規則は、配置の層の既定の歩き WALK_write の定義そのものである。第1の記号は同定できず、語も特定できないので、機能の層は未決（OPEN）とした。",
+   "note.en": "The book's numbers 1–7 coincide with the leaf order of the layout tree read left to right, top first at vertical joins. The rule is in effect the definition of the default walk WALK_write over layer A. Sign 1 could not be identified and the word is unknown, so the function layer is OPEN.",
+   "refs_list": [
+    "Gardiner 1957"
+   ],
+   "quadrats": [
+    "𓀀",
+    "𓊃𓐰𓎡",
+    "𓎛",
+    "𓅱",
+    "𓆓𓐰𓏏"
+   ],
+   "cartouche": false
+  },
+  {
+   "id": "d26",
+   "title.ja": "クレオパトラ：語尾の t と卵の限定符",
+   "title.en": "Cleopatra: the ending t and the egg determinative",
+   "book": "53",
+   "cat": "DET",
+   "signs_list": [
+    {
+     "id": "n1",
+     "code": "N29",
+     "value": "q",
+     "glyph": "𓈎"
+    },
+    {
+     "id": "n2",
+     "code": "E23",
+     "value": "l",
+     "glyph": "𓃭"
+    },
+    {
+     "id": "n3",
+     "code": "M17",
+     "value": "i",
+     "glyph": "𓇋"
+    },
+    {
+     "id": "n4",
+     "code": "V4",
+     "value": "wꜣ",
+     "glyph": "𓍯"
+    },
+    {
+     "id": "n5",
+     "code": "Q3",
+     "value": "p",
+     "glyph": "𓊪"
+    },
+    {
+     "id": "n6",
+     "code": "G1",
+     "value": "ꜣ",
+     "glyph": "𓄿"
+    },
+    {
+     "id": "n7",
+     "code": "D46",
+     "value": "d",
+     "glyph": "𓂧"
+    },
+    {
+     "id": "n8",
+     "code": "D21",
+     "value": "r",
+     "glyph": "𓂋"
+    },
+    {
+     "id": "n9",
+     "code": "G1",
+     "value": "ꜣ",
+     "glyph": "𓄿"
+    },
+    {
+     "id": "n10",
+     "code": "X1",
+     "value": "t",
+     "glyph": "𓏏"
+    },
+    {
+     "id": "n11",
+     "code": "H8",
+     "value": "女神・女王",
+     "glyph": "𓆇"
+    }
+   ],
+   "A": "[CARTOUCHE [LINE8 [⿱ n1 n2] n3 n4 n5 n6 [⿱ n7 n8] n9 [⿱ n10 n11]]]",
+   "B": "[CLOSE [INFL2 [SPELL9 n1:PHON1 n2:PHON1 n3:PHON1 n4:PHON2 n5:PHON1 n6:PHON1 n7:PHON1 n8:PHON1 n9:PHON1] n10:FEM] n11:DET_H]",
+   "B_alt": null,
+   "read_list": [
+    "n1",
+    "n2",
+    "n3",
+    "n4",
+    "n5",
+    "n6",
+    "n7",
+    "n8",
+    "n9",
+    "n10",
+    "n11"
+   ],
+   "walk_write": [
+    "n1",
+    "n2",
+    "n3",
+    "n4",
+    "n5",
+    "n6",
+    "n7",
+    "n8",
+    "n9",
+    "n10",
+    "n11"
+   ],
+   "reorder": "-",
+   "status": "HYPOTHESIS",
+   "mismatch": [
+    {
+     "op": "INFL2",
+     "leaves": [
+      "n1",
+      "n2",
+      "n3",
+      "n4",
+      "n5",
+      "n6",
+      "n7",
+      "n8",
+      "n9",
+      "n10"
+     ]
+    }
+   ],
+   "mismatch_alt": [],
+   "claim.ja": "本書は、このカルトゥーシュの本来の音は /klIwpɑ:drɑ:tsɑ:/ で、名は「クレオパトラツァ」であり、「クレオパトラ」はその切り詰めだと述べる（p. 53）。",
+   "claim.en": "The book says the cartouche's authentic sound is /klIwpɑ:drɑ:tsɑ:/, so the name is 'Cleopatratsa', and 'Cleopatra' is a clipping of it (p. 53).",
+   "std.ja": "標準では、末尾の X1 は t（女性語尾）で、卵 H8 は女神や王妃の名の後に置く読まない限定符である。Champollion（1822）以来の解読もそう扱う（Callimahos による解説）。",
+   "std.en": "Standard: the final X1 is t (feminine ending) and the egg H8 is a silent determinative placed after names of goddesses and queens; so it has been treated since Champollion (1822) (as explained by Callimahos).",
+   "note.ja": "末尾の「ツァ」は、限定符 H8 に音を与えたことから出ていると見える（推測）。層 B では H8 は主要部で音をもたない。また［X1 ⿱ H8］は一つの方形だが、機能の層では t は語の側、H8 は閉じる側に分かれる（MISMATCH）。",
+   "note.en": "The final 'tsa' appears to come from giving the determinative H8 a sound (inference). In layer B, H8 is the head and carries no sound. [X1 ⿱ H8] is one quadrat, yet in the function layer t goes with the word and H8 with the closing (MISMATCH).",
+   "refs_list": [
+    "Champollion 1822",
+    "Callimahos",
+    "Gardiner 1957"
+   ],
+   "quadrats": [
+    "𓈎𓐰𓃭",
+    "𓇋",
+    "𓍯",
+    "𓊪",
+    "𓄿",
+    "𓂧𓐰𓂋",
+    "𓄿",
+    "𓏏𓐰𓆇"
+   ],
+   "cartouche": true
+  }
+ ]
+}
