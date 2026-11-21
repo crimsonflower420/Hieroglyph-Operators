@@ -24,7 +24,7 @@ html { -webkit-text-size-adjust: 100%; }
 body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.7 var(--font-serif); }
 html[data-lang="ja"] body { font-family: var(--font-jp); line-height: 1.9; }
 [data-lang="ja"] .en, [data-lang="en"] .ja { display: none !important; }
-a { color: var(--accent); text-underline-offset: 2px; }
+a { color: var(--accent); text-underline-offset: 2px; overflow-wrap: anywhere; }
 .wrap { max-width: var(--page); margin: 0 auto; padding: 0 1rem; }
 .skip { position: absolute; left: -999px; }
 .skip:focus { left: 1rem; top: .5rem; background: var(--bg); padding: .3rem .6rem; z-index: 9; }
@@ -40,7 +40,7 @@ a { color: var(--accent); text-underline-offset: 2px; }
 .seg { display: inline-flex; border: 1px solid var(--border); border-radius: 3px; overflow: hidden; }
 .seg label { cursor: pointer; }
 .seg input { position: absolute; opacity: 0; pointer-events: none; }
-.seg span { display: block; padding: .15rem .5rem; color: var(--muted); }
+.seg label > span { display: block; padding: .15rem .5rem; color: var(--muted); }
 .seg input:checked + span { background: var(--accent); color: var(--bg); }
 .seg input:focus-visible + span { outline: 2px solid var(--accent-2); }
 nav.primary { width: 100%; font-family: var(--font-sans); font-size: .9rem; }
