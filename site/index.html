@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja" data-lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>トップ — ヒエログリフの演算子</title>
+<meta name="title-ja" content="トップ — ヒエログリフの演算子">
+<meta name="title-en" content="Top — Hieroglyph Operators">
+<meta name="description" content="Egyptian hieroglyphic quadrats read as operator trees over Gardiner signs. A sister site to Kanji in Order.">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/NotoSansEgyptianHieroglyphs-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/main.css">
+<script>
+(function () {
+  try {
+    var r = document.documentElement, t = localStorage.getItem('ho-theme');
+    var th = (t === 'light' || t === 'dark') ? t : (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    r.setAttribute('data-theme', th); r.style.colorScheme = th;
+    var q = (location.search.match(/[?&]lang=(ja|en)/) || [])[1];
+    var l = q || localStorage.getItem('ho-lang'); if (l !== 'en' && l !== 'ja') l = 'ja';
+    r.lang = l; r.setAttribute('data-lang', l);
+  } catch (e) {}
+})();
+</script>
+</head>
+<body>
+<a class="skip" href="#main"><span class="ja" lang="ja">本文へ</span><span class="en" lang="en">Skip to content</span></a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./"><span class="brand-glyph" aria-hidden="true" data-q="𓊪𓐰𓏏" data-size="1.7em"></span><span class="ja" lang="ja">ヒエログリフの演算子</span><span class="en" lang="en">Hieroglyph Operators</span><small><span class="ja" lang="ja">方形を演算子の木として読む</span><span class="en" lang="en">quadrats as operator trees</span></small></a>
+    <div class="controls">
+      <form class="seg lang-toggle" aria-label="Language"><label><input type="radio" name="lang" value="ja"><span>JA</span></label><label><input type="radio" name="lang" value="en"><span>EN</span></label></form>
+      <form class="seg theme-toggle" aria-label="Theme"><label><input type="radio" name="theme" value="light"><span><span class="ja" lang="ja">明</span><span class="en" lang="en">Light</span></span></label><label><input type="radio" name="theme" value="auto"><span><span class="ja" lang="ja">自動</span><span class="en" lang="en">Auto</span></span></label><label><input type="radio" name="theme" value="dark"><span><span class="ja" lang="ja">暗</span><span class="en" lang="en">Dark</span></span></label></form>
+    </div>
+    <nav class="primary" aria-label="Primary"><ul><li><a href="./" aria-current="page"><span class="ja" lang="ja">トップ</span><span class="en" lang="en">Top</span></a></li><li><a href="concept"><span class="ja" lang="ja">考え方</span><span class="en" lang="en">Concept</span></a></li><li><a href="operators"><span class="ja" lang="ja">演算子</span><span class="en" lang="en">Operators</span></a></li><li><a href="pilot"><span class="ja" lang="ja">パイロット調査</span><span class="en" lang="en">Pilot</span></a></li><li><a href="sources"><span class="ja" lang="ja">出典</span><span class="en" lang="en">Sources</span></a></li><li><a href="https://kanji-morphology.pages.dev/"><span class="ja" lang="ja">順序の漢字 ↗</span><span class="en" lang="en">Kanji in Order ↗</span></a></li></ul></nav>
+  </div>
+</header>
+<main id="main"><div class="wrap">
+
+<p class="tag"><span class="ja" lang="ja">姉妹サイト・パイロット段階</span><span class="en" lang="en">Sister site · pilot stage</span></p>
+<h1><span class="ja" lang="ja">ヒエログリフの演算子</span><span class="en" lang="en">Hieroglyph Operators</span></h1>
+<p class="lede"><span class="ja" lang="ja">古代エジプトのヒエログリフは、記号を「方形（クァドラート）」と呼ばれる見えない四角の中に、上下・左右・差し込み・重ね合わせで並べて書く。このサイトは、その並べ方を演算子の木として書き出し、数えてみる試みである。</span><span class="en" lang="en">Ancient Egyptian hieroglyphs are written by packing signs into an invisible square called a quadrat: one above another, side by side, tucked into a corner, or laid over one another. This site writes those arrangements out as operator trees and counts them.</span></p>
+<p><span class="ja" lang="ja">見方は姉妹サイト<a href="https://kanji-morphology.pages.dev/">「順序の漢字」</a>から借りている。漢字のサイトでは、字を「画→部品→字」という順序づけの過程の出力として扱う。ここでは同じ見方をヒエログリフに当て、どこまで通用し、どこで通用しないかを確かめる。</span><span class="en" lang="en">The lens is borrowed from the sister site, <a href="https://kanji-morphology.pages.dev/">Kanji in Order</a>, which treats a kanji as the output of an ordering process: strokes, then components, then characters. Here the same lens is pointed at hieroglyphs, to see where it holds and where it does not.</span></p>
+<figure>
+<span data-q="𓆑𓐰𓈖𓐰𓄓𓐳𓀀" data-size="5.5em"></span>
+<figcaption><span class="ja" lang="ja">Unicode 標準の例（図11-5）。I9 の下に N35、その下に F20 を置き、F20 の左下の隅に A1 を差し込む。符号列は &lt;13191, 13430, 13216, 13430, 13113, 13433, 13000&gt;。描画はこのサイトの簡易レイアウトである。</span><span class="en" lang="en">An example from the Unicode Standard (Figure 11-5): I9 above N35 above F20, with A1 inserted at F20's bottom-start corner. Sequence &lt;13191, 13430, 13216, 13430, 13113, 13433, 13000&gt;. Drawn by this site's schematic layout.</span></figcaption>
+</figure>
+
+<h2><span class="ja" lang="ja">いまの結果（パイロット）</span><span class="en" lang="en">Results so far (pilot)</span></h2>
+<p><span class="ja" lang="ja">中王国の石碑、大英博物館 EA 581（インテフの石碑）で、複数の記号からなる最初の50の方形を演算子の木にした。演算子の節点は64個で、縦の結合が46、横の結合が11、差し込みが7、重ね合わせは0である。50のうち40は演算子一つだけの方形で、木の深さは最大でも3である。</span><span class="en" lang="en">On a Middle Kingdom stela, British Museum EA 581 (the stela of Intef), the first 50 multi-sign quadrats were written as operator trees. They have 64 operator nodes: 46 vertical joins, 11 horizontal joins, 7 insertions and no overlays. 40 of the 50 quadrats use a single operator, and no tree is deeper than 3.</span></p>
+<p><span class="ja" lang="ja">石碑全体（229方形、節点308）では、横の結合の割合が、横書きの行では16%、縦書きの列では40%になる。演算子の内訳は行の向きとともに変わる。方形が語の構造よりも紙面の配置に従っていることと合う（推測）。</span><span class="en" lang="en">Over the whole stela (229 quadrats, 308 nodes), horizontal joins are 16% of nodes in the horizontal lines and 40% in the vertical columns. The operator mix moves with line direction, which fits the idea that quadrats follow page layout more than word structure (inference).</span></p>
+<div class="cards">
+<a class="card" href="concept"><strong><span class="ja" lang="ja">考え方</span><span class="en" lang="en">Concept</span></strong><span><span class="ja" lang="ja">漢字から引き継げるものと、引き継げないもの。</span><span class="en" lang="en">What carries over from kanji, and what does not.</span></span></a>
+<a class="card" href="operators"><strong><span class="ja" lang="ja">演算子</span><span class="en" lang="en">Operators</span></strong><span><span class="ja" lang="ja">Unicode の書式制御文字と Manuel de Codage の記号。</span><span class="en" lang="en">The Unicode format controls and the Manuel de Codage signs.</span></span></a>
+<a class="card" href="pilot"><strong><span class="ja" lang="ja">パイロット調査</span><span class="en" lang="en">Pilot</span></strong><span><span class="ja" lang="ja">EA 581 の50方形：項数・深さ・演算子の頻度。</span><span class="en" lang="en">50 quadrats from EA 581: arity, depth, operator counts.</span></span></a>
+<a class="card" href="sources"><strong><span class="ja" lang="ja">出典</span><span class="en" lang="en">Sources</span></strong><span><span class="ja" lang="ja">一次資料、コーパス、ライセンス。</span><span class="en" lang="en">Primary sources, corpora, licences.</span></span></a>
+</div>
+<div class="flag spec"><span class="ja" lang="ja"><strong>注意。</strong>ここでの木は配置の記述であり、ヒエログリフが統語構造をもつという主張ではない。推測や推論はその都度そう明記する。</span><span class="en" lang="en"><strong>Note.</strong> The trees here describe arrangement. They are not a claim that hieroglyphs have syntax. Inference and speculation are labelled where they appear.</span></div>
+<p><span class="ja" lang="ja">ほかの文字体系も、今後それぞれ独立したサイトで扱う予定である。</span><span class="en" lang="en">Other writing systems will get their own sites later.</span></p>
+
+</div></main>
+<footer class="site-footer"><div class="wrap">
+<p><span class="ja" lang="ja">研究ノートのサイトであり、随時改訂する。</span><span class="en" lang="en">A research-notes site, revised as the work goes on.</span> <a href="https://github.com/crimsonflower420/Hieroglyph-Operators">Hieroglyph-Operators</a> · <span class="ja" lang="ja">姉妹サイト</span><span class="en" lang="en">Sister site</span>: <a href="https://kanji-morphology.pages.dev/"><span class="ja" lang="ja">順序の漢字</span><span class="en" lang="en">Kanji in Order</span></a></p>
+<p><span class="ja" lang="ja">ヒエログリフの字形：Noto Sans Egyptian Hieroglyphs（SIL OFL 1.1）。EA 581 の符号化：M.-J. Nederhof（HieroJax、GPL-3.0）。</span><span class="en" lang="en">Glyphs: Noto Sans Egyptian Hieroglyphs (SIL OFL 1.1). EA 581 encoding: M.-J. Nederhof (HieroJax, GPL-3.0).</span></p>
+<p>Theory Desk · Grant Golland</p>
+</div></footer>
+<script src="js/site.js" defer></script>
+<script src="js/quadrat.js" defer></script>
+</body>
+</html>

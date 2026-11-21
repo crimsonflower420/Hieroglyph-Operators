@@ -1,0 +1,34 @@
+{
+ "_source": "Kanji in Order, arity census (https://kanji-morphology.pages.dev/arity-census), site/js/arity-census-data.js in crimsonflower420/Kanji-Morphology at 3e3ba46; KanjiVG snapshot 70a0b7ae (2026-09-30), jōyō 2,136",
+ "chars": 2136,
+ "nodes": 6176,
+ "arity": {
+  "2": 5782,
+  "3": 332,
+  "4": 55,
+  "5": 6,
+  "6": 1
+ },
+ "depth": {
+  "1": 2076,
+  "2": 2295,
+  "3": 1346,
+  "4": 382,
+  "5": 70,
+  "6": 5,
+  "7": 2
+ },
+ "ops": {
+  "⿱": 2691,
+  "⿰": 1737,
+  "none": 1348,
+  "⿸": 148,
+  "⿺": 78,
+  "⿵": 62,
+  "⿳": 52,
+  "⿹": 43,
+  "⿴": 10,
+  "⿲": 5,
+  "⿷": 2
+ }
+}

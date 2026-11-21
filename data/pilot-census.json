@@ -1,0 +1,1147 @@
+{
+ "source": {
+  "object": "Stela of Intef son of Senet, British Museum EA 581 (limestone; Abydos; early 12th Dynasty, reign of Senusret I)",
+  "encoding": "Mark-Jan Nederhof, HieroJax text page 'British Museum EA581', https://nederhof.github.io/hierojax/texts/BritishMuseumEA581.html (fetched 2026-11-21); HieroJax repository is GPL-3.0",
+  "direction": "Line direction from the same editor's RES encoding in the St Andrews corpus (PhilologEg 0.5.14, corpus/resources/IntefSonSenetHi.xml, created 2016-08-04, modified 2017-01-19): hrl = horizontal right-to-left, vrl = vertical right-to-left. Transcribed from a British Museum photograph, with Sethe (1928), Aegyptische Lesestuecke, pp. 80-81.",
+  "note": "Encoding of relative positions is the editor's; it is not a facsimile."
+ },
+ "definitions": "(chosen to match the kanji site's arity census where they can):\n  group     a top-level unit of the fragment (a quadrat, or a lone sign).\n  node      an operator application with arity >= 2.\n  arity     vertical / horizontal: number of members as encoded (a:b:c = 3).\n            insertion: 1 + number of inserted groups. overlay: 2.\n  depth     the quadrat's root node is depth 1; each step into a child node adds 1.\n  height    the largest node depth in the quadrat (0 for a lone sign).",
+ "pilot": {
+  "rule": "the first 50 multi-sign groups in encoded order",
+  "lines": [
+   1,
+   7
+  ],
+  "census": {
+   "groups": 50,
+   "single": 0,
+   "quadrats": 50,
+   "signs": 134,
+   "signsInQuadrats": 134,
+   "nodes": 64,
+   "arity": {
+    "2": 47,
+    "3": 14,
+    "4": 3
+   },
+   "depth": {
+    "1": 50,
+    "2": 11,
+    "3": 3
+   },
+   "height": {
+    "1": 40,
+    "2": 7,
+    "3": 3
+   },
+   "signsPerQuadrat": {
+    "2": 25,
+    "3": 18,
+    "4": 5,
+    "5": 2
+   },
+   "ops": {
+    "ver": 46,
+    "hor": 11,
+    "ins": 7
+   },
+   "rootOps": {
+    "ver": 43,
+    "ins": 5,
+    "hor": 2
+   },
+   "insPos": {
+    "te": 3,
+    "bs": 2,
+    "be": 2,
+    "b": 1,
+    "ts": 1
+   },
+   "mirrored": 0,
+   "opByDepth": {
+    "1": {
+     "ver": 43,
+     "ins": 5,
+     "hor": 2
+    },
+    "2": {
+     "hor": 9,
+     "ins": 2
+    },
+    "3": {
+     "ver": 3
+    }
+   }
+  },
+  "items": [
+   {
+    "line": 1,
+    "dir": "hrl",
+    "pos": 2,
+    "u": "𓈖𓐰𓂉𓐰𓇿𓐰𓈖",
+    "expr": "N35 : D19 : N17 : N35",
+    "signs": 4,
+    "height": 1,
+    "nodes": [
+     [
+      "ver",
+      4,
+      1
+     ]
+    ]
+   },
+   {
+    "line": 1,
+    "dir": "hrl",
+    "pos": 4,
+    "u": "𓈖𓐰𓏏𓐱𓋀",
+    "expr": "N35 : (X1 * R14)",
+    "signs": 3,
+    "height": 2,
+    "nodes": [
+     [
+      "ver",
+      2,
+      1
+     ],
+     [
+      "hor",
+      2,
+      2
+     ]
+    ]
+   },
+   {
+    "line": 1,
+    "dir": "hrl",
+    "pos": 6,
+    "u": "𓌴𓐰𓁹",
+    "expr": "U2 : D4",
+    "signs": 2,
+    "height": 1,
+    "nodes": [
+     [
+      "ver",
+      2,
+      1
+     ]
+    ]
+   },
+   {
+    "line": 1,
+    "dir": "hrl",
+    "pos": 10,
+    "u": "𓄋𓐰𓈐",
+    "expr": "F13 : N31",
+    "signs": 2,
+    "height": 1,
+    "nodes": [
+     [
+      "ver",
+      2,
+      1
+     ]
+    ]
+   },
+   {
+    "line": 2,
+    "dir": "hrl",
+    "pos": 2,
+    "u": "𓈖𓐰𓄓𓐻𓏤",
+    "expr": "N35 : (F20 ⟨b⟩ Z1)",
+    "signs": 3,
+    "height": 2,
+    "nodes": [
+     [
+      "ver",
+      2,
+      1
+     ],
+     [
+      "ins:b",
+      2,
+      2
+     ]
+    ]
+   },
+   {
+    "line": 2,
+    "dir": "hrl",
+    "pos": 3,
+    "u": "𓂣𓐰𓄚",
+    "expr": "D42 : F26",
+    "signs": 2,
+    "height": 1,
+    "nodes": [
+     [
+      "ver",
+      2,
+      1
+     ]
+    ]
+   },
+   {
+    "line": 2,
+    "dir": "hrl",
+    "pos": 4,
+    "u": "𓏌𓐰𓏏𓐰𓏭",
+    "expr": "W24 : X1 : Z4",
+    "signs": 3,
+    "height": 1,
+    "nodes": [
+     [
+      "ver",
+      3,
+      1
+     ]
+    ]
+   },
+   {
+    "line": 2,
+    "dir": "hrl",
+    "pos": 6,
+    "u": "𓈖𓐰𓏏𓐰𓆑",
+    "expr": "N35 : X1 : I9",
+    "signs": 3,
+    "height": 1,
+    "nodes": [
+     [
+      "ver",
+      3,
+      1
+     ]
+    ]
+   },
+   {
+    "line": 2,
+    "dir": "hrl",
+    "pos": 7,
+    "u": "𓆓𓐳𓂧𓐰𓆑",
+    "expr": "(I10 ⟨bs⟩ D46) : I9",
+    "signs": 3,
+    "height": 2,
+    "nodes": [
+     [
+      "ver",
+      2,
+      1
+     ],
+     [
+      "ins:bs",
+      2,
+      2
+     ]
+    ]
+   },
+   {
+    "line": 2,
+    "dir": "hrl",
+    "pos": 9,
+    "u": "𓂋𓐰𓎼𓐰𓂋",
+    "expr": "D21 : W11 : D21",
+    "signs": 3,
+    "height": 1,
+    "nodes": [
+     [
+      "ver",
+      3,
+      1
+     ]
+    ]
+   },
+   {
+    "line": 2,
+    "dir": "hrl",
+    "pos": 10,
+    "u": "𓊣𓐲𓏏",
+    "expr": "P7 ⟨ts⟩ X1",
+    "signs": 2,
+    "height": 1,
+    "nodes": [
+     [
+      "ins:ts",
+      2,
+      1
+     ]
+    ]
+   },
+   {
+    "line": 2,
+    "dir": "hrl",
+    "pos": 11,
+    "u": "𓏏𓐰𓉐",
+    "expr": "X1 : O1",
+    "signs": 2,
+    "height": 1,
+    "nodes": [
+     [
+      "ver",
+      2,
+      1
+     ]
+    ]
+   },
+   {
+    "line": 2,
+    "dir": "hrl",
+    "pos": 12,
+    "u": "𓍿𓐰𓈖𓐰𓁹",
+    "expr": "V13 : N35 : D4",
+    "signs": 3,
+    "height": 1,
+    "nodes": [
+     [
+      "ver",
+      3,
+      1
+     ]
+    ]
+   },
+   {
+    "line": 2,
+    "dir": "hrl",
+    "pos": 13,
+    "u": "𓈖𓐰𓀀",
+    "expr": "N35 : A1",
+    "signs": 2,
+    "height": 1,
+    "nodes": [
+     [
+      "ver",
+      2,
+      1
+     ]
+    ]
+   },
+   {
+    "line": 3,
+    "dir": "hrl",
+    "pos": 2,
+    "u": "𓊃𓐰𓏏𓐰𓈉",
+    "expr": "O34 : X1 : N25",
+    "signs": 3,
+    "height": 1,
+    "nodes": [
+     [
+      "ver",
+      3,
+      1
+     ]
+    ]
+   },
+   {
+    "line": 3,
+    "dir": "hrl",
+    "pos": 3,
+    "u": "𓈖𓐰𓏏",
+    "expr": "N35 : X1",
+    "signs": 2,
+    "height": 1,
+    "nodes": [
+     [
+      "ver",
+      2,
+      1
+     ]
+    ]
+   },
+   {
+    "line": 3,
+    "dir": "hrl",
+    "pos": 4,
+    "u": "𓍋𓐱𓃀",
+    "expr": "U23 * D58",
+    "signs": 2,
+    "height": 1,
+    "nodes": [
+     [
+      "hor",
+      2,
+      1
+     ]
+    ]
+   },
+   {
+    "line": 3,
+    "dir": "hrl",
+    "pos": 5,
+    "u": "𓈋𓐰𓊖",
+    "expr": "N26 : O49",
+    "signs": 2,
+    "height": 1,
+    "nodes": [
+     [
+      "ver",
+      2,
+      1
+     ]
+    ]
+   },
+   {
+    "line": 3,
+    "dir": "hrl",
+    "pos": 6,
+    "u": "𓈀𓐰𓏤𓐱𓈇𓐰𓊪𓐰𓈖",
+    "expr": "N18 : (Z1 * N23) : Q3 : N35",
+    "signs": 5,
+    "height": 2,
+    "nodes": [
+     [
+      "ver",
+      4,
+      1
+     ],
+     [
+      "hor",
+      2,
+      2
+     ]
+    ]
+   },
+   {
+    "line": 3,
+    "dir": "hrl",
+    "pos": 7,
+    "u": "𓈖𓐰𓈎𓐰𓂋𓐰𓂢",
+    "expr": "N35 : N29 : D21 : D41",
+    "signs": 4,
+    "height": 1,
+    "nodes": [
+     [
+      "ver",
+      4,
+      1
+     ]
+    ]
+   },
+   {
+    "line": 3,
+    "dir": "hrl",
+    "pos": 9,
+    "u": "𓂋𓐰𓆑",
+    "expr": "D21 : I9",
+    "signs": 2,
+    "height": 1,
+    "nodes": [
+     [
+      "ver",
+      2,
+      1
+     ]
+    ]
+   },
+   {
+    "line": 3,
+    "dir": "hrl",
+    "pos": 10,
+    "u": "𓊅𓐱𓏪",
+    "expr": "O36 * Z3",
+    "signs": 2,
+    "height": 1,
+    "nodes": [
+     [
+      "hor",
+      2,
+      1
+     ]
+    ]
+   },
+   {
+    "line": 3,
+    "dir": "hrl",
+    "pos": 11,
+    "u": "𓸭𓐰𓄿",
+    "expr": "U+13E2D : G1",
+    "signs": 2,
+    "height": 1,
+    "nodes": [
+     [
+      "ver",
+      2,
+      1
+     ]
+    ]
+   },
+   {
+    "line": 4,
+    "dir": "hrl",
+    "pos": 1,
+    "u": "𓈖𓐰𓎟𓐰𓏤𓐱𓂋",
+    "expr": "N35 : V30 : (Z1 * D21)",
+    "signs": 4,
+    "height": 2,
+    "nodes": [
+     [
+      "ver",
+      3,
+      1
+     ],
+     [
+      "hor",
+      2,
+      2
+     ]
+    ]
+   },
+   {
+    "line": 4,
+    "dir": "hrl",
+    "pos": 2,
+    "u": "𓇥𓐰𓂋",
+    "expr": "M36 : D21",
+    "signs": 2,
+    "height": 1,
+    "nodes": [
+     [
+      "ver",
+      2,
+      1
+     ]
+    ]
+   },
+   {
+    "line": 4,
+    "dir": "hrl",
+    "pos": 4,
+    "u": "𓏏𓐰𓉐",
+    "expr": "X1 : O1",
+    "signs": 2,
+    "height": 1,
+    "nodes": [
+     [
+      "ver",
+      2,
+      1
+     ]
+    ]
+   },
+   {
+    "line": 4,
+    "dir": "hrl",
+    "pos": 5,
+    "u": "𓅜𓐴𓐍𓐵𓏏",
+    "expr": "G25 ⟨te⟩ Aa1 ⟨be⟩ X1",
+    "signs": 3,
+    "height": 1,
+    "nodes": [
+     [
+      "ins:te+be",
+      3,
+      1
+     ]
+    ]
+   },
+   {
+    "line": 4,
+    "dir": "hrl",
+    "pos": 6,
+    "u": "𓇥𓐰𓂋",
+    "expr": "M36 : D21",
+    "signs": 2,
+    "height": 1,
+    "nodes": [
+     [
+      "ver",
+      2,
+      1
+     ]
+    ]
+   },
+   {
+    "line": 4,
+    "dir": "hrl",
+    "pos": 7,
+    "u": "𓂋𓐰𓎡𓐰𓇳",
+    "expr": "D21 : V31 : N5",
+    "signs": 3,
+    "height": 1,
+    "nodes": [
+     [
+      "ver",
+      3,
+      1
+     ]
+    ]
+   },
+   {
+    "line": 4,
+    "dir": "hrl",
+    "pos": 8,
+    "u": "𓁹𓐰𓊨𓐱𓀭",
+    "expr": "D4 : (Q1 * A40)",
+    "signs": 3,
+    "height": 2,
+    "nodes": [
+     [
+      "ver",
+      2,
+      1
+     ],
+     [
+      "hor",
+      2,
+      2
+     ]
+    ]
+   },
+   {
+    "line": 4,
+    "dir": "hrl",
+    "pos": 9,
+    "u": "𓎼𓐰𓂋𓐰𓏏",
+    "expr": "W11 : D21 : X1",
+    "signs": 3,
+    "height": 1,
+    "nodes": [
+     [
+      "ver",
+      3,
+      1
+     ]
+    ]
+   },
+   {
+    "line": 4,
+    "dir": "hrl",
+    "pos": 11,
+    "u": "𓏏𓐰𓈖",
+    "expr": "X1 : N35",
+    "signs": 2,
+    "height": 1,
+    "nodes": [
+     [
+      "ver",
+      2,
+      1
+     ]
+    ]
+   },
+   {
+    "line": 5,
+    "dir": "hrl",
+    "pos": 1,
+    "u": "𓈖𓐰𓏏𓐰𓆑",
+    "expr": "N35 : X1 : I9",
+    "signs": 3,
+    "height": 1,
+    "nodes": [
+     [
+      "ver",
+      3,
+      1
+     ]
+    ]
+   },
+   {
+    "line": 5,
+    "dir": "hrl",
+    "pos": 4,
+    "u": "𓅡𓐰𓎡",
+    "expr": "G29 : V31",
+    "signs": 2,
+    "height": 1,
+    "nodes": [
+     [
+      "ver",
+      2,
+      1
+     ]
+    ]
+   },
+   {
+    "line": 5,
+    "dir": "hrl",
+    "pos": 5,
+    "u": "𓏏𓐱𓈖𓐰𓐷𔏏𓐰𓏥𓐸𓐱𓋴",
+    "expr": "(X1 * N35) : ((U+143CF : Z2) * S29)",
+    "signs": 5,
+    "height": 3,
+    "nodes": [
+     [
+      "ver",
+      2,
+      1
+     ],
+     [
+      "hor",
+      2,
+      2
+     ],
+     [
+      "hor",
+      2,
+      2
+     ],
+     [
+      "ver",
+      2,
+      3
+     ]
+    ]
+   },
+   {
+    "line": 5,
+    "dir": "hrl",
+    "pos": 6,
+    "u": "𓇼𓐰𓏥",
+    "expr": "N14 : Z2",
+    "signs": 2,
+    "height": 1,
+    "nodes": [
+     [
+      "ver",
+      2,
+      1
+     ]
+    ]
+   },
+   {
+    "line": 5,
+    "dir": "hrl",
+    "pos": 8,
+    "u": "𓇯𓐰𓏏𓐰𓏤",
+    "expr": "N1 : X1 : Z1",
+    "signs": 3,
+    "height": 1,
+    "nodes": [
+     [
+      "ver",
+      3,
+      1
+     ]
+    ]
+   },
+   {
+    "line": 5,
+    "dir": "hrl",
+    "pos": 10,
+    "u": "𓈖𓐰𓏌𓐰𓏏",
+    "expr": "N35 : W24 : X1",
+    "signs": 3,
+    "height": 1,
+    "nodes": [
+     [
+      "ver",
+      3,
+      1
+     ]
+    ]
+   },
+   {
+    "line": 5,
+    "dir": "hrl",
+    "pos": 12,
+    "u": "𓈖𓐰𓐷𓏏𓐰𓇶𓐸𓐱𓏨",
+    "expr": "N35 : ((X1 : N8) * Z2c)",
+    "signs": 4,
+    "height": 3,
+    "nodes": [
+     [
+      "ver",
+      2,
+      1
+     ],
+     [
+      "hor",
+      2,
+      2
+     ],
+     [
+      "ver",
+      2,
+      3
+     ]
+    ]
+   },
+   {
+    "line": 6,
+    "dir": "hrl",
+    "pos": 2,
+    "u": "𓏏𓐰𓂻",
+    "expr": "X1 : D54",
+    "signs": 2,
+    "height": 1,
+    "nodes": [
+     [
+      "ver",
+      2,
+      1
+     ]
+    ]
+   },
+   {
+    "line": 6,
+    "dir": "hrl",
+    "pos": 3,
+    "u": "𓈖𓐰𓋴",
+    "expr": "N35 : S29",
+    "signs": 2,
+    "height": 1,
+    "nodes": [
+     [
+      "ver",
+      2,
+      1
+     ]
+    ]
+   },
+   {
+    "line": 6,
+    "dir": "hrl",
+    "pos": 4,
+    "u": "𓅨𓐴𓂋",
+    "expr": "G36 ⟨te⟩ D21",
+    "signs": 2,
+    "height": 1,
+    "nodes": [
+     [
+      "ins:te",
+      2,
+      1
+     ]
+    ]
+   },
+   {
+    "line": 6,
+    "dir": "hrl",
+    "pos": 10,
+    "u": "𓅱𓐴𓊖𓐵𓏤",
+    "expr": "G43 ⟨te⟩ O49 ⟨be⟩ Z1",
+    "signs": 3,
+    "height": 1,
+    "nodes": [
+     [
+      "ins:te+be",
+      3,
+      1
+     ]
+    ]
+   },
+   {
+    "line": 6,
+    "dir": "hrl",
+    "pos": 12,
+    "u": "𓈖𓐰𓐷𓏌𓐰𓏏𓐸𓐱𓏮",
+    "expr": "N35 : ((W24 : X1) * Z4a)",
+    "signs": 4,
+    "height": 3,
+    "nodes": [
+     [
+      "ver",
+      2,
+      1
+     ],
+     [
+      "hor",
+      2,
+      2
+     ],
+     [
+      "ver",
+      2,
+      3
+     ]
+    ]
+   },
+   {
+    "line": 6,
+    "dir": "hrl",
+    "pos": 14,
+    "u": "𓏌𓐰𓊖",
+    "expr": "W24 : O49",
+    "signs": 2,
+    "height": 1,
+    "nodes": [
+     [
+      "ver",
+      2,
+      1
+     ]
+    ]
+   },
+   {
+    "line": 7,
+    "dir": "hrl",
+    "pos": 1,
+    "u": "𓅜𓐳𓐍",
+    "expr": "G25 ⟨bs⟩ Aa1",
+    "signs": 2,
+    "height": 1,
+    "nodes": [
+     [
+      "ins:bs",
+      2,
+      1
+     ]
+    ]
+   },
+   {
+    "line": 7,
+    "dir": "hrl",
+    "pos": 2,
+    "u": "𔏏𓐰𓏨",
+    "expr": "U+143CF : Z2c",
+    "signs": 2,
+    "height": 1,
+    "nodes": [
+     [
+      "ver",
+      2,
+      1
+     ]
+    ]
+   },
+   {
+    "line": 7,
+    "dir": "hrl",
+    "pos": 3,
+    "u": "𓊵𓐰𓏏𓐱𓊪",
+    "expr": "R4 : (X1 * Q3)",
+    "signs": 3,
+    "height": 2,
+    "nodes": [
+     [
+      "ver",
+      2,
+      1
+     ],
+     [
+      "hor",
+      2,
+      2
+     ]
+    ]
+   },
+   {
+    "line": 7,
+    "dir": "hrl",
+    "pos": 4,
+    "u": "𓈖𓐰𓎟𓐰𓏤",
+    "expr": "N35 : V30 : Z1",
+    "signs": 3,
+    "height": 1,
+    "nodes": [
+     [
+      "ver",
+      3,
+      1
+     ]
+    ]
+   },
+   {
+    "line": 7,
+    "dir": "hrl",
+    "pos": 5,
+    "u": "𓇥𓐰𓂋",
+    "expr": "M36 : D21",
+    "signs": 2,
+    "height": 1,
+    "nodes": [
+     [
+      "ver",
+      2,
+      1
+     ]
+    ]
+   }
+  ]
+ },
+ "stela": {
+  "census": {
+   "groups": 294,
+   "single": 65,
+   "quadrats": 229,
+   "signs": 697,
+   "signsInQuadrats": 632,
+   "nodes": 308,
+   "arity": {
+    "2": 225,
+    "3": 72,
+    "4": 10,
+    "5": 1
+   },
+   "depth": {
+    "1": 229,
+    "2": 69,
+    "3": 10
+   },
+   "height": {
+    "1": 165,
+    "2": 54,
+    "3": 10
+   },
+   "signsPerQuadrat": {
+    "2": 115,
+    "3": 71,
+    "4": 31,
+    "5": 7,
+    "6": 5
+   },
+   "ops": {
+    "ver": 181,
+    "hor": 105,
+    "ins": 22
+   },
+   "rootOps": {
+    "ver": 144,
+    "hor": 68,
+    "ins": 17
+   },
+   "insPos": {
+    "b": 8,
+    "bs": 8,
+    "te": 5,
+    "be": 3,
+    "ts": 1
+   },
+   "mirrored": 31,
+   "opByDepth": {
+    "1": {
+     "ver": 144,
+     "ins": 17,
+     "hor": 68
+    },
+    "2": {
+     "hor": 33,
+     "ins": 4,
+     "ver": 32
+    },
+    "3": {
+     "ver": 5,
+     "hor": 4,
+     "ins": 1
+    }
+   }
+  },
+  "byDirection": {
+   "hrl": {
+    "groups": 90,
+    "single": 34,
+    "quadrats": 56,
+    "signs": 187,
+    "signsInQuadrats": 153,
+    "nodes": 73,
+    "arity": {
+     "2": 54,
+     "3": 15,
+     "4": 3,
+     "5": 1
+    },
+    "depth": {
+     "1": 56,
+     "2": 13,
+     "3": 4
+    },
+    "height": {
+     "1": 44,
+     "2": 8,
+     "3": 4
+    },
+    "signsPerQuadrat": {
+     "2": 27,
+     "3": 20,
+     "4": 6,
+     "5": 3
+    },
+    "ops": {
+     "ver": 52,
+     "hor": 12,
+     "ins": 9
+    },
+    "rootOps": {
+     "ver": 48,
+     "ins": 6,
+     "hor": 2
+    },
+    "insPos": {
+     "b": 3,
+     "te": 3,
+     "bs": 2,
+     "be": 2,
+     "ts": 1
+    },
+    "mirrored": 2,
+    "opByDepth": {
+     "1": {
+      "ver": 48,
+      "ins": 6,
+      "hor": 2
+     },
+     "2": {
+      "hor": 9,
+      "ins": 3,
+      "ver": 1
+     },
+     "3": {
+      "ver": 3,
+      "hor": 1
+     }
+    }
+   },
+   "vrl": {
+    "groups": 204,
+    "single": 31,
+    "quadrats": 173,
+    "signs": 510,
+    "signsInQuadrats": 479,
+    "nodes": 235,
+    "arity": {
+     "2": 171,
+     "3": 57,
+     "4": 7
+    },
+    "depth": {
+     "1": 173,
+     "2": 56,
+     "3": 6
+    },
+    "height": {
+     "1": 121,
+     "2": 46,
+     "3": 6
+    },
+    "signsPerQuadrat": {
+     "2": 88,
+     "3": 51,
+     "4": 25,
+     "5": 4,
+     "6": 5
+    },
+    "ops": {
+     "ver": 129,
+     "hor": 93,
+     "ins": 13
+    },
+    "rootOps": {
+     "ver": 96,
+     "hor": 66,
+     "ins": 11
+    },
+    "insPos": {
+     "bs": 6,
+     "b": 5,
+     "te": 2,
+     "be": 1
+    },
+    "mirrored": 29,
+    "opByDepth": {
+     "1": {
+      "ver": 96,
+      "hor": 66,
+      "ins": 11
+     },
+     "2": {
+      "ver": 31,
+      "hor": 24,
+      "ins": 1
+     },
+     "3": {
+      "hor": 3,
+      "ins": 1,
+      "ver": 2
+     }
+    }
+   }
+  }
+ }
+}

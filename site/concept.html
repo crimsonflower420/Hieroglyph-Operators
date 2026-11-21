@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja" data-lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>考え方 — ヒエログリフの演算子</title>
+<meta name="title-ja" content="考え方 — ヒエログリフの演算子">
+<meta name="title-en" content="Concept — Hieroglyph Operators">
+<meta name="description" content="Egyptian hieroglyphic quadrats read as operator trees over Gardiner signs. A sister site to Kanji in Order.">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/NotoSansEgyptianHieroglyphs-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/main.css">
+<script>
+(function () {
+  try {
+    var r = document.documentElement, t = localStorage.getItem('ho-theme');
+    var th = (t === 'light' || t === 'dark') ? t : (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    r.setAttribute('data-theme', th); r.style.colorScheme = th;
+    var q = (location.search.match(/[?&]lang=(ja|en)/) || [])[1];
+    var l = q || localStorage.getItem('ho-lang'); if (l !== 'en' && l !== 'ja') l = 'ja';
+    r.lang = l; r.setAttribute('data-lang', l);
+  } catch (e) {}
+})();
+</script>
+</head>
+<body>
+<a class="skip" href="#main"><span class="ja" lang="ja">本文へ</span><span class="en" lang="en">Skip to content</span></a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./"><span class="brand-glyph" aria-hidden="true" data-q="𓊪𓐰𓏏" data-size="1.7em"></span><span class="ja" lang="ja">ヒエログリフの演算子</span><span class="en" lang="en">Hieroglyph Operators</span><small><span class="ja" lang="ja">方形を演算子の木として読む</span><span class="en" lang="en">quadrats as operator trees</span></small></a>
+    <div class="controls">
+      <form class="seg lang-toggle" aria-label="Language"><label><input type="radio" name="lang" value="ja"><span>JA</span></label><label><input type="radio" name="lang" value="en"><span>EN</span></label></form>
+      <form class="seg theme-toggle" aria-label="Theme"><label><input type="radio" name="theme" value="light"><span><span class="ja" lang="ja">明</span><span class="en" lang="en">Light</span></span></label><label><input type="radio" name="theme" value="auto"><span><span class="ja" lang="ja">自動</span><span class="en" lang="en">Auto</span></span></label><label><input type="radio" name="theme" value="dark"><span><span class="ja" lang="ja">暗</span><span class="en" lang="en">Dark</span></span></label></form>
+    </div>
+    <nav class="primary" aria-label="Primary"><ul><li><a href="./"><span class="ja" lang="ja">トップ</span><span class="en" lang="en">Top</span></a></li><li><a href="concept" aria-current="page"><span class="ja" lang="ja">考え方</span><span class="en" lang="en">Concept</span></a></li><li><a href="operators"><span class="ja" lang="ja">演算子</span><span class="en" lang="en">Operators</span></a></li><li><a href="pilot"><span class="ja" lang="ja">パイロット調査</span><span class="en" lang="en">Pilot</span></a></li><li><a href="sources"><span class="ja" lang="ja">出典</span><span class="en" lang="en">Sources</span></a></li><li><a href="https://kanji-morphology.pages.dev/"><span class="ja" lang="ja">順序の漢字 ↗</span><span class="en" lang="en">Kanji in Order ↗</span></a></li></ul></nav>
+  </div>
+</header>
+<main id="main"><div class="wrap">
+
+<h1><span class="ja" lang="ja">考え方：漢字から何を引き継ぐか</span><span class="en" lang="en">Concept: what carries over from kanji</span></h1>
+<p class="lede"><span class="ja" lang="ja">漢字のサイトは、字を三層の順序の出力として読む。画の並び（筆順）、部品の並び、そして部品を組み合わせる演算子の木である。ヒエログリフでは、この三層のうち一つはそのまま当てはまり、一つは足場がなく、一つは意味が変わる。</span><span class="en" lang="en">The kanji site reads a character as the output of three layers of order: the order of strokes, the order of components, and the operator tree that combines components. For hieroglyphs, one of these layers fits as it is, one has nothing to stand on, and one changes its meaning.</span></p>
+
+<h2><span class="ja" lang="ja">1. 引き継げるもの：配置の演算子</span><span class="en" lang="en">1. What carries over: operators of arrangement</span></h2>
+<p><span class="ja" lang="ja">ヒエログリフの方形は、少数の配置操作で書ける。Unicode は 12.0 で9個の書式制御文字（縦の結合 U+13430、横の結合 U+13431、四隅への差し込み、重ね合わせ、区切りの開始と終了）を加え、15.0 でさらに29個（中央・上・下への差し込み、囲み、鏡映、欠損の印など）を加えた。縦の結合は Manuel de Codage の「:」、横の結合は「*」に当たる。</span><span class="en" lang="en">A hieroglyphic quadrat can be written with a handful of arrangement operations. Unicode 12.0 added nine format controls (vertical joiner U+13430, horizontal joiner U+13431, insertion at the four corners, overlay, begin and end segment), and Unicode 15.0 added 29 more (insertion at middle, top and bottom, enclosures, mirroring, damage marks and others). The vertical joiner corresponds to the Manuel de Codage colon “:” and the horizontal joiner to the asterisk “*”.</span></p>
+<p><span class="ja" lang="ja">縦の結合は漢字の ⿱、横の結合は ⿰ に近く、差し込みは ⿴ や ⿺ などの囲みの仲間に近い。どちらの体系でも、方形や字は「演算子が引数を取る木」として書ける。<a href="operators">演算子のページ</a>に一覧がある。</span><span class="en" lang="en">The vertical joiner is close to the kanji ⿱, the horizontal joiner to ⿰, and insertion to the enclosure family such as ⿴ and ⿺. In both systems a quadrat or a character can be written as a tree of operators taking arguments. The <a href="operators">operators page</a> lists them.</span></p>
+
+<h2><span class="ja" lang="ja">2. 引き継げないもの：正準的な筆順</span><span class="en" lang="en">2. What does not carry over: a canonical stroke order</span></h2>
+<p><span class="ja" lang="ja">漢字のサイトの大部分は、筆順を木のたどり方として調べている。ヒエログリフの記号は絵であり、記号の中の線を引く順序が規範として定められていたことを示す資料は、少なくとも記念碑の書体については見つかっていない。だからこの層には足場がない。</span><span class="en" lang="en">Most of the kanji site studies stroke order as a walk through the tree. Hieroglyphic signs are pictures, and for the monumental script there is no evidence we have found that the order of lines inside a sign was ever prescribed. So this layer has nothing to stand on.</span></p>
+<p><span class="ja" lang="ja">筆記体のヒエラティックには手がかりがある。マインツの AKU-PAL データベースは、版1.3（2024年）から、ヒエラティックの字形ごとに筆の運び（Strichfolge）をベクトル画像で示している。Regulski（2018）は、パピルス Gardiner II（BM EA 10676）で、記号を組み立てる個々の筆の運びを調べ、一つの文書の中でどこまで揃っているかを論じている。</span><span class="en" lang="en">The cursive hieratic script offers some leads. Since version 1.3 (2024) the AKU-PAL database in Mainz shows the stroke sequence (Strichfolge) of hieratic graphemes as vector graphics. Regulski (2018) studies the individual brush strokes that build signs in Papyrus Gardiner II (BM EA 10676) and asks how standardised they are within a single document.</span></p>
+<div class="flag spec"><span class="ja" lang="ja"><strong>推測。</strong>ヒエラティックの筆の運びが、漢字の筆順のような共有の規範だったのか、書き手ごとの癖だったのかは、ここではまだ確かめていない。Regulski の論文は個人の書き癖を手がかりにしており、規範の存在を示すものではない。</span><span class="en" lang="en"><strong>Speculation.</strong> Whether hieratic stroke sequences were a shared norm like kanji stroke order, or individual habit, has not been checked here. Regulski's paper works from individual writing habits; it does not show that a norm existed.</span></div>
+
+<h2><span class="ja" lang="ja">3. 意味が変わるもの：読む向き</span><span class="en" lang="en">3. What changes meaning: reading direction</span></h2>
+<p><span class="ja" lang="ja">ヒエログリフは右から左にも左から右にも、横にも縦にも書かれる。人や動物の顔は行の始まりの方を向くので、読み手は顔に向かって読む。Unicode はヒエログリフに左から右の強い方向性を与え、右から左に表示するときは字形を鏡映すべきだとしている。</span><span class="en" lang="en">Hieroglyphs are written right to left or left to right, in rows or in columns. The faces of people and animals look toward the start of the line, so the reader reads into the faces. Unicode gives hieroglyphs strong left-to-right directionality and says glyphs should be mirrored when the text is displayed right to left.</span></p>
+<p><span class="ja" lang="ja">漢字では、部品の並びの順序が字の中で固定されている。ヒエログリフでは、方形の中の「始まりの側」が行の向きで入れ替わる。Unicode の差し込みの名前が「左上」ではなく「上の始まり側（top start）」になっているのは、このためだと考えられる（推論）。順序の問いは、字の組み立ての問いから、紙面の配置の問いに移る。</span><span class="en" lang="en">In kanji, the order of components inside a character is fixed. In a hieroglyphic quadrat, which side counts as the start flips with the line direction. This is presumably why the Unicode insertion controls are named “top start” and not “top left” (inference). The ordering question moves from how a character is built to how a surface is laid out.</span></p>
+
+<h2><span class="ja" lang="ja">4. 意味が変わるもの：方形は語ではない</span><span class="en" lang="en">4. What changes meaning: a quadrat is not a word</span></h2>
+<p><span class="ja" lang="ja">漢字一字は、ふつう一つの形態素に当たる。方形はそうではない。Unicode 標準は、記号が「見た目のよい形で」概念上の四角の中に並べられると書いている。EA 581 でも、地名アビドス（3行目）は二つの方形（U23 * D58 と N26 : O49）にまたがって書かれている。逆に、3行目の D21 : I9 では、語の終わりの r と、続く接尾代名詞 =f の f が一つの方形に入っている（読みは推定）。</span><span class="en" lang="en">One kanji usually corresponds to one morpheme. A quadrat does not. The Unicode Standard says signs were arranged “in an aesthetically-pleasing manner” within a notional rectangle. On EA 581 the place name Abydos (line 3) runs over two quadrats (U23 * D58 and N26 : O49). The other way round, D21 : I9 in line 3 holds the final r of one word and the f of the suffix pronoun =f that follows it (reading inferred).</span></p>
+<p><span class="ja" lang="ja">パイロット調査の数字もこれと合う。EA 581 では、横の結合の割合が横書きの行で16%、縦書きの列で40%である。同じ文章の中で、行の形が演算子の選び方を変えている（推論）。</span><span class="en" lang="en">The pilot numbers fit this. On EA 581, horizontal joins make up 16% of nodes in horizontal lines and 40% in vertical columns. Within one text, the shape of the line changes which operators are used (inference).</span></p>
+
+<h2><span class="ja" lang="ja">まとめ</span><span class="en" lang="en">Summary</span></h2>
+<div class="table-scroll"><table>
+<tr><th><span class="ja" lang="ja">層</span><span class="en" lang="en">Layer</span></th><th><span class="ja" lang="ja">漢字</span><span class="en" lang="en">Kanji</span></th><th><span class="ja" lang="ja">ヒエログリフ</span><span class="en" lang="en">Hieroglyphs</span></th></tr>
+<tr><td><span class="ja" lang="ja">画の並び</span><span class="en" lang="en">Stroke order</span></td><td><span class="ja" lang="ja">規範がある</span><span class="en" lang="en">Prescribed</span></td><td><span class="ja" lang="ja">記念碑体では規範の証拠なし。ヒエラティックに手がかり</span><span class="en" lang="en">No evidence of a norm in the monumental script; leads in hieratic</span></td></tr>
+<tr><td><span class="ja" lang="ja">演算子の木</span><span class="en" lang="en">Operator tree</span></td><td><span class="ja" lang="ja">字の内部構造</span><span class="en" lang="en">Inner structure of a character</span></td><td><span class="ja" lang="ja">方形の配置（Unicode・MdC で符号化できる）</span><span class="en" lang="en">Layout of a quadrat (encodable in Unicode and MdC)</span></td></tr>
+<tr><td><span class="ja" lang="ja">読む向き</span><span class="en" lang="en">Reading direction</span></td><td><span class="ja" lang="ja">字の中では固定</span><span class="en" lang="en">Fixed inside a character</span></td><td><span class="ja" lang="ja">行ごとに変わる。顔は行の始まりを向く</span><span class="en" lang="en">Varies by line; faces look to the line's start</span></td></tr>
+<tr><td><span class="ja" lang="ja">単位</span><span class="en" lang="en">Unit</span></td><td><span class="ja" lang="ja">ほぼ形態素</span><span class="en" lang="en">Roughly a morpheme</span></td><td><span class="ja" lang="ja">配置の単位で、語とは一致しない</span><span class="en" lang="en">A layout unit, not aligned with words</span></td></tr>
+</table></div>
+<div class="flag"><span class="ja" lang="ja">演算子の木は記述のための道具であり、ヒエログリフが統語をもつという主張ではない。</span><span class="en" lang="en">The operator tree is a descriptive tool. It is not a claim that hieroglyphs have syntax.</span></div>
+
+</div></main>
+<footer class="site-footer"><div class="wrap">
+<p><span class="ja" lang="ja">研究ノートのサイトであり、随時改訂する。</span><span class="en" lang="en">A research-notes site, revised as the work goes on.</span> <a href="https://github.com/crimsonflower420/Hieroglyph-Operators">Hieroglyph-Operators</a> · <span class="ja" lang="ja">姉妹サイト</span><span class="en" lang="en">Sister site</span>: <a href="https://kanji-morphology.pages.dev/"><span class="ja" lang="ja">順序の漢字</span><span class="en" lang="en">Kanji in Order</span></a></p>
+<p><span class="ja" lang="ja">ヒエログリフの字形：Noto Sans Egyptian Hieroglyphs（SIL OFL 1.1）。EA 581 の符号化：M.-J. Nederhof（HieroJax、GPL-3.0）。</span><span class="en" lang="en">Glyphs: Noto Sans Egyptian Hieroglyphs (SIL OFL 1.1). EA 581 encoding: M.-J. Nederhof (HieroJax, GPL-3.0).</span></p>
+<p>Theory Desk · Grant Golland</p>
+</div></footer>
+<script src="js/site.js" defer></script>
+<script src="js/quadrat.js" defer></script>
+</body>
+</html>
