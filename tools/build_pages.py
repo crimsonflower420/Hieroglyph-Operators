@@ -9,10 +9,11 @@ K = json.load(open(ROOT / 'data/kanji-arity-reference.json', encoding='utf8'))
 KANJI = 'https://kanji-morphology.pages.dev/'
 REPO = 'https://github.com/crimsonflower420/Hieroglyph-Operators'
 import pages_two_layer as TL
+import page_depth as PD
 
 NAV = [('index', 'トップ', 'Top'), ('concept', '考え方', 'Concept'), ('operators', '演算子', 'Operators'),
        ('derivations', '二層の導出', 'Derivations'), ('notation', '記法', 'Notation'),
-       ('pilot', 'パイロット調査', 'Pilot'), ('rahman', 'ラフマン再読', 'Rahman'), ('sources', '出典', 'Sources')]
+       ('pilot', 'パイロット調査', 'Pilot'), ('rahman', 'ラフマン再読', 'Rahman'), ('depth', '深さの在りか', 'Depth'), ('sources', '出典', 'Sources')]
 
 def bi(ja, en, tag='span', cls=''):
     c = f' {cls}' if cls else ''
@@ -125,6 +126,7 @@ index = f'''
 <a class="card" href="derivations"><strong>{bi("二層の導出", "Two-layer derivations")}</strong><span>{bi("配置の層と機能の層。演算子、検査、歩き。", "Layout layer and function layer: operators, checks, walks.")}</span></a>
 <a class="card" href="notation"><strong>{bi("記法", "Notation")}</strong><span>{bi("共有規格 v1 とヒエログリフでの具体化。", "Shared standard v1 and its hieroglyph profile.")}</span></a>
 <a class="card" href="rahman"><strong>{bi("ラフマン再読", "Rahman re-read")}</strong><span>{bi("本書の組み合わせを二層の導出で書き、標準と照らす。", "The book's combinations as two-layer derivations, checked against the standard.")}</span></a>
+<a class="card" href="depth"><strong>{bi("深さの在りか", "Where the depth sits")}</strong><span>{bi("同じ語の配置の木と機能の木の高さ、漢字の字の中の木との比較。", "Layout height against function height for the same words, beside the tree inside a kanji.")}</span></a>
 <a class="card" href="sources"><strong>{bi("出典", "Sources")}</strong><span>{bi("一次資料、コーパス、ライセンス。", "Primary sources, corpora, licences.")}</span></a>
 </div>
 <div class="flag spec">{bi(
@@ -437,6 +439,7 @@ SRC = [
  ]),
 ]
 SRC.append((bi('二層の導出とラフマン再読', 'Two-layer derivations and the Rahman re-read'), TL.SOURCES_EXTRA))
+SRC.append((bi('深さの在りか（漢字の木）', 'Where the depth sits (kanji trees)'), PD.SOURCES))
 src_html = ''
 for head, items in SRC:
     src_html += f'<h2>{head}</h2><ul>' + ''.join(f'<li>{t}' + (f' <a href="{u}">{u}</a>' if u else '') + '</li>' for t, u in items) + '</ul>'
@@ -457,7 +460,7 @@ PAGES = [('index', 'トップ', 'Top', index), ('concept', '考え方', 'Concept
          ('sources', '出典', 'Sources', sources)]
 _der, _nota, _rah = TL.pages(bi)
 PAGES += [('derivations', '二層の導出', 'Two-layer derivations', _der), ('notation', '記法', 'Notation', _nota),
-          ('rahman', 'ラフマン再読', 'Rahman re-read', _rah)]
+          ('rahman', 'ラフマン再読', 'Rahman re-read', _rah), ('depth', '深さの在りか', 'Where the depth sits', PD.pages(bi))]
 for slug, tj, te, body in PAGES:
     (ROOT / 'site' / f'{slug}.html').write_text(page(slug, tj, te, body), encoding='utf8')
 print('built', [p[0] for p in PAGES])
