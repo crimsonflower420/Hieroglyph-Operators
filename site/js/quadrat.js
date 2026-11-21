@@ -100,7 +100,7 @@
   }
   function f(v) { return Math.round(v * 100) / 100; }
   function svgFor(tree, em) {
-    var L = layout(tree), s = 1 / Math.max(L.w, L.h), o = [];
+    var L = layout(tree), s = 1 / Math.max(L.w, L.h, 0.9), o = [];  /* floor keeps small single signs at natural size */
     L.draw(o, (1 - L.w * s) / 2 * 100, (1 - L.h * s) / 2 * 100, s * 100);
     return '<svg class="q" viewBox="0 0 100 100" width="' + em + '" height="' + em + '" role="img">' + o.join('') + '</svg>';
   }

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja" data-lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>記法 — ヒエログリフの演算子</title>
+<meta name="title-ja" content="記法 — ヒエログリフの演算子">
+<meta name="title-en" content="Notation — Hieroglyph Operators">
+<meta name="description" content="Egyptian hieroglyphic quadrats read as operator trees over Gardiner signs. A sister site to Kanji in Order.">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/NotoSansEgyptianHieroglyphs-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/main.css">
+<script>
+(function () {
+  try {
+    var r = document.documentElement, t = localStorage.getItem('ho-theme');
+    var th = (t === 'light' || t === 'dark') ? t : (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    r.setAttribute('data-theme', th); r.style.colorScheme = th;
+    var q = (location.search.match(/[?&]lang=(ja|en)/) || [])[1];
+    var l = q || localStorage.getItem('ho-lang'); if (l !== 'en' && l !== 'ja') l = 'ja';
+    r.lang = l; r.setAttribute('data-lang', l);
+  } catch (e) {}
+})();
+</script>
+</head>
+<body>
+<a class="skip" href="#main"><span class="ja" lang="ja">本文へ</span><span class="en" lang="en">Skip to content</span></a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./"><span class="brand-glyph" aria-hidden="true" data-q="𓊪𓐰𓏏" data-size="1.7em"></span><span class="ja" lang="ja">ヒエログリフの演算子</span><span class="en" lang="en">Hieroglyph Operators</span><small><span class="ja" lang="ja">方形を演算子の木として読む</span><span class="en" lang="en">quadrats as operator trees</span></small></a>
+    <div class="controls">
+      <form class="seg lang-toggle" aria-label="Language"><label><input type="radio" name="lang" value="ja"><span>JA</span></label><label><input type="radio" name="lang" value="en"><span>EN</span></label></form>
+      <form class="seg theme-toggle" aria-label="Theme"><label><input type="radio" name="theme" value="light"><span><span class="ja" lang="ja">明</span><span class="en" lang="en">Light</span></span></label><label><input type="radio" name="theme" value="auto"><span><span class="ja" lang="ja">自動</span><span class="en" lang="en">Auto</span></span></label><label><input type="radio" name="theme" value="dark"><span><span class="ja" lang="ja">暗</span><span class="en" lang="en">Dark</span></span></label></form>
+    </div>
+    <nav class="primary" aria-label="Primary"><ul><li><a href="./"><span class="ja" lang="ja">トップ</span><span class="en" lang="en">Top</span></a></li><li><a href="concept"><span class="ja" lang="ja">考え方</span><span class="en" lang="en">Concept</span></a></li><li><a href="operators"><span class="ja" lang="ja">演算子</span><span class="en" lang="en">Operators</span></a></li><li><a href="derivations"><span class="ja" lang="ja">二層の導出</span><span class="en" lang="en">Derivations</span></a></li><li><a href="notation" aria-current="page"><span class="ja" lang="ja">記法</span><span class="en" lang="en">Notation</span></a></li><li><a href="pilot"><span class="ja" lang="ja">パイロット調査</span><span class="en" lang="en">Pilot</span></a></li><li><a href="rahman"><span class="ja" lang="ja">ラフマン再読</span><span class="en" lang="en">Rahman</span></a></li><li><a href="sources"><span class="ja" lang="ja">出典</span><span class="en" lang="en">Sources</span></a></li><li><a href="https://kanji-morphology.pages.dev/"><span class="ja" lang="ja">順序の漢字 ↗</span><span class="en" lang="en">Kanji in Order ↗</span></a></li></ul></nav>
+  </div>
+</header>
+<main id="main"><div class="wrap">
+
+<p class="tag"><span class="ja" lang="ja">共有の規格</span><span class="en" lang="en">Shared standard</span></p>
+<h1><span class="ja" lang="ja">記法 / Notation</span><span class="en" lang="en">Notation / 記法</span></h1>
+<p class="lede"><span class="ja" lang="ja">このサイトの導出は、文字の下位語彙の導出のための共有規格 v1 で書く。規格は Syntax · Semantics · Interface とともに起草し、2026年11月21日に Grant Golland が承認した。改訂はありうる。</span><span class="en" lang="en">The derivations on this site are written in v1 of the shared standard for sub-lexical derivations. It was drafted with Syntax · Semantics · Interface and approved by Grant Golland on 21 November 2026; it may be revised.</span></p>
+<p><span class="ja" lang="ja">規格の全文（英語）：<a href="https://github.com/crimsonflower420/Hieroglyph-Operators/blob/main/notes/SUBLEXICAL-DERIVATIONS-v1.md">SUBLEXICAL-DERIVATIONS-v1.md</a>。ここではその要点を述べ、ヒエログリフでの使い方を示す。</span><span class="en" lang="en">Full text (English): <a href="https://github.com/crimsonflower420/Hieroglyph-Operators/blob/main/notes/SUBLEXICAL-DERIVATIONS-v1.md">SUBLEXICAL-DERIVATIONS-v1.md</a>. This page gives the main points and how they are used for hieroglyphs.</span></p>
+<div class="table-scroll"><table>
+<tr><th>§</th><th><span class="ja" lang="ja">規格の要点</span><span class="en" lang="en">Standard</span></th><th><span class="ja" lang="ja">このサイトでの使い方</span><span class="en" lang="en">Use on this site</span></th></tr>
+<tr><td>1</td><td><span class="ja" lang="ja">根のある順序木。節点は演算子のラベル・項数・娘から成る。葉は字形と語釈。ブラケット形式が正本で、図はそこから生成する。項数は演算子が決め、娘の数が違えば検査器が落とす。</span><span class="en" lang="en">Rooted ordered tree; node = operator label + arity + daughters; leaves = glyph + gloss. Bracket form is the source of truth; figures are generated from it. Arity is fixed by the operator; a wrong daughter count fails the checker.</span></td><td><span class="ja" lang="ja"><code>data/derivations/rahman.drv</code> の A・B の行。図は <code>tools/derivations.py</code> が生成する。</span><span class="en" lang="en">The A and B lines of <code>data/derivations/rahman.drv</code>; figures from <code>tools/derivations.py</code>.</span></td></tr>
+<tr><td>2</td><td><span class="ja" lang="ja">主要部は機能の木にだけ置き、_H で示す。配置の木には主要部がない。</span><span class="en" lang="en">Heads only in the function tree, marked _H; layout trees are headless.</span></td><td><span class="ja" lang="ja">限定符（DET）にだけ _H を付ける。</span><span class="en" lang="en">Only determinatives (DET) carry _H.</span></td></tr>
+<tr><td>3</td><td><span class="ja" lang="ja">二つの層：A 配置、B 型付きの機能。葉の番号でつなぎ、食い違いは明記する。</span><span class="en" lang="en">Two layers: A layout, B typed function; linked by node ids; mismatches stated.</span></td><td><span class="ja" lang="ja">方形の木と記号のはたらきの木。食い違いは MISMATCH として自動で報告する。</span><span class="en" lang="en">Quadrat tree and sign-function tree; mismatches reported automatically as MISMATCH.</span></td></tr>
+<tr><td>4</td><td><span class="ja" lang="ja">木は階層、順序は木の上の名前付きの線形化（WALK）。例外は記録し、木には組み込まない。</span><span class="en" lang="en">Tree = hierarchy; order = named linearizations (WALK). Exceptions are recorded, not built into the tree.</span></td><td>WALK_write, WALK_read</td></tr>
+<tr><td>5</td><td><span class="ja" lang="ja">並べ替え：(a) 移動（層 B が支持するときだけ）、(b) 線形化の並べ替え。既定は (b) で、WALK_write ≠ WALK_read と記し、TRANSPOSE(honorific) のラベルを付ける。</span><span class="en" lang="en">Reordering: (a) movement, only if layer B argues for it; (b) linearization reorder, marked WALK_write ≠ WALK_read with TRANSPOSE(honorific). Default (b).</span></td><td><span class="ja" lang="ja">すべて (b)。書記上の並べ替えには TRANSPOSE(graphic) も使う。</span><span class="en" lang="en">All (b); TRANSPOSE(graphic) is also used for graphic reorders.</span></td></tr>
+<tr><td>6</td><td><span class="ja" lang="ja">どの木にも HYPOTHESIS。確かな事実には出典。未決は OPEN。CONJECTURE は使わない。Grant の考えは GRANT'S HYPOTHESIS と明記する。</span><span class="en" lang="en">HYPOTHESIS on every tree; attested facts with source; OPEN for unresolved; no CONJECTURE; Grant's ideas credited as GRANT'S HYPOTHESIS.</span></td><td><span class="ja" lang="ja">各導出の見出しに表示する。</span><span class="en" lang="en">Shown in each derivation's header line.</span></td></tr>
+<tr><td>7</td><td><span class="ja" lang="ja">主張しないこと：記号の木は統語・Merge・X バー・θ ではない。書き順・読み順は心理的な導出ではない。機能の木は語の形態・意味そのものではない。二つの水準が同じだとは言わない。並行関係は「Grant の承認待ち」の注に置く。</span><span class="en" lang="en">Not claimed: glyph trees are syntax / Merge / X-bar / θ; stroke or reading order is a psychological derivation; function tree = word morphology/semantics; the two levels are the same. Any parallel goes in a 'Parallel (for Grant to approve)' note.</span></td><td><span class="ja" lang="ja"><a href="derivations">二層の導出</a>の最後に明記する。</span><span class="en" lang="en">Stated at the end of <a href="derivations">Two-layer derivations</a>.</span></td></tr>
+<tr><td>8</td><td><span class="ja" lang="ja">相互リンク：一致する箇所では関連ページへリンクする。用語集の共有は任意。</span><span class="en" lang="en">Interlinking: link matching pages; an optional shared glossary.</span></td><td><span class="ja" lang="ja">漢字のサイトの<a href="https://kanji-morphology.pages.dev/walk-permutation">書き順と歩き順</a>へリンクする。</span><span class="en" lang="en">Links to the kanji site's <a href="https://kanji-morphology.pages.dev/walk-permutation">written order vs walk order</a>.</span></td></tr>
+</table></div>
+
+<h2><span class="ja" lang="ja">ヒエログリフでの具体化</span><span class="en" lang="en">The hieroglyph profile</span></h2>
+<p><span class="ja" lang="ja">規格は演算子の名前を ⿰・⿱ など漢字の IDS から取る。ヒエログリフでは、⿰ と ⿱ をそれぞれ横の結合・縦の結合に当て、差し込み・重ね合わせ・カルトゥーシュ・方形の列（LINE<i>k</i>）を加えた。層 B には、補音（CMPL）、限定符による閉じ（CLOSE）、語尾（INFL・PL）、略記（ABBR）などの型を置いた。一覧は<a href="derivations">二層の導出</a>にある。</span><span class="en" lang="en">The standard takes operator names such as ⿰ and ⿱ from kanji IDS. For hieroglyphs, ⿰ and ⿱ are assigned to the horizontal and vertical joiners, and insertion, overlay, cartouche and the quadrat row (LINE<i>k</i>) are added. Layer B gets types for complements (CMPL), closing by a determinative (CLOSE), endings (INFL, PL), abbreviation (ABBR) and others. The full list is on <a href="derivations">Two-layer derivations</a>.</span></p>
+<pre class="bracket">=== d05
+signs: n1 U7 mr | n2 D21 r | n3 A2
+A: [LINE2 [⿱ n1 n2] n3]
+B: [CLOSE [CMPL2 n1:PHON2 n2:COMPL] n3:DET_H]
+read: n1 n2 n3</pre>
+<p class="meta"><span class="ja" lang="ja">クレジット：規格 v1 は Syntax · Semantics · Interface とともに起草し、Grant Golland が承認した。</span><span class="en" lang="en">Credit: standard v1 drafted with Syntax · Semantics · Interface; approved by Grant Golland.</span></p>
+
+</div></main>
+<footer class="site-footer"><div class="wrap">
+<p><span class="ja" lang="ja">研究ノートのサイトであり、随時改訂する。</span><span class="en" lang="en">A research-notes site, revised as the work goes on.</span> <a href="https://github.com/crimsonflower420/Hieroglyph-Operators">Hieroglyph-Operators</a> · <span class="ja" lang="ja">姉妹サイト</span><span class="en" lang="en">Sister site</span>: <a href="https://kanji-morphology.pages.dev/"><span class="ja" lang="ja">順序の漢字</span><span class="en" lang="en">Kanji in Order</span></a></p>
+<p><span class="ja" lang="ja">ヒエログリフの字形：Noto Sans Egyptian Hieroglyphs（SIL OFL 1.1）。EA 581 の符号化：M.-J. Nederhof（HieroJax、GPL-3.0）。</span><span class="en" lang="en">Glyphs: Noto Sans Egyptian Hieroglyphs (SIL OFL 1.1). EA 581 encoding: M.-J. Nederhof (HieroJax, GPL-3.0).</span></p>
+<p>Theory Desk · Grant Golland</p>
+</div></footer>
+<script src="js/site.js" defer></script>
+<script src="js/quadrat.js" defer></script>
+</body>
+</html>

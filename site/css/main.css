@@ -88,3 +88,49 @@ figcaption { font-size: .85rem; color: var(--muted); }
   h1 { font-size: 1.45rem; }
   .brand small { display: none; }
 }
+
+/* Two-layer derivations */
+.drv { border: 1px solid var(--border); border-radius: 4px; background: var(--bg-2); padding: .8rem .9rem; margin: 1.2rem 0; max-width: 100% !important; }
+.drv h3 { margin: 0 0 .3rem; }
+.drv .meta { font-family: var(--font-sans); font-size: .78rem; color: var(--muted); }
+.drv .meta b { color: var(--ochre); }
+.drv .qrow { display: flex; flex-wrap: wrap; align-items: center; gap: .1rem; margin: .5rem 0; }
+.drv .qrow.cart { border: 2px solid var(--glyph); border-radius: 1.6em; padding: .15rem .7rem; width: max-content; max-width: 100%; position: relative; }
+.drv .qrow.cart::after { content: ""; position: absolute; right: -6px; top: 10%; height: 80%; border-right: 2px solid var(--glyph); }
+.drv .qrow svg.q text, .qinline svg.q text { fill: var(--glyph); }
+.layers { display: grid; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); gap: .6rem; margin: .4rem 0; }
+.layer { background: var(--bg); border: 1px solid var(--border); border-radius: 3px; padding: .4rem; min-width: 0; }
+.layer > .lab { font-family: var(--font-sans); font-size: .74rem; font-weight: 700; color: var(--muted); letter-spacing: .02em; }
+.svgscroll { overflow-x: auto; }
+pre.bracket { font: .78rem/1.5 ui-monospace, Menlo, monospace; background: var(--code); padding: .35rem .5rem; margin: .3rem 0; white-space: pre-wrap; overflow-wrap: anywhere; border-radius: 3px; }
+svg.dtree, svg.dwalk { display: block; max-width: none; }
+svg.dtree .edge { stroke: var(--muted); stroke-width: 1.2; }
+svg.dtree .op { font: 700 12px var(--font-sans); fill: var(--accent); }
+svg.dtree .code { font: 10px var(--font-sans); fill: var(--muted); }
+svg.dtree .role { font: 600 9.5px var(--font-sans); fill: var(--text); }
+svg.dtree .role.head { fill: var(--accent-2); }
+svg .hg { font-family: var(--font-hiero); font-size: 26px; fill: var(--glyph); }
+svg .hg.sm { font-size: 20px; }
+svg .leafbg { fill: hsl(var(--h) 55% 50% / .16); stroke: hsl(var(--h) 55% 45% / .7); stroke-width: 1.2; }
+svg .miss { fill: none; stroke: var(--muted); stroke-dasharray: 3 2; }
+svg.dwalk .wlab { font: 700 11px var(--font-sans); fill: var(--muted); }
+svg.dwalk .wl { stroke: var(--muted); stroke-width: 1; }
+svg.dwalk .wl.moved { stroke: var(--accent-2); stroke-width: 1.8; stroke-dasharray: 5 3; }
+.mm { font-family: var(--font-sans); font-size: .82rem; color: var(--accent-2); }
+.drv p { margin: .35rem 0; font-size: .95rem; }
+.drv .k { font-family: var(--font-sans); font-size: .74rem; font-weight: 700; color: var(--muted); margin-right: .3rem; }
+.qinline { display: inline-block; vertical-align: middle; }
+.layers.one { grid-template-columns: 1fr; }
+td.nw, th.nw { white-space: nowrap; }
+@media (max-width: 640px) {
+  .brand { font-size: .95rem; }
+  .brand small { display: none; }
+  .controls { font-size: .7rem; gap: .25rem; }
+  .seg label > span { padding: .1rem .35rem; }
+  nav.primary { font-size: .8rem; }
+  nav.primary ul { gap: 0 .65rem; }
+}
+@media (max-width: 480px) {
+  nav.primary ul { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; white-space: nowrap; padding-bottom: 2px; }
+  nav.primary ul::-webkit-scrollbar { display: none; }
+}
