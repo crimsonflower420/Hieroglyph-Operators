@@ -21,6 +21,8 @@ This repository holds a research-notes website that reads Egyptian hieroglyphs t
 | `tools/quadrat_census.py` | Parses the pilot text into operator trees and writes `data/pilot-census.json` and `site/js/pilot-data.js` |
 | `tools/build_pages.py` | Builds the five pages from the census data and the JA/EN texts |
 | `data/ea581-lines.json` | BM EA 581, Unicode encoding by M.-J. Nederhof (HieroJax, GPL-3.0), with line direction from his RES encoding |
+| `tools/kanji_heights.py` | Per-character tree height of the 2,136 jōyō kanji from the pinned KanjiVG snapshot, using the Kanji-Morphology composition rule (needs that repo checked out); writes `data/kanji-height-reference.json` |
+| `tools/depth_compare.py` | Layout height vs function height for the Rahman derivations, with EA 581 and kanji beside them; writes `data/depth-compare.json` (page `depth`) |
 | `data/kanji-arity-reference.json` | Kanji arity census numbers, pinned to Kanji-Morphology 3e3ba46 and KanjiVG 70a0b7ae |
 | `notes/` | Research notes with sources |
 
@@ -28,6 +30,9 @@ This repository holds a research-notes website that reads Egyptian hieroglyphs t
 
 ```sh
 python3 tools/quadrat_census.py
+# optional, needs crimsonflower420/Kanji-Morphology checked out:
+# python3 tools/kanji_heights.py --kanji-repo /path/to/Kanji-Morphology
+python3 tools/depth_compare.py
 python3 tools/build_pages.py
 WRANGLER_CACHE_DIR=/tmp/wrangler-cache npx wrangler pages deploy site --project-name hieroglyph-operators --branch main --commit-hash "$(git rev-parse HEAD)"
 ```
