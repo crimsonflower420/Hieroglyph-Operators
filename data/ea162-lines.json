@@ -1,0 +1,136 @@
+{
+ "source": {
+  "object": "BM EA 162 (Imeny): HieroJax heading \"Stela of Imeny\"",
+  "encoding": "Mark-Jan Nederhof, HieroJax text page BritishMuseumEA162, https://raw.githubusercontent.com/nederhof/hierojax/da318801e00b10b4b5c5ec8d9cc6f8fddcc9eb5a/docs/texts/BritishMuseumEA162.html (commit da318801e00b10b4b5c5ec8d9cc6f8fddcc9eb5a); HieroJax repository is GPL-3.0",
+  "direction": "Not recorded here (OPEN); not needed for the boundary counts.",
+  "note": "Encoding of relative positions is the editor's; it is not a facsimile."
+ },
+ "lines": [
+  {
+   "line": 1,
+   "section": "upper register",
+   "label": "1",
+   "direction": null,
+   "unicode": "𓇓𓑋𓏏𓐰𓊵𓏙𓐍𓐰𓂋𓁹𓐰𓊨𓏅𓑋𓅂𓋀𓅂𓑋𓑃︀𓑃︀𓍋𓃀𓈋𓐰𓊖𓅓𓊨𓏏𓐰𓉐𓏥𓐰𓆑𓎟𓐰𓏏𓄤𓂋𓐰𓏏"
+  },
+  {
+   "line": 2,
+   "section": "upper register",
+   "label": "2",
+   "direction": null,
+   "unicode": "𓃂𓏏𓐰𓈗𓂞𓐰𓆑𓉐𓂋𓐰𓏏𓊤𓅱𓅓𓏏𓐰𓏑𓏔𓐰𓏥𓅓𓎛𓑎𓈎𓐰𓏏𓏊𓏪𓅓𓃾𓑋𓐱𓅿𓐰𓏧𓅓𓐍𓐱𓏏𓐰𓎟"
+  },
+  {
+   "line": 3,
+   "section": "upper register",
+   "label": "3",
+   "direction": null,
+   "unicode": "𓄤𓑋𓂋𓐰𓏏𓈖𓐰𓂓𓐱𓏤𓐰𓈖𓇋𓄪𓐻𓐍𓅱𓐍𓐰𓂋𓊹𓉼𓅓𓂋𓐰𓏤𓀎𓏪𓅨𓐰𓂋𓇋𓏠𓐰𓈖𓇋𓇋𓁹𓐰𓈖𓈎𓐱𓃀𓅱𓑊𓆰𓑇𓌳𓐴𓐚𓐰𓂝𓊤"
+  },
+  {
+   "line": 4,
+   "section": "upper register",
+   "label": "4",
+   "direction": null,
+   "unicode": "𓂞𓐰𓏏𓈖𓐰𓆑𓂣𓐰𓂣𓅓𓈖𓐰𓈙𓅓𓏏𓐰𔀯𓁷𓑒𓍯𓑈𓄿𓏏𓐰𓈐𓏪𓋀𓏏𓐰𓈉𓊏𓐱𓊪𓐰𓆑𓊵𓐰𓏏𓐱𓊪𓏏𓐰𓏔𓏪𓁷"
+  },
+  {
+   "line": 5,
+   "section": "upper register",
+   "label": "5",
+   "direction": null,
+   "unicode": "𓊵𓐰𓉻𓅓𓉲𓐰𓎱𓏥𓐰𓈖𔄋𓆓𓐳𓂧𓏏𓐰𓈖𓐰𓆑𓂻𓅱𓅓𓊵𓐰𓏏𓐱𓊪𓇋𓈖𓐰𓅨𓏥𓐰𓈖𓍋𓃀𓈋𓑐𓐰𓊖𓑋𓅓𓍯𓎼𓉲𓐰𓎱"
+  },
+  {
+   "line": 6,
+   "section": "middle register",
+   "label": "6",
+   "direction": null,
+   "unicode": "𓅓𓅝𓑐𓐰𓏏𓐱𓏏𓑉𓉲𓐰𓎱𓅓𓎛𓐱𓃀𓉲𓐰𓎱𓊃𓐰𓎡𓐰𓂋𔁪𓅓𓉐𓐰𓂋𓏏𓐰𓂻𔅇𓉲𓐰𓎱"
+  },
+  {
+   "line": 7,
+   "section": "middle register",
+   "label": "7",
+   "direction": null,
+   "unicode": "𓅓𓉐𓐰𓂋𓏏𓐰𓂻𓇮𓐱𓏏𓉲𓐰𓎱𓅓𓁶𓐱𓆴𓉲𓐰𓎱𓅓𓎛𓐱𓃀𓉲𓐰𓎱𓎟𓐰𓉻𓁹𓐰𓂋𓅱"
+  },
+  {
+   "line": 8,
+   "section": "middle register",
+   "label": "8",
+   "direction": null,
+   "unicode": "𓈖𓐰𓁹𓐰𓊨𓏅𓑐𓋀𓑀𓐲𓏏𓑀𓅂𓊹𓑀𓐱𓉼𓈖𓐰𓂓𓐱𓏤𓐰𓈖𓅓𓐰𓂋𓀎𓐰𓏥𓅨𓐰𓂋𓇋𓐱𓐷𓏠𓐰𓈖𓐸𓇋𓐱𓇋𓘾"
+  },
+  {
+   "line": 9,
+   "section": "middle register",
+   "label": "1",
+   "direction": null,
+   "unicode": "𓈞𓑉𓐱𓏏𓐰𓆑𓑉𓌻𓐰𓂋𓏏𓐰𓆑𓁹𓐰𓂋𓐰𓏏𓎛𓐱𓎿𓊃𓐰𓊃𓏏𓐰𓆑𓇳𓐱𓏤𓐰𓎟𓉡𓑋𓊹𓐱𓍛"
+  },
+  {
+   "line": 10,
+   "section": "middle register",
+   "label": "2",
+   "direction": null,
+   "unicode": "𓅓𓂧𓎛𓐱𓅱𓄠𓐱𓋴𓏏𓐰𓈖𓇋𓐱𓐷𓏠𓐰𓈖𓐸𓇋𓐱𓇋𓐚𓐱𓏏𓐰𓊤︂"
+  },
+  {
+   "line": 11,
+   "section": "middle register",
+   "label": "3",
+   "direction": null,
+   "unicode": "𓍏𓐱𓐷𓅡𓐰𓏏𓐸𓅭𓐴𓏏𓏃𓈖𓐰𓏏𓄡𓐰𓏏𓍘"
+  },
+  {
+   "line": 12,
+   "section": "middle register",
+   "label": "4",
+   "direction": null,
+   "unicode": "𓅡𓎡𓐰𓆑𓌳𓐴𓐙𓑀𓂝𓐰𓈖𓊨𓐱𓐷𓏏𓐰𓄣𓐸𓆑𓁹𓐰𓂋𓎛𓐱𓎿𓊃𓐰𓊃𓏏𓐰𓆑𓇳𓐱𓏤𓐰𓎟𓅓𓐰𓂋𓋨𓐰𓏏𓉡𓅭𓎟𓄪𓐻𓏤𓐚𓐰𓊤︂"
+  },
+  {
+   "line": 13,
+   "section": "middle register",
+   "label": "5",
+   "direction": null,
+   "unicode": "𓌢𓐰𓈖𓆑𓐰𓌻𓑀𓂋𓐰𓆑𓏃𓈖𓐰𓏏𓄡𓐰𓏏𓐱𓏮𓊵𓐰𓏏𓐱𓊪𓁹𓐰𓈖𓅭𓐴𓏏𓏏𓋴𓐱𓃀𓎡𓐰𓏥𓌳𓐴𓐚𓑀𓐰𓂝𓊤𓐱𓅱"
+  },
+  {
+   "line": 14,
+   "section": "lower register",
+   "label": "1",
+   "direction": null,
+   "unicode": "𓅭𓏃𓈖𓐰𓏏𓄡𓐰𓏏𓇋𓐱𓇋"
+  },
+  {
+   "line": 15,
+   "section": "lower register",
+   "label": "2",
+   "direction": null,
+   "unicode": "𓂖𓆓𓐳𓆑𓄿𓏔𓎛𓐱𓐷𓊪𓐰𓈘𓐸"
+  },
+  {
+   "line": 16,
+   "section": "lower register",
+   "label": "3",
+   "direction": null,
+   "unicode": "𓈖𓐰𓈙𓐰𓏏𓁸𓐍𓐰𓂤𓇋𓐱𓇋𓏏𓐰𓏥"
+  },
+  {
+   "line": 17,
+   "section": "lower register",
+   "label": "4",
+   "direction": null,
+   "unicode": "𓁷𓐰𓂋𓉐𓇋𓐱𓐷𓏠𓐰𓈖𓐸𓇋𓐱𓇋"
+  },
+  {
+   "line": 18,
+   "section": "lower register",
+   "label": "5",
+   "direction": null,
+   "unicode": "𓁷𓐰𓂋𓉐𓅭𓅱𓐰𓏏𓇋𓐱𓇋𓐱𓏏"
+  }
+ ]
+}

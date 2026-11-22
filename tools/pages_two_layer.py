@@ -22,7 +22,7 @@ REFS = {
  'Rosetta Stone (BM EA 24)': ('British Museum, EA 24, the Rosetta Stone (collection record).', 'https://www.britishmuseum.org/collection/object/Y_EA24'),
 }
 BOOK = ('Rahman, Md. Ridwanur. <i>Ancient Egyptian Hieroglyph as the Pictorial Scrutiny of Modern Linguistics: The First Research Work on Egyptian Hieroglyphic Language in the Bosom of Bangladesh</i>. First published 2020; ILIM Press edition, Dhaka, 2023. ISBN 978-984-35-4321-9.', '')
-STANDARD = ('SUBLEXICAL-DERIVATIONS-v1, shared standard for sub-lexical derivations, drafted with Syntax · Semantics · Interface; approved by Grant Golland, 21 Nov 2026 (copy in this repository).', REPO + '/blob/main/notes/SUBLEXICAL-DERIVATIONS-v1.md')
+STANDARD = ('<span class="ja" lang="ja">SUBLEXICAL-DERIVATIONS-v1、文字の下位語彙の導出のための共有規格。Syntax · Semantics · Interface とともに起草し、2026年11月21日にグラントが承認した（このリポジトリに写しがある）。</span><span class="en" lang="en">SUBLEXICAL-DERIVATIONS-v1, shared standard for sub-lexical derivations, drafted with Syntax · Semantics · Interface; approved by Grant Golland, 21 Nov 2026 (copy in this repository).</span>', REPO + '/blob/main/notes/SUBLEXICAL-DERIVATIONS-v1.md')
 
 CAT = {  # (ja, en)
  'COMPL': ('補音', 'Phonetic complements'), 'DET': ('限定符（主要部）', 'Determinatives (heads)'),
@@ -146,7 +146,7 @@ def pages(bi):
  f"二つの歩きが食い違うときは、木は一つのまま、歩きの上に並べ替えを記す（規格の既定 (b)）。ラベルは TRANSPOSE(honorific) または TRANSPOSE(graphic) である。漢字のサイトの<a href=\"{KANJI}walk-permutation\">「書き順と歩き順の置換」</a>の語彙でいえば、敬意による転置は reorder の型に当たる。尊ぶ語のかたまりが、それが追い越すかたまりより先に書かれる。今回の例には return の型に当たるものはない。",
  f"When the two walks differ, the tree stays single and the reorder is marked on the walk (the standard's default (b)), labelled TRANSPOSE(honorific) or TRANSPOSE(graphic). In the vocabulary of the kanji site's <a href=\"{KANJI}walk-permutation\">written order vs walk order</a>, honorific transposition is of the reorder type: the honoured block is written ahead of the block it passes. No case of the return type occurs here.")}</p>
 <div class="flag spec">{bi(
- "<strong>並行関係（Grant の承認待ち）。</strong>漢字の reorder（書き順で部品のかたまりが先に出る）と、ヒエログリフの敬意による転置（尊ぶ語が先に書かれる）は、どちらも「一つの木、二つの歩き、かたまり一つの入れ替え」という同じ形で書ける。どちらも文字の層の話であり、統語の主張ではない。",
+ "<strong>並行関係（グラントの承認待ち）。</strong>漢字の reorder（書き順で部品のかたまりが先に出る）と、ヒエログリフの敬意による転置（尊ぶ語が先に書かれる）は、どちらも「一つの木、二つの歩き、かたまり一つの入れ替え」という同じ形で書ける。どちらも文字の層の話であり、統語の主張ではない。",
  "<strong>Parallel (for Grant to approve).</strong> The kanji reorder (a component block comes earlier in stroke order) and hieroglyphic honorific transposition (the honoured word is written first) can both be written in the same shape: one tree, two walks, one block swapped. Both are about the writing layer; neither is a syntactic claim.")}</div>
 <p>{bi(
  "Peust（2007）は、敬意による転置が話し言葉の統語上の倒置規則によく似ていると論じる。このサイトはその見方を紹介するにとどめ、移動 (a) は使わない。規格は、層 B がそれを支持するときにだけ移動を許している。",
@@ -167,7 +167,7 @@ def pages(bi):
 <p class="tag">{bi("共有の規格", "Shared standard")}</p>
 <h1>{bi("記法 / Notation", "Notation / 記法")}</h1>
 <p class="lede">{bi(
- "このサイトの導出は、文字の下位語彙の導出のための共有規格 v1 で書く。規格は Syntax · Semantics · Interface とともに起草し、2026年11月21日に Grant Golland が承認した。改訂はありうる。",
+ "このサイトの導出は、文字の下位語彙の導出のための共有規格 v1 で書く。規格は Syntax · Semantics · Interface とともに起草し、2026年11月21日にグラントが承認した。改訂はありうる。",
  "The derivations on this site are written in v1 of the shared standard for sub-lexical derivations. It was drafted with Syntax · Semantics · Interface and approved by Grant Golland on 21 November 2026; it may be revised.")}</p>
 <p>{bi(
  f"規格の全文（英語）：<a href=\"{STANDARD[1]}\">SUBLEXICAL-DERIVATIONS-v1.md</a>。ここではその要点を述べ、ヒエログリフでの使い方を示す。",
@@ -179,8 +179,8 @@ def pages(bi):
 <tr><td>3</td><td>{bi("二つの層：A 配置、B 型付きの機能。葉の番号でつなぎ、食い違いは明記する。", "Two layers: A layout, B typed function; linked by node ids; mismatches stated.")}</td><td>{bi("方形の木と記号のはたらきの木。食い違いは MISMATCH として自動で報告する。", "Quadrat tree and sign-function tree; mismatches reported automatically as MISMATCH.")}</td></tr>
 <tr><td>4</td><td>{bi("木は階層、順序は木の上の名前付きの線形化（WALK）。例外は記録し、木には組み込まない。", "Tree = hierarchy; order = named linearizations (WALK). Exceptions are recorded, not built into the tree.")}</td><td>WALK_write, WALK_read</td></tr>
 <tr><td>5</td><td>{bi("並べ替え：(a) 移動（層 B が支持するときだけ）、(b) 線形化の並べ替え。既定は (b) で、WALK_write ≠ WALK_read と記し、TRANSPOSE(honorific) のラベルを付ける。", "Reordering: (a) movement, only if layer B argues for it; (b) linearization reorder, marked WALK_write ≠ WALK_read with TRANSPOSE(honorific). Default (b).")}</td><td>{bi("すべて (b)。書記上の並べ替えには TRANSPOSE(graphic) も使う。", "All (b); TRANSPOSE(graphic) is also used for graphic reorders.")}</td></tr>
-<tr><td>6</td><td>{bi("どの木にも HYPOTHESIS。確かな事実には出典。未決は OPEN。CONJECTURE は使わない。Grant の考えは GRANT'S HYPOTHESIS と明記する。", "HYPOTHESIS on every tree; attested facts with source; OPEN for unresolved; no CONJECTURE; Grant's ideas credited as GRANT'S HYPOTHESIS.")}</td><td>{bi("各導出の見出しに表示する。", "Shown in each derivation's header line.")}</td></tr>
-<tr><td>7</td><td>{bi("主張しないこと：記号の木は統語・Merge・X バー・θ ではない。書き順・読み順は心理的な導出ではない。機能の木は語の形態・意味そのものではない。二つの水準が同じだとは言わない。並行関係は「Grant の承認待ち」の注に置く。", "Not claimed: glyph trees are syntax / Merge / X-bar / θ; stroke or reading order is a psychological derivation; function tree = word morphology/semantics; the two levels are the same. Any parallel goes in a 'Parallel (for Grant to approve)' note.")}</td><td>{bi("<a href=\"derivations\">二層の導出</a>の最後に明記する。", "Stated at the end of <a href=\"derivations\">Two-layer derivations</a>.")}</td></tr>
+<tr><td>6</td><td>{bi("どの木にも HYPOTHESIS。確かな事実には出典。未決は OPEN。CONJECTURE は使わない。グラントの考えは GRANT'S HYPOTHESIS（グラントの仮説）と明記する。", "HYPOTHESIS on every tree; attested facts with source; OPEN for unresolved; no CONJECTURE; Grant's ideas credited as GRANT'S HYPOTHESIS.")}</td><td>{bi("各導出の見出しに表示する。", "Shown in each derivation's header line.")}</td></tr>
+<tr><td>7</td><td>{bi("主張しないこと：記号の木は統語・Merge・X バー・θ ではない。書き順・読み順は心理的な導出ではない。機能の木は語の形態・意味そのものではない。二つの水準が同じだとは言わない。並行関係は「グラントの承認待ち」の注に置く。", "Not claimed: glyph trees are syntax / Merge / X-bar / θ; stroke or reading order is a psychological derivation; function tree = word morphology/semantics; the two levels are the same. Any parallel goes in a 'Parallel (for Grant to approve)' note.")}</td><td>{bi("<a href=\"derivations\">二層の導出</a>の最後に明記する。", "Stated at the end of <a href=\"derivations\">Two-layer derivations</a>.")}</td></tr>
 <tr><td>8</td><td>{bi("相互リンク：一致する箇所では関連ページへリンクする。用語集の共有は任意。", "Interlinking: link matching pages; an optional shared glossary.")}</td><td>{bi(f"漢字のサイトの<a href=\"{KANJI}walk-permutation\">書き順と歩き順</a>へリンクする。", f"Links to the kanji site's <a href=\"{KANJI}walk-permutation\">written order vs walk order</a>.")}</td></tr>
 </table></div>
 
@@ -193,7 +193,7 @@ signs: n1 U7 mr | n2 D21 r | n3 A2
 A: [LINE2 [⿱ n1 n2] n3]
 B: [CLOSE [CMPL2 n1:PHON2 n2:COMPL] n3:DET_H]
 read: n1 n2 n3</pre>
-<p class="meta">{bi("クレジット：規格 v1 は Syntax · Semantics · Interface とともに起草し、Grant Golland が承認した。", "Credit: standard v1 drafted with Syntax · Semantics · Interface; approved by Grant Golland.")}</p>
+<p class="meta">{bi("クレジット：規格 v1 は Syntax · Semantics · Interface とともに起草し、グラントが承認した。", "Credit: standard v1 drafted with Syntax · Semantics · Interface; approved by Grant Golland.")}</p>
 '''
 
     groups = ''

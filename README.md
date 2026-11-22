@@ -23,6 +23,7 @@ This repository holds a research-notes website that reads Egyptian hieroglyphs t
 | `data/ea581-lines.json` | BM EA 581, Unicode encoding by M.-J. Nederhof (HieroJax, GPL-3.0), with line direction from his RES encoding |
 | `tools/kanji_heights.py` | Per-character tree height of the 2,136 jōyō kanji from the pinned KanjiVG snapshot, using the Kanji-Morphology composition rule (needs that repo checked out); writes `data/kanji-height-reference.json` |
 | `tools/depth_compare.py` | Layout height vs function height for the Rahman derivations, with EA 581 and kanji beside them; writes `data/depth-compare.json` (page `depth`) |
+| `tools/quadrat_word_align.py` | Aligns TLA word division (via AES, CC BY-SA 4.0) with Nederhof's quadrats for EA 581 and EA 162; `--fetch` rebuilds `data/ea581-tla-words.json`, `data/ea162-tla-words.json`, `data/ea162-lines.json` from pinned commits; writes `data/quadrat-word.json` (page `boundaries`) |
 | `data/kanji-arity-reference.json` | Kanji arity census numbers, pinned to Kanji-Morphology 3e3ba46 and KanjiVG 70a0b7ae |
 | `notes/` | Research notes with sources |
 
@@ -33,6 +34,7 @@ python3 tools/quadrat_census.py
 # optional, needs crimsonflower420/Kanji-Morphology checked out:
 # python3 tools/kanji_heights.py --kanji-repo /path/to/Kanji-Morphology
 python3 tools/depth_compare.py
+python3 tools/quadrat_word_align.py   # add --fetch to rebuild its inputs
 python3 tools/build_pages.py
 WRANGLER_CACHE_DIR=/tmp/wrangler-cache npx wrangler pages deploy site --project-name hieroglyph-operators --branch main --commit-hash "$(git rev-parse HEAD)"
 ```
@@ -40,7 +42,8 @@ WRANGLER_CACHE_DIR=/tmp/wrangler-cache npx wrangler pages deploy site --project-
 ## Licences
 
 - Code and the site's own text: CC BY-SA 4.0 for text, MIT for code, unless a file says otherwise.
-- `data/ea581-lines.json` comes from HieroJax and stays under GPL-3.0.
+- `data/ea581-lines.json` and `data/ea162-lines.json` come from HieroJax and stay under GPL-3.0.
+- `data/ea581-tla-words.json` and `data/ea162-tla-words.json` are extracts of Thesaurus Linguae Aegyptiae texts via AES (S. D. Schweitzer) and stay under CC BY-SA 4.0.
 - `site/fonts/`: Noto Sans Egyptian Hieroglyphs v2.002, SIL OFL 1.1 (see `site/fonts/OFL.txt`).
 - Kanji numbers come from Kanji in Order (KanjiVG, CC BY-SA 3.0).
 

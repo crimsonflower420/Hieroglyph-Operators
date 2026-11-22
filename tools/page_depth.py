@@ -120,12 +120,12 @@ def pages(bi):
 <li>{bi("高さは木の形の数であり、読みやすさや書く人の頭の中の手順については何も言わない。", "Height is a number about tree shape; it says nothing about legibility or about any procedure in the writer's mind.")}</li>
 </ul>
 <div class="flag spec">{bi(
- "<strong>並行関係（Grant の承認待ち）。</strong>漢字では配置の深さが集まる単位が「字」であり、ここで測ったヒエログリフの例では機能の深さが集まる単位が「語」（いくつかの方形の列）である、と書ける。どちらも文字の層についての記述であり、統語の主張ではない。",
+ "<strong>並行関係（グラントの承認待ち）。</strong>漢字では配置の深さが集まる単位が「字」であり、ここで測ったヒエログリフの例では機能の深さが集まる単位が「語」（いくつかの方形の列）である、と書ける。どちらも文字の層についての記述であり、統語の主張ではない。",
  "<strong>Parallel (for Grant to approve).</strong> One could write it this way: in kanji the unit that collects layout depth is the character, while in the hieroglyphic cases measured here the unit that collects function depth is the word (a row of several quadrats). Both describe the writing layer; neither is a syntactic claim.")}</div>
 
 <h2>{bi("未決の問い", "Open questions")}</h2>
 <ul>
-<li>{bi("OPEN：EA 581 の語ごとの層 B。語の区切りのある公開の転写（TLA など）と方形の符号化を突き合わせる必要がある。", "OPEN: layer B word by word for EA 581. It needs a published transcription with word division (such as the TLA) aligned with the quadrat encoding.")}</li>
+<li>{bi("OPEN：EA 581 の語ごとの層 B。TLA の語の区切りと方形の符号化の突き合わせはできた（<a href=\"boundaries\">方形の境目と語の境目</a>）。層 B はまだ書いていない。", "OPEN: layer B word by word for EA 581. The TLA word division is now aligned with the quadrat encoding (<a href=\"boundaries\">Quadrat and word boundaries</a>); layer B is not yet written.")}</li>
 <li>{bi("OPEN：漢字の機能の木（意符・音符）の高さ。KanjiVG の部首や音符の属性から木を作れるかは未確認。", "OPEN: the height of a kanji function tree (semantic and phonetic components). Whether one can be built from KanjiVG's radical and phonetic attributes is not yet checked.")}</li>
 </ul>
 '''
