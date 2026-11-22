@@ -1,0 +1,10384 @@
+{
+ "method": "1. Each TLA sentence element (\"token\") carries its line (lineCount) and, where the editors\n     encoded it, its signs: Unicode (hiero_unicode) or Gardiner codes (hiero). Codes without a\n     Unicode sign (TLA/JSesh extensions such as US248Y1VARB) become a wildcard sign.\n  2. Line by line, the token signs are aligned to the signs of Nederhof's quadrats by edit distance\n     (match 0, wildcard 0.5, substitution 1, gap 1). Every Nederhof sign receives the token whose\n     sign it matched or replaced. A Nederhof sign left over between two signs of the same token is\n     given to that token; any other leftover sign stays unassigned (OPEN).\n  3. A quadrat (a group with an operator node) is INSIDE if all its signs belong to one token,\n     ACROSS if they belong to two or more, OPEN if any sign is unassigned and the rest do not\n     already show two tokens. Lone signs are counted separately.\n  4. The same counts are repeated with \"words\" = a token plus any following suffix pronoun\n     (tokens whose transliteration begins with \"=\"), because the TLA writes suffix pronouns as\n     separate elements.",
+ "note": "A count is not a rule. The alignment is not an edition.",
+ "texts": [
+  {
+   "key": "ea581",
+   "label": "BM EA 581 (Intef son of Senet)",
+   "sources": {
+    "quadrats": {
+     "object": "Stela of Intef son of Senet, British Museum EA 581 (limestone; Abydos; early 12th Dynasty, reign of Senusret I)",
+     "encoding": "Mark-Jan Nederhof, HieroJax text page 'British Museum EA581', https://nederhof.github.io/hierojax/texts/BritishMuseumEA581.html (fetched 2026-11-21); HieroJax repository is GPL-3.0",
+     "direction": "Line direction from the same editor's RES encoding in the St Andrews corpus (PhilologEg 0.5.14, corpus/resources/IntefSonSenetHi.xml, created 2016-08-04, modified 2017-01-19): hrl = horizontal right-to-left, vrl = vertical right-to-left. Transcribed from a British Museum photograph, with Sethe (1928), Aegyptische Lesestuecke, pp. 80-81.",
+     "note": "Encoding of relative positions is the editor's; it is not a facsimile."
+    },
+    "words": {
+     "text": "Thesaurus Linguae Aegyptiae text 5D5ST6HPRRG4FEQKZZEWHNX36E (BM EA 581 (Intef son of Senet)); TLA editor field (owner): \"Renata & Peter Landgrafova & Dils\"; corpus \"sawlit\"; date \"MK & SIP\".",
+     "tla": "https://tla.digital/text/5D5ST6HPRRG4FEQKZZEWHNX36E",
+     "via": "AES - Ancient Egyptian Sentences, S. D. Schweitzer, converted from the TLA database excerpt of January 2018 (urn:nbn:de:kobv:b4-opus4-29190).",
+     "file": "https://raw.githubusercontent.com/simondschweitzer/aes/35276d2527cca1a055e31ed5f6683e777717170f/files/aes/_aes_sawlit.json",
+     "sha256": "b3d5eb695584be976b9981392eb4e149d13f447f677cf445b5a954898bc82ef4",
+     "licence": "CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/). This extract keeps that licence."
+    }
+   },
+   "coverage": {
+    "linesMappedAndBestMatch": 27,
+    "lines": 27,
+    "tlaSentences": 23,
+    "tlaTokens": 277,
+    "words": 252,
+    "tokenSignSource": {
+     "unicode": 225,
+     "gardiner": 49,
+     "none": 2,
+     "inventory": 1
+    },
+    "tokensWithoutSigns": [
+     "=(j)",
+     "=(j)"
+    ],
+    "nederhofSigns": 697,
+    "tlaSigns": 683,
+    "exact": 582,
+    "wildcard": 55,
+    "substituted": 43,
+    "nederhofOnly": 17,
+    "nederhofOnlyUnassigned": 6,
+    "tlaOnly": 3,
+    "groups": 294,
+    "quadrats": 229
+   },
+   "byToken": {
+    "quadrats": {
+     "across": 67,
+     "acrossExact": 57,
+     "inside": 158,
+     "insideExact": 112,
+     "open": 4
+    },
+    "lone": {
+     "inside": 65
+    },
+    "units": {
+     "total": 277,
+     "written": 275,
+     "noSigns": 2,
+     "dist": {
+      "multiGroup": 77,
+      "oneGroupShared": 90,
+      "oneGroupAlone": 99,
+      "open": 9
+     },
+     "groupsTouched": {
+      "1": 194,
+      "2": 66,
+      "3": 15
+     }
+    },
+    "discontinuous": [
+     "ḥns-jb"
+    ],
+    "quadratsByDirection": {
+     "hrl": {
+      "across": 17,
+      "inside": 38,
+      "open": 1
+     },
+     "vrl": {
+      "inside": 120,
+      "across": 50,
+      "open": 3
+     }
+    },
+    "unplaced": []
+   },
+   "byWord": {
+    "quadrats": {
+     "across": 58,
+     "acrossExact": 49,
+     "inside": 167,
+     "insideExact": 119,
+     "open": 4
+    },
+    "lone": {
+     "inside": 65
+    },
+    "units": {
+     "total": 252,
+     "written": 252,
+     "noSigns": 0,
+     "dist": {
+      "multiGroup": 84,
+      "oneGroupShared": 67,
+      "oneGroupAlone": 92,
+      "open": 9
+     },
+     "groupsTouched": {
+      "1": 164,
+      "2": 73,
+      "3": 14,
+      "4": 1
+     }
+    },
+    "discontinuous": [
+     "ḥns-jb"
+    ],
+    "quadratsByDirection": {
+     "hrl": {
+      "across": 13,
+      "inside": 42,
+      "open": 1
+     },
+     "vrl": {
+      "inside": 125,
+      "across": 45,
+      "open": 3
+     }
+    },
+    "unplaced": []
+   },
+   "acrossPairsByPOS": {
+    "verb + substantive": 7,
+    "preposition + pronoun": 5,
+    "preposition + substantive": 5,
+    "pronoun + verb": 4,
+    "substantive + pronoun": 4,
+    "verb + preposition": 4,
+    "verb + verb": 4,
+    "substantive + adjective": 4,
+    "verb + pronoun": 3,
+    "preposition + verb": 3,
+    "adjective + substantive": 2,
+    "substantive + substantive": 2,
+    "verb + substantive + preposition": 1,
+    "preposition + epitheton_title": 1,
+    "preposition + particle": 1,
+    "particle + substantive": 1,
+    "adjective + verb": 1,
+    "verb + preposition + pronoun": 1,
+    "verb + epitheton_title": 1,
+    "verb + particle + entity_name": 1,
+    "unknown + preposition": 1,
+    "verb + pronoun + preposition + pronoun": 1,
+    "verb + preposition + substantive + pronoun": 1,
+    "substantive + preposition": 1,
+    "substantive + verb": 1,
+    "pronoun + adjective": 1,
+    "pronoun + particle": 1,
+    "pronoun + preposition + pronoun": 1,
+    "verb + adjective": 1,
+    "substantive + preposition + substantive": 1,
+    "preposition + entity_name": 1,
+    "verb + pronoun + preposition": 1
+   },
+   "perLine": [
+    {
+     "line": 1,
+     "tlaLine": "[A1]",
+     "bestMatch": true,
+     "dir": "hrl",
+     "orderDiffers": [],
+     "nederhofSigns": 18,
+     "tlaSigns": 18,
+     "exact": 17,
+     "wildcard": 1,
+     "cost": 0.5,
+     "diffs": []
+    },
+    {
+     "line": 2,
+     "tlaLine": "[A2]",
+     "bestMatch": true,
+     "dir": "hrl",
+     "orderDiffers": [],
+     "nederhofSigns": 29,
+     "tlaSigns": 29,
+     "exact": 27,
+     "wildcard": 0,
+     "cost": 2,
+     "diffs": [
+      {
+       "kind": "sub",
+       "nederhof": "𓊣",
+       "tla": "𓏏",
+       "token": "gr,t"
+      },
+      {
+       "kind": "sub",
+       "nederhof": "𓏏",
+       "tla": "𓊣",
+       "token": "ꜥḥꜥ,t"
+      }
+     ]
+    },
+    {
+     "line": 3,
+     "tlaLine": "[A3]",
+     "bestMatch": true,
+     "dir": "hrl",
+     "orderDiffers": [],
+     "nederhofSigns": 27,
+     "tlaSigns": 28,
+     "exact": 25,
+     "wildcard": 2,
+     "cost": 2.0,
+     "diffs": [
+      {
+       "kind": "tla-only",
+       "tla": "𓈖",
+       "token": "šꜣ(.w).n"
+      }
+     ]
+    },
+    {
+     "line": 4,
+     "tlaLine": "[A4]",
+     "bestMatch": true,
+     "dir": "hrl",
+     "orderDiffers": [],
+     "nederhofSigns": 27,
+     "tlaSigns": 26,
+     "exact": 26,
+     "wildcard": 0,
+     "cost": 1,
+     "diffs": [
+      {
+       "kind": "nederhof-only",
+       "nederhof": "𓈖",
+       "assigned": false
+      }
+     ]
+    },
+    {
+     "line": 5,
+     "tlaLine": "[A5]",
+     "bestMatch": true,
+     "dir": "hrl",
+     "orderDiffers": [],
+     "nederhofSigns": 27,
+     "tlaSigns": 27,
+     "exact": 24,
+     "wildcard": 1,
+     "cost": 2.5,
+     "diffs": [
+      {
+       "kind": "sub",
+       "nederhof": "𔏏",
+       "tla": "𓏥",
+       "token": "bꜣk.t{pl}"
+      },
+      {
+       "kind": "sub",
+       "nederhof": "𓏥",
+       "tla": "𓈖",
+       "token": "n"
+      }
+     ]
+    },
+    {
+     "line": 6,
+     "tlaLine": "[A6]",
+     "bestMatch": true,
+     "dir": "hrl",
+     "orderDiffers": [],
+     "nederhofSigns": 24,
+     "tlaSigns": 24,
+     "exact": 21,
+     "wildcard": 1,
+     "cost": 2.5,
+     "diffs": [
+      {
+       "kind": "sub",
+       "nederhof": "𓇋",
+       "tla": "𓇍",
+       "token": "jy.t"
+      },
+      {
+       "kind": "sub",
+       "nederhof": "𓅂",
+       "tla": "𓅃",
+       "token": "{Ḥr,w}〈ḥr〉"
+      }
+     ]
+    },
+    {
+     "line": 7,
+     "tlaLine": "[A7]",
+     "bestMatch": true,
+     "dir": "hrl",
+     "orderDiffers": [],
+     "nederhofSigns": 35,
+     "tlaSigns": 35,
+     "exact": 31,
+     "wildcard": 1,
+     "cost": 3.5,
+     "diffs": [
+      {
+       "kind": "sub",
+       "nederhof": "𓅜",
+       "tla": "𓐍",
+       "token": "ꜣḫ,pl"
+      },
+      {
+       "kind": "sub",
+       "nederhof": "𓐍",
+       "tla": "𓅜",
+       "token": "ꜣḫ,pl"
+      },
+      {
+       "kind": "sub",
+       "nederhof": "𓏨",
+       "tla": "𓏦",
+       "token": "ꜣḫ,pl"
+      }
+     ]
+    },
+    {
+     "line": 8,
+     "tlaLine": "[B1]",
+     "bestMatch": true,
+     "dir": "vrl",
+     "orderDiffers": [],
+     "nederhofSigns": 20,
+     "tlaSigns": 20,
+     "exact": 17,
+     "wildcard": 1,
+     "cost": 2.5,
+     "diffs": [
+      {
+       "kind": "sub",
+       "nederhof": "𓐍",
+       "tla": "𓅓",
+       "token": "ḫm"
+      },
+      {
+       "kind": "sub",
+       "nederhof": "𓅓",
+       "tla": "𓐍",
+       "token": "ḫm"
+      }
+     ]
+    },
+    {
+     "line": 9,
+     "tlaLine": "[B2]",
+     "bestMatch": true,
+     "dir": "vrl",
+     "orderDiffers": [],
+     "nederhofSigns": 27,
+     "tlaSigns": 25,
+     "exact": 21,
+     "wildcard": 3,
+     "cost": 4.5,
+     "diffs": [
+      {
+       "kind": "nederhof-only",
+       "nederhof": "𓏤",
+       "assigned": true
+      },
+      {
+       "kind": "nederhof-only",
+       "nederhof": "𓏤",
+       "assigned": true
+      },
+      {
+       "kind": "sub",
+       "nederhof": "𓏤",
+       "tla": "𓏥",
+       "token": "pri̯.pl"
+      }
+     ]
+    },
+    {
+     "line": 10,
+     "tlaLine": "[B3]",
+     "bestMatch": true,
+     "dir": "vrl",
+     "orderDiffers": [],
+     "nederhofSigns": 28,
+     "tlaSigns": 26,
+     "exact": 20,
+     "wildcard": 3,
+     "cost": 6.5,
+     "diffs": [
+      {
+       "kind": "sub",
+       "nederhof": "𓊤",
+       "tla": "𓌃",
+       "token": "mdwi̯.w"
+      },
+      {
+       "kind": "nederhof-only",
+       "nederhof": "𓏤",
+       "assigned": true
+      },
+      {
+       "kind": "sub",
+       "nederhof": "𓏤",
+       "tla": "𓏥",
+       "token": "s,t.pl"
+      },
+      {
+       "kind": "sub",
+       "nederhof": "𓏤",
+       "tla": "𓏴",
+       "token": "ḏnd"
+      },
+      {
+       "kind": "nederhof-only",
+       "nederhof": "𓏴",
+       "assigned": false
+      }
+     ]
+    },
+    {
+     "line": 11,
+     "tlaLine": "[B4]",
+     "bestMatch": true,
+     "dir": "vrl",
+     "orderDiffers": [],
+     "nederhofSigns": 25,
+     "tlaSigns": 25,
+     "exact": 19,
+     "wildcard": 3,
+     "cost": 4.5,
+     "diffs": [
+      {
+       "kind": "sub",
+       "nederhof": "𓃺",
+       "tla": "𓃹",
+       "token": "wnn.t"
+      },
+      {
+       "kind": "sub",
+       "nederhof": "𓅓",
+       "tla": "𓏏",
+       "token": "wnn.t"
+      },
+      {
+       "kind": "sub",
+       "nederhof": "𓏏",
+       "tla": "𓅓",
+       "token": "m"
+      }
+     ]
+    },
+    {
+     "line": 12,
+     "tlaLine": "[B5]",
+     "bestMatch": true,
+     "dir": "vrl",
+     "orderDiffers": [],
+     "nederhofSigns": 24,
+     "tlaSigns": 24,
+     "exact": 21,
+     "wildcard": 1,
+     "cost": 2.5,
+     "diffs": [
+      {
+       "kind": "sub",
+       "nederhof": "𓂝",
+       "tla": "𓂣",
+       "token": "ꜥn(.w)"
+      },
+      {
+       "kind": "sub",
+       "nederhof": "𓦉",
+       "tla": "𓁿",
+       "token": "rm.w"
+      }
+     ]
+    },
+    {
+     "line": 13,
+     "tlaLine": "[B6]",
+     "bestMatch": true,
+     "dir": "vrl",
+     "orderDiffers": [],
+     "nederhofSigns": 21,
+     "tlaSigns": 20,
+     "exact": 17,
+     "wildcard": 1,
+     "cost": 3.5,
+     "diffs": [
+      {
+       "kind": "nederhof-only",
+       "nederhof": "𓈖",
+       "assigned": false
+      },
+      {
+       "kind": "sub",
+       "nederhof": "𓅜",
+       "tla": "𓐍",
+       "token": "ꜣḫ,t"
+      },
+      {
+       "kind": "sub",
+       "nederhof": "𓐍",
+       "tla": "𓅜",
+       "token": "ꜣḫ,t"
+      }
+     ]
+    },
+    {
+     "line": 14,
+     "tlaLine": "[B7]",
+     "bestMatch": true,
+     "dir": "vrl",
+     "orderDiffers": [],
+     "nederhofSigns": 26,
+     "tlaSigns": 25,
+     "exact": 22,
+     "wildcard": 2,
+     "cost": 3.0,
+     "diffs": [
+      {
+       "kind": "sub",
+       "nederhof": "𓵔",
+       "tla": "𓆒",
+       "token": "ḏd.⸮t(w)?"
+      },
+      {
+       "kind": "nederhof-only",
+       "nederhof": "𓏏",
+       "assigned": false
+      }
+     ]
+    },
+    {
+     "line": 15,
+     "tlaLine": "[B8]",
+     "bestMatch": true,
+     "dir": "vrl",
+     "orderDiffers": [],
+     "nederhofSigns": 24,
+     "tlaSigns": 22,
+     "exact": 19,
+     "wildcard": 0,
+     "cost": 5,
+     "diffs": [
+      {
+       "kind": "sub",
+       "nederhof": "𓵔",
+       "tla": "𓆒",
+       "token": "ḏf(ꜣ).pl"
+      },
+      {
+       "kind": "nederhof-only",
+       "nederhof": "𓏔",
+       "assigned": true
+      },
+      {
+       "kind": "nederhof-only",
+       "nederhof": "𓏤",
+       "assigned": true
+      },
+      {
+       "kind": "sub",
+       "nederhof": "𓏤",
+       "tla": "𓏒",
+       "token": "ḏf(ꜣ).pl"
+      },
+      {
+       "kind": "sub",
+       "nederhof": "𓏤",
+       "tla": "𓏥",
+       "token": "ḏf(ꜣ).pl"
+      }
+     ]
+    },
+    {
+     "line": 16,
+     "tlaLine": "[B9]",
+     "bestMatch": true,
+     "dir": "vrl",
+     "orderDiffers": [],
+     "nederhofSigns": 25,
+     "tlaSigns": 25,
+     "exact": 22,
+     "wildcard": 2,
+     "cost": 2.0,
+     "diffs": [
+      {
+       "kind": "sub",
+       "nederhof": "𓌴",
+       "tla": "𓌳",
+       "token": "〈j〉mꜣ,t"
+      }
+     ]
+    },
+    {
+     "line": 17,
+     "tlaLine": "[B10]",
+     "bestMatch": true,
+     "dir": "vrl",
+     "orderDiffers": [],
+     "nederhofSigns": 28,
+     "tlaSigns": 25,
+     "exact": 20,
+     "wildcard": 3,
+     "cost": 6.5,
+     "diffs": [
+      {
+       "kind": "sub",
+       "nederhof": "𓅫",
+       "tla": "𓅪",
+       "token": "ḥqr"
+      },
+      {
+       "kind": "nederhof-only",
+       "nederhof": "𔏏",
+       "assigned": true
+      },
+      {
+       "kind": "nederhof-only",
+       "nederhof": "𓏤",
+       "assigned": true
+      },
+      {
+       "kind": "sub",
+       "nederhof": "𓏤",
+       "tla": "𓏥",
+       "token": "jḫ,t.pl"
+      },
+      {
+       "kind": "nederhof-only",
+       "nederhof": "𓈖",
+       "assigned": false
+      }
+     ]
+    },
+    {
+     "line": 18,
+     "tlaLine": "[B11]",
+     "bestMatch": true,
+     "dir": "vrl",
+     "orderDiffers": [],
+     "nederhofSigns": 27,
+     "tlaSigns": 27,
+     "exact": 21,
+     "wildcard": 4,
+     "cost": 4.0,
+     "diffs": [
+      {
+       "kind": "sub",
+       "nederhof": "𓅜",
+       "tla": "𓐍",
+       "token": "ꜣḫ.t(j)"
+      },
+      {
+       "kind": "sub",
+       "nederhof": "𓐍",
+       "tla": "𓅜",
+       "token": "ꜣḫ.t(j)"
+      }
+     ]
+    },
+    {
+     "line": 19,
+     "tlaLine": "[B12]",
+     "bestMatch": true,
+     "dir": "vrl",
+     "orderDiffers": [],
+     "nederhofSigns": 24,
+     "tlaSigns": 24,
+     "exact": 19,
+     "wildcard": 2,
+     "cost": 4.0,
+     "diffs": [
+      {
+       "kind": "sub",
+       "nederhof": "𓵔",
+       "tla": "𓆓",
+       "token": "ḏd.t"
+      },
+      {
+       "kind": "sub",
+       "nederhof": "𓄿",
+       "tla": "𓐍",
+       "token": "ḫꜣ"
+      },
+      {
+       "kind": "sub",
+       "nederhof": "𓐍",
+       "tla": "𓄿",
+       "token": "ḫꜣ"
+      }
+     ]
+    },
+    {
+     "line": 20,
+     "tlaLine": "[B13]",
+     "bestMatch": true,
+     "dir": "vrl",
+     "orderDiffers": [],
+     "nederhofSigns": 24,
+     "tlaSigns": 24,
+     "exact": 19,
+     "wildcard": 5,
+     "cost": 2.5,
+     "diffs": []
+    },
+    {
+     "line": 21,
+     "tlaLine": "[B14]",
+     "bestMatch": true,
+     "dir": "vrl",
+     "orderDiffers": [],
+     "nederhofSigns": 28,
+     "tlaSigns": 26,
+     "exact": 24,
+     "wildcard": 1,
+     "cost": 3.5,
+     "diffs": [
+      {
+       "kind": "nederhof-only",
+       "nederhof": "𓏤",
+       "assigned": true
+      },
+      {
+       "kind": "nederhof-only",
+       "nederhof": "𓏤",
+       "assigned": true
+      },
+      {
+       "kind": "sub",
+       "nederhof": "𓏤",
+       "tla": "𓏥",
+       "token": "zp.pl"
+      }
+     ]
+    },
+    {
+     "line": 22,
+     "tlaLine": "[B15]",
+     "bestMatch": true,
+     "dir": "vrl",
+     "orderDiffers": [],
+     "nederhofSigns": 23,
+     "tlaSigns": 23,
+     "exact": 21,
+     "wildcard": 0,
+     "cost": 2,
+     "diffs": [
+      {
+       "kind": "sub",
+       "nederhof": "𓄿",
+       "tla": "𓐍",
+       "token": "ḫꜣ.pl"
+      },
+      {
+       "kind": "sub",
+       "nederhof": "𓐍",
+       "tla": "𓄿",
+       "token": "ḫꜣ.pl"
+      }
+     ]
+    },
+    {
+     "line": 23,
+     "tlaLine": "[B16]",
+     "bestMatch": true,
+     "dir": "vrl",
+     "orderDiffers": [],
+     "nederhofSigns": 27,
+     "tlaSigns": 26,
+     "exact": 22,
+     "wildcard": 4,
+     "cost": 3.0,
+     "diffs": [
+      {
+       "kind": "nederhof-only",
+       "nederhof": "𓁶",
+       "assigned": false
+      }
+     ]
+    },
+    {
+     "line": 24,
+     "tlaLine": "[B17]",
+     "bestMatch": true,
+     "dir": "vrl",
+     "orderDiffers": [],
+     "nederhofSigns": 23,
+     "tlaSigns": 23,
+     "exact": 20,
+     "wildcard": 3,
+     "cost": 1.5,
+     "diffs": []
+    },
+    {
+     "line": 25,
+     "tlaLine": "[B18]",
+     "bestMatch": true,
+     "dir": "vrl",
+     "orderDiffers": [],
+     "nederhofSigns": 28,
+     "tlaSigns": 28,
+     "exact": 23,
+     "wildcard": 4,
+     "cost": 3.0,
+     "diffs": [
+      {
+       "kind": "sub",
+       "nederhof": "𔌏",
+       "tla": "𓐥",
+       "token": "mḏd"
+      }
+     ]
+    },
+    {
+     "line": 26,
+     "tlaLine": "[B19]",
+     "bestMatch": true,
+     "dir": "vrl",
+     "orderDiffers": [],
+     "nederhofSigns": 30,
+     "tlaSigns": 30,
+     "exact": 22,
+     "wildcard": 5,
+     "cost": 5.5,
+     "diffs": [
+      {
+       "kind": "sub",
+       "nederhof": "𓂠",
+       "tla": "𓂞",
+       "token": "ḏi̯〈.t〉"
+      },
+      {
+       "kind": "sub",
+       "nederhof": "𓅓",
+       "tla": "𓏌",
+       "token": "nḏ"
+      },
+      {
+       "kind": "sub",
+       "nederhof": "𓏌",
+       "tla": "𓅓",
+       "token": "m-ꜥ"
+      }
+     ]
+    },
+    {
+     "line": 27,
+     "tlaLine": "[B20]",
+     "bestMatch": true,
+     "dir": "vrl",
+     "orderDiffers": [
+      "s,t.pl"
+     ],
+     "nederhofSigns": 28,
+     "tlaSigns": 28,
+     "exact": 22,
+     "wildcard": 2,
+     "cost": 7.0,
+     "diffs": [
+      {
+       "kind": "sub",
+       "nederhof": "𓄿",
+       "tla": "𓐍",
+       "token": "ḫꜣ"
+      },
+      {
+       "kind": "sub",
+       "nederhof": "𓐍",
+       "tla": "𓄿",
+       "token": "ḫꜣ"
+      },
+      {
+       "kind": "tla-only",
+       "tla": "𓊨",
+       "token": "s,t.pl"
+      },
+      {
+       "kind": "tla-only",
+       "tla": "𓏪",
+       "token": "s,t.pl"
+      },
+      {
+       "kind": "nederhof-only",
+       "nederhof": "𓊨",
+       "assigned": true
+      },
+      {
+       "kind": "nederhof-only",
+       "nederhof": "𓏪",
+       "assigned": true
+      }
+     ]
+    }
+   ],
+   "quadratRows": [
+    {
+     "line": 1,
+     "pos": 2,
+     "u": "𓈖𓐰𓂉𓐰𓇿𓐰𓈖",
+     "class": "across",
+     "units": [
+      0,
+      1,
+      2
+     ],
+     "open": 0,
+     "tokens": [
+      "sn",
+      "tꜣ",
+      "n"
+     ]
+    },
+    {
+     "line": 1,
+     "pos": 4,
+     "u": "𓈖𓐰𓏏𓐱𓋀",
+     "class": "inside",
+     "units": [
+      3
+     ],
+     "open": 0,
+     "tokens": [
+      "Ḫnt,j-jmn,tjw"
+     ]
+    },
+    {
+     "line": 1,
+     "pos": 6,
+     "u": "𓌴𓐰𓁹",
+     "class": "inside",
+     "units": [
+      4
+     ],
+     "open": 0,
+     "tokens": [
+      "mꜣꜣ"
+     ]
+    },
+    {
+     "line": 1,
+     "pos": 10,
+     "u": "𓄋𓐰𓈐",
+     "class": "inside",
+     "units": [
+      6
+     ],
+     "open": 0,
+     "tokens": [
+      "Wp-wꜣ,(w)t"
+     ]
+    },
+    {
+     "line": 2,
+     "pos": 2,
+     "u": "𓈖𓐰𓄓𓐻𓏤",
+     "class": "across",
+     "units": [
+      7,
+      8
+     ],
+     "open": 0,
+     "tokens": [
+      "jn",
+      "jm,j-rʾ-ꜥ-ẖn,wtj"
+     ]
+    },
+    {
+     "line": 2,
+     "pos": 3,
+     "u": "𓂣𓐰𓄚",
+     "class": "inside",
+     "units": [
+      8
+     ],
+     "open": 0,
+     "tokens": [
+      "jm,j-rʾ-ꜥ-ẖn,wtj"
+     ]
+    },
+    {
+     "line": 2,
+     "pos": 4,
+     "u": "𓏌𓐰𓏏𓐰𓏭",
+     "class": "inside",
+     "units": [
+      8
+     ],
+     "open": 0,
+     "tokens": [
+      "jm,j-rʾ-ꜥ-ẖn,wtj"
+     ]
+    },
+    {
+     "line": 2,
+     "pos": 6,
+     "u": "𓈖𓐰𓏏𓐰𓆑",
+     "class": "inside",
+     "units": [
+      9
+     ],
+     "open": 0,
+     "tokens": [
+      "Jni̯-jt≡f"
+     ]
+    },
+    {
+     "line": 2,
+     "pos": 7,
+     "u": "𓆓𓐳𓂧𓐰𓆑",
+     "class": "across",
+     "units": [
+      10,
+      11
+     ],
+     "open": 0,
+     "tokens": [
+      "ḏd",
+      "=f"
+     ]
+    },
+    {
+     "line": 2,
+     "pos": 9,
+     "u": "𓂋𓐰𓎼𓐰𓂋",
+     "class": "across",
+     "units": [
+      12,
+      13
+     ],
+     "open": 0,
+     "tokens": [
+      "jr",
+      "gr,t"
+     ]
+    },
+    {
+     "line": 2,
+     "pos": 10,
+     "u": "𓊣𓐲𓏏",
+     "class": "across",
+     "units": [
+      13,
+      14
+     ],
+     "open": 0,
+     "tokens": [
+      "gr,t",
+      "ꜥḥꜥ,t"
+     ]
+    },
+    {
+     "line": 2,
+     "pos": 11,
+     "u": "𓏏𓐰𓉐",
+     "class": "inside",
+     "units": [
+      14
+     ],
+     "open": 0,
+     "tokens": [
+      "ꜥḥꜥ,t"
+     ]
+    },
+    {
+     "line": 2,
+     "pos": 12,
+     "u": "𓍿𓐰𓈖𓐰𓁹",
+     "class": "across",
+     "units": [
+      15,
+      16
+     ],
+     "open": 0,
+     "tokens": [
+      "ṯn",
+      "jri̯.n"
+     ]
+    },
+    {
+     "line": 2,
+     "pos": 13,
+     "u": "𓈖𓐰𓀀",
+     "class": "across",
+     "units": [
+      16,
+      17
+     ],
+     "open": 0,
+     "tokens": [
+      "jri̯.n",
+      "=j"
+     ]
+    },
+    {
+     "line": 3,
+     "pos": 2,
+     "u": "𓊃𓐰𓏏𓐰𓈉",
+     "class": "inside",
+     "units": [
+      19
+     ],
+     "open": 0,
+     "tokens": [
+      "z(my),t"
+     ]
+    },
+    {
+     "line": 3,
+     "pos": 3,
+     "u": "𓈖𓐰𓏏",
+     "class": "inside",
+     "units": [
+      20
+     ],
+     "open": 0,
+     "tokens": [
+      "n.t"
+     ]
+    },
+    {
+     "line": 3,
+     "pos": 4,
+     "u": "𓍋𓐱𓃀",
+     "class": "inside",
+     "units": [
+      21
+     ],
+     "open": 0,
+     "tokens": [
+      "Ꜣbḏ,w"
+     ]
+    },
+    {
+     "line": 3,
+     "pos": 5,
+     "u": "𓈋𓐰𓊖",
+     "class": "inside",
+     "units": [
+      21
+     ],
+     "open": 0,
+     "tokens": [
+      "Ꜣbḏ,w"
+     ]
+    },
+    {
+     "line": 3,
+     "pos": 6,
+     "u": "𓈀𓐰𓏤𓐱𓈇𓐰𓊪𓐰𓈖",
+     "class": "across",
+     "units": [
+      22,
+      23
+     ],
+     "open": 0,
+     "tokens": [
+      "jw",
+      "pn"
+     ]
+    },
+    {
+     "line": 3,
+     "pos": 7,
+     "u": "𓈖𓐰𓈎𓐰𓂋𓐰𓂢",
+     "class": "across",
+     "units": [
+      24,
+      25
+     ],
+     "open": 0,
+     "tokens": [
+      "n(,j)",
+      "q(ꜣ)ri̯"
+     ]
+    },
+    {
+     "line": 3,
+     "pos": 9,
+     "u": "𓂋𓐰𓆑",
+     "class": "across",
+     "units": [
+      26,
+      27
+     ],
+     "open": 0,
+     "tokens": [
+      "jr",
+      "=f"
+     ]
+    },
+    {
+     "line": 3,
+     "pos": 10,
+     "u": "𓊅𓐱𓏪",
+     "class": "inside",
+     "units": [
+      28
+     ],
+     "open": 0,
+     "tokens": [
+      "jnb.pl"
+     ]
+    },
+    {
+     "line": 3,
+     "pos": 11,
+     "u": "𓸭𓐰𓄿",
+     "class": "inside",
+     "units": [
+      29
+     ],
+     "open": 0,
+     "tokens": [
+      "šꜣ(.w).n"
+     ]
+    },
+    {
+     "line": 4,
+     "pos": 1,
+     "u": "𓈖𓐰𓎟𓐰𓏤𓐱𓂋",
+     "class": "open",
+     "units": [
+      30
+     ],
+     "open": 1,
+     "tokens": [
+      "Nb-r-ḏr"
+     ]
+    },
+    {
+     "line": 4,
+     "pos": 2,
+     "u": "𓇥𓐰𓂋",
+     "class": "inside",
+     "units": [
+      30
+     ],
+     "open": 0,
+     "tokens": [
+      "Nb-r-ḏr"
+     ]
+    },
+    {
+     "line": 4,
+     "pos": 4,
+     "u": "𓏏𓐰𓉐",
+     "class": "inside",
+     "units": [
+      31
+     ],
+     "open": 0,
+     "tokens": [
+      "s,t"
+     ]
+    },
+    {
+     "line": 4,
+     "pos": 5,
+     "u": "𓅜𓐴𓐍𓐵𓏏",
+     "class": "inside",
+     "units": [
+      32
+     ],
+     "open": 0,
+     "tokens": [
+      "ꜣḫ.t"
+     ]
+    },
+    {
+     "line": 4,
+     "pos": 6,
+     "u": "𓇥𓐰𓂋",
+     "class": "inside",
+     "units": [
+      33
+     ],
+     "open": 0,
+     "tokens": [
+      "ḏr"
+     ]
+    },
+    {
+     "line": 4,
+     "pos": 7,
+     "u": "𓂋𓐰𓎡𓐰𓇳",
+     "class": "inside",
+     "units": [
+      34
+     ],
+     "open": 0,
+     "tokens": [
+      "rk"
+     ]
+    },
+    {
+     "line": 4,
+     "pos": 8,
+     "u": "𓁹𓐰𓊨𓐱𓀭",
+     "class": "inside",
+     "units": [
+      35
+     ],
+     "open": 0,
+     "tokens": [
+      "Wsjr"
+     ]
+    },
+    {
+     "line": 4,
+     "pos": 9,
+     "u": "𓎼𓐰𓂋𓐰𓏏",
+     "class": "inside",
+     "units": [
+      36
+     ],
+     "open": 0,
+     "tokens": [
+      "grg{t}.t.n"
+     ]
+    },
+    {
+     "line": 4,
+     "pos": 11,
+     "u": "𓏏𓐰𓈖",
+     "class": "inside",
+     "units": [
+      36
+     ],
+     "open": 0,
+     "tokens": [
+      "grg{t}.t.n"
+     ]
+    },
+    {
+     "line": 5,
+     "pos": 1,
+     "u": "𓈖𓐰𓏏𓐰𓆑",
+     "class": "across",
+     "units": [
+      38,
+      39
+     ],
+     "open": 0,
+     "tokens": [
+      "n",
+      "jt.pl"
+     ]
+    },
+    {
+     "line": 5,
+     "pos": 4,
+     "u": "𓅡𓐰𓎡",
+     "class": "inside",
+     "units": [
+      40
+     ],
+     "open": 0,
+     "tokens": [
+      "bꜣk.t{pl}"
+     ]
+    },
+    {
+     "line": 5,
+     "pos": 5,
+     "u": "𓏏𓐱𓈖𓐰𓐷𔏏𓐰𓏥𓐸𓐱𓋴",
+     "class": "across",
+     "units": [
+      40,
+      41,
+      42
+     ],
+     "open": 0,
+     "tokens": [
+      "bꜣk.t{pl}",
+      "n",
+      "=s"
+     ]
+    },
+    {
+     "line": 5,
+     "pos": 6,
+     "u": "𓇼𓐰𓏥",
+     "class": "inside",
+     "units": [
+      43
+     ],
+     "open": 0,
+     "tokens": [
+      "sbꜣ.pl"
+     ]
+    },
+    {
+     "line": 5,
+     "pos": 8,
+     "u": "𓇯𓐰𓏏𓐰𓏤",
+     "class": "inside",
+     "units": [
+      45
+     ],
+     "open": 0,
+     "tokens": [
+      "p,t"
+     ]
+    },
+    {
+     "line": 5,
+     "pos": 10,
+     "u": "𓈖𓐰𓏌𓐰𓏏",
+     "class": "inside",
+     "units": [
+      46
+     ],
+     "open": 0,
+     "tokens": [
+      "ḥn,wt"
+     ]
+    },
+    {
+     "line": 5,
+     "pos": 12,
+     "u": "𓈖𓐰𓐷𓏏𓐰𓇶𓐸𓐱𓏨",
+     "class": "across",
+     "units": [
+      47,
+      48
+     ],
+     "open": 0,
+     "tokens": [
+      "n.t",
+      "ḥnmm,t"
+     ]
+    },
+    {
+     "line": 6,
+     "pos": 2,
+     "u": "𓏏𓐰𓂻",
+     "class": "inside",
+     "units": [
+      49
+     ],
+     "open": 0,
+     "tokens": [
+      "jy.t"
+     ]
+    },
+    {
+     "line": 6,
+     "pos": 3,
+     "u": "𓈖𓐰𓋴",
+     "class": "across",
+     "units": [
+      50,
+      51
+     ],
+     "open": 0,
+     "tokens": [
+      "n",
+      "=s"
+     ]
+    },
+    {
+     "line": 6,
+     "pos": 4,
+     "u": "𓅨𓐴𓂋",
+     "class": "inside",
+     "units": [
+      52
+     ],
+     "open": 0,
+     "tokens": [
+      "wr.pl"
+     ]
+    },
+    {
+     "line": 6,
+     "pos": 10,
+     "u": "𓅱𓐴𓊖𓐵𓏤",
+     "class": "inside",
+     "units": [
+      54
+     ],
+     "open": 0,
+     "tokens": [
+      "Ḏd,w"
+     ]
+    },
+    {
+     "line": 6,
+     "pos": 12,
+     "u": "𓈖𓐰𓐷𓏌𓐰𓏏𓐸𓐱𓏮",
+     "class": "inside",
+     "units": [
+      55
+     ],
+     "open": 0,
+     "tokens": [
+      "sn.nwt"
+     ]
+    },
+    {
+     "line": 6,
+     "pos": 14,
+     "u": "𓏌𓐰𓊖",
+     "class": "inside",
+     "units": [
+      56
+     ],
+     "open": 0,
+     "tokens": [
+      "Jwn,w"
+     ]
+    },
+    {
+     "line": 7,
+     "pos": 1,
+     "u": "𓅜𓐳𓐍",
+     "class": "inside",
+     "units": [
+      58
+     ],
+     "open": 0,
+     "tokens": [
+      "ꜣḫ,pl"
+     ]
+    },
+    {
+     "line": 7,
+     "pos": 2,
+     "u": "𔏏𓐰𓏨",
+     "class": "inside",
+     "units": [
+      58
+     ],
+     "open": 0,
+     "tokens": [
+      "ꜣḫ,pl"
+     ]
+    },
+    {
+     "line": 7,
+     "pos": 3,
+     "u": "𓊵𓐰𓏏𓐱𓊪",
+     "class": "inside",
+     "units": [
+      59
+     ],
+     "open": 0,
+     "tokens": [
+      "ḥtp.n"
+     ]
+    },
+    {
+     "line": 7,
+     "pos": 4,
+     "u": "𓈖𓐰𓎟𓐰𓏤",
+     "class": "across",
+     "units": [
+      59,
+      60
+     ],
+     "open": 0,
+     "tokens": [
+      "ḥtp.n",
+      "Nb-(r)-ḏr"
+     ]
+    },
+    {
+     "line": 7,
+     "pos": 5,
+     "u": "𓇥𓐰𓂋",
+     "class": "inside",
+     "units": [
+      60
+     ],
+     "open": 0,
+     "tokens": [
+      "Nb-(r)-ḏr"
+     ]
+    },
+    {
+     "line": 7,
+     "pos": 7,
+     "u": "𓁷𓐰𓂋",
+     "class": "inside",
+     "units": [
+      61
+     ],
+     "open": 0,
+     "tokens": [
+      "ḥr"
+     ]
+    },
+    {
+     "line": 7,
+     "pos": 10,
+     "u": "𓈖𓐰𓄪𓐻𓏤",
+     "class": "across",
+     "units": [
+      64,
+      65
+     ],
+     "open": 0,
+     "tokens": [
+      "n",
+      "jmꜣḫ(,w)"
+     ]
+    },
+    {
+     "line": 7,
+     "pos": 11,
+     "u": "𓄓𓐻𓐷𓂣𓐰𓐍𓐱𓏌𓐸",
+     "class": "inside",
+     "units": [
+      66
+     ],
+     "open": 0,
+     "tokens": [
+      "jm,j-rʾ-ꜥ-ẖn,wtj"
+     ]
+    },
+    {
+     "line": 7,
+     "pos": 12,
+     "u": "𓏏𓐰𓏰𓐰𓏰",
+     "class": "inside",
+     "units": [
+      66
+     ],
+     "open": 0,
+     "tokens": [
+      "jm,j-rʾ-ꜥ-ẖn,wtj"
+     ]
+    },
+    {
+     "line": 7,
+     "pos": 14,
+     "u": "𓏏𓐰𓆑",
+     "class": "inside",
+     "units": [
+      67
+     ],
+     "open": 0,
+     "tokens": [
+      "Jni̯-jt≡f"
+     ]
+    },
+    {
+     "line": 7,
+     "pos": 15,
+     "u": "𓁹𓐰𓈖𓐰𓊃𓐰𓈖𓐰𓏏",
+     "class": "across",
+     "units": [
+      68,
+      69,
+      70
+     ],
+     "open": 0,
+     "tokens": [
+      "jri̯(.w)",
+      "n",
+      "Zn,t"
+     ]
+    },
+    {
+     "line": 8,
+     "pos": 1,
+     "u": "𓏌𓐰𓎡",
+     "class": "inside",
+     "units": [
+      71
+     ],
+     "open": 0,
+     "tokens": [
+      "jnk"
+     ]
+    },
+    {
+     "line": 8,
+     "pos": 2,
+     "u": "𓎼𓐰𓂋",
+     "class": "inside",
+     "units": [
+      72
+     ],
+     "open": 0,
+     "tokens": [
+      "gr"
+     ]
+    },
+    {
+     "line": 8,
+     "pos": 3,
+     "u": "𔏏𓑀𓐰𓈖",
+     "class": "across",
+     "units": [
+      72,
+      73
+     ],
+     "open": 0,
+     "tokens": [
+      "gr",
+      "n"
+     ]
+    },
+    {
+     "line": 8,
+     "pos": 5,
+     "u": "𓏴𓐰𓈖𓐰𓈖",
+     "class": "across",
+     "units": [
+      75,
+      76
+     ],
+     "open": 0,
+     "tokens": [
+      "šbn",
+      "n"
+     ]
+    },
+    {
+     "line": 8,
+     "pos": 10,
+     "u": "𓌻𓐰𓏏",
+     "class": "inside",
+     "units": [
+      78
+     ],
+     "open": 0,
+     "tokens": [
+      "n-mrw,t"
+     ]
+    },
+    {
+     "line": 8,
+     "pos": 11,
+     "u": "𓍚𓐱𓄿",
+     "class": "across",
+     "units": [
+      79,
+      80
+     ],
+     "open": 0,
+     "tokens": [
+      "ḫsf",
+      "ꜣd"
+     ]
+    },
+    {
+     "line": 8,
+     "pos": 12,
+     "u": "𓂧𓐰𓆌",
+     "class": "inside",
+     "units": [
+      80
+     ],
+     "open": 0,
+     "tokens": [
+      "ꜣd"
+     ]
+    },
+    {
+     "line": 9,
+     "pos": 1,
+     "u": "𓏌𓐰𓎡𓐰𓈎",
+     "class": "across",
+     "units": [
+      81,
+      82
+     ],
+     "open": 0,
+     "tokens": [
+      "jnk",
+      "qb"
+     ]
+    },
+    {
+     "line": 9,
+     "pos": 2,
+     "u": "𓃀𓐱𓏁",
+     "class": "inside",
+     "units": [
+      82
+     ],
+     "open": 0,
+     "tokens": [
+      "qb"
+     ]
+    },
+    {
+     "line": 9,
+     "pos": 3,
+     "u": "𓆄𓐱𓅱",
+     "class": "inside",
+     "units": [
+      83
+     ],
+     "open": 0,
+     "tokens": [
+      "šw"
+     ]
+    },
+    {
+     "line": 9,
+     "pos": 5,
+     "u": "𓐷𓐍𓐰𓐍𓐸𓐱𓆼",
+     "class": "inside",
+     "units": [
+      85
+     ],
+     "open": 0,
+     "tokens": [
+      "ḫ(ꜣ)ḫ"
+     ]
+    },
+    {
+     "line": 9,
+     "pos": 6,
+     "u": "𓂻𓐱𓁷",
+     "class": "across",
+     "units": [
+      85,
+      86
+     ],
+     "open": 0,
+     "tokens": [
+      "ḫ(ꜣ)ḫ",
+      "ḥr"
+     ]
+    },
+    {
+     "line": 9,
+     "pos": 7,
+     "u": "𓂋𓐰𓐍𓐰𔏏",
+     "class": "inside",
+     "units": [
+      87
+     ],
+     "open": 0,
+     "tokens": [
+      "rḫ"
+     ]
+    },
+    {
+     "line": 9,
+     "pos": 8,
+     "u": "𓉐𓐰𓂻𓐱𓏤𓐱𓏤𓐱𓏤",
+     "class": "inside",
+     "units": [
+      88
+     ],
+     "open": 0,
+     "tokens": [
+      "pri̯.pl"
+     ]
+    },
+    {
+     "line": 9,
+     "pos": 10,
+     "u": "𓂸𓐰𓇍𓐱𓇋𓐱𓇋𓐱𓏏",
+     "class": "across",
+     "units": [
+      89,
+      90
+     ],
+     "open": 0,
+     "tokens": [
+      "ḫmt",
+      "jy.t"
+     ]
+    },
+    {
+     "line": 10,
+     "pos": 1,
+     "u": "𓏌𓐰𓎡",
+     "class": "inside",
+     "units": [
+      91
+     ],
+     "open": 0,
+     "tokens": [
+      "jnk"
+     ]
+    },
+    {
+     "line": 10,
+     "pos": 2,
+     "u": "𓊤𓐱𓐷𓂧𓐰𓅱𓐸",
+     "class": "inside",
+     "units": [
+      92
+     ],
+     "open": 0,
+     "tokens": [
+      "mdwi̯.w"
+     ]
+    },
+    {
+     "line": 10,
+     "pos": 3,
+     "u": "𓅱𓐰𔏏𓑀",
+     "class": "inside",
+     "units": [
+      92
+     ],
+     "open": 0,
+     "tokens": [
+      "mdwi̯.w"
+     ]
+    },
+    {
+     "line": 10,
+     "pos": 5,
+     "u": "𓊨𓐱𓐷𓏏𓐰𓉐𓐰𓏤𓐱𓏤𓐱𓏤𓐸",
+     "class": "across",
+     "units": [
+      94,
+      95
+     ],
+     "open": 0,
+     "tokens": [
+      "s,t.pl",
+      "ḏnd"
+     ]
+    },
+    {
+     "line": 10,
+     "pos": 6,
+     "u": "𓃓𓐳𓏴",
+     "class": "open",
+     "units": [
+      95
+     ],
+     "open": 1,
+     "tokens": [
+      "ḏnd"
+     ]
+    },
+    {
+     "line": 10,
+     "pos": 7,
+     "u": "𓂋𓐰𓐍𓐰𔏏",
+     "class": "inside",
+     "units": [
+      96
+     ],
+     "open": 0,
+     "tokens": [
+      "rḫ"
+     ]
+    },
+    {
+     "line": 10,
+     "pos": 8,
+     "u": "𓋭𓐰𔏏𓐰𓈖",
+     "class": "across",
+     "units": [
+      97,
+      98
+     ],
+     "open": 0,
+     "tokens": [
+      "ṯꜣz(.pl)",
+      "n(,j)"
+     ]
+    },
+    {
+     "line": 10,
+     "pos": 9,
+     "u": "𓐷𓈎𓐰𓈖𓐰𓂧𓐰𓏏𓐸𓐱𓐷𓁷𓐰𓋴𓐸",
+     "class": "across",
+     "units": [
+      99,
+      100,
+      101,
+      102
+     ],
+     "open": 0,
+     "tokens": [
+      "qnd",
+      "=t(w)",
+      "ḥr",
+      "=s"
+     ]
+    },
+    {
+     "line": 11,
+     "pos": 1,
+     "u": "𓏌𓐰𓎡",
+     "class": "inside",
+     "units": [
+      103
+     ],
+     "open": 0,
+     "tokens": [
+      "jnk"
+     ]
+    },
+    {
+     "line": 11,
+     "pos": 2,
+     "u": "𓋴𓑀𓐱𓐷𓆑𓐰𓈖𓐰𓏌𓐸",
+     "class": "inside",
+     "units": [
+      104
+     ],
+     "open": 0,
+     "tokens": [
+      "sfn(.w)"
+     ]
+    },
+    {
+     "line": 11,
+     "pos": 3,
+     "u": "𔏏𓐰𓄕𓐱𓏤𓐰𔏏𓑀",
+     "class": "across",
+     "units": [
+      104,
+      105
+     ],
+     "open": 0,
+     "tokens": [
+      "sfn(.w)",
+      "sḏm"
+     ]
+    },
+    {
+     "line": 11,
+     "pos": 5,
+     "u": "𓂋𓐰𓈖",
+     "class": "inside",
+     "units": [
+      107
+     ],
+     "open": 0,
+     "tokens": [
+      "rn"
+     ]
+    },
+    {
+     "line": 11,
+     "pos": 7,
+     "u": "𓈖𓐰𓆑𓐰𓂧",
+     "class": "across",
+     "units": [
+      109,
+      110
+     ],
+     "open": 0,
+     "tokens": [
+      "n",
+      "{f}〈ḏ〉d"
+     ]
+    },
+    {
+     "line": 11,
+     "pos": 8,
+     "u": "𓈖𓐰𓃺𓐰𓈖",
+     "class": "across",
+     "units": [
+      111,
+      113
+     ],
+     "open": 0,
+     "tokens": [
+      "n",
+      "wnn.t"
+     ]
+    },
+    {
+     "line": 11,
+     "pos": 9,
+     "u": "𓐷𓈖𓐰𓅓𓐴𓏏𓐸𓐱𓐷𓄣𓐰𓀀𓐸",
+     "class": "across",
+     "units": [
+      113,
+      114,
+      115,
+      116
+     ],
+     "open": 0,
+     "tokens": [
+      "wnn.t",
+      "m",
+      "jb",
+      "={j}〈f〉"
+     ]
+    },
+    {
+     "line": 12,
+     "pos": 1,
+     "u": "𓏌𓐰𓎡",
+     "class": "inside",
+     "units": [
+      117
+     ],
+     "open": 0,
+     "tokens": [
+      "jnk"
+     ]
+    },
+    {
+     "line": 12,
+     "pos": 2,
+     "u": "𓆌𓐰𓅱𓐰𓂝",
+     "class": "across",
+     "units": [
+      118,
+      119
+     ],
+     "open": 0,
+     "tokens": [
+      "sꜣq.w",
+      "ꜥn(.w)"
+     ]
+    },
+    {
+     "line": 12,
+     "pos": 3,
+     "u": "𓈖𓐰𓏌𓐱𓂻",
+     "class": "inside",
+     "units": [
+      119
+     ],
+     "open": 0,
+     "tokens": [
+      "ꜥn(.w)"
+     ]
+    },
+    {
+     "line": 12,
+     "pos": 4,
+     "u": "𓋴𓑀𓐱𓐷𓆑𓐰𓈖𓐰𓏌𓐱𓏤𓐸",
+     "class": "inside",
+     "units": [
+      120
+     ],
+     "open": 0,
+     "tokens": [
+      "sfn.w"
+     ]
+    },
+    {
+     "line": 12,
+     "pos": 5,
+     "u": "𓋴𓑀𓐱𓐷𓎼𓐰𓂋𓐰𓏝𓐸",
+     "class": "inside",
+     "units": [
+      121
+     ],
+     "open": 0,
+     "tokens": [
+      "sgr"
+     ]
+    },
+    {
+     "line": 12,
+     "pos": 9,
+     "u": "𓐷𓐍𓐰𓈖𓐰𔏏𓐸𓐱𓄤",
+     "class": "across",
+     "units": [
+      124,
+      125
+     ],
+     "open": 0,
+     "tokens": [
+      "ḫn",
+      "nfr"
+     ]
+    },
+    {
+     "line": 13,
+     "pos": 1,
+     "u": "𓏌𓐰𓎡",
+     "class": "inside",
+     "units": [
+      126
+     ],
+     "open": 0,
+     "tokens": [
+      "jnk"
+     ]
+    },
+    {
+     "line": 13,
+     "pos": 2,
+     "u": "𓌉𓐱𓁷",
+     "class": "across",
+     "units": [
+      127,
+      128
+     ],
+     "open": 0,
+     "tokens": [
+      "ḥḏ",
+      "ḥr"
+     ]
+    },
+    {
+     "line": 13,
+     "pos": 3,
+     "u": "𓈖𓐰𓈖",
+     "class": "open",
+     "units": [
+      129
+     ],
+     "open": 1,
+     "tokens": [
+      "n"
+     ]
+    },
+    {
+     "line": 13,
+     "pos": 4,
+     "u": "𓏏𓐰𓍯",
+     "class": "inside",
+     "units": [
+      130
+     ],
+     "open": 0,
+     "tokens": [
+      "twꜣ"
+     ]
+    },
+    {
+     "line": 13,
+     "pos": 7,
+     "u": "𓆑𓐰𓁹",
+     "class": "across",
+     "units": [
+      131,
+      132
+     ],
+     "open": 0,
+     "tokens": [
+      "=f",
+      "jri̯"
+     ]
+    },
+    {
+     "line": 13,
+     "pos": 8,
+     "u": "𓅜𓐳𓐍",
+     "class": "inside",
+     "units": [
+      133
+     ],
+     "open": 0,
+     "tokens": [
+      "ꜣḫ,t"
+     ]
+    },
+    {
+     "line": 13,
+     "pos": 9,
+     "u": "𓏏𓐰𔏏𓑀𓐰𓈖",
+     "class": "across",
+     "units": [
+      133,
+      134
+     ],
+     "open": 0,
+     "tokens": [
+      "ꜣḫ,t",
+      "n"
+     ]
+    },
+    {
+     "line": 13,
+     "pos": 10,
+     "u": "𓏇𓐱𓇋𓐱𓀀",
+     "class": "inside",
+     "units": [
+      135
+     ],
+     "open": 0,
+     "tokens": [
+      "mj(,tj)"
+     ]
+    },
+    {
+     "line": 14,
+     "pos": 1,
+     "u": "𓏌𓐰𓎡",
+     "class": "inside",
+     "units": [
+      137
+     ],
+     "open": 0,
+     "tokens": [
+      "jnk"
+     ]
+    },
+    {
+     "line": 14,
+     "pos": 2,
+     "u": "𓂸𓐻𓏏",
+     "class": "inside",
+     "units": [
+      138
+     ],
+     "open": 0,
+     "tokens": [
+      "mtj"
+     ]
+    },
+    {
+     "line": 14,
+     "pos": 3,
+     "u": "𓂭𓐱𓂭𓐱𓅓",
+     "class": "across",
+     "units": [
+      138,
+      139
+     ],
+     "open": 0,
+     "tokens": [
+      "mtj",
+      "m"
+     ]
+    },
+    {
+     "line": 14,
+     "pos": 4,
+     "u": "𓉐𓐱𓏤",
+     "class": "inside",
+     "units": [
+      140
+     ],
+     "open": 0,
+     "tokens": [
+      "pr"
+     ]
+    },
+    {
+     "line": 14,
+     "pos": 5,
+     "u": "𓎟𓐰𓏤𓐰𓆑",
+     "class": "across",
+     "units": [
+      141,
+      142
+     ],
+     "open": 0,
+     "tokens": [
+      "nb",
+      "=f"
+     ]
+    },
+    {
+     "line": 14,
+     "pos": 6,
+     "u": "𓂋𓐰𓐍𓐰𔏏𓑀",
+     "class": "inside",
+     "units": [
+      143
+     ],
+     "open": 0,
+     "tokens": [
+      "rḫ"
+     ]
+    },
+    {
+     "line": 14,
+     "pos": 7,
+     "u": "𓊪𓐰𓄡",
+     "class": "inside",
+     "units": [
+      144
+     ],
+     "open": 0,
+     "tokens": [
+      "pẖr"
+     ]
+    },
+    {
+     "line": 14,
+     "pos": 8,
+     "u": "𓄲𓐰𔏏",
+     "class": "inside",
+     "units": [
+      144
+     ],
+     "open": 0,
+     "tokens": [
+      "pẖr"
+     ]
+    },
+    {
+     "line": 14,
+     "pos": 10,
+     "u": "𓋴𓑀𓐱𓇬",
+     "class": "inside",
+     "units": [
+      146
+     ],
+     "open": 0,
+     "tokens": [
+      "swn"
+     ]
+    },
+    {
+     "line": 14,
+     "pos": 11,
+     "u": "𓈖𓑀𓐰𓵔𓐰𓂧𓐱𓏏",
+     "class": "across",
+     "units": [
+      146,
+      147
+     ],
+     "open": 1,
+     "tokens": [
+      "swn",
+      "ḏd.⸮t(w)?"
+     ]
+    },
+    {
+     "line": 15,
+     "pos": 1,
+     "u": "𓏌𓐰𓎡",
+     "class": "inside",
+     "units": [
+      148
+     ],
+     "open": 0,
+     "tokens": [
+      "jnk"
+     ]
+    },
+    {
+     "line": 15,
+     "pos": 2,
+     "u": "𓌉𓐱𓁷",
+     "class": "across",
+     "units": [
+      149,
+      150
+     ],
+     "open": 0,
+     "tokens": [
+      "ḥḏ",
+      "ḥr"
+     ]
+    },
+    {
+     "line": 15,
+     "pos": 3,
+     "u": "𓄫𓐰𓂝",
+     "class": "inside",
+     "units": [
+      151
+     ],
+     "open": 0,
+     "tokens": [
+      "ꜣw-ḏr,t"
+     ]
+    },
+    {
+     "line": 15,
+     "pos": 4,
+     "u": "𓂧𓐰𓏏𓐱𓏤",
+     "class": "inside",
+     "units": [
+      151
+     ],
+     "open": 0,
+     "tokens": [
+      "ꜣw-ḏr,t"
+     ]
+    },
+    {
+     "line": 15,
+     "pos": 6,
+     "u": "𓵔𓐰𓆑𓐰𓏔𓐰𓏤𓐱𓏤𓐱𓏤",
+     "class": "inside",
+     "units": [
+      153
+     ],
+     "open": 0,
+     "tokens": [
+      "ḏf(ꜣ).pl"
+     ]
+    },
+    {
+     "line": 15,
+     "pos": 7,
+     "u": "𓆄𓐱𓅱",
+     "class": "inside",
+     "units": [
+      154
+     ],
+     "open": 0,
+     "tokens": [
+      "šwi̯"
+     ]
+    },
+    {
+     "line": 15,
+     "pos": 9,
+     "u": "𓎛𓐱𓃀𓐱𓋴𓑀",
+     "class": "inside",
+     "units": [
+      156
+     ],
+     "open": 0,
+     "tokens": [
+      "ḥbs"
+     ]
+    },
+    {
+     "line": 15,
+     "pos": 10,
+     "u": "𓋳𓐱𓁷",
+     "class": "across",
+     "units": [
+      156,
+      157
+     ],
+     "open": 0,
+     "tokens": [
+      "ḥbs",
+      "ḥr"
+     ]
+    },
+    {
+     "line": 16,
+     "pos": 1,
+     "u": "𓏌𓐰𓎡",
+     "class": "inside",
+     "units": [
+      158
+     ],
+     "open": 0,
+     "tokens": [
+      "jnk"
+     ]
+    },
+    {
+     "line": 16,
+     "pos": 2,
+     "u": "𓐍𓐰𓈖",
+     "class": "inside",
+     "units": [
+      159
+     ],
+     "open": 0,
+     "tokens": [
+      "ḫnms"
+     ]
+    },
+    {
+     "line": 16,
+     "pos": 3,
+     "u": "𓌰𓐱𓅓",
+     "class": "inside",
+     "units": [
+      159
+     ],
+     "open": 0,
+     "tokens": [
+      "ḫnms"
+     ]
+    },
+    {
+     "line": 16,
+     "pos": 4,
+     "u": "𓋴𓑀𓐱𓀙",
+     "class": "inside",
+     "units": [
+      159
+     ],
+     "open": 0,
+     "tokens": [
+      "ḫnms"
+     ]
+    },
+    {
+     "line": 16,
+     "pos": 5,
+     "u": "𓈖𓐰𓅪",
+     "class": "across",
+     "units": [
+      160,
+      161
+     ],
+     "open": 0,
+     "tokens": [
+      "n(,j)",
+      "nḏs.pl"
+     ]
+    },
+    {
+     "line": 16,
+     "pos": 6,
+     "u": "𓀀𓐱𓏨",
+     "class": "inside",
+     "units": [
+      161
+     ],
+     "open": 0,
+     "tokens": [
+      "nḏs.pl"
+     ]
+    },
+    {
+     "line": 16,
+     "pos": 7,
+     "u": "𓃀𓐱𓐷𓈖𓐰𓂋𓐰𓏝𓐸",
+     "class": "inside",
+     "units": [
+      162
+     ],
+     "open": 0,
+     "tokens": [
+      "bnr"
+     ]
+    },
+    {
+     "line": 16,
+     "pos": 8,
+     "u": "𓐷𓌴𓐰𓏏𓐸𓐱𓆭",
+     "class": "inside",
+     "units": [
+      163
+     ],
+     "open": 0,
+     "tokens": [
+      "〈j〉mꜣ,t"
+     ]
+    },
+    {
+     "line": 16,
+     "pos": 9,
+     "u": "𓈖𓐰𓂜𓐰𓏏𓐱𓏭",
+     "class": "across",
+     "units": [
+      164,
+      165
+     ],
+     "open": 0,
+     "tokens": [
+      "n",
+      "jw,tj-n≡f"
+     ]
+    },
+    {
+     "line": 16,
+     "pos": 10,
+     "u": "𓈖𓐰𓆑",
+     "class": "inside",
+     "units": [
+      165
+     ],
+     "open": 0,
+     "tokens": [
+      "jw,tj-n≡f"
+     ]
+    },
+    {
+     "line": 17,
+     "pos": 1,
+     "u": "𓏌𓐰𓎡",
+     "class": "inside",
+     "units": [
+      166
+     ],
+     "open": 0,
+     "tokens": [
+      "jnk"
+     ]
+    },
+    {
+     "line": 17,
+     "pos": 2,
+     "u": "𓋴𓑀𓐱𓅓",
+     "class": "inside",
+     "units": [
+      167
+     ],
+     "open": 0,
+     "tokens": [
+      "sm"
+     ]
+    },
+    {
+     "line": 17,
+     "pos": 3,
+     "u": "𓄦𓐰𔏏",
+     "class": "inside",
+     "units": [
+      167
+     ],
+     "open": 0,
+     "tokens": [
+      "sm"
+     ]
+    },
+    {
+     "line": 17,
+     "pos": 4,
+     "u": "𓎛𓐱𓐷𓈎𓐰𓂋𓐰𓅫𓐸",
+     "class": "inside",
+     "units": [
+      168
+     ],
+     "open": 0,
+     "tokens": [
+      "ḥqr"
+     ]
+    },
+    {
+     "line": 17,
+     "pos": 5,
+     "u": "𓂜𓐰𓈖",
+     "class": "inside",
+     "units": [
+      169
+     ],
+     "open": 0,
+     "tokens": [
+      "nn"
+     ]
+    },
+    {
+     "line": 17,
+     "pos": 6,
+     "u": "𓐍𓐱𓏏𓐰𔏏𓑀𓐰𓏤𓐱𓏤𓐱𓏤",
+     "class": "inside",
+     "units": [
+      170
+     ],
+     "open": 0,
+     "tokens": [
+      "jḫ,t.pl"
+     ]
+    },
+    {
+     "line": 17,
+     "pos": 7,
+     "u": "𓆑𓐰𓄫",
+     "class": "across",
+     "units": [
+      171,
+      172
+     ],
+     "open": 0,
+     "tokens": [
+      "=f",
+      "ꜣw-ḏr,t"
+     ]
+    },
+    {
+     "line": 17,
+     "pos": 8,
+     "u": "𓂧𓐰𓏏𓐱𓏤",
+     "class": "inside",
+     "units": [
+      172
+     ],
+     "open": 0,
+     "tokens": [
+      "ꜣw-ḏr,t"
+     ]
+    },
+    {
+     "line": 17,
+     "pos": 9,
+     "u": "𓈖𓐰𓈖",
+     "class": "open",
+     "units": [
+      173
+     ],
+     "open": 1,
+     "tokens": [
+      "n"
+     ]
+    },
+    {
+     "line": 17,
+     "pos": 11,
+     "u": "𓀀𓐱𓏨",
+     "class": "inside",
+     "units": [
+      174
+     ],
+     "open": 0,
+     "tokens": [
+      "nḏs.pl"
+     ]
+    },
+    {
+     "line": 18,
+     "pos": 1,
+     "u": "𓏌𓐰𓎡",
+     "class": "inside",
+     "units": [
+      175
+     ],
+     "open": 0,
+     "tokens": [
+      "jnk"
+     ]
+    },
+    {
+     "line": 18,
+     "pos": 2,
+     "u": "𓂋𓐰𓐍𓐰𔏏𓑀",
+     "class": "inside",
+     "units": [
+      176
+     ],
+     "open": 0,
+     "tokens": [
+      "rḫ"
+     ]
+    },
+    {
+     "line": 18,
+     "pos": 3,
+     "u": "𓈖𓐰𓈖",
+     "class": "across",
+     "units": [
+      177,
+      178
+     ],
+     "open": 0,
+     "tokens": [
+      "n",
+      "n,tj"
+     ]
+    },
+    {
+     "line": 18,
+     "pos": 4,
+     "u": "𓏏𓐱𓏭𓐰𓂜",
+     "class": "across",
+     "units": [
+      178,
+      179
+     ],
+     "open": 0,
+     "tokens": [
+      "n,tj",
+      "n"
+     ]
+    },
+    {
+     "line": 18,
+     "pos": 5,
+     "u": "𓂋𓐰𓐍",
+     "class": "inside",
+     "units": [
+      180
+     ],
+     "open": 0,
+     "tokens": [
+      "rḫ"
+     ]
+    },
+    {
+     "line": 18,
+     "pos": 6,
+     "u": "𔏏𓑀𓐰𓆑",
+     "class": "across",
+     "units": [
+      180,
+      181
+     ],
+     "open": 0,
+     "tokens": [
+      "rḫ",
+      "=f"
+     ]
+    },
+    {
+     "line": 18,
+     "pos": 7,
+     "u": "𓋴𓐱𓃀𓐱𓇼𓐰𔏏𓑀",
+     "class": "inside",
+     "units": [
+      182
+     ],
+     "open": 0,
+     "tokens": [
+      "sbꜣ"
+     ]
+    },
+    {
+     "line": 18,
+     "pos": 8,
+     "u": "𓊃𓐰𓀀𓐱𓏤",
+     "class": "inside",
+     "units": [
+      183
+     ],
+     "open": 0,
+     "tokens": [
+      "z"
+     ]
+    },
+    {
+     "line": 18,
+     "pos": 9,
+     "u": "𓅜𓐳𓐍𓐵𓏏",
+     "class": "inside",
+     "units": [
+      184
+     ],
+     "open": 0,
+     "tokens": [
+      "ꜣḫ.t(j)"
+     ]
+    },
+    {
+     "line": 18,
+     "pos": 10,
+     "u": "𓋴𓐱𓐷𓈖𓐰𓆑𓐸",
+     "class": "across",
+     "units": [
+      185,
+      186,
+      187
+     ],
+     "open": 0,
+     "tokens": [
+      "=s(j)",
+      "n",
+      "=f"
+     ]
+    },
+    {
+     "line": 19,
+     "pos": 1,
+     "u": "𓏌𓐰𓎡",
+     "class": "inside",
+     "units": [
+      188
+     ],
+     "open": 0,
+     "tokens": [
+      "jnk"
+     ]
+    },
+    {
+     "line": 19,
+     "pos": 2,
+     "u": "𓂸𓐻𓏏",
+     "class": "inside",
+     "units": [
+      189
+     ],
+     "open": 0,
+     "tokens": [
+      "mtj"
+     ]
+    },
+    {
+     "line": 19,
+     "pos": 3,
+     "u": "𓂭𓐱𓂭𓐱𔏏︀𓑀𓐰𓈖",
+     "class": "across",
+     "units": [
+      189,
+      190
+     ],
+     "open": 0,
+     "tokens": [
+      "mtj",
+      "n(,j)"
+     ]
+    },
+    {
+     "line": 19,
+     "pos": 4,
+     "u": "𓇓𓐱𓐷𓏏𓐰𓈖𓐰𓉐𓐸",
+     "class": "inside",
+     "units": [
+      191
+     ],
+     "open": 0,
+     "tokens": [
+      "pr-nswt"
+     ]
+    },
+    {
+     "line": 19,
+     "pos": 5,
+     "u": "𓂋𓐰𓐍𓐰𔏏",
+     "class": "inside",
+     "units": [
+      192
+     ],
+     "open": 0,
+     "tokens": [
+      "rḫ"
+     ]
+    },
+    {
+     "line": 19,
+     "pos": 6,
+     "u": "𓵔𓐰𓂧𓐰𓏏",
+     "class": "inside",
+     "units": [
+      193
+     ],
+     "open": 0,
+     "tokens": [
+      "ḏd.t"
+     ]
+    },
+    {
+     "line": 19,
+     "pos": 8,
+     "u": "𓄿𓐳𓐍",
+     "class": "inside",
+     "units": [
+      195
+     ],
+     "open": 0,
+     "tokens": [
+      "ḫꜣ"
+     ]
+    },
+    {
+     "line": 19,
+     "pos": 9,
+     "u": "𓉐𓐱𓏤",
+     "class": "inside",
+     "units": [
+      195
+     ],
+     "open": 0,
+     "tokens": [
+      "ḫꜣ"
+     ]
+    },
+    {
+     "line": 20,
+     "pos": 1,
+     "u": "𓏌𓐰𓎡",
+     "class": "inside",
+     "units": [
+      197
+     ],
+     "open": 0,
+     "tokens": [
+      "jnk"
+     ]
+    },
+    {
+     "line": 20,
+     "pos": 2,
+     "u": "𓄕𓐱𓅱𓐰𔏏",
+     "class": "inside",
+     "units": [
+      198
+     ],
+     "open": 0,
+     "tokens": [
+      "sḏm.w"
+     ]
+    },
+    {
+     "line": 20,
+     "pos": 3,
+     "u": "𓄕𓐱𓏤𓐰𔏏𓑀",
+     "class": "inside",
+     "units": [
+      199
+     ],
+     "open": 0,
+     "tokens": [
+      "sḏm"
+     ]
+    },
+    {
+     "line": 20,
+     "pos": 5,
+     "u": "𓐙𓐰𓏏𓐰𔏏",
+     "class": "inside",
+     "units": [
+      201
+     ],
+     "open": 0,
+     "tokens": [
+      "mꜣꜥ,t"
+     ]
+    },
+    {
+     "line": 20,
+     "pos": 6,
+     "u": "𓋴𓑀𓐱𓍯",
+     "class": "inside",
+     "units": [
+      202
+     ],
+     "open": 0,
+     "tokens": [
+      "swꜣwꜣ"
+     ]
+    },
+    {
+     "line": 20,
+     "pos": 8,
+     "u": "𓍯𓐱𓄿",
+     "class": "inside",
+     "units": [
+      202
+     ],
+     "open": 0,
+     "tokens": [
+      "swꜣwꜣ"
+     ]
+    },
+    {
+     "line": 20,
+     "pos": 9,
+     "u": "𓇋𓐱𓋴𓐱𓋴𓐱𓏏",
+     "class": "inside",
+     "units": [
+      203
+     ],
+     "open": 0,
+     "tokens": [
+      "jss,t"
+     ]
+    },
+    {
+     "line": 20,
+     "pos": 10,
+     "u": "𓁷𓐱𓄣𓐱𓏤",
+     "class": "across",
+     "units": [
+      204,
+      205
+     ],
+     "open": 0,
+     "tokens": [
+      "ḥr",
+      "jb"
+     ]
+    },
+    {
+     "line": 21,
+     "pos": 1,
+     "u": "𓏌𓐰𓎡",
+     "class": "inside",
+     "units": [
+      206
+     ],
+     "open": 0,
+     "tokens": [
+      "jnk"
+     ]
+    },
+    {
+     "line": 21,
+     "pos": 2,
+     "u": "𓃀𓐱𓐷𓈖𓐰𓂋𓐸",
+     "class": "inside",
+     "units": [
+      207
+     ],
+     "open": 0,
+     "tokens": [
+      "bnr"
+     ]
+    },
+    {
+     "line": 21,
+     "pos": 3,
+     "u": "𓈖𓐰𓉐𓐱𓏤",
+     "class": "across",
+     "units": [
+      208,
+      209
+     ],
+     "open": 0,
+     "tokens": [
+      "n",
+      "pr"
+     ]
+    },
+    {
+     "line": 21,
+     "pos": 4,
+     "u": "𓎟𓐰𓏤𓐰𓆑",
+     "class": "across",
+     "units": [
+      210,
+      211
+     ],
+     "open": 0,
+     "tokens": [
+      "nb",
+      "=f"
+     ]
+    },
+    {
+     "line": 21,
+     "pos": 5,
+     "u": "𓋴𓑀𓐱𓐷𓐍𓐰𓆼𓐸",
+     "class": "inside",
+     "units": [
+      212
+     ],
+     "open": 0,
+     "tokens": [
+      "sḫꜣ.w"
+     ]
+    },
+    {
+     "line": 21,
+     "pos": 7,
+     "u": "𓁷𓐱𓏤",
+     "class": "inside",
+     "units": [
+      213
+     ],
+     "open": 0,
+     "tokens": [
+      "ḥr"
+     ]
+    },
+    {
+     "line": 21,
+     "pos": 8,
+     "u": "𓊃𓐰𓊪𓐱𓊗",
+     "class": "inside",
+     "units": [
+      214
+     ],
+     "open": 0,
+     "tokens": [
+      "zp.pl"
+     ]
+    },
+    {
+     "line": 21,
+     "pos": 9,
+     "u": "𓏤𓐱𓏤𓐱𓏤𓐰𓆑",
+     "class": "across",
+     "units": [
+      214,
+      215
+     ],
+     "open": 0,
+     "tokens": [
+      "zp.pl",
+      "=f"
+     ]
+    },
+    {
+     "line": 21,
+     "pos": 11,
+     "u": "𓂣𓐰𓂋𓐰𓏝",
+     "class": "inside",
+     "units": [
+      216
+     ],
+     "open": 0,
+     "tokens": [
+      "mꜥr(.w)"
+     ]
+    },
+    {
+     "line": 22,
+     "pos": 1,
+     "u": "𓏌𓐰𓎡",
+     "class": "inside",
+     "units": [
+      217
+     ],
+     "open": 0,
+     "tokens": [
+      "jnk"
+     ]
+    },
+    {
+     "line": 22,
+     "pos": 2,
+     "u": "𓄤𓐱𓅓",
+     "class": "across",
+     "units": [
+      218,
+      219
+     ],
+     "open": 0,
+     "tokens": [
+      "nfr",
+      "m-ẖnw"
+     ]
+    },
+    {
+     "line": 22,
+     "pos": 4,
+     "u": "𓏌𓐱𓉐",
+     "class": "inside",
+     "units": [
+      219
+     ],
+     "open": 0,
+     "tokens": [
+      "m-ẖnw"
+     ]
+    },
+    {
+     "line": 22,
+     "pos": 5,
+     "u": "𓄿𓐳𓐍",
+     "class": "inside",
+     "units": [
+      220
+     ],
+     "open": 0,
+     "tokens": [
+      "ḫꜣ.pl"
+     ]
+    },
+    {
+     "line": 22,
+     "pos": 6,
+     "u": "𓉐𓐱𓏨",
+     "class": "inside",
+     "units": [
+      220
+     ],
+     "open": 0,
+     "tokens": [
+      "ḫꜣ.pl"
+     ]
+    },
+    {
+     "line": 22,
+     "pos": 7,
+     "u": "𓍯𓐱𓄿",
+     "class": "inside",
+     "units": [
+      221
+     ],
+     "open": 0,
+     "tokens": [
+      "wꜣḥ-jb"
+     ]
+    },
+    {
+     "line": 22,
+     "pos": 8,
+     "u": "𓎛𓐱𓎝𓐱𓄣",
+     "class": "inside",
+     "units": [
+      221
+     ],
+     "open": 0,
+     "tokens": [
+      "wꜣḥ-jb"
+     ]
+    },
+    {
+     "line": 22,
+     "pos": 9,
+     "u": "𓆄𓐱𓅱",
+     "class": "inside",
+     "units": [
+      222
+     ],
+     "open": 0,
+     "tokens": [
+      "šwi̯"
+     ]
+    },
+    {
+     "line": 22,
+     "pos": 11,
+     "u": "𓐷𓂋𓐰𓂋𓐸𓐱𓇋𓐱𓏏",
+     "class": "inside",
+     "units": [
+      224
+     ],
+     "open": 0,
+     "tokens": [
+      "rrj,t"
+     ]
+    },
+    {
+     "line": 23,
+     "pos": 1,
+     "u": "𓏌𓐰𓎡",
+     "class": "inside",
+     "units": [
+      225
+     ],
+     "open": 0,
+     "tokens": [
+      "jnk"
+     ]
+    },
+    {
+     "line": 23,
+     "pos": 2,
+     "u": "𓄤𓐱𓐷𓆑𓐰𓂋𓐸",
+     "class": "inside",
+     "units": [
+      226
+     ],
+     "open": 0,
+     "tokens": [
+      "nfr"
+     ]
+    },
+    {
+     "line": 23,
+     "pos": 3,
+     "u": "𓂜𓐰𓈖",
+     "class": "inside",
+     "units": [
+      227
+     ],
+     "open": 0,
+     "tokens": [
+      "nn"
+     ]
+    },
+    {
+     "line": 23,
+     "pos": 4,
+     "u": "𓋴𓑀𓐱𓇋𓐱𓐷𓈖𓐰𓂻𓐸",
+     "class": "inside",
+     "units": [
+      228
+     ],
+     "open": 0,
+     "tokens": [
+      "sjn"
+     ]
+    },
+    {
+     "line": 23,
+     "pos": 5,
+     "u": "𓁷𓐱𓏤",
+     "class": "inside",
+     "units": [
+      229
+     ],
+     "open": 0,
+     "tokens": [
+      "ḥr"
+     ]
+    },
+    {
+     "line": 23,
+     "pos": 6,
+     "u": "𓏏𓐰𓍃",
+     "class": "inside",
+     "units": [
+      231
+     ],
+     "open": 0,
+     "tokens": [
+      "tm"
+     ]
+    },
+    {
+     "line": 23,
+     "pos": 7,
+     "u": "𓅓𓐰𓈖",
+     "class": "across",
+     "units": [
+      231,
+      232
+     ],
+     "open": 0,
+     "tokens": [
+      "tm",
+      "nḏr.w"
+     ]
+    },
+    {
+     "line": 23,
+     "pos": 8,
+     "u": "𓇥𓐰𓂋",
+     "class": "inside",
+     "units": [
+      232
+     ],
+     "open": 0,
+     "tokens": [
+      "nḏr.w"
+     ]
+    },
+    {
+     "line": 23,
+     "pos": 9,
+     "u": "𓅱𓐰𓊃",
+     "class": "across",
+     "units": [
+      232,
+      233
+     ],
+     "open": 0,
+     "tokens": [
+      "nḏr.w",
+      "z"
+     ]
+    },
+    {
+     "line": 23,
+     "pos": 10,
+     "u": "𓐷𓀀𓐰𓁷𓐸𓐱𓐷𓁶𓐰𓏏𓐰𓂋𓐰𓏤𓐸",
+     "class": "across",
+     "units": [
+      233,
+      234,
+      235
+     ],
+     "open": 1,
+     "tokens": [
+      "z",
+      "ḥr",
+      "tp,(j)t-rʾ"
+     ]
+    },
+    {
+     "line": 24,
+     "pos": 1,
+     "u": "𓏌𓐰𓎡𓐰𓂣",
+     "class": "across",
+     "units": [
+      236,
+      237
+     ],
+     "open": 0,
+     "tokens": [
+      "jnk",
+      "ꜥqꜣ"
+     ]
+    },
+    {
+     "line": 24,
+     "pos": 2,
+     "u": "𓄿𓐴𓈎",
+     "class": "inside",
+     "units": [
+      237
+     ],
+     "open": 0,
+     "tokens": [
+      "ꜥqꜣ"
+     ]
+    },
+    {
+     "line": 24,
+     "pos": 3,
+     "u": "𓂭𓐱𓂭𓐱𔏏︀𓑀",
+     "class": "inside",
+     "units": [
+      237
+     ],
+     "open": 0,
+     "tokens": [
+      "ꜥqꜣ"
+     ]
+    },
+    {
+     "line": 24,
+     "pos": 4,
+     "u": "𓏇𓐱𓐷𓏏𓐰𓏭𓐸",
+     "class": "inside",
+     "units": [
+      238
+     ],
+     "open": 0,
+     "tokens": [
+      "mj,ty"
+     ]
+    },
+    {
+     "line": 24,
+     "pos": 5,
+     "u": "𓃛𓐻𓊃",
+     "class": "inside",
+     "units": [
+      239
+     ],
+     "open": 0,
+     "tokens": [
+      "jws(,w)"
+     ]
+    },
+    {
+     "line": 24,
+     "pos": 7,
+     "u": "𓂸𓐻𓏏",
+     "class": "inside",
+     "units": [
+      240
+     ],
+     "open": 0,
+     "tokens": [
+      "mtj"
+     ]
+    },
+    {
+     "line": 24,
+     "pos": 8,
+     "u": "𓂭𓐱𓂭𓐱𔏏︀𓑀",
+     "class": "inside",
+     "units": [
+      240
+     ],
+     "open": 0,
+     "tokens": [
+      "mtj"
+     ]
+    },
+    {
+     "line": 24,
+     "pos": 9,
+     "u": "𓐙𓐰𓂣",
+     "class": "inside",
+     "units": [
+      241
+     ],
+     "open": 0,
+     "tokens": [
+      "mꜣꜥ"
+     ]
+    },
+    {
+     "line": 24,
+     "pos": 10,
+     "u": "𓏇𓐱𓅞",
+     "class": "across",
+     "units": [
+      242,
+      243
+     ],
+     "open": 0,
+     "tokens": [
+      "mj",
+      "Ḏḥw,tj"
+     ]
+    },
+    {
+     "line": 25,
+     "pos": 1,
+     "u": "𓏌𓐰𓎡",
+     "class": "inside",
+     "units": [
+      244
+     ],
+     "open": 0,
+     "tokens": [
+      "jnk"
+     ]
+    },
+    {
+     "line": 25,
+     "pos": 2,
+     "u": "𓏠𓐰𓈖𓐰𔏏",
+     "class": "inside",
+     "units": [
+      245
+     ],
+     "open": 0,
+     "tokens": [
+      "mn"
+     ]
+    },
+    {
+     "line": 25,
+     "pos": 3,
+     "u": "𓂾𓐱𓏤",
+     "class": "inside",
+     "units": [
+      246
+     ],
+     "open": 0,
+     "tokens": [
+      "rd"
+     ]
+    },
+    {
+     "line": 25,
+     "pos": 4,
+     "u": "𓇋𓐱𓐷𓈎𓐰𓂋𓐰𔏏𓐸",
+     "class": "inside",
+     "units": [
+      247
+     ],
+     "open": 0,
+     "tokens": [
+      "jqr"
+     ]
+    },
+    {
+     "line": 25,
+     "pos": 5,
+     "u": "𓋴𓑀𓐱𓐷𓐍𓐰𓂋𓐰𔏏𓐸",
+     "class": "inside",
+     "units": [
+      248
+     ],
+     "open": 0,
+     "tokens": [
+      "sḫr"
+     ]
+    },
+    {
+     "line": 25,
+     "pos": 7,
+     "u": "𔏏𓐰𓂸𓐻𓏏",
+     "class": "across",
+     "units": [
+      249,
+      250
+     ],
+     "open": 0,
+     "tokens": [
+      "mḏd",
+      "mtn"
+     ]
+    },
+    {
+     "line": 25,
+     "pos": 8,
+     "u": "𓈖𓐰𓈐𓐰𓈖",
+     "class": "across",
+     "units": [
+      250,
+      251
+     ],
+     "open": 0,
+     "tokens": [
+      "mtn",
+      "n(,j)"
+     ]
+    },
+    {
+     "line": 25,
+     "pos": 9,
+     "u": "𓋴𓑀𓐱𓐷𓏠𓐰𓐍𓐱𓍊𓐸",
+     "class": "inside",
+     "units": [
+      252
+     ],
+     "open": 0,
+     "tokens": [
+      "smnḫ"
+     ]
+    },
+    {
+     "line": 25,
+     "pos": 10,
+     "u": "𓇓𓐱𓅱",
+     "class": "inside",
+     "units": [
+      253
+     ],
+     "open": 0,
+     "tokens": [
+      "sw"
+     ]
+    },
+    {
+     "line": 26,
+     "pos": 1,
+     "u": "𓏌𓐰𓎡",
+     "class": "inside",
+     "units": [
+      254
+     ],
+     "open": 0,
+     "tokens": [
+      "jnk"
+     ]
+    },
+    {
+     "line": 26,
+     "pos": 2,
+     "u": "𓂋𓐰𓐍𓐰𔏏",
+     "class": "inside",
+     "units": [
+      255
+     ],
+     "open": 0,
+     "tokens": [
+      "rḫ(.w)"
+     ]
+    },
+    {
+     "line": 26,
+     "pos": 3,
+     "u": "𓋴𓐱𓃀𓐱𓇼𓐰𔏏𓑀",
+     "class": "inside",
+     "units": [
+      256
+     ],
+     "open": 0,
+     "tokens": [
+      "sbꜣ"
+     ]
+    },
+    {
+     "line": 26,
+     "pos": 4,
+     "u": "𓇓𓐱𓅱",
+     "class": "inside",
+     "units": [
+      257
+     ],
+     "open": 0,
+     "tokens": [
+      "sw"
+     ]
+    },
+    {
+     "line": 26,
+     "pos": 5,
+     "u": "𓂋𓐰𓐍𓐰𔏏𓑀",
+     "class": "inside",
+     "units": [
+      258
+     ],
+     "open": 0,
+     "tokens": [
+      "rḫ"
+     ]
+    },
+    {
+     "line": 26,
+     "pos": 6,
+     "u": "𓈖𓐰𓐩𓐱𓐷𓏌𓐰𔏏𓐸",
+     "class": "inside",
+     "units": [
+      259
+     ],
+     "open": 0,
+     "tokens": [
+      "nḏnḏ"
+     ]
+    },
+    {
+     "line": 26,
+     "pos": 7,
+     "u": "𓈖𓐰𓐩𓐱𓐷𓏌𓐰𔏏𓐸",
+     "class": "inside",
+     "units": [
+      259
+     ],
+     "open": 0,
+     "tokens": [
+      "nḏnḏ"
+     ]
+    },
+    {
+     "line": 26,
+     "pos": 8,
+     "u": "𓂋𓐰𓂠",
+     "class": "across",
+     "units": [
+      260,
+      261
+     ],
+     "open": 0,
+     "tokens": [
+      "r",
+      "ḏi̯〈.t〉"
+     ]
+    },
+    {
+     "line": 26,
+     "pos": 9,
+     "u": "𓐩𓐱𓅓𓐱𓐷𓏏𓐰𓏌𓐸",
+     "class": "across",
+     "units": [
+      262,
+      263,
+      264
+     ],
+     "open": 0,
+     "tokens": [
+      "nḏ",
+      "=t(w)",
+      "m-ꜥ"
+     ]
+    },
+    {
+     "line": 26,
+     "pos": 10,
+     "u": "𓂝𓐰𓆑",
+     "class": "across",
+     "units": [
+      264,
+      265
+     ],
+     "open": 0,
+     "tokens": [
+      "m-ꜥ",
+      "=f"
+     ]
+    },
+    {
+     "line": 27,
+     "pos": 1,
+     "u": "𓏌𓐰𓎡",
+     "class": "inside",
+     "units": [
+      266
+     ],
+     "open": 0,
+     "tokens": [
+      "jnk"
+     ]
+    },
+    {
+     "line": 27,
+     "pos": 2,
+     "u": "𓌃𓐱𓐷𓂧𓐰𓅱𓐸",
+     "class": "inside",
+     "units": [
+      267
+     ],
+     "open": 0,
+     "tokens": [
+      "mdw.w"
+     ]
+    },
+    {
+     "line": 27,
+     "pos": 3,
+     "u": "𓅱𓐰𔏏𓑀",
+     "class": "inside",
+     "units": [
+      267
+     ],
+     "open": 0,
+     "tokens": [
+      "mdw.w"
+     ]
+    },
+    {
+     "line": 27,
+     "pos": 5,
+     "u": "𓄿𓐳𓐍",
+     "class": "inside",
+     "units": [
+      269
+     ],
+     "open": 0,
+     "tokens": [
+      "ḫꜣ"
+     ]
+    },
+    {
+     "line": 27,
+     "pos": 6,
+     "u": "𓉐𓐱𓏤𓐰𓈖",
+     "class": "across",
+     "units": [
+      269,
+      270
+     ],
+     "open": 0,
+     "tokens": [
+      "ḫꜣ",
+      "n(,j)"
+     ]
+    },
+    {
+     "line": 27,
+     "pos": 7,
+     "u": "𓐙𓐰𓏏𓐰𔏏",
+     "class": "inside",
+     "units": [
+      271
+     ],
+     "open": 0,
+     "tokens": [
+      "mꜣꜥ,t"
+     ]
+    },
+    {
+     "line": 27,
+     "pos": 8,
+     "u": "𓋴𓐱𓇮𓐱𓐷𓂋𓐰𓏤𓐸",
+     "class": "across",
+     "units": [
+      272,
+      273
+     ],
+     "open": 0,
+     "tokens": [
+      "spd",
+      "rʾ"
+     ]
+    },
+    {
+     "line": 27,
+     "pos": 9,
+     "u": "𓅓𓐱𓎛𓐱𓐷𓈖𓐰𓋴𓐸",
+     "class": "across",
+     "units": [
+      274,
+      276
+     ],
+     "open": 0,
+     "tokens": [
+      "m",
+      "ḥns-jb"
+     ]
+    },
+    {
+     "line": 27,
+     "pos": 10,
+     "u": "𓊨𓐱𓏪𓐱𓄣𓐱𓏤",
+     "class": "across",
+     "units": [
+      275,
+      276
+     ],
+     "open": 0,
+     "tokens": [
+      "s,t.pl",
+      "ḥns-jb"
+     ]
+    }
+   ],
+   "tokens": [
+    {
+     "i": 0,
+     "line": 1,
+     "tr": "sn",
+     "pos": "verb",
+     "gloss": "die Erde küssen",
+     "how": "unicode",
+     "signs": "𓌢𓈖𓂉",
+     "word": 0
+    },
+    {
+     "i": 1,
+     "line": 1,
+     "tr": "tꜣ",
+     "pos": "substantive",
+     "gloss": "Erde",
+     "how": "unicode",
+     "signs": "𓇿",
+     "word": 1
+    },
+    {
+     "i": 2,
+     "line": 1,
+     "tr": "n",
+     "pos": "preposition",
+     "gloss": "für (jmd.)",
+     "how": "unicode",
+     "signs": "𓈖",
+     "word": 2
+    },
+    {
+     "i": 3,
+     "line": 1,
+     "tr": "Ḫnt,j-jmn,tjw",
+     "pos": "epitheton_title",
+     "gloss": "Chontamenti (\"der an der Spitze der Westlichen ist\")",
+     "how": "unicode",
+     "signs": "𓏅𓈖𓏏𓋀𓅂",
+     "word": 3
+    },
+    {
+     "i": 4,
+     "line": 1,
+     "tr": "mꜣꜣ",
+     "pos": "verb",
+     "gloss": "sehen; erblicken",
+     "how": "unicode",
+     "signs": "𓌴𓁹𓅀",
+     "word": 4
+    },
+    {
+     "i": 5,
+     "line": 1,
+     "tr": "nfr,pl",
+     "pos": "substantive",
+     "gloss": "Schönheit",
+     "how": "unicode",
+     "signs": "𓄤𓏨",
+     "word": 5
+    },
+    {
+     "i": 6,
+     "line": 1,
+     "tr": "Wp-wꜣ,(w)t",
+     "pos": "entity_name",
+     "gloss": "Wepwaut (\"Wegeöffner\")",
+     "how": "gardiner",
+     "signs": "𓄋𓈐?",
+     "word": 6
+    },
+    {
+     "i": 7,
+     "line": 2,
+     "tr": "jn",
+     "pos": "preposition",
+     "gloss": "durch; seitens (jmds.)",
+     "how": "unicode",
+     "signs": "𓇋𓈖",
+     "word": 7
+    },
+    {
+     "i": 8,
+     "line": 2,
+     "tr": "jm,j-rʾ-ꜥ-ẖn,wtj",
+     "pos": "epitheton_title",
+     "gloss": "Kabinettsvorsteher",
+     "how": "unicode",
+     "signs": "𓄓𓏤𓂣𓄚𓏌𓏏𓏭",
+     "word": 8
+    },
+    {
+     "i": 9,
+     "line": 2,
+     "tr": "Jni̯-jt≡f",
+     "pos": "entity_name",
+     "gloss": "PN/m",
+     "how": "unicode",
+     "signs": "𓏎𓈖𓏏𓆑",
+     "word": 9
+    },
+    {
+     "i": 10,
+     "line": 2,
+     "tr": "ḏd",
+     "pos": "verb",
+     "gloss": "sagen",
+     "how": "unicode",
+     "signs": "𓆓𓂧",
+     "word": 10
+    },
+    {
+     "i": 11,
+     "line": 2,
+     "tr": "=f",
+     "pos": "pronoun",
+     "gloss": "[Suffix Pron. sg.3.m.]",
+     "how": "unicode",
+     "signs": "𓆑",
+     "word": 10
+    },
+    {
+     "i": 12,
+     "line": 2,
+     "tr": "jr",
+     "pos": "preposition",
+     "gloss": "was anbetrifft (vorangestellt zur Betonung eines Satzgliedes)",
+     "how": "unicode",
+     "signs": "𓇋𓂋",
+     "word": 11
+    },
+    {
+     "i": 13,
+     "line": 2,
+     "tr": "gr,t",
+     "pos": "particle",
+     "gloss": "[enkl.Partikel]",
+     "how": "unicode",
+     "signs": "𓎼𓂋𓏏",
+     "word": 12
+    },
+    {
+     "i": 14,
+     "line": 2,
+     "tr": "ꜥḥꜥ,t",
+     "pos": "substantive",
+     "gloss": "Grab",
+     "how": "unicode",
+     "signs": "𓊣𓏏𓉐",
+     "word": 13
+    },
+    {
+     "i": 15,
+     "line": 2,
+     "tr": "ṯn",
+     "pos": "pronoun",
+     "gloss": "dieser [Dem.Pron. sg.f.]",
+     "how": "unicode",
+     "signs": "𓍿𓈖",
+     "word": 14
+    },
+    {
+     "i": 16,
+     "line": 2,
+     "tr": "jri̯.n",
+     "pos": "verb",
+     "gloss": "fertigen",
+     "how": "unicode",
+     "signs": "𓁹𓈖",
+     "word": 15
+    },
+    {
+     "i": 17,
+     "line": 2,
+     "tr": "=j",
+     "pos": "pronoun",
+     "gloss": "[Suffix Pron. sg.1.c.]",
+     "how": "unicode",
+     "signs": "𓀀",
+     "word": 15
+    },
+    {
+     "i": 18,
+     "line": 3,
+     "tr": "m",
+     "pos": "preposition",
+     "gloss": "in",
+     "how": "unicode",
+     "signs": "𓅓",
+     "word": 16
+    },
+    {
+     "i": 19,
+     "line": 3,
+     "tr": "z(my),t",
+     "pos": "substantive",
+     "gloss": "Wüste",
+     "how": "unicode",
+     "signs": "𓊃𓏏𓈉",
+     "word": 17
+    },
+    {
+     "i": 20,
+     "line": 3,
+     "tr": "n.t",
+     "pos": "adjective",
+     "gloss": "von [Genitiv]",
+     "how": "unicode",
+     "signs": "𓈖𓏏",
+     "word": 18
+    },
+    {
+     "i": 21,
+     "line": 3,
+     "tr": "Ꜣbḏ,w",
+     "pos": "entity_name",
+     "gloss": "Abydos",
+     "how": "unicode",
+     "signs": "𓍋𓃀𓈋𓊖",
+     "word": 19
+    },
+    {
+     "i": 22,
+     "line": 3,
+     "tr": "jw",
+     "pos": "substantive",
+     "gloss": "Insel",
+     "how": "unicode",
+     "signs": "𓈀𓏤𓈇",
+     "word": 20
+    },
+    {
+     "i": 23,
+     "line": 3,
+     "tr": "pn",
+     "pos": "pronoun",
+     "gloss": "dieser [Dem.Pron. sg.m.]",
+     "how": "unicode",
+     "signs": "𓊪𓈖",
+     "word": 21
+    },
+    {
+     "i": 24,
+     "line": 3,
+     "tr": "n(,j)",
+     "pos": "adjective",
+     "gloss": "von [Genitiv]",
+     "how": "unicode",
+     "signs": "𓈖",
+     "word": 22
+    },
+    {
+     "i": 25,
+     "line": 3,
+     "tr": "q(ꜣ)ri̯",
+     "pos": "verb",
+     "gloss": "sich aufhalten",
+     "how": "unicode",
+     "signs": "𓈎𓂋𓂢",
+     "word": 23
+    },
+    {
+     "i": 26,
+     "line": 3,
+     "tr": "jr",
+     "pos": "preposition",
+     "gloss": "[lokal]",
+     "how": "unicode",
+     "signs": "𓇋𓂋",
+     "word": 24
+    },
+    {
+     "i": 27,
+     "line": 3,
+     "tr": "=f",
+     "pos": "pronoun",
+     "gloss": "[Suffix Pron. sg.3.m.]",
+     "how": "unicode",
+     "signs": "𓆑",
+     "word": 24
+    },
+    {
+     "i": 28,
+     "line": 3,
+     "tr": "jnb.pl",
+     "pos": "substantive",
+     "gloss": "Mauer",
+     "how": "unicode",
+     "signs": "𓊅𓏪",
+     "word": 25
+    },
+    {
+     "i": 29,
+     "line": 3,
+     "tr": "šꜣ(.w).n",
+     "pos": "verb",
+     "gloss": "bestimmen; anordnen",
+     "how": "gardiner",
+     "signs": "?𓄿?𓈖",
+     "word": 26
+    },
+    {
+     "i": 30,
+     "line": 4,
+     "tr": "Nb-r-ḏr",
+     "pos": "epitheton_title",
+     "gloss": "Allherr",
+     "how": "unicode",
+     "signs": "𓎟𓏤𓂋𓇥𓂋",
+     "word": 27
+    },
+    {
+     "i": 31,
+     "line": 4,
+     "tr": "s,t",
+     "pos": "substantive",
+     "gloss": "Ort",
+     "how": "unicode",
+     "signs": "𓊨𓏏𓉐",
+     "word": 28
+    },
+    {
+     "i": 32,
+     "line": 4,
+     "tr": "ꜣḫ.t",
+     "pos": "adjective",
+     "gloss": "herrlich",
+     "how": "unicode",
+     "signs": "𓅜𓐍𓏏",
+     "word": 29
+    },
+    {
+     "i": 33,
+     "line": 4,
+     "tr": "ḏr",
+     "pos": "preposition",
+     "gloss": "seit (temporal)",
+     "how": "unicode",
+     "signs": "𓇥𓂋",
+     "word": 30
+    },
+    {
+     "i": 34,
+     "line": 4,
+     "tr": "rk",
+     "pos": "substantive",
+     "gloss": "Zeit",
+     "how": "unicode",
+     "signs": "𓂋𓎡𓇳",
+     "word": 31
+    },
+    {
+     "i": 35,
+     "line": 4,
+     "tr": "Wsjr",
+     "pos": "entity_name",
+     "gloss": "Osiris",
+     "how": "unicode",
+     "signs": "𓁹𓊨𓀭",
+     "word": 32
+    },
+    {
+     "i": 36,
+     "line": 4,
+     "tr": "grg{t}.t.n",
+     "pos": "verb",
+     "gloss": "gründen",
+     "how": "unicode",
+     "signs": "𓎼𓂋𓏏𓍅𓏏𓈖",
+     "word": 33
+    },
+    {
+     "i": 37,
+     "line": 4,
+     "tr": "Ḥr,w",
+     "pos": "entity_name",
+     "gloss": "Horus",
+     "how": "unicode",
+     "signs": "𓅃",
+     "word": 34
+    },
+    {
+     "i": 38,
+     "line": 5,
+     "tr": "n",
+     "pos": "preposition",
+     "gloss": "für (jmd.)",
+     "how": "unicode",
+     "signs": "𓈖",
+     "word": 35
+    },
+    {
+     "i": 39,
+     "line": 5,
+     "tr": "jt.pl",
+     "pos": "substantive",
+     "gloss": "Vorfahren",
+     "how": "unicode",
+     "signs": "𓏏𓆑𓀭𓏪",
+     "word": 36
+    },
+    {
+     "i": 40,
+     "line": 5,
+     "tr": "bꜣk.t{pl}",
+     "pos": "verb",
+     "gloss": "arbeiten",
+     "how": "gardiner",
+     "signs": "𓅡𓎡𓏏?𓏥",
+     "word": 37
+    },
+    {
+     "i": 41,
+     "line": 5,
+     "tr": "n",
+     "pos": "preposition",
+     "gloss": "für (jmd.)",
+     "how": "unicode",
+     "signs": "𓈖",
+     "word": 38
+    },
+    {
+     "i": 42,
+     "line": 5,
+     "tr": "=s",
+     "pos": "pronoun",
+     "gloss": "[Suffix Pron.sg.3.f.]",
+     "how": "unicode",
+     "signs": "𓋴",
+     "word": 38
+    },
+    {
+     "i": 43,
+     "line": 5,
+     "tr": "sbꜣ.pl",
+     "pos": "substantive",
+     "gloss": "Stern",
+     "how": "unicode",
+     "signs": "𓇼𓏥",
+     "word": 39
+    },
+    {
+     "i": 44,
+     "line": 5,
+     "tr": "m",
+     "pos": "preposition",
+     "gloss": "an",
+     "how": "unicode",
+     "signs": "𓅓",
+     "word": 40
+    },
+    {
+     "i": 45,
+     "line": 5,
+     "tr": "p,t",
+     "pos": "substantive",
+     "gloss": "Himmel",
+     "how": "unicode",
+     "signs": "𓇯𓏏𓏤",
+     "word": 41
+    },
+    {
+     "i": 46,
+     "line": 5,
+     "tr": "ḥn,wt",
+     "pos": "substantive",
+     "gloss": "Herrin",
+     "how": "unicode",
+     "signs": "𓎛𓈖𓏌𓏏𓁐",
+     "word": 42
+    },
+    {
+     "i": 47,
+     "line": 5,
+     "tr": "n.t",
+     "pos": "adjective",
+     "gloss": "von [Genitiv]",
+     "how": "unicode",
+     "signs": "𓈖𓏏",
+     "word": 43
+    },
+    {
+     "i": 48,
+     "line": 5,
+     "tr": "ḥnmm,t",
+     "pos": "substantive",
+     "gloss": "Menschheit",
+     "how": "unicode",
+     "signs": "𓇶𓏨",
+     "word": 44
+    },
+    {
+     "i": 49,
+     "line": 6,
+     "tr": "jy.t",
+     "pos": "verb",
+     "gloss": "kommen",
+     "how": "unicode",
+     "signs": "𓇍𓏏𓂻",
+     "word": 45
+    },
+    {
+     "i": 50,
+     "line": 6,
+     "tr": "n",
+     "pos": "preposition",
+     "gloss": "[Dativ: Richtung]",
+     "how": "unicode",
+     "signs": "𓈖",
+     "word": 46
+    },
+    {
+     "i": 51,
+     "line": 6,
+     "tr": "=s",
+     "pos": "pronoun",
+     "gloss": "[Suffix Pron.sg.3.f.]",
+     "how": "unicode",
+     "signs": "𓋴",
+     "word": 46
+    },
+    {
+     "i": 52,
+     "line": 6,
+     "tr": "wr.pl",
+     "pos": "substantive",
+     "gloss": "der Große",
+     "how": "unicode",
+     "signs": "𓅨𓂋𓀭𓏪",
+     "word": 47
+    },
+    {
+     "i": 53,
+     "line": 6,
+     "tr": "m",
+     "pos": "preposition",
+     "gloss": "aus",
+     "how": "unicode",
+     "signs": "𓅓",
+     "word": 48
+    },
+    {
+     "i": 54,
+     "line": 6,
+     "tr": "Ḏd,w",
+     "pos": "entity_name",
+     "gloss": "Djedu (Busiris)",
+     "how": "unicode",
+     "signs": "𓊽𓊽𓅱𓊖𓏤",
+     "word": 49
+    },
+    {
+     "i": 55,
+     "line": 6,
+     "tr": "sn.nwt",
+     "pos": "substantive",
+     "gloss": "Kollegin; Gefährtin",
+     "how": "gardiner",
+     "signs": "𓌢𓈖𓏌𓏏?",
+     "word": 50
+    },
+    {
+     "i": 56,
+     "line": 6,
+     "tr": "Jwn,w",
+     "pos": "entity_name",
+     "gloss": "Heliopolis",
+     "how": "unicode",
+     "signs": "𓉺𓏌𓊖",
+     "word": 51
+    },
+    {
+     "i": 57,
+     "line": 6,
+     "tr": "{Ḥr,w}〈ḥr〉",
+     "pos": "preposition",
+     "gloss": "in Hinsicht auf (Bezug)",
+     "how": "unicode",
+     "signs": "𓅃",
+     "word": 52
+    },
+    {
+     "i": 58,
+     "line": 7,
+     "tr": "ꜣḫ,pl",
+     "pos": "substantive",
+     "gloss": "Macht",
+     "how": "gardiner",
+     "signs": "𓐍𓅜?𓏦",
+     "word": 53
+    },
+    {
+     "i": 59,
+     "line": 7,
+     "tr": "ḥtp.n",
+     "pos": "verb",
+     "gloss": "zufrieden sein",
+     "how": "unicode",
+     "signs": "𓊵𓏏𓊪𓈖",
+     "word": 54
+    },
+    {
+     "i": 60,
+     "line": 7,
+     "tr": "Nb-(r)-ḏr",
+     "pos": "epitheton_title",
+     "gloss": "Allherr",
+     "how": "unicode",
+     "signs": "𓎟𓏤𓇥𓂋𓀭",
+     "word": 55
+    },
+    {
+     "i": 61,
+     "line": 7,
+     "tr": "ḥr",
+     "pos": "preposition",
+     "gloss": "[kausal]",
+     "how": "unicode",
+     "signs": "𓁷𓂋",
+     "word": 56
+    },
+    {
+     "i": 62,
+     "line": 7,
+     "tr": "=s",
+     "pos": "pronoun",
+     "gloss": "[Suffix Pron.sg.3.f.]",
+     "how": "unicode",
+     "signs": "𓋴",
+     "word": 56
+    },
+    {
+     "i": 63,
+     "line": 7,
+     "tr": "pr,t-ḫrw",
+     "pos": "substantive",
+     "gloss": "Totenopfer",
+     "how": "unicode",
+     "signs": "𓉓",
+     "word": 57
+    },
+    {
+     "i": 64,
+     "line": 7,
+     "tr": "n",
+     "pos": "preposition",
+     "gloss": "für (jmd.)",
+     "how": "unicode",
+     "signs": "𓈖",
+     "word": 58
+    },
+    {
+     "i": 65,
+     "line": 7,
+     "tr": "jmꜣḫ(,w)",
+     "pos": "substantive",
+     "gloss": "Würdiger; Versorgter",
+     "how": "unicode",
+     "signs": "𓄪𓏤",
+     "word": 59
+    },
+    {
+     "i": 66,
+     "line": 7,
+     "tr": "jm,j-rʾ-ꜥ-ẖn,wtj",
+     "pos": "epitheton_title",
+     "gloss": "Kabinettsvorsteher",
+     "how": "unicode",
+     "signs": "𓄓𓂣𓐍𓏌𓏏𓏰𓏰",
+     "word": 60
+    },
+    {
+     "i": 67,
+     "line": 7,
+     "tr": "Jni̯-jt≡f",
+     "pos": "entity_name",
+     "gloss": "PN/m",
+     "how": "unicode",
+     "signs": "𓏎𓏏𓆑",
+     "word": 61
+    },
+    {
+     "i": 68,
+     "line": 7,
+     "tr": "jri̯(.w)",
+     "pos": "verb",
+     "gloss": "zeugen",
+     "how": "unicode",
+     "signs": "𓁹",
+     "word": 62
+    },
+    {
+     "i": 69,
+     "line": 7,
+     "tr": "n",
+     "pos": "particle",
+     "gloss": "[Einführg. d. log. Subj. b. Pass.]",
+     "how": "unicode",
+     "signs": "𓈖",
+     "word": 63
+    },
+    {
+     "i": 70,
+     "line": 7,
+     "tr": "Zn,t",
+     "pos": "entity_name",
+     "gloss": "PN/f",
+     "how": "unicode",
+     "signs": "𓊃𓈖𓏏",
+     "word": 64
+    },
+    {
+     "i": 71,
+     "line": 8,
+     "tr": "jnk",
+     "pos": "pronoun",
+     "gloss": "ich [Selbst. Pron. sg.1.c]",
+     "how": "unicode",
+     "signs": "𓏌𓎡",
+     "word": 65
+    },
+    {
+     "i": 72,
+     "line": 8,
+     "tr": "gr",
+     "pos": "verb",
+     "gloss": "schweigen",
+     "how": "gardiner",
+     "signs": "𓎼𓂋?",
+     "word": 66
+    },
+    {
+     "i": 73,
+     "line": 8,
+     "tr": "n",
+     "pos": "preposition",
+     "gloss": "[Präposition]",
+     "how": "unicode",
+     "signs": "𓈖",
+     "word": 67
+    },
+    {
+     "i": 74,
+     "line": 8,
+     "tr": "ḏnd",
+     "pos": "substantive",
+     "gloss": "Zorniger",
+     "how": "unicode",
+     "signs": "𓃓",
+     "word": 68
+    },
+    {
+     "i": 75,
+     "line": 8,
+     "tr": "šbn",
+     "pos": "verb",
+     "gloss": "mischen; sich mischen (unter)",
+     "how": "unicode",
+     "signs": "𓏴𓈖",
+     "word": 69
+    },
+    {
+     "i": 76,
+     "line": 8,
+     "tr": "n",
+     "pos": "preposition",
+     "gloss": "[Präposition]",
+     "how": "unicode",
+     "signs": "𓈖",
+     "word": 70
+    },
+    {
+     "i": 77,
+     "line": 8,
+     "tr": "ḫm",
+     "pos": "substantive",
+     "gloss": "Unwissender",
+     "how": "unicode",
+     "signs": "𓅓𓐍𓂜",
+     "word": 71
+    },
+    {
+     "i": 78,
+     "line": 8,
+     "tr": "n-mrw,t",
+     "pos": "preposition",
+     "gloss": "damit",
+     "how": "unicode",
+     "signs": "𓈖𓌻𓏏",
+     "word": 72
+    },
+    {
+     "i": 79,
+     "line": 8,
+     "tr": "ḫsf",
+     "pos": "verb",
+     "gloss": "abwehren",
+     "how": "unicode",
+     "signs": "𓍚",
+     "word": 73
+    },
+    {
+     "i": 80,
+     "line": 8,
+     "tr": "ꜣd",
+     "pos": "substantive",
+     "gloss": "Wut; Aggression",
+     "how": "unicode",
+     "signs": "𓄿𓂧𓆌",
+     "word": 74
+    },
+    {
+     "i": 81,
+     "line": 9,
+     "tr": "jnk",
+     "pos": "pronoun",
+     "gloss": "ich [Selbst. Pron. sg.1.c]",
+     "how": "unicode",
+     "signs": "𓏌𓎡",
+     "word": 75
+    },
+    {
+     "i": 82,
+     "line": 9,
+     "tr": "qb",
+     "pos": "verb",
+     "gloss": "kühl sein",
+     "how": "gardiner",
+     "signs": "𓈎𓃀?",
+     "word": 76
+    },
+    {
+     "i": 83,
+     "line": 9,
+     "tr": "šw",
+     "pos": "verb",
+     "gloss": "leer sein",
+     "how": "unicode",
+     "signs": "𓆄𓅱",
+     "word": 77
+    },
+    {
+     "i": 84,
+     "line": 9,
+     "tr": "m",
+     "pos": "preposition",
+     "gloss": "[idiomatisch mit Verben verbunden]",
+     "how": "unicode",
+     "signs": "𓅓",
+     "word": 78
+    },
+    {
+     "i": 85,
+     "line": 9,
+     "tr": "ḫ(ꜣ)ḫ",
+     "pos": "unknown",
+     "gloss": "Eile",
+     "how": "gardiner",
+     "signs": "𓐍𓐍?𓂻",
+     "word": 79
+    },
+    {
+     "i": 86,
+     "line": 9,
+     "tr": "ḥr",
+     "pos": "preposition",
+     "gloss": "weil (Konjunktion)",
+     "how": "unicode",
+     "signs": "𓁷",
+     "word": 80
+    },
+    {
+     "i": 87,
+     "line": 9,
+     "tr": "rḫ",
+     "pos": "verb",
+     "gloss": "wissen",
+     "how": "gardiner",
+     "signs": "𓂋𓐍?",
+     "word": 81
+    },
+    {
+     "i": 88,
+     "line": 9,
+     "tr": "pri̯.pl",
+     "pos": "substantive",
+     "gloss": "Ausgang, Ergebnis",
+     "how": "unicode",
+     "signs": "𓉐𓂻𓏥",
+     "word": 82
+    },
+    {
+     "i": 89,
+     "line": 9,
+     "tr": "ḫmt",
+     "pos": "verb",
+     "gloss": "bedenken; planen",
+     "how": "unicode",
+     "signs": "𓐍𓂸",
+     "word": 83
+    },
+    {
+     "i": 90,
+     "line": 9,
+     "tr": "jy.t",
+     "pos": "verb",
+     "gloss": "kommen",
+     "how": "unicode",
+     "signs": "𓇍𓇋𓇋𓏏",
+     "word": 84
+    },
+    {
+     "i": 91,
+     "line": 10,
+     "tr": "jnk",
+     "pos": "pronoun",
+     "gloss": "ich [Selbst. Pron. sg.1.c]",
+     "how": "unicode",
+     "signs": "𓏌𓎡",
+     "word": 85
+    },
+    {
+     "i": 92,
+     "line": 10,
+     "tr": "mdwi̯.w",
+     "pos": "verb",
+     "gloss": "sprechen",
+     "how": "gardiner",
+     "signs": "𓌃𓂧𓅱𓅱?",
+     "word": 86
+    },
+    {
+     "i": 93,
+     "line": 10,
+     "tr": "m",
+     "pos": "preposition",
+     "gloss": "[Präposition]",
+     "how": "unicode",
+     "signs": "𓅓",
+     "word": 87
+    },
+    {
+     "i": 94,
+     "line": 10,
+     "tr": "s,t.pl",
+     "pos": "substantive",
+     "gloss": "Angelegenheit",
+     "how": "unicode",
+     "signs": "𓊨𓏏𓉐𓏥",
+     "word": 88
+    },
+    {
+     "i": 95,
+     "line": 10,
+     "tr": "ḏnd",
+     "pos": "substantive",
+     "gloss": "Zorn; Wüten",
+     "how": "unicode",
+     "signs": "𓏴𓃓",
+     "word": 89
+    },
+    {
+     "i": 96,
+     "line": 10,
+     "tr": "rḫ",
+     "pos": "verb",
+     "gloss": "kennen",
+     "how": "gardiner",
+     "signs": "𓂋𓐍?",
+     "word": 90
+    },
+    {
+     "i": 97,
+     "line": 10,
+     "tr": "ṯꜣz(.pl)",
+     "pos": "substantive",
+     "gloss": "Spruch",
+     "how": "gardiner",
+     "signs": "𓋭?",
+     "word": 91
+    },
+    {
+     "i": 98,
+     "line": 10,
+     "tr": "n(,j)",
+     "pos": "adjective",
+     "gloss": "von [Genitiv]",
+     "how": "unicode",
+     "signs": "𓈖",
+     "word": 92
+    },
+    {
+     "i": 99,
+     "line": 10,
+     "tr": "qnd",
+     "pos": "verb",
+     "gloss": "wütend sein, wütend werden",
+     "how": "unicode",
+     "signs": "𓈎𓈖𓂧",
+     "word": 93
+    },
+    {
+     "i": 100,
+     "line": 10,
+     "tr": "=t(w)",
+     "pos": "pronoun",
+     "gloss": "[Suffix Pron. sg.3.c.]",
+     "how": "unicode",
+     "signs": "𓏏",
+     "word": 93
+    },
+    {
+     "i": 101,
+     "line": 10,
+     "tr": "ḥr",
+     "pos": "preposition",
+     "gloss": "[kausal]",
+     "how": "unicode",
+     "signs": "𓁷",
+     "word": 94
+    },
+    {
+     "i": 102,
+     "line": 10,
+     "tr": "=s",
+     "pos": "pronoun",
+     "gloss": "[Suffix Pron.sg.3.f.]",
+     "how": "unicode",
+     "signs": "𓋴",
+     "word": 94
+    },
+    {
+     "i": 103,
+     "line": 11,
+     "tr": "jnk",
+     "pos": "pronoun",
+     "gloss": "ich [Selbst. Pron. sg.1.c]",
+     "how": "unicode",
+     "signs": "𓏌𓎡",
+     "word": 95
+    },
+    {
+     "i": 104,
+     "line": 11,
+     "tr": "sfn(.w)",
+     "pos": "verb",
+     "gloss": "sanftmütig sein",
+     "how": "gardiner",
+     "signs": "𓋴𓆑𓈖𓏌?",
+     "word": 96
+    },
+    {
+     "i": 105,
+     "line": 11,
+     "tr": "sḏm",
+     "pos": "verb",
+     "gloss": "hören",
+     "how": "gardiner",
+     "signs": "?𓏤?",
+     "word": 97
+    },
+    {
+     "i": 106,
+     "line": 11,
+     "tr": "=j",
+     "pos": "pronoun",
+     "gloss": "[Suffix Pron. sg.1.c.]",
+     "how": "unicode",
+     "signs": "𓀀",
+     "word": 97
+    },
+    {
+     "i": 107,
+     "line": 11,
+     "tr": "rn",
+     "pos": "substantive",
+     "gloss": "Name",
+     "how": "unicode",
+     "signs": "𓂋𓈖",
+     "word": 98
+    },
+    {
+     "i": 108,
+     "line": 11,
+     "tr": "=j",
+     "pos": "pronoun",
+     "gloss": "[Suffix Pron. sg.1.c.]",
+     "how": "unicode",
+     "signs": "𓀀",
+     "word": 98
+    },
+    {
+     "i": 109,
+     "line": 11,
+     "tr": "n",
+     "pos": "preposition",
+     "gloss": "zu (jmd.)",
+     "how": "unicode",
+     "signs": "𓈖",
+     "word": 99
+    },
+    {
+     "i": 110,
+     "line": 11,
+     "tr": "{f}〈ḏ〉d",
+     "pos": "verb",
+     "gloss": "sagen",
+     "how": "unicode",
+     "signs": "𓆑𓂧",
+     "word": 100
+    },
+    {
+     "i": 111,
+     "line": 11,
+     "tr": "n",
+     "pos": "preposition",
+     "gloss": "zu (jmd.)",
+     "how": "unicode",
+     "signs": "𓈖",
+     "word": 101
+    },
+    {
+     "i": 112,
+     "line": 11,
+     "tr": "=(j)",
+     "pos": "pronoun",
+     "gloss": "[Suffix Pron. sg.1.c.]",
+     "how": "none",
+     "signs": "",
+     "word": 101
+    },
+    {
+     "i": 113,
+     "line": 11,
+     "tr": "wnn.t",
+     "pos": "verb",
+     "gloss": "existieren",
+     "how": "unicode",
+     "signs": "𓃹𓈖𓈖𓏏",
+     "word": 102
+    },
+    {
+     "i": 114,
+     "line": 11,
+     "tr": "m",
+     "pos": "preposition",
+     "gloss": "in",
+     "how": "unicode",
+     "signs": "𓅓",
+     "word": 103
+    },
+    {
+     "i": 115,
+     "line": 11,
+     "tr": "jb",
+     "pos": "substantive",
+     "gloss": "Herz",
+     "how": "unicode",
+     "signs": "𓄣",
+     "word": 104
+    },
+    {
+     "i": 116,
+     "line": 11,
+     "tr": "={j}〈f〉",
+     "pos": "pronoun",
+     "gloss": "[Suffix Pron. sg.3.m.]",
+     "how": "unicode",
+     "signs": "𓀀",
+     "word": 104
+    },
+    {
+     "i": 117,
+     "line": 12,
+     "tr": "jnk",
+     "pos": "pronoun",
+     "gloss": "ich [Selbst. Pron. sg.1.c]",
+     "how": "unicode",
+     "signs": "𓏌𓎡",
+     "word": 105
+    },
+    {
+     "i": 118,
+     "line": 12,
+     "tr": "sꜣq.w",
+     "pos": "verb",
+     "gloss": "zusammenfügen; sich zusammennehmen",
+     "how": "unicode",
+     "signs": "𓆌𓅱",
+     "word": 106
+    },
+    {
+     "i": 119,
+     "line": 12,
+     "tr": "ꜥn(.w)",
+     "pos": "verb",
+     "gloss": "(sich) umwenden",
+     "how": "unicode",
+     "signs": "𓂣𓈖𓏌𓂻",
+     "word": 107
+    },
+    {
+     "i": 120,
+     "line": 12,
+     "tr": "sfn.w",
+     "pos": "verb",
+     "gloss": "sanftmütig sein",
+     "how": "unicode",
+     "signs": "𓋴𓆑𓈖𓏌𓏤",
+     "word": 108
+    },
+    {
+     "i": 121,
+     "line": 12,
+     "tr": "sgr",
+     "pos": "verb",
+     "gloss": "beruhigen",
+     "how": "unicode",
+     "signs": "𓋴𓎼𓂋𓏝",
+     "word": 109
+    },
+    {
+     "i": 122,
+     "line": 12,
+     "tr": "rm.w",
+     "pos": "substantive",
+     "gloss": "Weinender",
+     "how": "unicode",
+     "signs": "𓁿𓅱",
+     "word": 110
+    },
+    {
+     "i": 123,
+     "line": 12,
+     "tr": "m",
+     "pos": "preposition",
+     "gloss": "durch (etwas)",
+     "how": "unicode",
+     "signs": "𓅓",
+     "word": 111
+    },
+    {
+     "i": 124,
+     "line": 12,
+     "tr": "ḫn",
+     "pos": "substantive",
+     "gloss": "Rede",
+     "how": "gardiner",
+     "signs": "𓐍𓈖?",
+     "word": 112
+    },
+    {
+     "i": 125,
+     "line": 12,
+     "tr": "nfr",
+     "pos": "adjective",
+     "gloss": "gut",
+     "how": "unicode",
+     "signs": "𓄤",
+     "word": 113
+    },
+    {
+     "i": 126,
+     "line": 13,
+     "tr": "jnk",
+     "pos": "pronoun",
+     "gloss": "ich [Selbst. Pron. sg.1.c]",
+     "how": "unicode",
+     "signs": "𓏌𓎡",
+     "word": 114
+    },
+    {
+     "i": 127,
+     "line": 13,
+     "tr": "ḥḏ",
+     "pos": "verb",
+     "gloss": "freundlich sein",
+     "how": "unicode",
+     "signs": "𓌉",
+     "word": 115
+    },
+    {
+     "i": 128,
+     "line": 13,
+     "tr": "ḥr",
+     "pos": "substantive",
+     "gloss": "Gesicht",
+     "how": "unicode",
+     "signs": "𓁷",
+     "word": 116
+    },
+    {
+     "i": 129,
+     "line": 13,
+     "tr": "n",
+     "pos": "preposition",
+     "gloss": "für (jmd.)",
+     "how": "unicode",
+     "signs": "𓈖",
+     "word": 117
+    },
+    {
+     "i": 130,
+     "line": 13,
+     "tr": "twꜣ",
+     "pos": "substantive",
+     "gloss": "Armer; Bittender",
+     "how": "unicode",
+     "signs": "𓏏𓍯𓄿𓀀",
+     "word": 118
+    },
+    {
+     "i": 131,
+     "line": 13,
+     "tr": "=f",
+     "pos": "pronoun",
+     "gloss": "[Suffix Pron. sg.3.m.]",
+     "how": "unicode",
+     "signs": "𓆑",
+     "word": 118
+    },
+    {
+     "i": 132,
+     "line": 13,
+     "tr": "jri̯",
+     "pos": "verb",
+     "gloss": "machen",
+     "how": "unicode",
+     "signs": "𓁹",
+     "word": 119
+    },
+    {
+     "i": 133,
+     "line": 13,
+     "tr": "ꜣḫ,t",
+     "pos": "substantive",
+     "gloss": "Nützliches",
+     "how": "gardiner",
+     "signs": "𓐍𓅜𓏏?",
+     "word": 120
+    },
+    {
+     "i": 134,
+     "line": 13,
+     "tr": "n",
+     "pos": "preposition",
+     "gloss": "für (jmd.)",
+     "how": "unicode",
+     "signs": "𓈖",
+     "word": 121
+    },
+    {
+     "i": 135,
+     "line": 13,
+     "tr": "mj(,tj)",
+     "pos": "substantive",
+     "gloss": "Gleicher",
+     "how": "unicode",
+     "signs": "𓏇𓇋𓀀",
+     "word": 122
+    },
+    {
+     "i": 136,
+     "line": 13,
+     "tr": "=f",
+     "pos": "pronoun",
+     "gloss": "[Suffix Pron. sg.3.m.]",
+     "how": "unicode",
+     "signs": "𓆑",
+     "word": 122
+    },
+    {
+     "i": 137,
+     "line": 14,
+     "tr": "jnk",
+     "pos": "pronoun",
+     "gloss": "ich [Selbst. Pron. sg.1.c]",
+     "how": "unicode",
+     "signs": "𓏌𓎡",
+     "word": 123
+    },
+    {
+     "i": 138,
+     "line": 14,
+     "tr": "mtj",
+     "pos": "verb",
+     "gloss": "richtig sein; maßvoll sein",
+     "how": "unicode",
+     "signs": "𓂸𓏏𓂭𓂭",
+     "word": 124
+    },
+    {
+     "i": 139,
+     "line": 14,
+     "tr": "m",
+     "pos": "preposition",
+     "gloss": "in",
+     "how": "unicode",
+     "signs": "𓅓",
+     "word": 125
+    },
+    {
+     "i": 140,
+     "line": 14,
+     "tr": "pr",
+     "pos": "substantive",
+     "gloss": "Haus",
+     "how": "unicode",
+     "signs": "𓉐𓏤",
+     "word": 126
+    },
+    {
+     "i": 141,
+     "line": 14,
+     "tr": "nb",
+     "pos": "substantive",
+     "gloss": "Herr",
+     "how": "unicode",
+     "signs": "𓎟𓏤",
+     "word": 127
+    },
+    {
+     "i": 142,
+     "line": 14,
+     "tr": "=f",
+     "pos": "pronoun",
+     "gloss": "[Suffix Pron. sg.3.m.]",
+     "how": "unicode",
+     "signs": "𓆑",
+     "word": 127
+    },
+    {
+     "i": 143,
+     "line": 14,
+     "tr": "rḫ",
+     "pos": "verb",
+     "gloss": "wissen",
+     "how": "gardiner",
+     "signs": "𓂋𓐍?",
+     "word": 128
+    },
+    {
+     "i": 144,
+     "line": 14,
+     "tr": "pẖr",
+     "pos": "verb",
+     "gloss": "umhergehen",
+     "how": "gardiner",
+     "signs": "𓊪𓄡𓄲?",
+     "word": 129
+    },
+    {
+     "i": 145,
+     "line": 14,
+     "tr": "m",
+     "pos": "preposition",
+     "gloss": "mittels",
+     "how": "unicode",
+     "signs": "𓅓",
+     "word": 130
+    },
+    {
+     "i": 146,
+     "line": 14,
+     "tr": "swn",
+     "pos": "substantive",
+     "gloss": "Kompliment; Schmeichelei",
+     "how": "unicode",
+     "signs": "𓋴𓇬𓈖",
+     "word": 131
+    },
+    {
+     "i": 147,
+     "line": 14,
+     "tr": "ḏd.⸮t(w)?",
+     "pos": "verb",
+     "gloss": "sagen",
+     "how": "gardiner",
+     "signs": "𓆒𓂧",
+     "word": 132
+    },
+    {
+     "i": 148,
+     "line": 15,
+     "tr": "jnk",
+     "pos": "pronoun",
+     "gloss": "ich [Selbst. Pron. sg.1.c]",
+     "how": "unicode",
+     "signs": "𓏌𓎡",
+     "word": 133
+    },
+    {
+     "i": 149,
+     "line": 15,
+     "tr": "ḥḏ",
+     "pos": "verb",
+     "gloss": "freundlich sein",
+     "how": "unicode",
+     "signs": "𓌉",
+     "word": 134
+    },
+    {
+     "i": 150,
+     "line": 15,
+     "tr": "ḥr",
+     "pos": "substantive",
+     "gloss": "Gesicht",
+     "how": "unicode",
+     "signs": "𓁷",
+     "word": 135
+    },
+    {
+     "i": 151,
+     "line": 15,
+     "tr": "ꜣw-ḏr,t",
+     "pos": "adjective",
+     "gloss": "freigebig",
+     "how": "unicode",
+     "signs": "𓄫𓂝𓂧𓏏𓏤",
+     "word": 136
+    },
+    {
+     "i": 152,
+     "line": 15,
+     "tr": "nb",
+     "pos": "substantive",
+     "gloss": "Besitzer (von etwas)",
+     "how": "unicode",
+     "signs": "𓎟",
+     "word": 137
+    },
+    {
+     "i": 153,
+     "line": 15,
+     "tr": "ḏf(ꜣ).pl",
+     "pos": "substantive",
+     "gloss": "Nahrung; Speise",
+     "how": "gardiner",
+     "signs": "𓆒𓆑𓏒𓏥",
+     "word": 138
+    },
+    {
+     "i": 154,
+     "line": 15,
+     "tr": "šwi̯",
+     "pos": "verb",
+     "gloss": "leer sein",
+     "how": "unicode",
+     "signs": "𓆄𓅱",
+     "word": 139
+    },
+    {
+     "i": 155,
+     "line": 15,
+     "tr": "m",
+     "pos": "preposition",
+     "gloss": "[idiomatisch mit Verben verbunden]",
+     "how": "unicode",
+     "signs": "𓅓",
+     "word": 140
+    },
+    {
+     "i": 156,
+     "line": 15,
+     "tr": "ḥbs",
+     "pos": "verb",
+     "gloss": "verhüllen",
+     "how": "unicode",
+     "signs": "𓎛𓃀𓋴𓋳",
+     "word": 141
+    },
+    {
+     "i": 157,
+     "line": 15,
+     "tr": "ḥr",
+     "pos": "substantive",
+     "gloss": "Gesicht",
+     "how": "unicode",
+     "signs": "𓁷",
+     "word": 142
+    },
+    {
+     "i": 158,
+     "line": 16,
+     "tr": "jnk",
+     "pos": "pronoun",
+     "gloss": "ich [Selbst. Pron. sg.1.c]",
+     "how": "unicode",
+     "signs": "𓏌𓎡",
+     "word": 143
+    },
+    {
+     "i": 159,
+     "line": 16,
+     "tr": "ḫnms",
+     "pos": "substantive",
+     "gloss": "Freund",
+     "how": "gardiner",
+     "signs": "𓐍𓈖𓌰𓅓𓋴?",
+     "word": 144
+    },
+    {
+     "i": 160,
+     "line": 16,
+     "tr": "n(,j)",
+     "pos": "adjective",
+     "gloss": "von [Genitiv]",
+     "how": "unicode",
+     "signs": "𓈖",
+     "word": 145
+    },
+    {
+     "i": 161,
+     "line": 16,
+     "tr": "nḏs.pl",
+     "pos": "substantive",
+     "gloss": "Kleiner, Geringer",
+     "how": "unicode",
+     "signs": "𓅪𓀀𓏨",
+     "word": 146
+    },
+    {
+     "i": 162,
+     "line": 16,
+     "tr": "bnr",
+     "pos": "verb",
+     "gloss": "süß sein",
+     "how": "unicode",
+     "signs": "𓃀𓈖𓂋𓏝",
+     "word": 147
+    },
+    {
+     "i": 163,
+     "line": 16,
+     "tr": "〈j〉mꜣ,t",
+     "pos": "substantive",
+     "gloss": "Liebenswürdigkeit",
+     "how": "gardiner",
+     "signs": "𓌳𓏏?",
+     "word": 148
+    },
+    {
+     "i": 164,
+     "line": 16,
+     "tr": "n",
+     "pos": "preposition",
+     "gloss": "für (jmd.)",
+     "how": "unicode",
+     "signs": "𓈖",
+     "word": 149
+    },
+    {
+     "i": 165,
+     "line": 16,
+     "tr": "jw,tj-n≡f",
+     "pos": "pronoun",
+     "gloss": "der besitzlos ist (selbstständig)",
+     "how": "unicode",
+     "signs": "𓂜𓏏𓏭𓈖𓆑",
+     "word": 150
+    },
+    {
+     "i": 166,
+     "line": 17,
+     "tr": "jnk",
+     "pos": "pronoun",
+     "gloss": "ich [Selbst. Pron. sg.1.c]",
+     "how": "unicode",
+     "signs": "𓏌𓎡",
+     "word": 151
+    },
+    {
+     "i": 167,
+     "line": 17,
+     "tr": "sm",
+     "pos": "verb",
+     "gloss": "versorgen",
+     "how": "gardiner",
+     "signs": "𓋴𓅓𓄦?",
+     "word": 152
+    },
+    {
+     "i": 168,
+     "line": 17,
+     "tr": "ḥqr",
+     "pos": "substantive",
+     "gloss": "Hungriger",
+     "how": "unicode",
+     "signs": "𓎛𓈎𓂋𓅪",
+     "word": 153
+    },
+    {
+     "i": 169,
+     "line": 17,
+     "tr": "nn",
+     "pos": "particle",
+     "gloss": "[Negationswort, systematisch unterschieden von n]",
+     "how": "gardiner",
+     "signs": "?𓈖",
+     "word": 154
+    },
+    {
+     "i": 170,
+     "line": 17,
+     "tr": "jḫ,t.pl",
+     "pos": "substantive",
+     "gloss": "Sache",
+     "how": "gardiner",
+     "signs": "𓐍𓏏?𓏥",
+     "word": 155
+    },
+    {
+     "i": 171,
+     "line": 17,
+     "tr": "=f",
+     "pos": "pronoun",
+     "gloss": "[Suffix Pron. sg.3.m.]",
+     "how": "unicode",
+     "signs": "𓆑",
+     "word": 155
+    },
+    {
+     "i": 172,
+     "line": 17,
+     "tr": "ꜣw-ḏr,t",
+     "pos": "adjective",
+     "gloss": "freigebig",
+     "how": "unicode",
+     "signs": "𓄫𓂧𓏏𓏤",
+     "word": 156
+    },
+    {
+     "i": 173,
+     "line": 17,
+     "tr": "n",
+     "pos": "preposition",
+     "gloss": "für (jmd.)",
+     "how": "unicode",
+     "signs": "𓈖",
+     "word": 157
+    },
+    {
+     "i": 174,
+     "line": 17,
+     "tr": "nḏs.pl",
+     "pos": "substantive",
+     "gloss": "Kleiner, Geringer",
+     "how": "unicode",
+     "signs": "𓅪𓀀𓏨",
+     "word": 158
+    },
+    {
+     "i": 175,
+     "line": 18,
+     "tr": "jnk",
+     "pos": "pronoun",
+     "gloss": "ich [Selbst. Pron. sg.1.c]",
+     "how": "unicode",
+     "signs": "𓏌𓎡",
+     "word": 159
+    },
+    {
+     "i": 176,
+     "line": 18,
+     "tr": "rḫ",
+     "pos": "verb",
+     "gloss": "wissen",
+     "how": "gardiner",
+     "signs": "𓂋𓐍?",
+     "word": 160
+    },
+    {
+     "i": 177,
+     "line": 18,
+     "tr": "n",
+     "pos": "preposition",
+     "gloss": "für (jmd.)",
+     "how": "unicode",
+     "signs": "𓈖",
+     "word": 161
+    },
+    {
+     "i": 178,
+     "line": 18,
+     "tr": "n,tj",
+     "pos": "pronoun",
+     "gloss": "der welcher (Relativpronomen)",
+     "how": "unicode",
+     "signs": "𓈖𓏏𓏭",
+     "word": 162
+    },
+    {
+     "i": 179,
+     "line": 18,
+     "tr": "n",
+     "pos": "particle",
+     "gloss": "[Negationspartikel]",
+     "how": "gardiner",
+     "signs": "?",
+     "word": 163
+    },
+    {
+     "i": 180,
+     "line": 18,
+     "tr": "rḫ",
+     "pos": "verb",
+     "gloss": "wissen",
+     "how": "gardiner",
+     "signs": "𓂋𓐍?",
+     "word": 164
+    },
+    {
+     "i": 181,
+     "line": 18,
+     "tr": "=f",
+     "pos": "pronoun",
+     "gloss": "[Suffix Pron. sg.3.m.]",
+     "how": "unicode",
+     "signs": "𓆑",
+     "word": 164
+    },
+    {
+     "i": 182,
+     "line": 18,
+     "tr": "sbꜣ",
+     "pos": "verb",
+     "gloss": "unterrichten",
+     "how": "gardiner",
+     "signs": "𓋴𓃀𓇼?",
+     "word": 165
+    },
+    {
+     "i": 183,
+     "line": 18,
+     "tr": "z",
+     "pos": "substantive",
+     "gloss": "Mann",
+     "how": "unicode",
+     "signs": "𓊃𓀀𓏤",
+     "word": 166
+    },
+    {
+     "i": 184,
+     "line": 18,
+     "tr": "ꜣḫ.t(j)",
+     "pos": "verb",
+     "gloss": "herrlich sein",
+     "how": "unicode",
+     "signs": "𓐍𓅜𓏏",
+     "word": 167
+    },
+    {
+     "i": 185,
+     "line": 18,
+     "tr": "=s(j)",
+     "pos": "pronoun",
+     "gloss": "[Suffix Pron. sg.3.f. (Verbaladj.)]",
+     "how": "unicode",
+     "signs": "𓋴",
+     "word": 167
+    },
+    {
+     "i": 186,
+     "line": 18,
+     "tr": "n",
+     "pos": "preposition",
+     "gloss": "für (jmd.)",
+     "how": "unicode",
+     "signs": "𓈖",
+     "word": 168
+    },
+    {
+     "i": 187,
+     "line": 18,
+     "tr": "=f",
+     "pos": "pronoun",
+     "gloss": "[Suffix Pron. sg.3.m.]",
+     "how": "unicode",
+     "signs": "𓆑",
+     "word": 168
+    },
+    {
+     "i": 188,
+     "line": 19,
+     "tr": "jnk",
+     "pos": "pronoun",
+     "gloss": "ich [Selbst. Pron. sg.1.c]",
+     "how": "unicode",
+     "signs": "𓏌𓎡",
+     "word": 169
+    },
+    {
+     "i": 189,
+     "line": 19,
+     "tr": "mtj",
+     "pos": "verb",
+     "gloss": "richtig sein; maßvoll sein",
+     "how": "gardiner",
+     "signs": "𓂸𓏏𓂭𓂭?",
+     "word": 170
+    },
+    {
+     "i": 190,
+     "line": 19,
+     "tr": "n(,j)",
+     "pos": "adjective",
+     "gloss": "von [Genitiv]",
+     "how": "unicode",
+     "signs": "𓈖",
+     "word": 171
+    },
+    {
+     "i": 191,
+     "line": 19,
+     "tr": "pr-nswt",
+     "pos": "substantive",
+     "gloss": "Königspalast",
+     "how": "unicode",
+     "signs": "𓇓𓏏𓈖𓉐",
+     "word": 172
+    },
+    {
+     "i": 192,
+     "line": 19,
+     "tr": "rḫ",
+     "pos": "verb",
+     "gloss": "wissen",
+     "how": "gardiner",
+     "signs": "𓂋𓐍?",
+     "word": 173
+    },
+    {
+     "i": 193,
+     "line": 19,
+     "tr": "ḏd.t",
+     "pos": "verb",
+     "gloss": "sagen",
+     "how": "unicode",
+     "signs": "𓆓𓂧𓏏",
+     "word": 174
+    },
+    {
+     "i": 194,
+     "line": 19,
+     "tr": "m",
+     "pos": "preposition",
+     "gloss": "[Präposition]",
+     "how": "unicode",
+     "signs": "𓅓",
+     "word": 175
+    },
+    {
+     "i": 195,
+     "line": 19,
+     "tr": "ḫꜣ",
+     "pos": "substantive",
+     "gloss": "Büro",
+     "how": "unicode",
+     "signs": "𓐍𓄿𓉐𓏤",
+     "word": 176
+    },
+    {
+     "i": 196,
+     "line": 19,
+     "tr": "nb",
+     "pos": "adjective",
+     "gloss": "jeder",
+     "how": "unicode",
+     "signs": "𓎟",
+     "word": 177
+    },
+    {
+     "i": 197,
+     "line": 20,
+     "tr": "jnk",
+     "pos": "pronoun",
+     "gloss": "ich [Selbst. Pron. sg.1.c]",
+     "how": "unicode",
+     "signs": "𓏌𓎡",
+     "word": 178
+    },
+    {
+     "i": 198,
+     "line": 20,
+     "tr": "sḏm.w",
+     "pos": "verb",
+     "gloss": "hören",
+     "how": "gardiner",
+     "signs": "?𓅱?",
+     "word": 179
+    },
+    {
+     "i": 199,
+     "line": 20,
+     "tr": "sḏm",
+     "pos": "verb",
+     "gloss": "hören",
+     "how": "gardiner",
+     "signs": "?𓏤?",
+     "word": 180
+    },
+    {
+     "i": 200,
+     "line": 20,
+     "tr": "=j",
+     "pos": "pronoun",
+     "gloss": "[Suffix Pron. sg.1.c.]",
+     "how": "unicode",
+     "signs": "𓀀",
+     "word": 180
+    },
+    {
+     "i": 201,
+     "line": 20,
+     "tr": "mꜣꜥ,t",
+     "pos": "substantive",
+     "gloss": "Gerechtigkeit",
+     "how": "gardiner",
+     "signs": "𓐙𓏏?",
+     "word": 181
+    },
+    {
+     "i": 202,
+     "line": 20,
+     "tr": "swꜣwꜣ",
+     "pos": "verb",
+     "gloss": "vorbeigehen lassen (?)",
+     "how": "unicode",
+     "signs": "𓋴𓍯𓄿𓍯𓄿",
+     "word": 182
+    },
+    {
+     "i": 203,
+     "line": 20,
+     "tr": "jss,t",
+     "pos": "verb",
+     "gloss": "leicht sein",
+     "how": "unicode",
+     "signs": "𓇋𓋴𓋴𓏏",
+     "word": 183
+    },
+    {
+     "i": 204,
+     "line": 20,
+     "tr": "ḥr",
+     "pos": "preposition",
+     "gloss": "[Präposition]",
+     "how": "unicode",
+     "signs": "𓁷",
+     "word": 184
+    },
+    {
+     "i": 205,
+     "line": 20,
+     "tr": "jb",
+     "pos": "substantive",
+     "gloss": "Herz",
+     "how": "unicode",
+     "signs": "𓄣𓏤",
+     "word": 185
+    },
+    {
+     "i": 206,
+     "line": 21,
+     "tr": "jnk",
+     "pos": "pronoun",
+     "gloss": "ich [Selbst. Pron. sg.1.c]",
+     "how": "unicode",
+     "signs": "𓏌𓎡",
+     "word": 186
+    },
+    {
+     "i": 207,
+     "line": 21,
+     "tr": "bnr",
+     "pos": "verb",
+     "gloss": "süß sein",
+     "how": "unicode",
+     "signs": "𓃀𓈖𓂋",
+     "word": 187
+    },
+    {
+     "i": 208,
+     "line": 21,
+     "tr": "n",
+     "pos": "preposition",
+     "gloss": "für (jmd.)",
+     "how": "unicode",
+     "signs": "𓈖",
+     "word": 188
+    },
+    {
+     "i": 209,
+     "line": 21,
+     "tr": "pr",
+     "pos": "substantive",
+     "gloss": "Haus",
+     "how": "unicode",
+     "signs": "𓉐𓏤",
+     "word": 189
+    },
+    {
+     "i": 210,
+     "line": 21,
+     "tr": "nb",
+     "pos": "substantive",
+     "gloss": "Herr",
+     "how": "unicode",
+     "signs": "𓎟𓏤",
+     "word": 190
+    },
+    {
+     "i": 211,
+     "line": 21,
+     "tr": "=f",
+     "pos": "pronoun",
+     "gloss": "[Suffix Pron. sg.3.m.]",
+     "how": "unicode",
+     "signs": "𓆑",
+     "word": 190
+    },
+    {
+     "i": 212,
+     "line": 21,
+     "tr": "sḫꜣ.w",
+     "pos": "verb",
+     "gloss": "sich erinnern",
+     "how": "gardiner",
+     "signs": "𓋴𓐍?𓅱",
+     "word": 191
+    },
+    {
+     "i": 213,
+     "line": 21,
+     "tr": "ḥr",
+     "pos": "preposition",
+     "gloss": "für (Grund)",
+     "how": "unicode",
+     "signs": "𓁷𓏤",
+     "word": 192
+    },
+    {
+     "i": 214,
+     "line": 21,
+     "tr": "zp.pl",
+     "pos": "substantive",
+     "gloss": "Angelegenheit",
+     "how": "unicode",
+     "signs": "𓊃𓊪𓊗𓏥",
+     "word": 193
+    },
+    {
+     "i": 215,
+     "line": 21,
+     "tr": "=f",
+     "pos": "pronoun",
+     "gloss": "[Suffix Pron. sg.3.m.]",
+     "how": "unicode",
+     "signs": "𓆑",
+     "word": 193
+    },
+    {
+     "i": 216,
+     "line": 21,
+     "tr": "mꜥr(.w)",
+     "pos": "adjective",
+     "gloss": "erfolgreich",
+     "how": "unicode",
+     "signs": "𓅓𓂣𓂋𓏝",
+     "word": 194
+    },
+    {
+     "i": 217,
+     "line": 22,
+     "tr": "jnk",
+     "pos": "pronoun",
+     "gloss": "ich [Selbst. Pron. sg.1.c]",
+     "how": "unicode",
+     "signs": "𓏌𓎡",
+     "word": 195
+    },
+    {
+     "i": 218,
+     "line": 22,
+     "tr": "nfr",
+     "pos": "verb",
+     "gloss": "gut sein",
+     "how": "unicode",
+     "signs": "𓄤",
+     "word": 196
+    },
+    {
+     "i": 219,
+     "line": 22,
+     "tr": "m-ẖnw",
+     "pos": "preposition",
+     "gloss": "in",
+     "how": "unicode",
+     "signs": "𓅓𓄚𓏌𓉐",
+     "word": 197
+    },
+    {
+     "i": 220,
+     "line": 22,
+     "tr": "ḫꜣ.pl",
+     "pos": "substantive",
+     "gloss": "Büro",
+     "how": "unicode",
+     "signs": "𓐍𓄿𓉐𓏨",
+     "word": 198
+    },
+    {
+     "i": 221,
+     "line": 22,
+     "tr": "wꜣḥ-jb",
+     "pos": "substantive",
+     "gloss": "der Freundliche",
+     "how": "unicode",
+     "signs": "𓍯𓄿𓎛𓎝𓄣",
+     "word": 199
+    },
+    {
+     "i": 222,
+     "line": 22,
+     "tr": "šwi̯",
+     "pos": "verb",
+     "gloss": "leer sein",
+     "how": "unicode",
+     "signs": "𓆄𓅱",
+     "word": 200
+    },
+    {
+     "i": 223,
+     "line": 22,
+     "tr": "m",
+     "pos": "preposition",
+     "gloss": "[idiomatisch mit Verben verbunden]",
+     "how": "unicode",
+     "signs": "𓅓",
+     "word": 201
+    },
+    {
+     "i": 224,
+     "line": 22,
+     "tr": "rrj,t",
+     "pos": "substantive",
+     "gloss": "Überheblichkeit (?)",
+     "how": "unicode",
+     "signs": "𓂋𓂋𓇋𓏏",
+     "word": 202
+    },
+    {
+     "i": 225,
+     "line": 23,
+     "tr": "jnk",
+     "pos": "pronoun",
+     "gloss": "ich [Selbst. Pron. sg.1.c]",
+     "how": "unicode",
+     "signs": "𓏌𓎡",
+     "word": 203
+    },
+    {
+     "i": 226,
+     "line": 23,
+     "tr": "nfr",
+     "pos": "verb",
+     "gloss": "gut sein",
+     "how": "unicode",
+     "signs": "𓄤𓆑𓂋",
+     "word": 204
+    },
+    {
+     "i": 227,
+     "line": 23,
+     "tr": "nn",
+     "pos": "particle",
+     "gloss": "[Negationswort, systematisch unterschieden von n]",
+     "how": "gardiner",
+     "signs": "?𓈖",
+     "word": 205
+    },
+    {
+     "i": 228,
+     "line": 23,
+     "tr": "sjn",
+     "pos": "verb",
+     "gloss": "hastig sein",
+     "how": "unicode",
+     "signs": "𓋴𓇋𓈖𓂻",
+     "word": 206
+    },
+    {
+     "i": 229,
+     "line": 23,
+     "tr": "ḥr",
+     "pos": "substantive",
+     "gloss": "Gesicht",
+     "how": "unicode",
+     "signs": "𓁷𓏤",
+     "word": 207
+    },
+    {
+     "i": 230,
+     "line": 23,
+     "tr": "=(j)",
+     "pos": "pronoun",
+     "gloss": "[Suffix Pron. sg.1.c.]",
+     "how": "none",
+     "signs": "",
+     "word": 207
+    },
+    {
+     "i": 231,
+     "line": 23,
+     "tr": "tm",
+     "pos": "verb",
+     "gloss": "[Negationsverb]",
+     "how": "unicode",
+     "signs": "𓏏𓍃𓅓",
+     "word": 208
+    },
+    {
+     "i": 232,
+     "line": 23,
+     "tr": "nḏr.w",
+     "pos": "verb",
+     "gloss": "fassen; packen",
+     "how": "unicode",
+     "signs": "𓈖𓇥𓂋𓅱",
+     "word": 209
+    },
+    {
+     "i": 233,
+     "line": 23,
+     "tr": "z",
+     "pos": "substantive",
+     "gloss": "Mann",
+     "how": "unicode",
+     "signs": "𓊃𓀀",
+     "word": 210
+    },
+    {
+     "i": 234,
+     "line": 23,
+     "tr": "ḥr",
+     "pos": "preposition",
+     "gloss": "wegen",
+     "how": "unicode",
+     "signs": "𓁷",
+     "word": 211
+    },
+    {
+     "i": 235,
+     "line": 23,
+     "tr": "tp,(j)t-rʾ",
+     "pos": "substantive",
+     "gloss": "Ausspruch",
+     "how": "inventory",
+     "signs": "???",
+     "word": 212
+    },
+    {
+     "i": 236,
+     "line": 24,
+     "tr": "jnk",
+     "pos": "pronoun",
+     "gloss": "ich [Selbst. Pron. sg.1.c]",
+     "how": "unicode",
+     "signs": "𓏌𓎡",
+     "word": 213
+    },
+    {
+     "i": 237,
+     "line": 24,
+     "tr": "ꜥqꜣ",
+     "pos": "verb",
+     "gloss": "richtig sein",
+     "how": "gardiner",
+     "signs": "𓂣𓄿𓈎𓂭𓂭?",
+     "word": 214
+    },
+    {
+     "i": 238,
+     "line": 24,
+     "tr": "mj,ty",
+     "pos": "substantive",
+     "gloss": "Gleicher",
+     "how": "unicode",
+     "signs": "𓏇𓏏𓏭",
+     "word": 215
+    },
+    {
+     "i": 239,
+     "line": 24,
+     "tr": "jws(,w)",
+     "pos": "substantive",
+     "gloss": "Waage",
+     "how": "gardiner",
+     "signs": "𓃛𓊃?",
+     "word": 216
+    },
+    {
+     "i": 240,
+     "line": 24,
+     "tr": "mtj",
+     "pos": "verb",
+     "gloss": "richtig sein; maßvoll sein",
+     "how": "gardiner",
+     "signs": "𓂸𓏏𓂭𓂭?",
+     "word": 217
+    },
+    {
+     "i": 241,
+     "line": 24,
+     "tr": "mꜣꜥ",
+     "pos": "adverb",
+     "gloss": "richtig",
+     "how": "unicode",
+     "signs": "𓐙𓂣",
+     "word": 218
+    },
+    {
+     "i": 242,
+     "line": 24,
+     "tr": "mj",
+     "pos": "preposition",
+     "gloss": "wie",
+     "how": "unicode",
+     "signs": "𓏇",
+     "word": 219
+    },
+    {
+     "i": 243,
+     "line": 24,
+     "tr": "Ḏḥw,tj",
+     "pos": "entity_name",
+     "gloss": "Thot",
+     "how": "unicode",
+     "signs": "𓅞",
+     "word": 220
+    },
+    {
+     "i": 244,
+     "line": 25,
+     "tr": "jnk",
+     "pos": "pronoun",
+     "gloss": "ich [Selbst. Pron. sg.1.c]",
+     "how": "unicode",
+     "signs": "𓏌𓎡",
+     "word": 221
+    },
+    {
+     "i": 245,
+     "line": 25,
+     "tr": "mn",
+     "pos": "verb",
+     "gloss": "gefestigt sein",
+     "how": "gardiner",
+     "signs": "𓏠𓈖?",
+     "word": 222
+    },
+    {
+     "i": 246,
+     "line": 25,
+     "tr": "rd",
+     "pos": "substantive",
+     "gloss": "Fuß",
+     "how": "unicode",
+     "signs": "𓂾𓏤",
+     "word": 223
+    },
+    {
+     "i": 247,
+     "line": 25,
+     "tr": "jqr",
+     "pos": "verb",
+     "gloss": "trefflich sein; fähig sein",
+     "how": "gardiner",
+     "signs": "𓇋𓈎𓂋?",
+     "word": 224
+    },
+    {
+     "i": 248,
+     "line": 25,
+     "tr": "sḫr",
+     "pos": "substantive",
+     "gloss": "Plan",
+     "how": "gardiner",
+     "signs": "𓋴𓐍𓂋?",
+     "word": 225
+    },
+    {
+     "i": 249,
+     "line": 25,
+     "tr": "mḏd",
+     "pos": "verb",
+     "gloss": "(jmdm.) ergeben sein",
+     "how": "gardiner",
+     "signs": "𓐥?",
+     "word": 226
+    },
+    {
+     "i": 250,
+     "line": 25,
+     "tr": "mtn",
+     "pos": "substantive",
+     "gloss": "Weg",
+     "how": "unicode",
+     "signs": "𓂸𓏏𓈖𓈐",
+     "word": 227
+    },
+    {
+     "i": 251,
+     "line": 25,
+     "tr": "n(,j)",
+     "pos": "adjective",
+     "gloss": "von [Genitiv]",
+     "how": "unicode",
+     "signs": "𓈖",
+     "word": 228
+    },
+    {
+     "i": 252,
+     "line": 25,
+     "tr": "smnḫ",
+     "pos": "verb",
+     "gloss": "vortrefflich machen",
+     "how": "unicode",
+     "signs": "𓋴𓏠𓐍𓍊",
+     "word": 229
+    },
+    {
+     "i": 253,
+     "line": 25,
+     "tr": "sw",
+     "pos": "pronoun",
+     "gloss": "ihn [Enkl. Pron. sg.3.m.]",
+     "how": "unicode",
+     "signs": "𓇓𓅱",
+     "word": 230
+    },
+    {
+     "i": 254,
+     "line": 26,
+     "tr": "jnk",
+     "pos": "pronoun",
+     "gloss": "ich [Selbst. Pron. sg.1.c]",
+     "how": "unicode",
+     "signs": "𓏌𓎡",
+     "word": 231
+    },
+    {
+     "i": 255,
+     "line": 26,
+     "tr": "rḫ(.w)",
+     "pos": "verb",
+     "gloss": "wissen",
+     "how": "gardiner",
+     "signs": "𓂋𓐍?",
+     "word": 232
+    },
+    {
+     "i": 256,
+     "line": 26,
+     "tr": "sbꜣ",
+     "pos": "verb",
+     "gloss": "unterrichten",
+     "how": "gardiner",
+     "signs": "𓋴𓃀𓇼?",
+     "word": 233
+    },
+    {
+     "i": 257,
+     "line": 26,
+     "tr": "sw",
+     "pos": "pronoun",
+     "gloss": "sich",
+     "how": "unicode",
+     "signs": "𓇓𓅱",
+     "word": 234
+    },
+    {
+     "i": 258,
+     "line": 26,
+     "tr": "rḫ",
+     "pos": "substantive",
+     "gloss": "Wissen",
+     "how": "gardiner",
+     "signs": "𓂋𓐍?",
+     "word": 235
+    },
+    {
+     "i": 259,
+     "line": 26,
+     "tr": "nḏnḏ",
+     "pos": "verb",
+     "gloss": "fragen; beraten",
+     "how": "gardiner",
+     "signs": "𓈖𓐩𓏌?𓈖𓐩𓏌?",
+     "word": 236
+    },
+    {
+     "i": 260,
+     "line": 26,
+     "tr": "r",
+     "pos": "preposition",
+     "gloss": "um zu (final)",
+     "how": "unicode",
+     "signs": "𓂋",
+     "word": 237
+    },
+    {
+     "i": 261,
+     "line": 26,
+     "tr": "ḏi̯〈.t〉",
+     "pos": "verb",
+     "gloss": "veranlassen",
+     "how": "unicode",
+     "signs": "𓂞",
+     "word": 238
+    },
+    {
+     "i": 262,
+     "line": 26,
+     "tr": "nḏ",
+     "pos": "verb",
+     "gloss": "fragen; beraten",
+     "how": "unicode",
+     "signs": "𓐩𓏌",
+     "word": 239
+    },
+    {
+     "i": 263,
+     "line": 26,
+     "tr": "=t(w)",
+     "pos": "pronoun",
+     "gloss": "[Suffix Pron. sg.3.c.]",
+     "how": "unicode",
+     "signs": "𓏏",
+     "word": 239
+    },
+    {
+     "i": 264,
+     "line": 26,
+     "tr": "m-ꜥ",
+     "pos": "preposition",
+     "gloss": "[Agensmarker b. Passiv]",
+     "how": "unicode",
+     "signs": "𓅓𓂝",
+     "word": 240
+    },
+    {
+     "i": 265,
+     "line": 26,
+     "tr": "=f",
+     "pos": "pronoun",
+     "gloss": "[Suffix Pron. sg.3.m.]",
+     "how": "unicode",
+     "signs": "𓆑",
+     "word": 240
+    },
+    {
+     "i": 266,
+     "line": 27,
+     "tr": "jnk",
+     "pos": "pronoun",
+     "gloss": "ich [Selbst. Pron. sg.1.c]",
+     "how": "unicode",
+     "signs": "𓏌𓎡",
+     "word": 241
+    },
+    {
+     "i": 267,
+     "line": 27,
+     "tr": "mdw.w",
+     "pos": "verb",
+     "gloss": "sprechen",
+     "how": "gardiner",
+     "signs": "𓌃𓂧𓅱𓅱?",
+     "word": 242
+    },
+    {
+     "i": 268,
+     "line": 27,
+     "tr": "m",
+     "pos": "preposition",
+     "gloss": "in",
+     "how": "unicode",
+     "signs": "𓅓",
+     "word": 243
+    },
+    {
+     "i": 269,
+     "line": 27,
+     "tr": "ḫꜣ",
+     "pos": "substantive",
+     "gloss": "Halle",
+     "how": "unicode",
+     "signs": "𓐍𓄿𓉐𓏤",
+     "word": 244
+    },
+    {
+     "i": 270,
+     "line": 27,
+     "tr": "n(,j)",
+     "pos": "adjective",
+     "gloss": "von [Genitiv]",
+     "how": "unicode",
+     "signs": "𓈖",
+     "word": 245
+    },
+    {
+     "i": 271,
+     "line": 27,
+     "tr": "mꜣꜥ,t",
+     "pos": "substantive",
+     "gloss": "Wahrheit",
+     "how": "gardiner",
+     "signs": "𓐙𓏏?",
+     "word": 246
+    },
+    {
+     "i": 272,
+     "line": 27,
+     "tr": "spd",
+     "pos": "verb",
+     "gloss": "tüchtig sein",
+     "how": "unicode",
+     "signs": "𓋴𓇮",
+     "word": 247
+    },
+    {
+     "i": 273,
+     "line": 27,
+     "tr": "rʾ",
+     "pos": "substantive",
+     "gloss": "Spruch; das Sagen",
+     "how": "unicode",
+     "signs": "𓂋𓏤",
+     "word": 248
+    },
+    {
+     "i": 274,
+     "line": 27,
+     "tr": "m",
+     "pos": "preposition",
+     "gloss": "[Präposition]",
+     "how": "unicode",
+     "signs": "𓅓",
+     "word": 249
+    },
+    {
+     "i": 275,
+     "line": 27,
+     "tr": "s,t.pl",
+     "pos": "substantive",
+     "gloss": "Angelegenheit",
+     "how": "unicode",
+     "signs": "𓊨𓏪",
+     "word": 250
+    },
+    {
+     "i": 276,
+     "line": 27,
+     "tr": "ḥns-jb",
+     "pos": "substantive",
+     "gloss": "Engherzigkeit",
+     "how": "unicode",
+     "signs": "𓎛𓈖𓋴𓄣𓏤",
+     "word": 251
+    }
+   ]
+  },
+  {
+   "key": "ea162",
+   "label": "BM EA 162 (Imeny)",
+   "sources": {
+    "quadrats": {
+     "object": "BM EA 162 (Imeny): HieroJax heading \"Stela of Imeny\"",
+     "encoding": "Mark-Jan Nederhof, HieroJax text page BritishMuseumEA162, https://raw.githubusercontent.com/nederhof/hierojax/da318801e00b10b4b5c5ec8d9cc6f8fddcc9eb5a/docs/texts/BritishMuseumEA162.html (commit da318801e00b10b4b5c5ec8d9cc6f8fddcc9eb5a); HieroJax repository is GPL-3.0",
+     "direction": "Not recorded here (OPEN); not needed for the boundary counts.",
+     "note": "Encoding of relative positions is the editor's; it is not a facsimile."
+    },
+    "words": {
+     "text": "Thesaurus Linguae Aegyptiae text RGI3F7G3OFDJ5A44XJ7DOFL55U (BM EA 162 (Imeny)); TLA editor field (owner): \"Alexander Schütze\"; corpus \"sawlit\"; date \"MK & SIP\".",
+     "tla": "https://tla.digital/text/RGI3F7G3OFDJ5A44XJ7DOFL55U",
+     "via": "AES - Ancient Egyptian Sentences, S. D. Schweitzer, converted from the TLA database excerpt of January 2018 (urn:nbn:de:kobv:b4-opus4-29190).",
+     "file": "https://raw.githubusercontent.com/simondschweitzer/aes/35276d2527cca1a055e31ed5f6683e777717170f/files/aes/_aes_sawlit.json",
+     "sha256": "b3d5eb695584be976b9981392eb4e149d13f447f677cf445b5a954898bc82ef4",
+     "licence": "CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/). This extract keeps that licence."
+    }
+   },
+   "coverage": {
+    "linesMappedAndBestMatch": 18,
+    "lines": 18,
+    "tlaSentences": 14,
+    "tlaTokens": 134,
+    "words": 121,
+    "tokenSignSource": {
+     "unicode": 125,
+     "inventory": 1,
+     "gardiner": 8
+    },
+    "tokensWithoutSigns": [],
+    "nederhofSigns": 385,
+    "tlaSigns": 383,
+    "exact": 357,
+    "wildcard": 12,
+    "substituted": 14,
+    "nederhofOnly": 2,
+    "nederhofOnlyUnassigned": 2,
+    "tlaOnly": 0,
+    "groups": 223,
+    "quadrats": 132
+   },
+   "byToken": {
+    "quadrats": {
+     "inside": 110,
+     "insideExact": 98,
+     "across": 22,
+     "acrossExact": 21
+    },
+    "lone": {
+     "inside": 89,
+     "open": 2
+    },
+    "units": {
+     "total": 134,
+     "written": 134,
+     "noSigns": 0,
+     "dist": {
+      "multiGroup": 62,
+      "oneGroupAlone": 37,
+      "oneGroupShared": 35
+     },
+     "groupsTouched": {
+      "1": 72,
+      "2": 31,
+      "3": 16,
+      "4": 11,
+      "5": 4
+     }
+    },
+    "discontinuous": [],
+    "unplaced": []
+   },
+   "byWord": {
+    "quadrats": {
+     "inside": 120,
+     "insideExact": 108,
+     "across": 12,
+     "acrossExact": 11
+    },
+    "lone": {
+     "inside": 89,
+     "open": 2
+    },
+    "units": {
+     "total": 121,
+     "written": 121,
+     "noSigns": 0,
+     "dist": {
+      "multiGroup": 64,
+      "oneGroupAlone": 38,
+      "oneGroupShared": 19
+     },
+     "groupsTouched": {
+      "1": 57,
+      "2": 33,
+      "3": 16,
+      "4": 11,
+      "5": 4
+     }
+    },
+    "discontinuous": [],
+    "unplaced": []
+   },
+   "acrossPairsByPOS": {
+    "verb + pronoun": 6,
+    "substantive + pronoun": 3,
+    "substantive + adjective": 3,
+    "preposition + substantive + adjective": 2,
+    "preposition + entity_name": 2,
+    "adjective + adjective": 2,
+    "substantive + substantive": 1,
+    "preposition + pronoun": 1,
+    "verb + preposition + pronoun": 1,
+    "pronoun + verb": 1
+   },
+   "perLine": [
+    {
+     "line": 1,
+     "tlaLine": "[A.1]",
+     "bestMatch": true,
+     "dir": null,
+     "orderDiffers": [],
+     "nederhofSigns": 29,
+     "tlaSigns": 27,
+     "exact": 23,
+     "wildcard": 4,
+     "cost": 4.0,
+     "diffs": [
+      {
+       "kind": "nederhof-only",
+       "nederhof": "𓑃",
+       "assigned": false
+      },
+      {
+       "kind": "nederhof-only",
+       "nederhof": "𓑃",
+       "assigned": false
+      }
+     ]
+    },
+    {
+     "line": 2,
+     "tlaLine": "[A.2]",
+     "bestMatch": true,
+     "dir": null,
+     "orderDiffers": [],
+     "nederhofSigns": 29,
+     "tlaSigns": 29,
+     "exact": 25,
+     "wildcard": 0,
+     "cost": 4,
+     "diffs": [
+      {
+       "kind": "sub",
+       "nederhof": "𓏑",
+       "tla": "𓏐",
+       "token": "tʾ.pl"
+      },
+      {
+       "kind": "sub",
+       "nederhof": "𓏔",
+       "tla": "𓏒",
+       "token": "tʾ.pl"
+      },
+      {
+       "kind": "sub",
+       "nederhof": "𓃾",
+       "tla": "𓃿",
+       "token": "kꜣ.pl"
+      },
+      {
+       "kind": "sub",
+       "nederhof": "𓏧",
+       "tla": "𓈓",
+       "token": "ꜣpd.pl"
+      }
+     ]
+    },
+    {
+     "line": 3,
+     "tlaLine": "[A.3]",
+     "bestMatch": true,
+     "dir": null,
+     "orderDiffers": [],
+     "nederhofSigns": 37,
+     "tlaSigns": 37,
+     "exact": 36,
+     "wildcard": 1,
+     "cost": 0.5,
+     "diffs": []
+    },
+    {
+     "line": 4,
+     "tlaLine": "[A.4]",
+     "bestMatch": true,
+     "dir": null,
+     "orderDiffers": [],
+     "nederhofSigns": 31,
+     "tlaSigns": 31,
+     "exact": 29,
+     "wildcard": 1,
+     "cost": 1.5,
+     "diffs": [
+      {
+       "kind": "sub",
+       "nederhof": "𓏔",
+       "tla": "𓏒",
+       "token": "ḥtp,t.pl"
+      }
+     ]
+    },
+    {
+     "line": 5,
+     "tlaLine": "[A.5]",
+     "bestMatch": true,
+     "dir": null,
+     "orderDiffers": [],
+     "nederhofSigns": 33,
+     "tlaSigns": 33,
+     "exact": 32,
+     "wildcard": 0,
+     "cost": 1,
+     "diffs": [
+      {
+       "kind": "sub",
+       "nederhof": "𔄋",
+       "tla": "𓊻",
+       "token": "ẖr,t-nṯr"
+      }
+     ]
+    },
+    {
+     "line": 6,
+     "tlaLine": "[A.6]",
+     "bestMatch": true,
+     "dir": null,
+     "orderDiffers": [],
+     "nederhofSigns": 23,
+     "tlaSigns": 23,
+     "exact": 21,
+     "wildcard": 1,
+     "cost": 1.5,
+     "diffs": [
+      {
+       "kind": "sub",
+       "nederhof": "𔅇",
+       "tla": "𓈾",
+       "token": "pr,t-Mnw"
+      }
+     ]
+    },
+    {
+     "line": 7,
+     "tlaLine": "[A.7]",
+     "bestMatch": true,
+     "dir": null,
+     "orderDiffers": [],
+     "nederhofSigns": 24,
+     "tlaSigns": 24,
+     "exact": 24,
+     "wildcard": 0,
+     "cost": 0,
+     "diffs": []
+    },
+    {
+     "line": 8,
+     "tlaLine": "[A.8]",
+     "bestMatch": true,
+     "dir": null,
+     "orderDiffers": [],
+     "nederhofSigns": 25,
+     "tlaSigns": 25,
+     "exact": 21,
+     "wildcard": 1,
+     "cost": 3.5,
+     "diffs": [
+      {
+       "kind": "sub",
+       "nederhof": "𓋀",
+       "tla": "𓏏",
+       "token": "Ḫnt(,j)-jmn,tjw"
+      },
+      {
+       "kind": "sub",
+       "nederhof": "𓏏",
+       "tla": "𓋀",
+       "token": "Ḫnt(,j)-jmn,tjw"
+      },
+      {
+       "kind": "sub",
+       "nederhof": "𓘾",
+       "tla": "𓀻",
+       "token": "Jmny"
+      }
+     ]
+    },
+    {
+     "line": 9,
+     "tlaLine": "[B.1]",
+     "bestMatch": true,
+     "dir": null,
+     "orderDiffers": [],
+     "nederhofSigns": 22,
+     "tlaSigns": 22,
+     "exact": 22,
+     "wildcard": 0,
+     "cost": 0,
+     "diffs": []
+    },
+    {
+     "line": 10,
+     "tlaLine": "[B.2]",
+     "bestMatch": true,
+     "dir": null,
+     "orderDiffers": [],
+     "nederhofSigns": 16,
+     "tlaSigns": 16,
+     "exact": 13,
+     "wildcard": 1,
+     "cost": 2.5,
+     "diffs": [
+      {
+       "kind": "sub",
+       "nederhof": "𓄠",
+       "tla": "𓄟",
+       "token": "msi̯.t.n"
+      },
+      {
+       "kind": "sub",
+       "nederhof": "𓐚",
+       "tla": "𓐙",
+       "token": "mꜣꜥ,t-ḫrw"
+      }
+     ]
+    },
+    {
+     "line": 11,
+     "tlaLine": "[B.3]",
+     "bestMatch": true,
+     "dir": null,
+     "orderDiffers": [],
+     "nederhofSigns": 11,
+     "tlaSigns": 11,
+     "exact": 10,
+     "wildcard": 1,
+     "cost": 0.5,
+     "diffs": []
+    },
+    {
+     "line": 12,
+     "tlaLine": "[B.4]",
+     "bestMatch": true,
+     "dir": null,
+     "orderDiffers": [],
+     "nederhofSigns": 33,
+     "tlaSigns": 33,
+     "exact": 31,
+     "wildcard": 2,
+     "cost": 1.0,
+     "diffs": []
+    },
+    {
+     "line": 13,
+     "tlaLine": "[B.5]",
+     "bestMatch": true,
+     "dir": null,
+     "orderDiffers": [],
+     "nederhofSigns": 29,
+     "tlaSigns": 29,
+     "exact": 28,
+     "wildcard": 0,
+     "cost": 1,
+     "diffs": [
+      {
+       "kind": "sub",
+       "nederhof": "𓐚",
+       "tla": "𓐙",
+       "token": "mꜣꜥ-ḫrw"
+      }
+     ]
+    },
+    {
+     "line": 14,
+     "tlaLine": "[C.1]",
+     "bestMatch": true,
+     "dir": null,
+     "orderDiffers": [],
+     "nederhofSigns": 8,
+     "tlaSigns": 8,
+     "exact": 8,
+     "wildcard": 0,
+     "cost": 0,
+     "diffs": []
+    },
+    {
+     "line": 15,
+     "tlaLine": "[C.2]",
+     "bestMatch": true,
+     "dir": null,
+     "orderDiffers": [],
+     "nederhofSigns": 8,
+     "tlaSigns": 8,
+     "exact": 7,
+     "wildcard": 0,
+     "cost": 1,
+     "diffs": [
+      {
+       "kind": "sub",
+       "nederhof": "𓏔",
+       "tla": "𓏒",
+       "token": "Ḏfꜣ≡(j)-ḥ(ꜥ)p(j)"
+      }
+     ]
+    },
+    {
+     "line": 16,
+     "tlaLine": "[C.3]",
+     "bestMatch": true,
+     "dir": null,
+     "orderDiffers": [],
+     "nederhofSigns": 10,
+     "tlaSigns": 10,
+     "exact": 10,
+     "wildcard": 0,
+     "cost": 0,
+     "diffs": []
+    },
+    {
+     "line": 17,
+     "tlaLine": "[C.4]",
+     "bestMatch": true,
+     "dir": null,
+     "orderDiffers": [],
+     "nederhofSigns": 8,
+     "tlaSigns": 8,
+     "exact": 8,
+     "wildcard": 0,
+     "cost": 0,
+     "diffs": []
+    },
+    {
+     "line": 18,
+     "tlaLine": "[C.5]",
+     "bestMatch": true,
+     "dir": null,
+     "orderDiffers": [],
+     "nederhofSigns": 9,
+     "tlaSigns": 9,
+     "exact": 9,
+     "wildcard": 0,
+     "cost": 0,
+     "diffs": []
+    }
+   ],
+   "quadratRows": [
+    {
+     "line": 1,
+     "pos": 2,
+     "u": "𓏏𓐰𓊵",
+     "class": "inside",
+     "units": [
+      0
+     ],
+     "open": 0,
+     "tokens": [
+      "ḥtp-di̯-nswt"
+     ]
+    },
+    {
+     "line": 1,
+     "pos": 4,
+     "u": "𓐍𓐰𓂋",
+     "class": "inside",
+     "units": [
+      1
+     ],
+     "open": 0,
+     "tokens": [
+      "ḫr"
+     ]
+    },
+    {
+     "line": 1,
+     "pos": 5,
+     "u": "𓁹𓐰𓊨",
+     "class": "inside",
+     "units": [
+      2
+     ],
+     "open": 0,
+     "tokens": [
+      "Wsjr"
+     ]
+    },
+    {
+     "line": 1,
+     "pos": 14,
+     "u": "𓈋𓐰𓊖",
+     "class": "inside",
+     "units": [
+      4
+     ],
+     "open": 0,
+     "tokens": [
+      "[nb]-ꜣbḏw"
+     ]
+    },
+    {
+     "line": 1,
+     "pos": 17,
+     "u": "𓏏𓐰𓉐",
+     "class": "inside",
+     "units": [
+      6
+     ],
+     "open": 0,
+     "tokens": [
+      "s,t.pl"
+     ]
+    },
+    {
+     "line": 1,
+     "pos": 18,
+     "u": "𓏥𓐰𓆑",
+     "class": "across",
+     "units": [
+      6,
+      7
+     ],
+     "open": 0,
+     "tokens": [
+      "s,t.pl",
+      "=f"
+     ]
+    },
+    {
+     "line": 1,
+     "pos": 19,
+     "u": "𓎟𓐰𓏏",
+     "class": "inside",
+     "units": [
+      8
+     ],
+     "open": 0,
+     "tokens": [
+      "nb.t(.pl)"
+     ]
+    },
+    {
+     "line": 1,
+     "pos": 21,
+     "u": "𓂋𓐰𓏏",
+     "class": "inside",
+     "units": [
+      9
+     ],
+     "open": 0,
+     "tokens": [
+      "nfr.t(.pl)"
+     ]
+    },
+    {
+     "line": 2,
+     "pos": 2,
+     "u": "𓏏𓐰𓈗",
+     "class": "inside",
+     "units": [
+      10
+     ],
+     "open": 0,
+     "tokens": [
+      "wꜥb.t(.pl)"
+     ]
+    },
+    {
+     "line": 2,
+     "pos": 3,
+     "u": "𓂞𓐰𓆑",
+     "class": "across",
+     "units": [
+      11,
+      12
+     ],
+     "open": 0,
+     "tokens": [
+      "di̯",
+      "=f"
+     ]
+    },
+    {
+     "line": 2,
+     "pos": 5,
+     "u": "𓂋𓐰𓏏",
+     "class": "inside",
+     "units": [
+      13
+     ],
+     "open": 0,
+     "tokens": [
+      "pr,t-ḫrw"
+     ]
+    },
+    {
+     "line": 2,
+     "pos": 9,
+     "u": "𓏏𓐰𓏑",
+     "class": "inside",
+     "units": [
+      15
+     ],
+     "open": 0,
+     "tokens": [
+      "tʾ.pl"
+     ]
+    },
+    {
+     "line": 2,
+     "pos": 10,
+     "u": "𓏔𓐰𓏥",
+     "class": "inside",
+     "units": [
+      15
+     ],
+     "open": 0,
+     "tokens": [
+      "tʾ.pl"
+     ]
+    },
+    {
+     "line": 2,
+     "pos": 13,
+     "u": "𓈎𓐰𓏏",
+     "class": "inside",
+     "units": [
+      17
+     ],
+     "open": 0,
+     "tokens": [
+      "ḥ(n)q,t.pl"
+     ]
+    },
+    {
+     "line": 2,
+     "pos": 17,
+     "u": "𓃾𓑋𓐱𓅿𓐰𓏧",
+     "class": "across",
+     "units": [
+      19,
+      20
+     ],
+     "open": 0,
+     "tokens": [
+      "kꜣ.pl",
+      "ꜣpd.pl"
+     ]
+    },
+    {
+     "line": 2,
+     "pos": 19,
+     "u": "𓐍𓐱𓏏𓐰𓎟",
+     "class": "across",
+     "units": [
+      22,
+      23
+     ],
+     "open": 0,
+     "tokens": [
+      "ḫ,t",
+      "nb(.t)"
+     ]
+    },
+    {
+     "line": 3,
+     "pos": 2,
+     "u": "𓂋𓐰𓏏",
+     "class": "inside",
+     "units": [
+      24
+     ],
+     "open": 0,
+     "tokens": [
+      "nfr.t"
+     ]
+    },
+    {
+     "line": 3,
+     "pos": 3,
+     "u": "𓈖𓐰𓂓𓐱𓏤𓐰𓈖",
+     "class": "across",
+     "units": [
+      25,
+      26,
+      27
+     ],
+     "open": 0,
+     "tokens": [
+      "n",
+      "kꜣ",
+      "n"
+     ]
+    },
+    {
+     "line": 3,
+     "pos": 5,
+     "u": "𓄪𓐻𓐍",
+     "class": "inside",
+     "units": [
+      28
+     ],
+     "open": 0,
+     "tokens": [
+      "jmꜣḫ,w"
+     ]
+    },
+    {
+     "line": 3,
+     "pos": 7,
+     "u": "𓐍𓐰𓂋",
+     "class": "inside",
+     "units": [
+      29
+     ],
+     "open": 0,
+     "tokens": [
+      "ḫr"
+     ]
+    },
+    {
+     "line": 3,
+     "pos": 11,
+     "u": "𓂋𓐰𓏤",
+     "class": "inside",
+     "units": [
+      31
+     ],
+     "open": 0,
+     "tokens": [
+      "(j)m(,j)-rʾ-mšꜥ,pl-wr"
+     ]
+    },
+    {
+     "line": 3,
+     "pos": 14,
+     "u": "𓅨𓐰𓂋",
+     "class": "inside",
+     "units": [
+      31
+     ],
+     "open": 0,
+     "tokens": [
+      "(j)m(,j)-rʾ-mšꜥ,pl-wr"
+     ]
+    },
+    {
+     "line": 3,
+     "pos": 16,
+     "u": "𓏠𓐰𓈖",
+     "class": "inside",
+     "units": [
+      32
+     ],
+     "open": 0,
+     "tokens": [
+      "Jmny"
+     ]
+    },
+    {
+     "line": 3,
+     "pos": 19,
+     "u": "𓁹𓐰𓈖",
+     "class": "inside",
+     "units": [
+      33
+     ],
+     "open": 0,
+     "tokens": [
+      "jri̯.n"
+     ]
+    },
+    {
+     "line": 3,
+     "pos": 20,
+     "u": "𓈎𓐱𓃀",
+     "class": "inside",
+     "units": [
+      34
+     ],
+     "open": 0,
+     "tokens": [
+      "Qbw"
+     ]
+    },
+    {
+     "line": 3,
+     "pos": 23,
+     "u": "𓌳𓐴𓐚𓐰𓂝",
+     "class": "inside",
+     "units": [
+      35
+     ],
+     "open": 0,
+     "tokens": [
+      "mꜣꜥ〈,t〉-ḫrw"
+     ]
+    },
+    {
+     "line": 4,
+     "pos": 1,
+     "u": "𓂞𓐰𓏏",
+     "class": "inside",
+     "units": [
+      36
+     ],
+     "open": 0,
+     "tokens": [
+      "di̯.t(w)"
+     ]
+    },
+    {
+     "line": 4,
+     "pos": 2,
+     "u": "𓈖𓐰𓆑",
+     "class": "across",
+     "units": [
+      37,
+      38
+     ],
+     "open": 0,
+     "tokens": [
+      "n",
+      "=f"
+     ]
+    },
+    {
+     "line": 4,
+     "pos": 3,
+     "u": "𓂣𓐰𓂣",
+     "class": "inside",
+     "units": [
+      39
+     ],
+     "open": 0,
+     "tokens": [
+      "ꜥ.du"
+     ]
+    },
+    {
+     "line": 4,
+     "pos": 5,
+     "u": "𓈖𓐰𓈙",
+     "class": "inside",
+     "units": [
+      41
+     ],
+     "open": 0,
+     "tokens": [
+      "nšm,t"
+     ]
+    },
+    {
+     "line": 4,
+     "pos": 7,
+     "u": "𓏏𓐰𔀯",
+     "class": "inside",
+     "units": [
+      41
+     ],
+     "open": 0,
+     "tokens": [
+      "nšm,t"
+     ]
+    },
+    {
+     "line": 4,
+     "pos": 11,
+     "u": "𓏏𓐰𓈐",
+     "class": "inside",
+     "units": [
+      43
+     ],
+     "open": 0,
+     "tokens": [
+      "wꜣ,t.pl"
+     ]
+    },
+    {
+     "line": 4,
+     "pos": 14,
+     "u": "𓏏𓐰𓈉",
+     "class": "inside",
+     "units": [
+      44
+     ],
+     "open": 0,
+     "tokens": [
+      "jmn,t"
+     ]
+    },
+    {
+     "line": 4,
+     "pos": 15,
+     "u": "𓊏𓐱𓊪𓐰𓆑",
+     "class": "across",
+     "units": [
+      45,
+      46
+     ],
+     "open": 0,
+     "tokens": [
+      "šsp",
+      "=f"
+     ]
+    },
+    {
+     "line": 4,
+     "pos": 16,
+     "u": "𓊵𓐰𓏏𓐱𓊪",
+     "class": "inside",
+     "units": [
+      47
+     ],
+     "open": 0,
+     "tokens": [
+      "ḥtp,t.pl"
+     ]
+    },
+    {
+     "line": 4,
+     "pos": 17,
+     "u": "𓏏𓐰𓏔",
+     "class": "inside",
+     "units": [
+      47
+     ],
+     "open": 0,
+     "tokens": [
+      "ḥtp,t.pl"
+     ]
+    },
+    {
+     "line": 5,
+     "pos": 1,
+     "u": "𓊵𓐰𓉻",
+     "class": "across",
+     "units": [
+      49,
+      50
+     ],
+     "open": 0,
+     "tokens": [
+      "ḥtp",
+      "ꜥꜣ"
+     ]
+    },
+    {
+     "line": 5,
+     "pos": 3,
+     "u": "𓉲𓐰𓎱",
+     "class": "inside",
+     "units": [
+      52
+     ],
+     "open": 0,
+     "tokens": [
+      "ḥꜣb.pl"
+     ]
+    },
+    {
+     "line": 5,
+     "pos": 4,
+     "u": "𓏥𓐰𓈖",
+     "class": "across",
+     "units": [
+      52,
+      53
+     ],
+     "open": 0,
+     "tokens": [
+      "ḥꜣb.pl",
+      "n(.w)"
+     ]
+    },
+    {
+     "line": 5,
+     "pos": 6,
+     "u": "𓆓𓐳𓂧",
+     "class": "inside",
+     "units": [
+      55
+     ],
+     "open": 0,
+     "tokens": [
+      "ḏd.t(w)"
+     ]
+    },
+    {
+     "line": 5,
+     "pos": 7,
+     "u": "𓏏𓐰𓈖𓐰𓆑",
+     "class": "across",
+     "units": [
+      55,
+      56,
+      57
+     ],
+     "open": 0,
+     "tokens": [
+      "ḏd.t(w)",
+      "n",
+      "=f"
+     ]
+    },
+    {
+     "line": 5,
+     "pos": 11,
+     "u": "𓊵𓐰𓏏𓐱𓊪",
+     "class": "inside",
+     "units": [
+      59
+     ],
+     "open": 0,
+     "tokens": [
+      "m-ḥtp"
+     ]
+    },
+    {
+     "line": 5,
+     "pos": 13,
+     "u": "𓈖𓐰𓅨",
+     "class": "across",
+     "units": [
+      60,
+      61
+     ],
+     "open": 0,
+     "tokens": [
+      "jn",
+      "wr,pl-n(,w)-ꜣbḏ,w"
+     ]
+    },
+    {
+     "line": 5,
+     "pos": 14,
+     "u": "𓏥𓐰𓈖",
+     "class": "inside",
+     "units": [
+      61
+     ],
+     "open": 0,
+     "tokens": [
+      "wr,pl-n(,w)-ꜣbḏ,w"
+     ]
+    },
+    {
+     "line": 5,
+     "pos": 17,
+     "u": "𓈋𓑐𓐰𓊖𓑋",
+     "class": "inside",
+     "units": [
+      61
+     ],
+     "open": 0,
+     "tokens": [
+      "wr,pl-n(,w)-ꜣbḏ,w"
+     ]
+    },
+    {
+     "line": 5,
+     "pos": 21,
+     "u": "𓉲𓐰𓎱",
+     "class": "inside",
+     "units": [
+      63
+     ],
+     "open": 0,
+     "tokens": [
+      "Wꜣg"
+     ]
+    },
+    {
+     "line": 6,
+     "pos": 2,
+     "u": "𓅝𓑐𓐰𓏏𓐱𓏏𓑉",
+     "class": "inside",
+     "units": [
+      65
+     ],
+     "open": 0,
+     "tokens": [
+      "Ḏḥw,t(y)t"
+     ]
+    },
+    {
+     "line": 6,
+     "pos": 3,
+     "u": "𓉲𓐰𓎱",
+     "class": "inside",
+     "units": [
+      65
+     ],
+     "open": 0,
+     "tokens": [
+      "Ḏḥw,t(y)t"
+     ]
+    },
+    {
+     "line": 6,
+     "pos": 5,
+     "u": "𓎛𓐱𓃀",
+     "class": "inside",
+     "units": [
+      67
+     ],
+     "open": 0,
+     "tokens": [
+      "ḥ(ꜣ)b-Skr"
+     ]
+    },
+    {
+     "line": 6,
+     "pos": 6,
+     "u": "𓉲𓐰𓎱",
+     "class": "inside",
+     "units": [
+      67
+     ],
+     "open": 0,
+     "tokens": [
+      "ḥ(ꜣ)b-Skr"
+     ]
+    },
+    {
+     "line": 6,
+     "pos": 7,
+     "u": "𓊃𓐰𓎡𓐰𓂋",
+     "class": "inside",
+     "units": [
+      67
+     ],
+     "open": 0,
+     "tokens": [
+      "ḥ(ꜣ)b-Skr"
+     ]
+    },
+    {
+     "line": 6,
+     "pos": 10,
+     "u": "𓉐𓐰𓂋",
+     "class": "inside",
+     "units": [
+      69
+     ],
+     "open": 0,
+     "tokens": [
+      "pr,t-Mnw"
+     ]
+    },
+    {
+     "line": 6,
+     "pos": 11,
+     "u": "𓏏𓐰𓂻",
+     "class": "inside",
+     "units": [
+      69
+     ],
+     "open": 0,
+     "tokens": [
+      "pr,t-Mnw"
+     ]
+    },
+    {
+     "line": 6,
+     "pos": 13,
+     "u": "𓉲𓐰𓎱",
+     "class": "inside",
+     "units": [
+      69
+     ],
+     "open": 0,
+     "tokens": [
+      "pr,t-Mnw"
+     ]
+    },
+    {
+     "line": 7,
+     "pos": 2,
+     "u": "𓉐𓐰𓂋",
+     "class": "inside",
+     "units": [
+      71
+     ],
+     "open": 0,
+     "tokens": [
+      "pr,t-Spd,t"
+     ]
+    },
+    {
+     "line": 7,
+     "pos": 3,
+     "u": "𓏏𓐰𓂻",
+     "class": "inside",
+     "units": [
+      71
+     ],
+     "open": 0,
+     "tokens": [
+      "pr,t-Spd,t"
+     ]
+    },
+    {
+     "line": 7,
+     "pos": 4,
+     "u": "𓇮𓐱𓏏",
+     "class": "inside",
+     "units": [
+      71
+     ],
+     "open": 0,
+     "tokens": [
+      "pr,t-Spd,t"
+     ]
+    },
+    {
+     "line": 7,
+     "pos": 5,
+     "u": "𓉲𓐰𓎱",
+     "class": "inside",
+     "units": [
+      71
+     ],
+     "open": 0,
+     "tokens": [
+      "pr,t-Spd,t"
+     ]
+    },
+    {
+     "line": 7,
+     "pos": 7,
+     "u": "𓁶𓐱𓆴",
+     "class": "inside",
+     "units": [
+      73
+     ],
+     "open": 0,
+     "tokens": [
+      "Tp(,j)-rnp,t"
+     ]
+    },
+    {
+     "line": 7,
+     "pos": 8,
+     "u": "𓉲𓐰𓎱",
+     "class": "inside",
+     "units": [
+      73
+     ],
+     "open": 0,
+     "tokens": [
+      "Tp(,j)-rnp,t"
+     ]
+    },
+    {
+     "line": 7,
+     "pos": 10,
+     "u": "𓎛𓐱𓃀",
+     "class": "inside",
+     "units": [
+      75
+     ],
+     "open": 0,
+     "tokens": [
+      "ḥ(ꜣ)b"
+     ]
+    },
+    {
+     "line": 7,
+     "pos": 11,
+     "u": "𓉲𓐰𓎱",
+     "class": "inside",
+     "units": [
+      75
+     ],
+     "open": 0,
+     "tokens": [
+      "ḥ(ꜣ)b"
+     ]
+    },
+    {
+     "line": 7,
+     "pos": 12,
+     "u": "𓎟𓐰𓉻",
+     "class": "across",
+     "units": [
+      76,
+      77
+     ],
+     "open": 0,
+     "tokens": [
+      "nb",
+      "ꜥꜣ"
+     ]
+    },
+    {
+     "line": 7,
+     "pos": 13,
+     "u": "𓁹𓐰𓂋",
+     "class": "inside",
+     "units": [
+      78
+     ],
+     "open": 0,
+     "tokens": [
+      "jrr.w"
+     ]
+    },
+    {
+     "line": 8,
+     "pos": 1,
+     "u": "𓈖𓐰𓁹𓐰𓊨",
+     "class": "across",
+     "units": [
+      79,
+      80
+     ],
+     "open": 0,
+     "tokens": [
+      "n",
+      "Wsjr"
+     ]
+    },
+    {
+     "line": 8,
+     "pos": 3,
+     "u": "𓋀𓑀𓐲𓏏𓑀",
+     "class": "inside",
+     "units": [
+      81
+     ],
+     "open": 0,
+     "tokens": [
+      "Ḫnt(,j)-jmn,tjw"
+     ]
+    },
+    {
+     "line": 8,
+     "pos": 5,
+     "u": "𓊹𓑀𓐱𓉼",
+     "class": "inside",
+     "units": [
+      82
+     ],
+     "open": 0,
+     "tokens": [
+      "nṯr-ꜥꜣ"
+     ]
+    },
+    {
+     "line": 8,
+     "pos": 6,
+     "u": "𓈖𓐰𓂓𓐱𓏤𓐰𓈖",
+     "class": "across",
+     "units": [
+      83,
+      84,
+      85
+     ],
+     "open": 0,
+     "tokens": [
+      "n",
+      "kꜣ",
+      "n"
+     ]
+    },
+    {
+     "line": 8,
+     "pos": 7,
+     "u": "𓅓𓐰𓂋",
+     "class": "inside",
+     "units": [
+      86
+     ],
+     "open": 0,
+     "tokens": [
+      "(j)m(,j)-r(ʾ)-mšꜥ,pl-wr"
+     ]
+    },
+    {
+     "line": 8,
+     "pos": 8,
+     "u": "𓀎𓐰𓏥",
+     "class": "inside",
+     "units": [
+      86
+     ],
+     "open": 0,
+     "tokens": [
+      "(j)m(,j)-r(ʾ)-mšꜥ,pl-wr"
+     ]
+    },
+    {
+     "line": 8,
+     "pos": 9,
+     "u": "𓅨𓐰𓂋",
+     "class": "inside",
+     "units": [
+      86
+     ],
+     "open": 0,
+     "tokens": [
+      "(j)m(,j)-r(ʾ)-mšꜥ,pl-wr"
+     ]
+    },
+    {
+     "line": 8,
+     "pos": 10,
+     "u": "𓇋𓐱𓐷𓏠𓐰𓈖𓐸",
+     "class": "inside",
+     "units": [
+      87
+     ],
+     "open": 0,
+     "tokens": [
+      "Jmny"
+     ]
+    },
+    {
+     "line": 8,
+     "pos": 11,
+     "u": "𓇋𓐱𓇋",
+     "class": "inside",
+     "units": [
+      87
+     ],
+     "open": 0,
+     "tokens": [
+      "Jmny"
+     ]
+    },
+    {
+     "line": 9,
+     "pos": 1,
+     "u": "𓈞𓑉𓐱𓏏𓐰𓆑𓑉",
+     "class": "across",
+     "units": [
+      88,
+      89
+     ],
+     "open": 0,
+     "tokens": [
+      "ḥm,t",
+      "=f"
+     ]
+    },
+    {
+     "line": 9,
+     "pos": 2,
+     "u": "𓌻𓐰𓂋",
+     "class": "inside",
+     "units": [
+      90
+     ],
+     "open": 0,
+     "tokens": [
+      "mrr.t"
+     ]
+    },
+    {
+     "line": 9,
+     "pos": 3,
+     "u": "𓏏𓐰𓆑",
+     "class": "across",
+     "units": [
+      90,
+      91
+     ],
+     "open": 0,
+     "tokens": [
+      "mrr.t",
+      "=f"
+     ]
+    },
+    {
+     "line": 9,
+     "pos": 4,
+     "u": "𓁹𓐰𓂋𓐰𓏏",
+     "class": "inside",
+     "units": [
+      92
+     ],
+     "open": 0,
+     "tokens": [
+      "jrr.t"
+     ]
+    },
+    {
+     "line": 9,
+     "pos": 5,
+     "u": "𓎛𓐱𓎿",
+     "class": "inside",
+     "units": [
+      93
+     ],
+     "open": 0,
+     "tokens": [
+      "ḥzz.t"
+     ]
+    },
+    {
+     "line": 9,
+     "pos": 6,
+     "u": "𓊃𓐰𓊃",
+     "class": "inside",
+     "units": [
+      93
+     ],
+     "open": 0,
+     "tokens": [
+      "ḥzz.t"
+     ]
+    },
+    {
+     "line": 9,
+     "pos": 7,
+     "u": "𓏏𓐰𓆑",
+     "class": "across",
+     "units": [
+      93,
+      94
+     ],
+     "open": 0,
+     "tokens": [
+      "ḥzz.t",
+      "=f"
+     ]
+    },
+    {
+     "line": 9,
+     "pos": 8,
+     "u": "𓇳𓐱𓏤𓐰𓎟",
+     "class": "inside",
+     "units": [
+      95
+     ],
+     "open": 0,
+     "tokens": [
+      "rꜥ-nb"
+     ]
+    },
+    {
+     "line": 9,
+     "pos": 10,
+     "u": "𓊹𓐱𓍛",
+     "class": "inside",
+     "units": [
+      96
+     ],
+     "open": 0,
+     "tokens": [
+      "ḥm(,t)-nṯr-Ḥw,t-Ḥr"
+     ]
+    },
+    {
+     "line": 10,
+     "pos": 3,
+     "u": "𓎛𓐱𓅱",
+     "class": "inside",
+     "units": [
+      97
+     ],
+     "open": 0,
+     "tokens": [
+      "Mdḥw"
+     ]
+    },
+    {
+     "line": 10,
+     "pos": 4,
+     "u": "𓄠𓐱𓋴",
+     "class": "inside",
+     "units": [
+      98
+     ],
+     "open": 0,
+     "tokens": [
+      "msi̯.t.n"
+     ]
+    },
+    {
+     "line": 10,
+     "pos": 5,
+     "u": "𓏏𓐰𓈖",
+     "class": "inside",
+     "units": [
+      98
+     ],
+     "open": 0,
+     "tokens": [
+      "msi̯.t.n"
+     ]
+    },
+    {
+     "line": 10,
+     "pos": 6,
+     "u": "𓇋𓐱𓐷𓏠𓐰𓈖𓐸",
+     "class": "inside",
+     "units": [
+      99
+     ],
+     "open": 0,
+     "tokens": [
+      "Jmny"
+     ]
+    },
+    {
+     "line": 10,
+     "pos": 7,
+     "u": "𓇋𓐱𓇋",
+     "class": "inside",
+     "units": [
+      99
+     ],
+     "open": 0,
+     "tokens": [
+      "Jmny"
+     ]
+    },
+    {
+     "line": 10,
+     "pos": 8,
+     "u": "𓐚𓐱𓏏𓐰𓊤︂",
+     "class": "inside",
+     "units": [
+      100
+     ],
+     "open": 0,
+     "tokens": [
+      "mꜣꜥ,t-ḫrw"
+     ]
+    },
+    {
+     "line": 11,
+     "pos": 1,
+     "u": "𓍏𓐱𓐷𓅡𓐰𓏏𓐸",
+     "class": "inside",
+     "units": [
+      101
+     ],
+     "open": 0,
+     "tokens": [
+      "wbꜣ(,y)t"
+     ]
+    },
+    {
+     "line": 11,
+     "pos": 2,
+     "u": "𓅭𓐴𓏏",
+     "class": "inside",
+     "units": [
+      102
+     ],
+     "open": 0,
+     "tokens": [
+      "Zꜣ,t-Ḫnt(,j)-ẖ,{t}tj"
+     ]
+    },
+    {
+     "line": 11,
+     "pos": 4,
+     "u": "𓈖𓐰𓏏",
+     "class": "inside",
+     "units": [
+      102
+     ],
+     "open": 0,
+     "tokens": [
+      "Zꜣ,t-Ḫnt(,j)-ẖ,{t}tj"
+     ]
+    },
+    {
+     "line": 11,
+     "pos": 5,
+     "u": "𓄡𓐰𓏏",
+     "class": "inside",
+     "units": [
+      102
+     ],
+     "open": 0,
+     "tokens": [
+      "Zꜣ,t-Ḫnt(,j)-ẖ,{t}tj"
+     ]
+    },
+    {
+     "line": 12,
+     "pos": 2,
+     "u": "𓎡𓐰𓆑",
+     "class": "across",
+     "units": [
+      103,
+      104
+     ],
+     "open": 0,
+     "tokens": [
+      "bꜣk",
+      "=f"
+     ]
+    },
+    {
+     "line": 12,
+     "pos": 3,
+     "u": "𓌳𓐴𓐙𓑀",
+     "class": "inside",
+     "units": [
+      105
+     ],
+     "open": 0,
+     "tokens": [
+      "mꜣꜥ"
+     ]
+    },
+    {
+     "line": 12,
+     "pos": 4,
+     "u": "𓂝𓐰𓈖",
+     "class": "across",
+     "units": [
+      105,
+      106
+     ],
+     "open": 0,
+     "tokens": [
+      "mꜣꜥ",
+      "n"
+     ]
+    },
+    {
+     "line": 12,
+     "pos": 5,
+     "u": "𓊨𓐱𓐷𓏏𓐰𓄣𓐸",
+     "class": "inside",
+     "units": [
+      107
+     ],
+     "open": 0,
+     "tokens": [
+      "s,t-jb"
+     ]
+    },
+    {
+     "line": 12,
+     "pos": 7,
+     "u": "𓁹𓐰𓂋",
+     "class": "inside",
+     "units": [
+      109
+     ],
+     "open": 0,
+     "tokens": [
+      "jrr"
+     ]
+    },
+    {
+     "line": 12,
+     "pos": 8,
+     "u": "𓎛𓐱𓎿",
+     "class": "inside",
+     "units": [
+      110
+     ],
+     "open": 0,
+     "tokens": [
+      "ḥzz.t"
+     ]
+    },
+    {
+     "line": 12,
+     "pos": 9,
+     "u": "𓊃𓐰𓊃",
+     "class": "inside",
+     "units": [
+      110
+     ],
+     "open": 0,
+     "tokens": [
+      "ḥzz.t"
+     ]
+    },
+    {
+     "line": 12,
+     "pos": 10,
+     "u": "𓏏𓐰𓆑",
+     "class": "across",
+     "units": [
+      110,
+      111
+     ],
+     "open": 0,
+     "tokens": [
+      "ḥzz.t",
+      "=f"
+     ]
+    },
+    {
+     "line": 12,
+     "pos": 11,
+     "u": "𓇳𓐱𓏤𓐰𓎟",
+     "class": "inside",
+     "units": [
+      112
+     ],
+     "open": 0,
+     "tokens": [
+      "rꜥ-nb"
+     ]
+    },
+    {
+     "line": 12,
+     "pos": 12,
+     "u": "𓅓𓐰𓂋",
+     "class": "inside",
+     "units": [
+      113
+     ],
+     "open": 0,
+     "tokens": [
+      "(j)m(,j)-r(ʾ)-ḫtm,t"
+     ]
+    },
+    {
+     "line": 12,
+     "pos": 13,
+     "u": "𓋨𓐰𓏏",
+     "class": "inside",
+     "units": [
+      113
+     ],
+     "open": 0,
+     "tokens": [
+      "(j)m(,j)-r(ʾ)-ḫtm,t"
+     ]
+    },
+    {
+     "line": 12,
+     "pos": 17,
+     "u": "𓄪𓐻𓏤",
+     "class": "inside",
+     "units": [
+      115
+     ],
+     "open": 0,
+     "tokens": [
+      "nb-jmꜣḫ"
+     ]
+    },
+    {
+     "line": 12,
+     "pos": 18,
+     "u": "𓐚𓐰𓊤︂",
+     "class": "inside",
+     "units": [
+      116
+     ],
+     "open": 0,
+     "tokens": [
+      "mꜣꜥ-ḫrw"
+     ]
+    },
+    {
+     "line": 13,
+     "pos": 1,
+     "u": "𓌢𓐰𓈖",
+     "class": "inside",
+     "units": [
+      117
+     ],
+     "open": 0,
+     "tokens": [
+      "sn"
+     ]
+    },
+    {
+     "line": 13,
+     "pos": 2,
+     "u": "𓆑𓐰𓌻𓑀",
+     "class": "across",
+     "units": [
+      118,
+      119
+     ],
+     "open": 0,
+     "tokens": [
+      "=f",
+      "mrr"
+     ]
+    },
+    {
+     "line": 13,
+     "pos": 3,
+     "u": "𓂋𓐰𓆑",
+     "class": "across",
+     "units": [
+      119,
+      120
+     ],
+     "open": 0,
+     "tokens": [
+      "mrr",
+      "=f"
+     ]
+    },
+    {
+     "line": 13,
+     "pos": 5,
+     "u": "𓈖𓐰𓏏",
+     "class": "inside",
+     "units": [
+      121
+     ],
+     "open": 0,
+     "tokens": [
+      "Ḫnt(,j)-ẖ,ty-ḥtp"
+     ]
+    },
+    {
+     "line": 13,
+     "pos": 6,
+     "u": "𓄡𓐰𓏏𓐱𓏮",
+     "class": "inside",
+     "units": [
+      121
+     ],
+     "open": 0,
+     "tokens": [
+      "Ḫnt(,j)-ẖ,ty-ḥtp"
+     ]
+    },
+    {
+     "line": 13,
+     "pos": 7,
+     "u": "𓊵𓐰𓏏𓐱𓊪",
+     "class": "inside",
+     "units": [
+      121
+     ],
+     "open": 0,
+     "tokens": [
+      "Ḫnt(,j)-ẖ,ty-ḥtp"
+     ]
+    },
+    {
+     "line": 13,
+     "pos": 8,
+     "u": "𓁹𓐰𓈖",
+     "class": "inside",
+     "units": [
+      122
+     ],
+     "open": 0,
+     "tokens": [
+      "jri̯.n"
+     ]
+    },
+    {
+     "line": 13,
+     "pos": 9,
+     "u": "𓅭𓐴𓏏",
+     "class": "inside",
+     "units": [
+      123
+     ],
+     "open": 0,
+     "tokens": [
+      "Zꜣ,t{t}-sbk,pl"
+     ]
+    },
+    {
+     "line": 13,
+     "pos": 11,
+     "u": "𓋴𓐱𓃀",
+     "class": "inside",
+     "units": [
+      123
+     ],
+     "open": 0,
+     "tokens": [
+      "Zꜣ,t{t}-sbk,pl"
+     ]
+    },
+    {
+     "line": 13,
+     "pos": 12,
+     "u": "𓎡𓐰𓏥",
+     "class": "inside",
+     "units": [
+      123
+     ],
+     "open": 0,
+     "tokens": [
+      "Zꜣ,t{t}-sbk,pl"
+     ]
+    },
+    {
+     "line": 13,
+     "pos": 13,
+     "u": "𓌳𓐴𓐚𓑀𓐰𓂝",
+     "class": "inside",
+     "units": [
+      124
+     ],
+     "open": 0,
+     "tokens": [
+      "mꜣꜥ-ḫrw"
+     ]
+    },
+    {
+     "line": 13,
+     "pos": 14,
+     "u": "𓊤𓐱𓅱",
+     "class": "inside",
+     "units": [
+      124
+     ],
+     "open": 0,
+     "tokens": [
+      "mꜣꜥ-ḫrw"
+     ]
+    },
+    {
+     "line": 14,
+     "pos": 3,
+     "u": "𓈖𓐰𓏏",
+     "class": "inside",
+     "units": [
+      125
+     ],
+     "open": 0,
+     "tokens": [
+      "Zꜣ-Ḫnt(,j)-ẖ,ty"
+     ]
+    },
+    {
+     "line": 14,
+     "pos": 4,
+     "u": "𓄡𓐰𓏏",
+     "class": "inside",
+     "units": [
+      125
+     ],
+     "open": 0,
+     "tokens": [
+      "Zꜣ-Ḫnt(,j)-ẖ,ty"
+     ]
+    },
+    {
+     "line": 14,
+     "pos": 5,
+     "u": "𓇋𓐱𓇋",
+     "class": "inside",
+     "units": [
+      125
+     ],
+     "open": 0,
+     "tokens": [
+      "Zꜣ-Ḫnt(,j)-ẖ,ty"
+     ]
+    },
+    {
+     "line": 15,
+     "pos": 2,
+     "u": "𓆓𓐳𓆑",
+     "class": "inside",
+     "units": [
+      127
+     ],
+     "open": 0,
+     "tokens": [
+      "Ḏfꜣ≡(j)-ḥ(ꜥ)p(j)"
+     ]
+    },
+    {
+     "line": 15,
+     "pos": 5,
+     "u": "𓎛𓐱𓐷𓊪𓐰𓈘𓐸",
+     "class": "inside",
+     "units": [
+      127
+     ],
+     "open": 0,
+     "tokens": [
+      "Ḏfꜣ≡(j)-ḥ(ꜥ)p(j)"
+     ]
+    },
+    {
+     "line": 16,
+     "pos": 1,
+     "u": "𓈖𓐰𓈙𓐰𓏏",
+     "class": "inside",
+     "units": [
+      128
+     ],
+     "open": 0,
+     "tokens": [
+      "nš,t"
+     ]
+    },
+    {
+     "line": 16,
+     "pos": 3,
+     "u": "𓐍𓐰𓂤",
+     "class": "inside",
+     "units": [
+      129
+     ],
+     "open": 0,
+     "tokens": [
+      "Ḫwy,t,pl"
+     ]
+    },
+    {
+     "line": 16,
+     "pos": 4,
+     "u": "𓇋𓐱𓇋",
+     "class": "inside",
+     "units": [
+      129
+     ],
+     "open": 0,
+     "tokens": [
+      "Ḫwy,t,pl"
+     ]
+    },
+    {
+     "line": 16,
+     "pos": 5,
+     "u": "𓏏𓐰𓏥",
+     "class": "inside",
+     "units": [
+      129
+     ],
+     "open": 0,
+     "tokens": [
+      "Ḫwy,t,pl"
+     ]
+    },
+    {
+     "line": 17,
+     "pos": 1,
+     "u": "𓁷𓐰𓂋",
+     "class": "inside",
+     "units": [
+      130
+     ],
+     "open": 0,
+     "tokens": [
+      "ḥr(,j)-pr"
+     ]
+    },
+    {
+     "line": 17,
+     "pos": 3,
+     "u": "𓇋𓐱𓐷𓏠𓐰𓈖𓐸",
+     "class": "inside",
+     "units": [
+      131
+     ],
+     "open": 0,
+     "tokens": [
+      "Jmny"
+     ]
+    },
+    {
+     "line": 17,
+     "pos": 4,
+     "u": "𓇋𓐱𓇋",
+     "class": "inside",
+     "units": [
+      131
+     ],
+     "open": 0,
+     "tokens": [
+      "Jmny"
+     ]
+    },
+    {
+     "line": 18,
+     "pos": 1,
+     "u": "𓁷𓐰𓂋",
+     "class": "inside",
+     "units": [
+      132
+     ],
+     "open": 0,
+     "tokens": [
+      "ḥr(,j)-pr"
+     ]
+    },
+    {
+     "line": 18,
+     "pos": 4,
+     "u": "𓅱𓐰𓏏",
+     "class": "inside",
+     "units": [
+      133
+     ],
+     "open": 0,
+     "tokens": [
+      "⸮Zꜣ-wt,yt?"
+     ]
+    },
+    {
+     "line": 18,
+     "pos": 5,
+     "u": "𓇋𓐱𓇋𓐱𓏏",
+     "class": "inside",
+     "units": [
+      133
+     ],
+     "open": 0,
+     "tokens": [
+      "⸮Zꜣ-wt,yt?"
+     ]
+    }
+   ],
+   "tokens": [
+    {
+     "i": 0,
+     "line": 1,
+     "tr": "ḥtp-di̯-nswt",
+     "pos": "substantive",
+     "gloss": "Gnadenerweisung des Königs",
+     "how": "unicode",
+     "signs": "𓇓𓏏𓊵𓏙",
+     "word": 0
+    },
+    {
+     "i": 1,
+     "line": 1,
+     "tr": "ḫr",
+     "pos": "preposition",
+     "gloss": "bei (jmdm.) (meist Höhergestelltem)",
+     "how": "unicode",
+     "signs": "𓐍𓂋",
+     "word": 1
+    },
+    {
+     "i": 2,
+     "line": 1,
+     "tr": "Wsjr",
+     "pos": "entity_name",
+     "gloss": "Osiris",
+     "how": "unicode",
+     "signs": "𓁹𓊨",
+     "word": 2
+    },
+    {
+     "i": 3,
+     "line": 1,
+     "tr": "Ḫnt,j{w}-jmn,tjw",
+     "pos": "epitheton_title",
+     "gloss": "Chontamenti (\"der an der Spitze der Westlichen ist\")",
+     "how": "unicode",
+     "signs": "𓏅𓅂𓋀𓅂",
+     "word": 3
+    },
+    {
+     "i": 4,
+     "line": 1,
+     "tr": "[nb]-ꜣbḏw",
+     "pos": "epitheton_title",
+     "gloss": "Herr von Abydos (Osiris u.a. Götter)",
+     "how": "inventory",
+     "signs": "????",
+     "word": 4
+    },
+    {
+     "i": 5,
+     "line": 1,
+     "tr": "m",
+     "pos": "preposition",
+     "gloss": "auf",
+     "how": "unicode",
+     "signs": "𓅓",
+     "word": 5
+    },
+    {
+     "i": 6,
+     "line": 1,
+     "tr": "s,t.pl",
+     "pos": "substantive",
+     "gloss": "Sitz",
+     "how": "unicode",
+     "signs": "𓊨𓏏𓉐𓏥",
+     "word": 6
+    },
+    {
+     "i": 7,
+     "line": 1,
+     "tr": "=f",
+     "pos": "pronoun",
+     "gloss": "[Suffix Pron. sg.3.m.]",
+     "how": "unicode",
+     "signs": "𓆑",
+     "word": 6
+    },
+    {
+     "i": 8,
+     "line": 1,
+     "tr": "nb.t(.pl)",
+     "pos": "adjective",
+     "gloss": "alle",
+     "how": "unicode",
+     "signs": "𓎟𓏏",
+     "word": 7
+    },
+    {
+     "i": 9,
+     "line": 1,
+     "tr": "nfr.t(.pl)",
+     "pos": "adjective",
+     "gloss": "vollkommen",
+     "how": "unicode",
+     "signs": "𓄤𓂋𓏏",
+     "word": 8
+    },
+    {
+     "i": 10,
+     "line": 2,
+     "tr": "wꜥb.t(.pl)",
+     "pos": "adjective",
+     "gloss": "rein",
+     "how": "unicode",
+     "signs": "𓃂𓏏𓈗",
+     "word": 9
+    },
+    {
+     "i": 11,
+     "line": 2,
+     "tr": "di̯",
+     "pos": "verb",
+     "gloss": "geben",
+     "how": "unicode",
+     "signs": "𓂞",
+     "word": 10
+    },
+    {
+     "i": 12,
+     "line": 2,
+     "tr": "=f",
+     "pos": "pronoun",
+     "gloss": "[Suffix Pron. sg.3.m.]",
+     "how": "unicode",
+     "signs": "𓆑",
+     "word": 10
+    },
+    {
+     "i": 13,
+     "line": 2,
+     "tr": "pr,t-ḫrw",
+     "pos": "substantive",
+     "gloss": "Totenopfer",
+     "how": "unicode",
+     "signs": "𓉐𓂋𓏏𓊤𓅱",
+     "word": 11
+    },
+    {
+     "i": 14,
+     "line": 2,
+     "tr": "m",
+     "pos": "preposition",
+     "gloss": "bestehend aus",
+     "how": "unicode",
+     "signs": "𓅓",
+     "word": 12
+    },
+    {
+     "i": 15,
+     "line": 2,
+     "tr": "tʾ.pl",
+     "pos": "substantive",
+     "gloss": "Brot (allg.)",
+     "how": "unicode",
+     "signs": "𓏏𓏐𓏒𓏥",
+     "word": 13
+    },
+    {
+     "i": 16,
+     "line": 2,
+     "tr": "m",
+     "pos": "preposition",
+     "gloss": "bestehend aus",
+     "how": "unicode",
+     "signs": "𓅓",
+     "word": 14
+    },
+    {
+     "i": 17,
+     "line": 2,
+     "tr": "ḥ(n)q,t.pl",
+     "pos": "substantive",
+     "gloss": "Bier",
+     "how": "unicode",
+     "signs": "𓎛𓈎𓏏𓏊𓏪",
+     "word": 15
+    },
+    {
+     "i": 18,
+     "line": 2,
+     "tr": "m",
+     "pos": "preposition",
+     "gloss": "bestehend aus",
+     "how": "unicode",
+     "signs": "𓅓",
+     "word": 16
+    },
+    {
+     "i": 19,
+     "line": 2,
+     "tr": "kꜣ.pl",
+     "pos": "substantive",
+     "gloss": "Stier",
+     "how": "unicode",
+     "signs": "𓃿",
+     "word": 17
+    },
+    {
+     "i": 20,
+     "line": 2,
+     "tr": "ꜣpd.pl",
+     "pos": "substantive",
+     "gloss": "Geflügel (koll.)",
+     "how": "unicode",
+     "signs": "𓅿𓈓",
+     "word": 18
+    },
+    {
+     "i": 21,
+     "line": 2,
+     "tr": "m",
+     "pos": "preposition",
+     "gloss": "bestehend aus",
+     "how": "unicode",
+     "signs": "𓅓",
+     "word": 19
+    },
+    {
+     "i": 22,
+     "line": 2,
+     "tr": "ḫ,t",
+     "pos": "substantive",
+     "gloss": "Sache",
+     "how": "unicode",
+     "signs": "𓐍𓏏",
+     "word": 20
+    },
+    {
+     "i": 23,
+     "line": 2,
+     "tr": "nb(.t)",
+     "pos": "adjective",
+     "gloss": "jeder",
+     "how": "unicode",
+     "signs": "𓎟",
+     "word": 21
+    },
+    {
+     "i": 24,
+     "line": 3,
+     "tr": "nfr.t",
+     "pos": "adjective",
+     "gloss": "schön",
+     "how": "unicode",
+     "signs": "𓄤𓂋𓏏",
+     "word": 22
+    },
+    {
+     "i": 25,
+     "line": 3,
+     "tr": "n",
+     "pos": "preposition",
+     "gloss": "für (jmd.)",
+     "how": "unicode",
+     "signs": "𓈖",
+     "word": 23
+    },
+    {
+     "i": 26,
+     "line": 3,
+     "tr": "kꜣ",
+     "pos": "substantive",
+     "gloss": "Ka",
+     "how": "unicode",
+     "signs": "𓂓𓏤",
+     "word": 24
+    },
+    {
+     "i": 27,
+     "line": 3,
+     "tr": "n",
+     "pos": "adjective",
+     "gloss": "von [Genitiv]",
+     "how": "unicode",
+     "signs": "𓈖",
+     "word": 25
+    },
+    {
+     "i": 28,
+     "line": 3,
+     "tr": "jmꜣḫ,w",
+     "pos": "substantive",
+     "gloss": "Versorgter",
+     "how": "unicode",
+     "signs": "𓇋𓄪𓐍𓅱",
+     "word": 26
+    },
+    {
+     "i": 29,
+     "line": 3,
+     "tr": "ḫr",
+     "pos": "preposition",
+     "gloss": "bei (jmdm.) (meist Höhergestelltem)",
+     "how": "unicode",
+     "signs": "𓐍𓂋",
+     "word": 27
+    },
+    {
+     "i": 30,
+     "line": 3,
+     "tr": "nṯr-ꜥꜣ",
+     "pos": "epitheton_title",
+     "gloss": "der große Gott (Gott)",
+     "how": "gardiner",
+     "signs": "𓊹?",
+     "word": 28
+    },
+    {
+     "i": 31,
+     "line": 3,
+     "tr": "(j)m(,j)-rʾ-mšꜥ,pl-wr",
+     "pos": "epitheton_title",
+     "gloss": "Generalissimus",
+     "how": "unicode",
+     "signs": "𓅓𓂋𓏤𓀎𓏪𓅨𓂋",
+     "word": 29
+    },
+    {
+     "i": 32,
+     "line": 3,
+     "tr": "Jmny",
+     "pos": "entity_name",
+     "gloss": "PN/m",
+     "how": "unicode",
+     "signs": "𓇋𓏠𓈖𓇋𓇋",
+     "word": 30
+    },
+    {
+     "i": 33,
+     "line": 3,
+     "tr": "jri̯.n",
+     "pos": "verb",
+     "gloss": "zeugen",
+     "how": "unicode",
+     "signs": "𓁹𓈖",
+     "word": 31
+    },
+    {
+     "i": 34,
+     "line": 3,
+     "tr": "Qbw",
+     "pos": "unknown",
+     "gloss": "PN/f",
+     "how": "unicode",
+     "signs": "𓈎𓃀𓅱𓆰",
+     "word": 32
+    },
+    {
+     "i": 35,
+     "line": 3,
+     "tr": "mꜣꜥ〈,t〉-ḫrw",
+     "pos": "substantive",
+     "gloss": "die Gerechtfertigte (die selige Tote)",
+     "how": "unicode",
+     "signs": "𓌳𓐚𓂝𓊤",
+     "word": 33
+    },
+    {
+     "i": 36,
+     "line": 4,
+     "tr": "di̯.t(w)",
+     "pos": "verb",
+     "gloss": "geben",
+     "how": "unicode",
+     "signs": "𓂞𓏏",
+     "word": 34
+    },
+    {
+     "i": 37,
+     "line": 4,
+     "tr": "n",
+     "pos": "preposition",
+     "gloss": "zu (jmd.)",
+     "how": "unicode",
+     "signs": "𓈖",
+     "word": 35
+    },
+    {
+     "i": 38,
+     "line": 4,
+     "tr": "=f",
+     "pos": "pronoun",
+     "gloss": "[Suffix Pron. sg.3.m.]",
+     "how": "unicode",
+     "signs": "𓆑",
+     "word": 35
+    },
+    {
+     "i": 39,
+     "line": 4,
+     "tr": "ꜥ.du",
+     "pos": "substantive",
+     "gloss": "Arm",
+     "how": "unicode",
+     "signs": "𓂣𓂣",
+     "word": 36
+    },
+    {
+     "i": 40,
+     "line": 4,
+     "tr": "m",
+     "pos": "preposition",
+     "gloss": "in",
+     "how": "unicode",
+     "signs": "𓅓",
+     "word": 37
+    },
+    {
+     "i": 41,
+     "line": 4,
+     "tr": "nšm,t",
+     "pos": "substantive",
+     "gloss": "[heilige Barke des Osiris in Abydos]",
+     "how": "gardiner",
+     "signs": "𓈖𓈙𓅓𓏏?",
+     "word": 38
+    },
+    {
+     "i": 42,
+     "line": 4,
+     "tr": "⸢ḥr⸣",
+     "pos": "preposition",
+     "gloss": "auf",
+     "how": "unicode",
+     "signs": "𓁷",
+     "word": 39
+    },
+    {
+     "i": 43,
+     "line": 4,
+     "tr": "wꜣ,t.pl",
+     "pos": "substantive",
+     "gloss": "Weg",
+     "how": "unicode",
+     "signs": "𓍯𓄿𓏏𓈐𓏪",
+     "word": 40
+    },
+    {
+     "i": 44,
+     "line": 4,
+     "tr": "jmn,t",
+     "pos": "substantive",
+     "gloss": "der Westen",
+     "how": "unicode",
+     "signs": "𓋀𓏏𓈉",
+     "word": 41
+    },
+    {
+     "i": 45,
+     "line": 4,
+     "tr": "šsp",
+     "pos": "verb",
+     "gloss": "empfangen",
+     "how": "unicode",
+     "signs": "𓊏𓊪",
+     "word": 42
+    },
+    {
+     "i": 46,
+     "line": 4,
+     "tr": "=f",
+     "pos": "pronoun",
+     "gloss": "[Suffix Pron. sg.3.m.]",
+     "how": "unicode",
+     "signs": "𓆑",
+     "word": 42
+    },
+    {
+     "i": 47,
+     "line": 4,
+     "tr": "ḥtp,t.pl",
+     "pos": "substantive",
+     "gloss": "Opfer",
+     "how": "unicode",
+     "signs": "𓊵𓏏𓊪𓏏𓏒𓏪",
+     "word": 43
+    },
+    {
+     "i": 48,
+     "line": 4,
+     "tr": "ḥr",
+     "pos": "preposition",
+     "gloss": "auf",
+     "how": "unicode",
+     "signs": "𓁷",
+     "word": 44
+    },
+    {
+     "i": 49,
+     "line": 5,
+     "tr": "ḥtp",
+     "pos": "substantive",
+     "gloss": "Opferaltar",
+     "how": "unicode",
+     "signs": "𓊵",
+     "word": 45
+    },
+    {
+     "i": 50,
+     "line": 5,
+     "tr": "ꜥꜣ",
+     "pos": "adjective",
+     "gloss": "groß",
+     "how": "unicode",
+     "signs": "𓉻",
+     "word": 46
+    },
+    {
+     "i": 51,
+     "line": 5,
+     "tr": "m",
+     "pos": "preposition",
+     "gloss": "bei",
+     "how": "unicode",
+     "signs": "𓅓",
+     "word": 47
+    },
+    {
+     "i": 52,
+     "line": 5,
+     "tr": "ḥꜣb.pl",
+     "pos": "substantive",
+     "gloss": "Fest",
+     "how": "unicode",
+     "signs": "𓉲𓎱𓏥",
+     "word": 48
+    },
+    {
+     "i": 53,
+     "line": 5,
+     "tr": "n(.w)",
+     "pos": "adjective",
+     "gloss": "von [Genitiv]",
+     "how": "unicode",
+     "signs": "𓈖",
+     "word": 49
+    },
+    {
+     "i": 54,
+     "line": 5,
+     "tr": "ẖr,t-nṯr",
+     "pos": "substantive",
+     "gloss": "Nekropole",
+     "how": "unicode",
+     "signs": "𓊻",
+     "word": 50
+    },
+    {
+     "i": 55,
+     "line": 5,
+     "tr": "ḏd.t(w)",
+     "pos": "verb",
+     "gloss": "sagen",
+     "how": "unicode",
+     "signs": "𓆓𓂧𓏏",
+     "word": 51
+    },
+    {
+     "i": 56,
+     "line": 5,
+     "tr": "n",
+     "pos": "preposition",
+     "gloss": "zu (jmd.)",
+     "how": "unicode",
+     "signs": "𓈖",
+     "word": 52
+    },
+    {
+     "i": 57,
+     "line": 5,
+     "tr": "=f",
+     "pos": "pronoun",
+     "gloss": "[Suffix Pron. sg.3.m.]",
+     "how": "unicode",
+     "signs": "𓆑",
+     "word": 52
+    },
+    {
+     "i": 58,
+     "line": 5,
+     "tr": "jyi̯.w",
+     "pos": "verb",
+     "gloss": "kommen",
+     "how": "unicode",
+     "signs": "𓂻𓅱",
+     "word": 53
+    },
+    {
+     "i": 59,
+     "line": 5,
+     "tr": "m-ḥtp",
+     "pos": "adverb",
+     "gloss": "Willkommen!",
+     "how": "unicode",
+     "signs": "𓅓𓊵𓏏𓊪",
+     "word": 54
+    },
+    {
+     "i": 60,
+     "line": 5,
+     "tr": "jn",
+     "pos": "preposition",
+     "gloss": "durch",
+     "how": "unicode",
+     "signs": "𓇋𓈖",
+     "word": 55
+    },
+    {
+     "i": 61,
+     "line": 5,
+     "tr": "wr,pl-n(,w)-ꜣbḏ,w",
+     "pos": "entity_name",
+     "gloss": "Die Großen von Abydos",
+     "how": "unicode",
+     "signs": "𓅨𓏥𓈖𓍋𓃀𓈋𓊖",
+     "word": 56
+    },
+    {
+     "i": 62,
+     "line": 5,
+     "tr": "m",
+     "pos": "preposition",
+     "gloss": "bei",
+     "how": "unicode",
+     "signs": "𓅓",
+     "word": 57
+    },
+    {
+     "i": 63,
+     "line": 5,
+     "tr": "Wꜣg",
+     "pos": "entity_name",
+     "gloss": "Wag-Fest (Totenfest)",
+     "how": "unicode",
+     "signs": "𓍯𓎼𓉲𓎱",
+     "word": 58
+    },
+    {
+     "i": 64,
+     "line": 6,
+     "tr": "m",
+     "pos": "preposition",
+     "gloss": "bei",
+     "how": "unicode",
+     "signs": "𓅓",
+     "word": 59
+    },
+    {
+     "i": 65,
+     "line": 6,
+     "tr": "Ḏḥw,t(y)t",
+     "pos": "entity_name",
+     "gloss": "Thot-Fest",
+     "how": "unicode",
+     "signs": "𓅝𓏏𓏏𓉲𓎱",
+     "word": 60
+    },
+    {
+     "i": 66,
+     "line": 6,
+     "tr": "m",
+     "pos": "preposition",
+     "gloss": "bei",
+     "how": "unicode",
+     "signs": "𓅓",
+     "word": 61
+    },
+    {
+     "i": 67,
+     "line": 6,
+     "tr": "ḥ(ꜣ)b-Skr",
+     "pos": "entity_name",
+     "gloss": "Fest des Sokar",
+     "how": "gardiner",
+     "signs": "𓎛𓃀𓉲𓎱𓊃𓎡𓂋?",
+     "word": 62
+    },
+    {
+     "i": 68,
+     "line": 6,
+     "tr": "m",
+     "pos": "preposition",
+     "gloss": "bei",
+     "how": "unicode",
+     "signs": "𓅓",
+     "word": 63
+    },
+    {
+     "i": 69,
+     "line": 6,
+     "tr": "pr,t-Mnw",
+     "pos": "entity_name",
+     "gloss": "Heraustreten des Min (Fest)",
+     "how": "unicode",
+     "signs": "𓉐𓂋𓏏𓂻𓈾𓉲𓎱",
+     "word": 64
+    },
+    {
+     "i": 70,
+     "line": 7,
+     "tr": "m",
+     "pos": "preposition",
+     "gloss": "bei",
+     "how": "unicode",
+     "signs": "𓅓",
+     "word": 65
+    },
+    {
+     "i": 71,
+     "line": 7,
+     "tr": "pr,t-Spd,t",
+     "pos": "substantive",
+     "gloss": "Siriusaufgang",
+     "how": "unicode",
+     "signs": "𓉐𓂋𓏏𓂻𓇮𓏏𓉲𓎱",
+     "word": 66
+    },
+    {
+     "i": 72,
+     "line": 7,
+     "tr": "m",
+     "pos": "preposition",
+     "gloss": "bei",
+     "how": "unicode",
+     "signs": "𓅓",
+     "word": 67
+    },
+    {
+     "i": 73,
+     "line": 7,
+     "tr": "Tp(,j)-rnp,t",
+     "pos": "entity_name",
+     "gloss": "Jahresanfang (ein Fest)",
+     "how": "unicode",
+     "signs": "𓁶𓆴𓉲𓎱",
+     "word": 68
+    },
+    {
+     "i": 74,
+     "line": 7,
+     "tr": "m",
+     "pos": "preposition",
+     "gloss": "bei",
+     "how": "unicode",
+     "signs": "𓅓",
+     "word": 69
+    },
+    {
+     "i": 75,
+     "line": 7,
+     "tr": "ḥ(ꜣ)b",
+     "pos": "substantive",
+     "gloss": "Fest",
+     "how": "unicode",
+     "signs": "𓎛𓃀𓉲𓎱",
+     "word": 70
+    },
+    {
+     "i": 76,
+     "line": 7,
+     "tr": "nb",
+     "pos": "adjective",
+     "gloss": "jeder",
+     "how": "unicode",
+     "signs": "𓎟",
+     "word": 71
+    },
+    {
+     "i": 77,
+     "line": 7,
+     "tr": "ꜥꜣ",
+     "pos": "adjective",
+     "gloss": "groß",
+     "how": "unicode",
+     "signs": "𓉻",
+     "word": 72
+    },
+    {
+     "i": 78,
+     "line": 7,
+     "tr": "jrr.w",
+     "pos": "verb",
+     "gloss": "Fest feiern",
+     "how": "unicode",
+     "signs": "𓁹𓂋𓅱",
+     "word": 73
+    },
+    {
+     "i": 79,
+     "line": 8,
+     "tr": "n",
+     "pos": "preposition",
+     "gloss": "für (jmd.)",
+     "how": "unicode",
+     "signs": "𓈖",
+     "word": 74
+    },
+    {
+     "i": 80,
+     "line": 8,
+     "tr": "Wsjr",
+     "pos": "entity_name",
+     "gloss": "Osiris",
+     "how": "unicode",
+     "signs": "𓁹𓊨",
+     "word": 75
+    },
+    {
+     "i": 81,
+     "line": 8,
+     "tr": "Ḫnt(,j)-jmn,tjw",
+     "pos": "epitheton_title",
+     "gloss": "Chontamenti (\"der an der Spitze der Westlichen ist\")",
+     "how": "unicode",
+     "signs": "𓏅𓏏𓋀𓅂",
+     "word": 76
+    },
+    {
+     "i": 82,
+     "line": 8,
+     "tr": "nṯr-ꜥꜣ",
+     "pos": "epitheton_title",
+     "gloss": "der große Gott (Gott)",
+     "how": "gardiner",
+     "signs": "𓊹?",
+     "word": 77
+    },
+    {
+     "i": 83,
+     "line": 8,
+     "tr": "n",
+     "pos": "preposition",
+     "gloss": "für (jmd.)",
+     "how": "unicode",
+     "signs": "𓈖",
+     "word": 78
+    },
+    {
+     "i": 84,
+     "line": 8,
+     "tr": "kꜣ",
+     "pos": "substantive",
+     "gloss": "Ka",
+     "how": "unicode",
+     "signs": "𓂓𓏤",
+     "word": 79
+    },
+    {
+     "i": 85,
+     "line": 8,
+     "tr": "n",
+     "pos": "adjective",
+     "gloss": "von [Genitiv]",
+     "how": "unicode",
+     "signs": "𓈖",
+     "word": 80
+    },
+    {
+     "i": 86,
+     "line": 8,
+     "tr": "(j)m(,j)-r(ʾ)-mšꜥ,pl-wr",
+     "pos": "epitheton_title",
+     "gloss": "Generalissimus",
+     "how": "unicode",
+     "signs": "𓅓𓂋𓀎𓏥𓅨𓂋",
+     "word": 81
+    },
+    {
+     "i": 87,
+     "line": 8,
+     "tr": "Jmny",
+     "pos": "entity_name",
+     "gloss": "PN/m",
+     "how": "unicode",
+     "signs": "𓇋𓏠𓈖𓇋𓇋𓀻",
+     "word": 82
+    },
+    {
+     "i": 88,
+     "line": 9,
+     "tr": "ḥm,t",
+     "pos": "substantive",
+     "gloss": "Ehefrau",
+     "how": "unicode",
+     "signs": "𓈞𓏏",
+     "word": 83
+    },
+    {
+     "i": 89,
+     "line": 9,
+     "tr": "=f",
+     "pos": "pronoun",
+     "gloss": "[Suffix Pron. sg.3.m.]",
+     "how": "unicode",
+     "signs": "𓆑",
+     "word": 83
+    },
+    {
+     "i": 90,
+     "line": 9,
+     "tr": "mrr.t",
+     "pos": "verb",
+     "gloss": "lieben",
+     "how": "unicode",
+     "signs": "𓌻𓂋𓏏",
+     "word": 84
+    },
+    {
+     "i": 91,
+     "line": 9,
+     "tr": "=f",
+     "pos": "pronoun",
+     "gloss": "[Suffix Pron. sg.3.m.]",
+     "how": "unicode",
+     "signs": "𓆑",
+     "word": 84
+    },
+    {
+     "i": 92,
+     "line": 9,
+     "tr": "jrr.t",
+     "pos": "verb",
+     "gloss": "machen",
+     "how": "unicode",
+     "signs": "𓁹𓂋𓏏",
+     "word": 85
+    },
+    {
+     "i": 93,
+     "line": 9,
+     "tr": "ḥzz.t",
+     "pos": "verb",
+     "gloss": "loben",
+     "how": "unicode",
+     "signs": "𓎛𓎿𓊃𓊃𓏏",
+     "word": 86
+    },
+    {
+     "i": 94,
+     "line": 9,
+     "tr": "=f",
+     "pos": "pronoun",
+     "gloss": "[Suffix Pron. sg.3.m.]",
+     "how": "unicode",
+     "signs": "𓆑",
+     "word": 86
+    },
+    {
+     "i": 95,
+     "line": 9,
+     "tr": "rꜥ-nb",
+     "pos": "adverb",
+     "gloss": "täglich",
+     "how": "unicode",
+     "signs": "𓇳𓏤𓎟",
+     "word": 87
+    },
+    {
+     "i": 96,
+     "line": 9,
+     "tr": "ḥm(,t)-nṯr-Ḥw,t-Ḥr",
+     "pos": "epitheton_title",
+     "gloss": "Priesterin der Hathor",
+     "how": "unicode",
+     "signs": "𓉡𓊹𓍛",
+     "word": 88
+    },
+    {
+     "i": 97,
+     "line": 10,
+     "tr": "Mdḥw",
+     "pos": "unknown",
+     "gloss": "PN/f",
+     "how": "unicode",
+     "signs": "𓅓𓂧𓎛𓅱",
+     "word": 89
+    },
+    {
+     "i": 98,
+     "line": 10,
+     "tr": "msi̯.t.n",
+     "pos": "verb",
+     "gloss": "gebären",
+     "how": "unicode",
+     "signs": "𓄟𓋴𓏏𓈖",
+     "word": 90
+    },
+    {
+     "i": 99,
+     "line": 10,
+     "tr": "Jmny",
+     "pos": "entity_name",
+     "gloss": "PN/f",
+     "how": "unicode",
+     "signs": "𓇋𓏠𓈖𓇋𓇋",
+     "word": 91
+    },
+    {
+     "i": 100,
+     "line": 10,
+     "tr": "mꜣꜥ,t-ḫrw",
+     "pos": "substantive",
+     "gloss": "die Gerechtfertigte (die selige Tote)",
+     "how": "gardiner",
+     "signs": "𓐙𓏏?",
+     "word": 92
+    },
+    {
+     "i": 101,
+     "line": 11,
+     "tr": "wbꜣ(,y)t",
+     "pos": "substantive",
+     "gloss": "Aufwärterin",
+     "how": "gardiner",
+     "signs": "𓍏?𓏏",
+     "word": 93
+    },
+    {
+     "i": 102,
+     "line": 11,
+     "tr": "Zꜣ,t-Ḫnt(,j)-ẖ,{t}tj",
+     "pos": "entity_name",
+     "gloss": "PN/f",
+     "how": "unicode",
+     "signs": "𓅭𓏏𓏃𓈖𓏏𓄡𓏏𓍘",
+     "word": 94
+    },
+    {
+     "i": 103,
+     "line": 12,
+     "tr": "bꜣk",
+     "pos": "substantive",
+     "gloss": "Diener",
+     "how": "gardiner",
+     "signs": "?𓎡",
+     "word": 95
+    },
+    {
+     "i": 104,
+     "line": 12,
+     "tr": "=f",
+     "pos": "pronoun",
+     "gloss": "[Suffix Pron. sg.3.m.]",
+     "how": "unicode",
+     "signs": "𓆑",
+     "word": 95
+    },
+    {
+     "i": 105,
+     "line": 12,
+     "tr": "mꜣꜥ",
+     "pos": "adjective",
+     "gloss": "wahr",
+     "how": "unicode",
+     "signs": "𓌳𓐙𓂝",
+     "word": 96
+    },
+    {
+     "i": 106,
+     "line": 12,
+     "tr": "n",
+     "pos": "adjective",
+     "gloss": "von [Genitiv]",
+     "how": "unicode",
+     "signs": "𓈖",
+     "word": 97
+    },
+    {
+     "i": 107,
+     "line": 12,
+     "tr": "s,t-jb",
+     "pos": "substantive",
+     "gloss": "Vorliebe",
+     "how": "unicode",
+     "signs": "𓊨𓏏𓄣",
+     "word": 98
+    },
+    {
+     "i": 108,
+     "line": 12,
+     "tr": "=f",
+     "pos": "pronoun",
+     "gloss": "[Suffix Pron. sg.3.m.]",
+     "how": "unicode",
+     "signs": "𓆑",
+     "word": 98
+    },
+    {
+     "i": 109,
+     "line": 12,
+     "tr": "jrr",
+     "pos": "verb",
+     "gloss": "machen",
+     "how": "unicode",
+     "signs": "𓁹𓂋",
+     "word": 99
+    },
+    {
+     "i": 110,
+     "line": 12,
+     "tr": "ḥzz.t",
+     "pos": "verb",
+     "gloss": "loben",
+     "how": "unicode",
+     "signs": "𓎛𓎿𓊃𓊃𓏏",
+     "word": 100
+    },
+    {
+     "i": 111,
+     "line": 12,
+     "tr": "=f",
+     "pos": "pronoun",
+     "gloss": "[Suffix Pron. sg.3.m.]",
+     "how": "unicode",
+     "signs": "𓆑",
+     "word": 100
+    },
+    {
+     "i": 112,
+     "line": 12,
+     "tr": "rꜥ-nb",
+     "pos": "adverb",
+     "gloss": "täglich",
+     "how": "unicode",
+     "signs": "𓇳𓏤𓎟",
+     "word": 101
+    },
+    {
+     "i": 113,
+     "line": 12,
+     "tr": "(j)m(,j)-r(ʾ)-ḫtm,t",
+     "pos": "epitheton_title",
+     "gloss": "Vorsteher der versiegelten Sachen",
+     "how": "unicode",
+     "signs": "𓅓𓂋𓋨𓏏",
+     "word": 102
+    },
+    {
+     "i": 114,
+     "line": 12,
+     "tr": "Zꜣ-Ḥw,t-Ḥr",
+     "pos": "entity_name",
+     "gloss": "PN/m",
+     "how": "unicode",
+     "signs": "𓉡𓅭",
+     "word": 103
+    },
+    {
+     "i": 115,
+     "line": 12,
+     "tr": "nb-jmꜣḫ",
+     "pos": "epitheton_title",
+     "gloss": "Herr der Ehrwürdigkeit",
+     "how": "unicode",
+     "signs": "𓎟𓄪𓏤",
+     "word": 104
+    },
+    {
+     "i": 116,
+     "line": 12,
+     "tr": "mꜣꜥ-ḫrw",
+     "pos": "substantive",
+     "gloss": "Gerechtfertigter (der selige Tote)",
+     "how": "gardiner",
+     "signs": "𓐚?",
+     "word": 105
+    },
+    {
+     "i": 117,
+     "line": 13,
+     "tr": "sn",
+     "pos": "substantive",
+     "gloss": "Bruder",
+     "how": "unicode",
+     "signs": "𓌢𓈖",
+     "word": 106
+    },
+    {
+     "i": 118,
+     "line": 13,
+     "tr": "=f",
+     "pos": "pronoun",
+     "gloss": "[Suffix Pron. sg.3.m.]",
+     "how": "unicode",
+     "signs": "𓆑",
+     "word": 106
+    },
+    {
+     "i": 119,
+     "line": 13,
+     "tr": "mrr",
+     "pos": "verb",
+     "gloss": "lieben",
+     "how": "unicode",
+     "signs": "𓌻𓂋",
+     "word": 107
+    },
+    {
+     "i": 120,
+     "line": 13,
+     "tr": "=f",
+     "pos": "pronoun",
+     "gloss": "[Suffix Pron. sg.3.m.]",
+     "how": "unicode",
+     "signs": "𓆑",
+     "word": 107
+    },
+    {
+     "i": 121,
+     "line": 13,
+     "tr": "Ḫnt(,j)-ẖ,ty-ḥtp",
+     "pos": "entity_name",
+     "gloss": "PN/m",
+     "how": "unicode",
+     "signs": "𓏃𓈖𓏏𓄡𓏏𓏮𓊵𓏏𓊪",
+     "word": 108
+    },
+    {
+     "i": 122,
+     "line": 13,
+     "tr": "jri̯.n",
+     "pos": "verb",
+     "gloss": "gebären",
+     "how": "unicode",
+     "signs": "𓁹𓈖",
+     "word": 109
+    },
+    {
+     "i": 123,
+     "line": 13,
+     "tr": "Zꜣ,t{t}-sbk,pl",
+     "pos": "unknown",
+     "gloss": "PN/f",
+     "how": "unicode",
+     "signs": "𓅭𓏏𓏏𓋴𓃀𓎡𓏥",
+     "word": 110
+    },
+    {
+     "i": 124,
+     "line": 13,
+     "tr": "mꜣꜥ-ḫrw",
+     "pos": "substantive",
+     "gloss": "Gerechtfertigter (der selige Tote)",
+     "how": "unicode",
+     "signs": "𓌳𓐙𓂝𓊤𓅱",
+     "word": 111
+    },
+    {
+     "i": 125,
+     "line": 14,
+     "tr": "Zꜣ-Ḫnt(,j)-ẖ,ty",
+     "pos": "unknown",
+     "gloss": "PN/m",
+     "how": "unicode",
+     "signs": "𓅭𓏃𓈖𓏏𓄡𓏏𓇋𓇋",
+     "word": 112
+    },
+    {
+     "i": 126,
+     "line": 15,
+     "tr": "ḥm-kꜣ",
+     "pos": "epitheton_title",
+     "gloss": "Totenpriester",
+     "how": "unicode",
+     "signs": "𓂖",
+     "word": 113
+    },
+    {
+     "i": 127,
+     "line": 15,
+     "tr": "Ḏfꜣ≡(j)-ḥ(ꜥ)p(j)",
+     "pos": "entity_name",
+     "gloss": "PN/m",
+     "how": "unicode",
+     "signs": "𓆓𓆑𓄿𓏒𓎛𓊪𓈘",
+     "word": 114
+    },
+    {
+     "i": 128,
+     "line": 16,
+     "tr": "nš,t",
+     "pos": "substantive",
+     "gloss": "Haarmacherin",
+     "how": "unicode",
+     "signs": "𓈖𓈙𓏏𓁸",
+     "word": 115
+    },
+    {
+     "i": 129,
+     "line": 16,
+     "tr": "Ḫwy,t,pl",
+     "pos": "entity_name",
+     "gloss": "PN/f",
+     "how": "unicode",
+     "signs": "𓐍𓂤𓇋𓇋𓏏𓏥",
+     "word": 116
+    },
+    {
+     "i": 130,
+     "line": 17,
+     "tr": "ḥr(,j)-pr",
+     "pos": "substantive",
+     "gloss": "Hausverwalter",
+     "how": "unicode",
+     "signs": "𓁷𓂋𓉐",
+     "word": 117
+    },
+    {
+     "i": 131,
+     "line": 17,
+     "tr": "Jmny",
+     "pos": "entity_name",
+     "gloss": "PN/m",
+     "how": "unicode",
+     "signs": "𓇋𓏠𓈖𓇋𓇋",
+     "word": 118
+    },
+    {
+     "i": 132,
+     "line": 18,
+     "tr": "ḥr(,j)-pr",
+     "pos": "substantive",
+     "gloss": "Hausverwalter",
+     "how": "unicode",
+     "signs": "𓁷𓂋𓉐",
+     "word": 119
+    },
+    {
+     "i": 133,
+     "line": 18,
+     "tr": "⸮Zꜣ-wt,yt?",
+     "pos": "entity_name",
+     "gloss": "PN/m",
+     "how": "unicode",
+     "signs": "𓅭𓅱𓏏𓇋𓇋𓏏",
+     "word": 120
+    }
+   ]
+  }
+ ]
+}

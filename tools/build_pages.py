@@ -10,10 +10,11 @@ KANJI = 'https://kanji-morphology.pages.dev/'
 REPO = 'https://github.com/crimsonflower420/Hieroglyph-Operators'
 import pages_two_layer as TL
 import page_depth as PD
+import page_boundaries as PB
 
 NAV = [('index', 'トップ', 'Top'), ('concept', '考え方', 'Concept'), ('operators', '演算子', 'Operators'),
        ('derivations', '二層の導出', 'Derivations'), ('notation', '記法', 'Notation'),
-       ('pilot', 'パイロット調査', 'Pilot'), ('rahman', 'ラフマン再読', 'Rahman'), ('depth', '深さの在りか', 'Depth'), ('sources', '出典', 'Sources')]
+       ('pilot', 'パイロット調査', 'Pilot'), ('rahman', 'ラフマン再読', 'Rahman'), ('depth', '深さの在りか', 'Depth'), ('boundaries', '方形と語', 'Boundaries'), ('sources', '出典', 'Sources')]
 
 def bi(ja, en, tag='span', cls=''):
     c = f' {cls}' if cls else ''
@@ -66,7 +67,7 @@ def page(slug, title_ja, title_en, body):
 <footer class="site-footer"><div class="wrap">
 <p>{bi("研究ノートのサイトであり、随時改訂する。", "A research-notes site, revised as the work goes on.")} <a href="{REPO}">Hieroglyph-Operators</a> · {bi("姉妹サイト", "Sister site")}: <a href="{KANJI}">{bi("順序の漢字", "Kanji in Order")}</a></p>
 <p>{bi("ヒエログリフの字形：Noto Sans Egyptian Hieroglyphs（SIL OFL 1.1）。EA 581 の符号化：M.-J. Nederhof（HieroJax、GPL-3.0）。", "Glyphs: Noto Sans Egyptian Hieroglyphs (SIL OFL 1.1). EA 581 encoding: M.-J. Nederhof (HieroJax, GPL-3.0).")}</p>
-<p>Theory Desk · Grant Golland</p>
+<p>Theory Desk · {bi("グラント", "Grant Golland")}</p>
 </div></footer>
 <script src="js/site.js" defer></script>
 <script src="js/quadrat.js" defer></script>
@@ -127,6 +128,7 @@ index = f'''
 <a class="card" href="notation"><strong>{bi("記法", "Notation")}</strong><span>{bi("共有規格 v1 とヒエログリフでの具体化。", "Shared standard v1 and its hieroglyph profile.")}</span></a>
 <a class="card" href="rahman"><strong>{bi("ラフマン再読", "Rahman re-read")}</strong><span>{bi("本書の組み合わせを二層の導出で書き、標準と照らす。", "The book's combinations as two-layer derivations, checked against the standard.")}</span></a>
 <a class="card" href="depth"><strong>{bi("深さの在りか", "Where the depth sits")}</strong><span>{bi("同じ語の配置の木と機能の木の高さ、漢字の字の中の木との比較。", "Layout height against function height for the same words, beside the tree inside a kanji.")}</span></a>
+<a class="card" href="boundaries"><strong>{bi("方形の境目と語の境目", "Quadrat and word boundaries")}</strong><span>{bi("EA 581 と EA 162 で、方形が TLA の語の境目をまたぐ頻度。", "How often a quadrat crosses a TLA word boundary, in EA 581 and EA 162.")}</span></a>
 <a class="card" href="sources"><strong>{bi("出典", "Sources")}</strong><span>{bi("一次資料、コーパス、ライセンス。", "Primary sources, corpora, licences.")}</span></a>
 </div>
 <div class="flag spec">{bi(
@@ -392,7 +394,7 @@ pilot = f'''
 
 <h2>{bi("未解決の問い", "Open questions")}</h2>
 <ul>
-<li>{bi("方形の境界は語の境界とどれだけ一致するか。TLA の語ごとの符号化と照らし合わせれば数えられるかもしれない。", "How often do quadrat boundaries match word boundaries? Matching against TLA's word-by-word encodings might make this countable.")}</li>
+<li>{bi("方形の境界は語の境界とどれだけ一致するか。TLA の語の区切りと照らし合わせて数えた。<a href=\"boundaries\">方形の境目と語の境目</a>を見よ。", "How often do quadrat boundaries match word boundaries? Counted against the TLA word division: see <a href=\"boundaries\">Quadrat and word boundaries</a>.")}</li>
 <li>{bi("縦書きの列で横の結合が増えるのは、列の幅に記号を詰めるためか。ほかの石碑やパピルスの転写でも同じか。", "Do horizontal joins rise in columns because signs are packed to the column's width? Does the same hold on other stelae, and in transcriptions of papyri?")}</li>
 <li>{bi("ヒエラティックの筆の運び（AKU-PAL の Strichfolge）は、書き手を越えて共有された順序だったか。", "Were hieratic stroke sequences (AKU-PAL's Strichfolge) an order shared across scribes?")}</li>
 <li>{bi("同じ語の方形の組み方は、時代や素材でどれだけ揺れるか。", "How much does the quadrat layout of the same word vary by period and medium?")}</li>
@@ -440,6 +442,7 @@ SRC = [
 ]
 SRC.append((bi('二層の導出とラフマン再読', 'Two-layer derivations and the Rahman re-read'), TL.SOURCES_EXTRA))
 SRC.append((bi('深さの在りか（漢字の木）', 'Where the depth sits (kanji trees)'), PD.SOURCES))
+SRC.append((bi('方形の境目と語の境目（語の区切り）', 'Quadrat and word boundaries (word division)'), PB.SOURCES))
 src_html = ''
 for head, items in SRC:
     src_html += f'<h2>{head}</h2><ul>' + ''.join(f'<li>{t}' + (f' <a href="{u}">{u}</a>' if u else '') + '</li>' for t, u in items) + '</ul>'
@@ -451,8 +454,8 @@ sources = f'''
 {src_html}
 <h2>{bi("このサイトのライセンス", "Licences of this site")}</h2>
 <p>{bi(
- "EA 581 の Unicode 符号列（data/ea581-lines.json）は HieroJax（GPL-3.0）から取ったもので、GPL-3.0 の下にある。字形は Noto Sans Egyptian Hieroglyphs（OFL 1.1）。漢字側の数字は「順序の漢字」の項数調査（KanjiVG、CC BY-SA 3.0）による。",
- "The EA 581 Unicode strings (data/ea581-lines.json) come from HieroJax (GPL-3.0) and stay under GPL-3.0. Glyphs are Noto Sans Egyptian Hieroglyphs (OFL 1.1). Kanji numbers come from the Kanji in Order arity census (KanjiVG, CC BY-SA 3.0).")}</p>
+ "EA 581 と EA 162 の Unicode 符号列（data/ea581-lines.json、data/ea162-lines.json）は HieroJax（GPL-3.0）から取ったもので、GPL-3.0 の下にある。TLA の語の区切りの抜粋（data/ea581-tla-words.json、data/ea162-tla-words.json）は AES から取ったもので、CC BY-SA 4.0 の下にある。字形は Noto Sans Egyptian Hieroglyphs（OFL 1.1）。漢字側の数字は「順序の漢字」の項数調査（KanjiVG、CC BY-SA 3.0）による。",
+ "The EA 581 and EA 162 Unicode strings (data/ea581-lines.json, data/ea162-lines.json) come from HieroJax (GPL-3.0) and stay under GPL-3.0. The TLA word-division extracts (data/ea581-tla-words.json, data/ea162-tla-words.json) come from AES and stay under CC BY-SA 4.0. Glyphs are Noto Sans Egyptian Hieroglyphs (OFL 1.1). Kanji numbers come from the Kanji in Order arity census (KanjiVG, CC BY-SA 3.0).")}</p>
 '''
 
 PAGES = [('index', 'トップ', 'Top', index), ('concept', '考え方', 'Concept', concept),
@@ -460,7 +463,8 @@ PAGES = [('index', 'トップ', 'Top', index), ('concept', '考え方', 'Concept
          ('sources', '出典', 'Sources', sources)]
 _der, _nota, _rah = TL.pages(bi)
 PAGES += [('derivations', '二層の導出', 'Two-layer derivations', _der), ('notation', '記法', 'Notation', _nota),
-          ('rahman', 'ラフマン再読', 'Rahman re-read', _rah), ('depth', '深さの在りか', 'Where the depth sits', PD.pages(bi))]
+          ('rahman', 'ラフマン再読', 'Rahman re-read', _rah), ('depth', '深さの在りか', 'Where the depth sits', PD.pages(bi)),
+          ('boundaries', '方形の境目と語の境目', 'Quadrat and word boundaries', PB.pages(bi))]
 for slug, tj, te, body in PAGES:
     (ROOT / 'site' / f'{slug}.html').write_text(page(slug, tj, te, body), encoding='utf8')
 print('built', [p[0] for p in PAGES])
