@@ -153,7 +153,7 @@ def pages(bi):
 <li>{bi(f"OPEN：EA 581 の方形{a_t.get('open', 0)}個と EA 162 の単独記号{B['byToken']['lone'].get('open', 0)}個（失われた記号 𓑃）。符号化の片方にしかない記号を含む。", f"OPEN: {a_t.get('open', 0)} quadrats in EA 581 and {B['byToken']['lone'].get('open', 0)} lone signs in EA 162 (lost-sign 𓑃). They contain a sign present in only one of the encodings.")}</li>
 <li>{bi("OPEN：TLA の現行版（tla.digital）が2018年の抜粋と同じ語の区切りかどうか。現行版はボット確認のため読めなかった。", "OPEN: whether the current TLA (tla.digital) has the same word division as the 2018 excerpt. The current version could not be read because of the bot-verification page.")}</li>
 <li>{bi("OPEN：方形の中の記号の順序が二つの符号化で違うとき（例：第2行の gr,t の t と ꜥḥꜥ,t の記号）、どの記号がどの語に属するかは位置で決めている。方形単位の数には影響しないが、記号単位の割り当ては確かではない。", "OPEN: where the two encodings order the signs inside a quadrat differently (e.g. line 2, the t of gr,t and the signs of ꜥḥꜥ,t), which sign belongs to which word is decided by position. This does not change the per-quadrat counts, but the per-sign assignment is not certain.")}</li>
-<li>{bi("OPEN：EA 162 の行の向き。数には不要なので記録していない。", "OPEN: the line direction of EA 162; not needed for the counts, so not recorded.")}</li>
+<li>{bi("EA 162 の行の向き：上段の第1〜5行は横の行（大英博物館の記録「five rows」）、中段の第6〜8行は列（HieroJax の注「rightmost three columns」）。<a href=\"second-text\">二つ目のテキスト</a>を見よ。ここでの数には使っていない。", "EA 162 line orientation: upper-register lines 1–5 are rows (BM record, “five rows”), middle-register lines 6–8 are columns (HieroJax note, “rightmost three columns”); see <a href=\"second-text\">Second texts</a>. Not used in the counts here.")}</li>
 </ul>
 '''
     # inline glyphs in running text get the hieroglyph font (attributes such as data-q are left alone)

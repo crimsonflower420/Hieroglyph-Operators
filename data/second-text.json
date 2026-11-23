@@ -1,0 +1,2413 @@
+{
+ "source": {
+  "encoding": "Mark-Jan Nederhof, HieroJax text pages, repository nederhof/hierojax commit da318801e00b10b4b5c5ec8d9cc6f8fddcc9eb5a (GPL-3.0). This file keeps that licence.",
+  "note": "Encoding of relative positions is the editor's; it is not a facsimile. orientation: row / col where the evidence field says so, otherwise null (excluded).",
+  "ea581": {
+   "object": "Stela of Intef son of Senet, British Museum EA 581 (limestone; Abydos; early 12th Dynasty, reign of Senusret I)",
+   "encoding": "Mark-Jan Nederhof, HieroJax text page 'British Museum EA581', https://nederhof.github.io/hierojax/texts/BritishMuseumEA581.html (fetched 2026-11-21); HieroJax repository is GPL-3.0",
+   "direction": "Line direction from the same editor's RES encoding in the St Andrews corpus (PhilologEg 0.5.14, corpus/resources/IntefSonSenetHi.xml, created 2016-08-04, modified 2017-01-19): hrl = horizontal right-to-left, vrl = vertical right-to-left. Transcribed from a British Museum photograph, with Sethe (1928), Aegyptische Lesestuecke, pp. 80-81.",
+   "note": "Encoding of relative positions is the editor's; it is not a facsimile."
+  }
+ },
+ "rule": "tools/quadrat_census.py: a node is an operator application of arity >= 2\n(vertical joiner, horizontal joiner, insertion, overlay). Enclosures (cartouches, U+1343C/D)\nare parsed (HieroJax grammar, \"enclosure\") but the enclosure itself is not counted as a node;\nnodes inside an enclosure are counted separately and left out of the main comparison.",
+ "tests": "(both one-sided: columns have the larger share of horizontal joins):\n  exact line-label permutation: all ways of choosing which lines are columns, keeping the\n     number of column lines fixed; statistic = pooled hor share in columns - in rows.\n     Lines, not nodes, are the units, because nodes in one line are not independent.\n  Fisher's exact test on the 2x2 node table, for comparison only (treats nodes as independent).",
+ "texts": [
+  {
+   "key": "ea581",
+   "label": "BM EA 581 (Intef son of Senet)",
+   "rows": {
+    "lines": 7,
+    "quadrats": 56,
+    "nodes": 73,
+    "ops": {
+     "ver": 52,
+     "hor": 12,
+     "ins": 9
+    },
+    "hor": 12,
+    "horShare": 0.1644
+   },
+   "cols": {
+    "lines": 20,
+    "quadrats": 173,
+    "nodes": 235,
+    "ops": {
+     "ver": 129,
+     "hor": 93,
+     "ins": 13
+    },
+    "hor": 93,
+    "horShare": 0.3957
+   },
+   "parseFailures": [],
+   "enclosures": 0,
+   "nodesInsideEnclosures": 0,
+   "opsInsideEnclosures": {},
+   "excludedLines": [],
+   "lines": [
+    {
+     "n": 1,
+     "label": "1",
+     "section": null,
+     "orientation": "row",
+     "groups": 11,
+     "quadrats": 4,
+     "enclosures": 0,
+     "ops": {
+      "ver": 4,
+      "hor": 1
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 5,
+     "hor": 1
+    },
+    {
+     "n": 2,
+     "label": "2",
+     "section": null,
+     "orientation": "row",
+     "groups": 13,
+     "quadrats": 10,
+     "enclosures": 0,
+     "ops": {
+      "ver": 9,
+      "ins": 3
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 12,
+     "hor": 0
+    },
+    {
+     "n": 3,
+     "label": "3",
+     "section": null,
+     "orientation": "row",
+     "groups": 12,
+     "quadrats": 9,
+     "enclosures": 0,
+     "ops": {
+      "ver": 7,
+      "hor": 3
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 10,
+     "hor": 3
+    },
+    {
+     "n": 4,
+     "label": "4",
+     "section": null,
+     "orientation": "row",
+     "groups": 12,
+     "quadrats": 9,
+     "enclosures": 0,
+     "ops": {
+      "ver": 8,
+      "hor": 2,
+      "ins": 1
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 11,
+     "hor": 2
+    },
+    {
+     "n": 5,
+     "label": "5",
+     "section": null,
+     "orientation": "row",
+     "groups": 12,
+     "quadrats": 7,
+     "enclosures": 0,
+     "ops": {
+      "ver": 9,
+      "hor": 3
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 12,
+     "hor": 3
+    },
+    {
+     "n": 6,
+     "label": "6",
+     "section": null,
+     "orientation": "row",
+     "groups": 15,
+     "quadrats": 6,
+     "enclosures": 0,
+     "ops": {
+      "ver": 5,
+      "ins": 2,
+      "hor": 1
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 8,
+     "hor": 1
+    },
+    {
+     "n": 7,
+     "label": "7",
+     "section": null,
+     "orientation": "row",
+     "groups": 15,
+     "quadrats": 11,
+     "enclosures": 0,
+     "ops": {
+      "ins": 3,
+      "ver": 10,
+      "hor": 2
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 15,
+     "hor": 2
+    },
+    {
+     "n": 8,
+     "label": "8",
+     "section": null,
+     "orientation": "col",
+     "groups": 12,
+     "quadrats": 7,
+     "enclosures": 0,
+     "ops": {
+      "ver": 6,
+      "hor": 1
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 7,
+     "hor": 1
+    },
+    {
+     "n": 9,
+     "label": "9",
+     "section": null,
+     "orientation": "col",
+     "groups": 10,
+     "quadrats": 8,
+     "enclosures": 0,
+     "ops": {
+      "ver": 5,
+      "hor": 6
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 11,
+     "hor": 6
+    },
+    {
+     "n": 10,
+     "label": "10",
+     "section": null,
+     "orientation": "col",
+     "groups": 9,
+     "quadrats": 8,
+     "enclosures": 0,
+     "ops": {
+      "ver": 8,
+      "hor": 4,
+      "ins": 1
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 13,
+     "hor": 4
+    },
+    {
+     "n": 11,
+     "label": "11",
+     "section": null,
+     "orientation": "col",
+     "groups": 9,
+     "quadrats": 7,
+     "enclosures": 0,
+     "ops": {
+      "ver": 8,
+      "hor": 3,
+      "ins": 1
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 12,
+     "hor": 3
+    },
+    {
+     "n": 12,
+     "label": "12",
+     "section": null,
+     "orientation": "col",
+     "groups": 9,
+     "quadrats": 6,
+     "enclosures": 0,
+     "ops": {
+      "ver": 6,
+      "hor": 5
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 11,
+     "hor": 5
+    },
+    {
+     "n": 13,
+     "label": "13",
+     "section": null,
+     "orientation": "col",
+     "groups": 11,
+     "quadrats": 8,
+     "enclosures": 0,
+     "ops": {
+      "ver": 5,
+      "hor": 2,
+      "ins": 1
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 8,
+     "hor": 2
+    },
+    {
+     "n": 14,
+     "label": "14",
+     "section": null,
+     "orientation": "col",
+     "groups": 11,
+     "quadrats": 10,
+     "enclosures": 0,
+     "ops": {
+      "ver": 6,
+      "ins": 1,
+      "hor": 4
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 11,
+     "hor": 4
+    },
+    {
+     "n": 15,
+     "label": "15",
+     "section": null,
+     "orientation": "col",
+     "groups": 10,
+     "quadrats": 8,
+     "enclosures": 0,
+     "ops": {
+      "ver": 4,
+      "hor": 6
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 10,
+     "hor": 6
+    },
+    {
+     "n": 16,
+     "label": "16",
+     "section": null,
+     "orientation": "col",
+     "groups": 10,
+     "quadrats": 10,
+     "enclosures": 0,
+     "ops": {
+      "ver": 7,
+      "hor": 6
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 13,
+     "hor": 6
+    },
+    {
+     "n": 17,
+     "label": "17",
+     "section": null,
+     "orientation": "col",
+     "groups": 11,
+     "quadrats": 10,
+     "enclosures": 0,
+     "ops": {
+      "ver": 8,
+      "hor": 6
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 14,
+     "hor": 6
+    },
+    {
+     "n": 18,
+     "label": "18",
+     "section": null,
+     "orientation": "col",
+     "groups": 10,
+     "quadrats": 10,
+     "enclosures": 0,
+     "ops": {
+      "ver": 9,
+      "hor": 4,
+      "ins": 1
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 14,
+     "hor": 4
+    },
+    {
+     "n": 19,
+     "label": "19",
+     "section": null,
+     "orientation": "col",
+     "groups": 10,
+     "quadrats": 8,
+     "enclosures": 0,
+     "ops": {
+      "ver": 5,
+      "ins": 2,
+      "hor": 3
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 10,
+     "hor": 3
+    },
+    {
+     "n": 20,
+     "label": "20",
+     "section": null,
+     "orientation": "col",
+     "groups": 10,
+     "quadrats": 8,
+     "enclosures": 0,
+     "ops": {
+      "ver": 4,
+      "hor": 6
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 10,
+     "hor": 6
+    },
+    {
+     "n": 21,
+     "label": "21",
+     "section": null,
+     "orientation": "col",
+     "groups": 11,
+     "quadrats": 9,
+     "enclosures": 0,
+     "ops": {
+      "ver": 8,
+      "hor": 6
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 14,
+     "hor": 6
+    },
+    {
+     "n": 22,
+     "label": "22",
+     "section": null,
+     "orientation": "col",
+     "groups": 11,
+     "quadrats": 9,
+     "enclosures": 0,
+     "ops": {
+      "ver": 2,
+      "hor": 7,
+      "ins": 1
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 10,
+     "hor": 7
+    },
+    {
+     "n": 23,
+     "label": "23",
+     "section": null,
+     "orientation": "col",
+     "groups": 10,
+     "quadrats": 10,
+     "enclosures": 0,
+     "ops": {
+      "ver": 10,
+      "hor": 4
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 14,
+     "hor": 4
+    },
+    {
+     "n": 24,
+     "label": "24",
+     "section": null,
+     "orientation": "col",
+     "groups": 10,
+     "quadrats": 9,
+     "enclosures": 0,
+     "ops": {
+      "ver": 3,
+      "ins": 3,
+      "hor": 4
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 10,
+     "hor": 4
+    },
+    {
+     "n": 25,
+     "label": "25",
+     "section": null,
+     "orientation": "col",
+     "groups": 10,
+     "quadrats": 9,
+     "enclosures": 0,
+     "ops": {
+      "ver": 7,
+      "hor": 6,
+      "ins": 1
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 14,
+     "hor": 6
+    },
+    {
+     "n": 26,
+     "label": "26",
+     "section": null,
+     "orientation": "col",
+     "groups": 10,
+     "quadrats": 10,
+     "enclosures": 0,
+     "ops": {
+      "ver": 11,
+      "hor": 5
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 16,
+     "hor": 5
+    },
+    {
+     "n": 27,
+     "label": "27",
+     "section": null,
+     "orientation": "col",
+     "groups": 10,
+     "quadrats": 9,
+     "enclosures": 0,
+     "ops": {
+      "ver": 7,
+      "hor": 5,
+      "ins": 1
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 13,
+     "hor": 5
+    }
+   ],
+   "exactPermutation": {
+    "p": 6.75652849565893e-05,
+    "permutations": 888030,
+    "atLeastAsExtreme": 60,
+    "observedDiff": 0.2314
+   },
+   "fisherNodes": 0.00013567937753655078,
+   "withEnclosureNodes": {
+    "rows": {
+     "nodes": 73,
+     "hor": 12,
+     "horShare": 0.1644
+    },
+    "cols": {
+     "nodes": 235,
+     "hor": 93,
+     "horShare": 0.3957
+    }
+   }
+  },
+  {
+   "key": "ea614",
+   "label": "BM EA 614 (Tjetji)",
+   "rows": {
+    "lines": 14,
+    "quadrats": 358,
+    "nodes": 441,
+    "ops": {
+     "ver": 320,
+     "hor": 97,
+     "ins": 24
+    },
+    "hor": 97,
+    "horShare": 0.22
+   },
+   "cols": {
+    "lines": 5,
+    "quadrats": 115,
+    "nodes": 178,
+    "ops": {
+     "ver": 84,
+     "hor": 81,
+     "ins": 13
+    },
+    "hor": 81,
+    "horShare": 0.4551
+   },
+   "parseFailures": [],
+   "enclosures": 3,
+   "nodesInsideEnclosures": 6,
+   "opsInsideEnclosures": {
+    "ins": 3,
+    "ver": 3
+   },
+   "excludedLines": [
+    {
+     "n": 20,
+     "section": "next to deceased",
+     "note": null,
+     "label": null
+    },
+    {
+     "n": 21,
+     "section": "next to upper dignitary",
+     "note": null,
+     "label": null
+    },
+    {
+     "n": 22,
+     "section": "next to lower dignitary",
+     "note": null,
+     "label": null
+    },
+    {
+     "n": 23,
+     "section": "text accompanying scene",
+     "note": null,
+     "label": "1"
+    },
+    {
+     "n": 24,
+     "section": "text accompanying scene",
+     "note": null,
+     "label": "2"
+    },
+    {
+     "n": 25,
+     "section": "text accompanying scene",
+     "note": null,
+     "label": "3"
+    },
+    {
+     "n": 26,
+     "section": "text accompanying scene",
+     "note": null,
+     "label": "4"
+    },
+    {
+     "n": 27,
+     "section": "text accompanying scene",
+     "note": null,
+     "label": "5"
+    },
+    {
+     "n": 28,
+     "section": "text accompanying scene",
+     "note": null,
+     "label": "6"
+    },
+    {
+     "n": 29,
+     "section": "text accompanying scene",
+     "note": null,
+     "label": "7"
+    }
+   ],
+   "lines": [
+    {
+     "n": 1,
+     "label": "1",
+     "section": "rows",
+     "orientation": "row",
+     "groups": 34,
+     "quadrats": 21,
+     "enclosures": 1,
+     "ops": {
+      "hor": 10,
+      "ver": 20,
+      "ins": 2
+     },
+     "opsInsideEnclosure": {
+      "ins": 1,
+      "ver": 1
+     },
+     "nodes": 32,
+     "hor": 10
+    },
+    {
+     "n": 2,
+     "label": "2",
+     "section": "rows",
+     "orientation": "row",
+     "groups": 39,
+     "quadrats": 29,
+     "enclosures": 0,
+     "ops": {
+      "ver": 26,
+      "hor": 5,
+      "ins": 4
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 35,
+     "hor": 5
+    },
+    {
+     "n": 3,
+     "label": "3",
+     "section": "rows",
+     "orientation": "row",
+     "groups": 40,
+     "quadrats": 29,
+     "enclosures": 0,
+     "ops": {
+      "ver": 22,
+      "hor": 9,
+      "ins": 3
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 34,
+     "hor": 9
+    },
+    {
+     "n": 4,
+     "label": "4",
+     "section": "rows",
+     "orientation": "row",
+     "groups": 34,
+     "quadrats": 24,
+     "enclosures": 1,
+     "ops": {
+      "hor": 6,
+      "ver": 20,
+      "ins": 2
+     },
+     "opsInsideEnclosure": {
+      "ins": 1,
+      "ver": 1
+     },
+     "nodes": 28,
+     "hor": 6
+    },
+    {
+     "n": 5,
+     "label": "5",
+     "section": "rows",
+     "orientation": "row",
+     "groups": 42,
+     "quadrats": 25,
+     "enclosures": 0,
+     "ops": {
+      "ver": 24,
+      "hor": 5,
+      "ins": 2
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 31,
+     "hor": 5
+    },
+    {
+     "n": 6,
+     "label": "6",
+     "section": "rows",
+     "orientation": "row",
+     "groups": 36,
+     "quadrats": 27,
+     "enclosures": 0,
+     "ops": {
+      "ver": 23,
+      "hor": 8,
+      "ins": 1
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 32,
+     "hor": 8
+    },
+    {
+     "n": 7,
+     "label": "7",
+     "section": "rows",
+     "orientation": "row",
+     "groups": 39,
+     "quadrats": 21,
+     "enclosures": 0,
+     "ops": {
+      "ver": 18,
+      "hor": 6,
+      "ins": 1
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 25,
+     "hor": 6
+    },
+    {
+     "n": 8,
+     "label": "8",
+     "section": "rows",
+     "orientation": "row",
+     "groups": 41,
+     "quadrats": 27,
+     "enclosures": 0,
+     "ops": {
+      "ver": 24,
+      "ins": 3,
+      "hor": 3
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 30,
+     "hor": 3
+    },
+    {
+     "n": 9,
+     "label": "9",
+     "section": "rows",
+     "orientation": "row",
+     "groups": 38,
+     "quadrats": 23,
+     "enclosures": 0,
+     "ops": {
+      "ver": 21,
+      "hor": 7
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 28,
+     "hor": 7
+    },
+    {
+     "n": 10,
+     "label": "10",
+     "section": "rows",
+     "orientation": "row",
+     "groups": 40,
+     "quadrats": 29,
+     "enclosures": 0,
+     "ops": {
+      "ver": 26,
+      "hor": 7,
+      "ins": 1
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 34,
+     "hor": 7
+    },
+    {
+     "n": 11,
+     "label": "11",
+     "section": "rows",
+     "orientation": "row",
+     "groups": 39,
+     "quadrats": 26,
+     "enclosures": 0,
+     "ops": {
+      "ver": 24,
+      "hor": 8
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 32,
+     "hor": 8
+    },
+    {
+     "n": 12,
+     "label": "12",
+     "section": "rows",
+     "orientation": "row",
+     "groups": 40,
+     "quadrats": 29,
+     "enclosures": 0,
+     "ops": {
+      "ver": 26,
+      "hor": 7,
+      "ins": 1
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 34,
+     "hor": 7
+    },
+    {
+     "n": 13,
+     "label": "13",
+     "section": "rows",
+     "orientation": "row",
+     "groups": 35,
+     "quadrats": 25,
+     "enclosures": 1,
+     "ops": {
+      "ver": 23,
+      "hor": 11,
+      "ins": 2
+     },
+     "opsInsideEnclosure": {
+      "ins": 1,
+      "ver": 1
+     },
+     "nodes": 36,
+     "hor": 11
+    },
+    {
+     "n": 14,
+     "label": "14",
+     "section": "rows",
+     "orientation": "row",
+     "groups": 41,
+     "quadrats": 23,
+     "enclosures": 0,
+     "ops": {
+      "ver": 23,
+      "hor": 5,
+      "ins": 2
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 30,
+     "hor": 5
+    },
+    {
+     "n": 15,
+     "label": "1",
+     "section": "columns",
+     "orientation": "col",
+     "groups": 27,
+     "quadrats": 19,
+     "enclosures": 0,
+     "ops": {
+      "hor": 16,
+      "ver": 12
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 28,
+     "hor": 16
+    },
+    {
+     "n": 16,
+     "label": "2",
+     "section": "columns",
+     "orientation": "col",
+     "groups": 26,
+     "quadrats": 23,
+     "enclosures": 0,
+     "ops": {
+      "ins": 7,
+      "hor": 15,
+      "ver": 13
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 35,
+     "hor": 15
+    },
+    {
+     "n": 17,
+     "label": "3",
+     "section": "columns",
+     "orientation": "col",
+     "groups": 26,
+     "quadrats": 24,
+     "enclosures": 0,
+     "ops": {
+      "hor": 15,
+      "ver": 21
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 36,
+     "hor": 15
+    },
+    {
+     "n": 18,
+     "label": "4",
+     "section": "columns",
+     "orientation": "col",
+     "groups": 26,
+     "quadrats": 22,
+     "enclosures": 0,
+     "ops": {
+      "hor": 15,
+      "ins": 3,
+      "ver": 17
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 35,
+     "hor": 15
+    },
+    {
+     "n": 19,
+     "label": "5",
+     "section": "columns",
+     "orientation": "col",
+     "groups": 30,
+     "quadrats": 27,
+     "enclosures": 0,
+     "ops": {
+      "ver": 21,
+      "hor": 20,
+      "ins": 3
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 44,
+     "hor": 20
+    }
+   ],
+   "exactPermutation": {
+    "p": 8.599931200550395e-05,
+    "permutations": 11628,
+    "atLeastAsExtreme": 1,
+    "observedDiff": 0.2351
+   },
+   "fisherNodes": 8.967022832926564e-09,
+   "withEnclosureNodes": {
+    "rows": {
+     "nodes": 447,
+     "hor": 97,
+     "horShare": 0.217
+    },
+    "cols": {
+     "nodes": 178,
+     "hor": 81,
+     "horShare": 0.4551
+    }
+   }
+  },
+  {
+   "key": "ea567",
+   "label": "BM EA 567 (Amenemhat)",
+   "rows": {
+    "lines": 24,
+    "quadrats": 221,
+    "nodes": 303,
+    "ops": {
+     "ver": 213,
+     "hor": 66,
+     "ins": 24
+    },
+    "hor": 66,
+    "horShare": 0.2178
+   },
+   "cols": {
+    "lines": 4,
+    "quadrats": 20,
+    "nodes": 26,
+    "ops": {
+     "ver": 16,
+     "hor": 7,
+     "ins": 3
+    },
+    "hor": 7,
+    "horShare": 0.2692
+   },
+   "parseFailures": [],
+   "enclosures": 1,
+   "nodesInsideEnclosures": 2,
+   "opsInsideEnclosures": {
+    "ver": 2
+   },
+   "excludedLines": [],
+   "lines": [
+    {
+     "n": 1,
+     "label": "1",
+     "section": "rows",
+     "orientation": "row",
+     "groups": 9,
+     "quadrats": 4,
+     "enclosures": 0,
+     "ops": {
+      "ver": 4
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 4,
+     "hor": 0
+    },
+    {
+     "n": 2,
+     "label": "2",
+     "section": "rows",
+     "orientation": "row",
+     "groups": 13,
+     "quadrats": 4,
+     "enclosures": 1,
+     "ops": {
+      "ins": 1,
+      "ver": 4
+     },
+     "opsInsideEnclosure": {
+      "ver": 2
+     },
+     "nodes": 5,
+     "hor": 0
+    },
+    {
+     "n": 3,
+     "label": "3",
+     "section": "rows",
+     "orientation": "row",
+     "groups": 17,
+     "quadrats": 8,
+     "enclosures": 0,
+     "ops": {
+      "ver": 8,
+      "hor": 3
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 11,
+     "hor": 3
+    },
+    {
+     "n": 4,
+     "label": "4",
+     "section": "rows",
+     "orientation": "row",
+     "groups": 20,
+     "quadrats": 9,
+     "enclosures": 0,
+     "ops": {
+      "ver": 8,
+      "hor": 4,
+      "ins": 1
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 13,
+     "hor": 4
+    },
+    {
+     "n": 5,
+     "label": "5",
+     "section": "rows",
+     "orientation": "row",
+     "groups": 24,
+     "quadrats": 15,
+     "enclosures": 0,
+     "ops": {
+      "ver": 14,
+      "ins": 3,
+      "hor": 7
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 24,
+     "hor": 7
+    },
+    {
+     "n": 6,
+     "label": "6",
+     "section": "rows",
+     "orientation": "row",
+     "groups": 26,
+     "quadrats": 13,
+     "enclosures": 0,
+     "ops": {
+      "ver": 11,
+      "hor": 3,
+      "ins": 3
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 17,
+     "hor": 3
+    },
+    {
+     "n": 7,
+     "label": "7",
+     "section": "rows",
+     "orientation": "row",
+     "groups": 29,
+     "quadrats": 13,
+     "enclosures": 0,
+     "ops": {
+      "ver": 13,
+      "hor": 1,
+      "ins": 2
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 16,
+     "hor": 1
+    },
+    {
+     "n": 8,
+     "label": "8",
+     "section": "rows",
+     "orientation": "row",
+     "groups": 31,
+     "quadrats": 10,
+     "enclosures": 0,
+     "ops": {
+      "ver": 11,
+      "hor": 3
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 14,
+     "hor": 3
+    },
+    {
+     "n": 9,
+     "label": "9",
+     "section": "rows",
+     "orientation": "row",
+     "groups": 24,
+     "quadrats": 11,
+     "enclosures": 0,
+     "ops": {
+      "ver": 9,
+      "ins": 2,
+      "hor": 1
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 12,
+     "hor": 1
+    },
+    {
+     "n": 10,
+     "label": "10",
+     "section": "rows",
+     "orientation": "row",
+     "groups": 25,
+     "quadrats": 11,
+     "enclosures": 0,
+     "ops": {
+      "ver": 12,
+      "hor": 4,
+      "ins": 1
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 17,
+     "hor": 4
+    },
+    {
+     "n": 11,
+     "label": "11",
+     "section": "rows",
+     "orientation": "row",
+     "groups": 27,
+     "quadrats": 12,
+     "enclosures": 0,
+     "ops": {
+      "ver": 11,
+      "hor": 1,
+      "ins": 1
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 13,
+     "hor": 1
+    },
+    {
+     "n": 12,
+     "label": "12",
+     "section": "rows",
+     "orientation": "row",
+     "groups": 27,
+     "quadrats": 13,
+     "enclosures": 0,
+     "ops": {
+      "ver": 12,
+      "hor": 6,
+      "ins": 2
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 20,
+     "hor": 6
+    },
+    {
+     "n": 13,
+     "label": "13",
+     "section": "rows",
+     "orientation": "row",
+     "groups": 28,
+     "quadrats": 9,
+     "enclosures": 0,
+     "ops": {
+      "ver": 9,
+      "hor": 5
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 14,
+     "hor": 5
+    },
+    {
+     "n": 14,
+     "label": "14",
+     "section": "rows",
+     "orientation": "row",
+     "groups": 27,
+     "quadrats": 10,
+     "enclosures": 0,
+     "ops": {
+      "ver": 12,
+      "hor": 3
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 15,
+     "hor": 3
+    },
+    {
+     "n": 15,
+     "label": "15",
+     "section": "rows",
+     "orientation": "row",
+     "groups": 26,
+     "quadrats": 9,
+     "enclosures": 0,
+     "ops": {
+      "ver": 9,
+      "hor": 3
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 12,
+     "hor": 3
+    },
+    {
+     "n": 16,
+     "label": "16",
+     "section": "rows",
+     "orientation": "row",
+     "groups": 27,
+     "quadrats": 12,
+     "enclosures": 0,
+     "ops": {
+      "ver": 12,
+      "hor": 5
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 17,
+     "hor": 5
+    },
+    {
+     "n": 17,
+     "label": "17",
+     "section": "rows",
+     "orientation": "row",
+     "groups": 14,
+     "quadrats": 8,
+     "enclosures": 0,
+     "ops": {
+      "ver": 8,
+      "hor": 3,
+      "ins": 1
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 12,
+     "hor": 3
+    },
+    {
+     "n": 18,
+     "label": "18",
+     "section": "rows",
+     "orientation": "row",
+     "groups": 15,
+     "quadrats": 10,
+     "enclosures": 0,
+     "ops": {
+      "ver": 10,
+      "hor": 4,
+      "ins": 2
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 16,
+     "hor": 4
+    },
+    {
+     "n": 19,
+     "label": "19",
+     "section": "rows",
+     "orientation": "row",
+     "groups": 16,
+     "quadrats": 7,
+     "enclosures": 0,
+     "ops": {
+      "ver": 7,
+      "hor": 2
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 9,
+     "hor": 2
+    },
+    {
+     "n": 20,
+     "label": "20",
+     "section": "rows",
+     "orientation": "row",
+     "groups": 15,
+     "quadrats": 8,
+     "enclosures": 0,
+     "ops": {
+      "ver": 5,
+      "hor": 1,
+      "ins": 3
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 9,
+     "hor": 1
+    },
+    {
+     "n": 21,
+     "label": "21",
+     "section": "rows",
+     "orientation": "row",
+     "groups": 16,
+     "quadrats": 5,
+     "enclosures": 0,
+     "ops": {
+      "ver": 5,
+      "ins": 1,
+      "hor": 1
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 7,
+     "hor": 1
+    },
+    {
+     "n": 22,
+     "label": "22",
+     "section": "rows",
+     "orientation": "row",
+     "groups": 15,
+     "quadrats": 6,
+     "enclosures": 0,
+     "ops": {
+      "ver": 6,
+      "hor": 3
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 9,
+     "hor": 3
+    },
+    {
+     "n": 23,
+     "label": "23",
+     "section": "rows",
+     "orientation": "row",
+     "groups": 16,
+     "quadrats": 10,
+     "enclosures": 0,
+     "ops": {
+      "ver": 9,
+      "ins": 1,
+      "hor": 1
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 11,
+     "hor": 1
+    },
+    {
+     "n": 24,
+     "label": "24",
+     "section": "rows",
+     "orientation": "row",
+     "groups": 19,
+     "quadrats": 4,
+     "enclosures": 0,
+     "ops": {
+      "ver": 4,
+      "hor": 2
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 6,
+     "hor": 2
+    },
+    {
+     "n": 25,
+     "label": "1",
+     "section": "columns",
+     "orientation": "col",
+     "groups": 10,
+     "quadrats": 5,
+     "enclosures": 0,
+     "ops": {
+      "ver": 5,
+      "hor": 1,
+      "ins": 1
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 7,
+     "hor": 1
+    },
+    {
+     "n": 26,
+     "label": "2",
+     "section": "columns",
+     "orientation": "col",
+     "groups": 12,
+     "quadrats": 8,
+     "enclosures": 0,
+     "ops": {
+      "ver": 6,
+      "hor": 2,
+      "ins": 1
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 9,
+     "hor": 2
+    },
+    {
+     "n": 27,
+     "label": "3",
+     "section": "columns",
+     "orientation": "col",
+     "groups": 8,
+     "quadrats": 6,
+     "enclosures": 0,
+     "ops": {
+      "ver": 4,
+      "hor": 3,
+      "ins": 1
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 8,
+     "hor": 3
+    },
+    {
+     "n": 28,
+     "label": "4",
+     "section": "columns",
+     "orientation": "col",
+     "groups": 1,
+     "quadrats": 1,
+     "enclosures": 0,
+     "ops": {
+      "ver": 1,
+      "hor": 1
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 2,
+     "hor": 1
+    }
+   ],
+   "exactPermutation": {
+    "p": 0.1621001221001221,
+    "permutations": 20475,
+    "atLeastAsExtreme": 3319,
+    "observedDiff": 0.0514
+   },
+   "fisherNodes": 0.34735896596529053,
+   "withEnclosureNodes": {
+    "rows": {
+     "nodes": 305,
+     "hor": 66,
+     "horShare": 0.2164
+    },
+    "cols": {
+     "nodes": 26,
+     "hor": 7,
+     "horShare": 0.2692
+    }
+   }
+  },
+  {
+   "key": "ea162",
+   "label": "BM EA 162 (Imeny)",
+   "rows": {
+    "lines": 5,
+    "quadrats": 46,
+    "nodes": 53,
+    "ops": {
+     "ver": 43,
+     "hor": 7,
+     "ins": 3
+    },
+    "hor": 7,
+    "horShare": 0.1321
+   },
+   "cols": {
+    "lines": 3,
+    "quadrats": 27,
+    "nodes": 30,
+    "ops": {
+     "ver": 20,
+     "hor": 9,
+     "ins": 1
+    },
+    "hor": 9,
+    "horShare": 0.3
+   },
+   "parseFailures": [],
+   "enclosures": 0,
+   "nodesInsideEnclosures": 0,
+   "opsInsideEnclosures": {},
+   "excludedLines": [
+    {
+     "n": 9,
+     "section": "middle register",
+     "note": "text accompanying scenes, from left to right",
+     "label": "1"
+    },
+    {
+     "n": 10,
+     "section": "middle register",
+     "note": "text accompanying scenes, from left to right",
+     "label": "2"
+    },
+    {
+     "n": 11,
+     "section": "middle register",
+     "note": "text accompanying scenes, from left to right",
+     "label": "3"
+    },
+    {
+     "n": 12,
+     "section": "middle register",
+     "note": "text accompanying scenes, from left to right",
+     "label": "4"
+    },
+    {
+     "n": 13,
+     "section": "middle register",
+     "note": "text accompanying scenes, from left to right",
+     "label": "5"
+    },
+    {
+     "n": 14,
+     "section": "lower register",
+     "note": null,
+     "label": "1"
+    },
+    {
+     "n": 15,
+     "section": "lower register",
+     "note": null,
+     "label": "2"
+    },
+    {
+     "n": 16,
+     "section": "lower register",
+     "note": null,
+     "label": "3"
+    },
+    {
+     "n": 17,
+     "section": "lower register",
+     "note": null,
+     "label": "4"
+    },
+    {
+     "n": 18,
+     "section": "lower register",
+     "note": null,
+     "label": "5"
+    }
+   ],
+   "lines": [
+    {
+     "n": 1,
+     "label": "1",
+     "section": "upper register",
+     "orientation": "row",
+     "groups": 21,
+     "quadrats": 8,
+     "enclosures": 0,
+     "ops": {
+      "ver": 8
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 8,
+     "hor": 0
+    },
+    {
+     "n": 2,
+     "label": "2",
+     "section": "upper register",
+     "orientation": "row",
+     "groups": 19,
+     "quadrats": 8,
+     "enclosures": 0,
+     "ops": {
+      "ver": 8,
+      "hor": 2
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 10,
+     "hor": 2
+    },
+    {
+     "n": 3,
+     "label": "3",
+     "section": "upper register",
+     "orientation": "row",
+     "groups": 24,
+     "quadrats": 10,
+     "enclosures": 0,
+     "ops": {
+      "ver": 8,
+      "hor": 2,
+      "ins": 2
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 12,
+     "hor": 2
+    },
+    {
+     "n": 4,
+     "label": "4",
+     "section": "upper register",
+     "orientation": "row",
+     "groups": 19,
+     "quadrats": 10,
+     "enclosures": 0,
+     "ops": {
+      "ver": 10,
+      "hor": 2
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 12,
+     "hor": 2
+    },
+    {
+     "n": 5,
+     "label": "5",
+     "section": "upper register",
+     "orientation": "row",
+     "groups": 21,
+     "quadrats": 10,
+     "enclosures": 0,
+     "ops": {
+      "ver": 9,
+      "ins": 1,
+      "hor": 1
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 11,
+     "hor": 1
+    },
+    {
+     "n": 6,
+     "label": "6",
+     "section": "middle register",
+     "orientation": "col",
+     "groups": 13,
+     "quadrats": 8,
+     "enclosures": 0,
+     "ops": {
+      "ver": 7,
+      "hor": 2
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 9,
+     "hor": 2
+    },
+    {
+     "n": 7,
+     "label": "7",
+     "section": "middle register",
+     "orientation": "col",
+     "groups": 14,
+     "quadrats": 10,
+     "enclosures": 0,
+     "ops": {
+      "ver": 7,
+      "hor": 3
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 10,
+     "hor": 3
+    },
+    {
+     "n": 8,
+     "label": "8",
+     "section": "middle register",
+     "orientation": "col",
+     "groups": 12,
+     "quadrats": 9,
+     "enclosures": 0,
+     "ops": {
+      "ver": 6,
+      "ins": 1,
+      "hor": 4
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 11,
+     "hor": 4
+    }
+   ],
+   "exactPermutation": {
+    "p": 0.017857142857142856,
+    "permutations": 56,
+    "atLeastAsExtreme": 1,
+    "observedDiff": 0.1679
+   },
+   "fisherNodes": 0.05957229553881771,
+   "withEnclosureNodes": {
+    "rows": {
+     "nodes": 53,
+     "hor": 7,
+     "horShare": 0.1321
+    },
+    "cols": {
+     "nodes": 30,
+     "hor": 9,
+     "horShare": 0.3
+    }
+   }
+  },
+  {
+   "key": "ea562",
+   "label": "BM EA 562 (Intef)",
+   "rows": {
+    "lines": 15,
+    "quadrats": 138,
+    "nodes": 165,
+    "ops": {
+     "ver": 127,
+     "hor": 27,
+     "ins": 11
+    },
+    "hor": 27,
+    "horShare": 0.1636
+   },
+   "cols": {
+    "lines": 0,
+    "quadrats": 0,
+    "nodes": 0,
+    "ops": {},
+    "hor": 0,
+    "horShare": null
+   },
+   "parseFailures": [],
+   "enclosures": 2,
+   "nodesInsideEnclosures": 1,
+   "opsInsideEnclosures": {
+    "ver": 1
+   },
+   "excludedLines": [
+    {
+     "n": 16,
+     "section": "next to deceased",
+     "note": null,
+     "label": null
+    }
+   ],
+   "lines": [
+    {
+     "n": 1,
+     "label": "1",
+     "section": "main text",
+     "orientation": "row",
+     "groups": 25,
+     "quadrats": 9,
+     "enclosures": 0,
+     "ops": {
+      "ver": 8,
+      "ins": 1
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 9,
+     "hor": 0
+    },
+    {
+     "n": 2,
+     "label": "2",
+     "section": "main text",
+     "orientation": "row",
+     "groups": 24,
+     "quadrats": 9,
+     "enclosures": 0,
+     "ops": {
+      "ver": 8,
+      "ins": 1
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 9,
+     "hor": 0
+    },
+    {
+     "n": 3,
+     "label": "3",
+     "section": "main text",
+     "orientation": "row",
+     "groups": 22,
+     "quadrats": 11,
+     "enclosures": 0,
+     "ops": {
+      "ver": 9,
+      "hor": 4,
+      "ins": 1
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 14,
+     "hor": 4
+    },
+    {
+     "n": 4,
+     "label": "4",
+     "section": "main text",
+     "orientation": "row",
+     "groups": 19,
+     "quadrats": 10,
+     "enclosures": 0,
+     "ops": {
+      "ver": 10,
+      "hor": 2
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 12,
+     "hor": 2
+    },
+    {
+     "n": 5,
+     "label": "5",
+     "section": "main text",
+     "orientation": "row",
+     "groups": 20,
+     "quadrats": 12,
+     "enclosures": 0,
+     "ops": {
+      "ver": 12,
+      "hor": 1
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 13,
+     "hor": 1
+    },
+    {
+     "n": 6,
+     "label": "6",
+     "section": "main text",
+     "orientation": "row",
+     "groups": 19,
+     "quadrats": 14,
+     "enclosures": 0,
+     "ops": {
+      "ver": 15,
+      "hor": 5
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 20,
+     "hor": 5
+    },
+    {
+     "n": 7,
+     "label": "7",
+     "section": "main text",
+     "orientation": "row",
+     "groups": 20,
+     "quadrats": 13,
+     "enclosures": 0,
+     "ops": {
+      "ver": 12,
+      "hor": 1,
+      "ins": 1
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 14,
+     "hor": 1
+    },
+    {
+     "n": 8,
+     "label": "8",
+     "section": "main text",
+     "orientation": "row",
+     "groups": 22,
+     "quadrats": 10,
+     "enclosures": 0,
+     "ops": {
+      "hor": 5,
+      "ver": 8,
+      "ins": 1
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 14,
+     "hor": 5
+    },
+    {
+     "n": 9,
+     "label": "9",
+     "section": "main text",
+     "orientation": "row",
+     "groups": 16,
+     "quadrats": 7,
+     "enclosures": 0,
+     "ops": {
+      "ver": 7,
+      "ins": 1
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 8,
+     "hor": 0
+    },
+    {
+     "n": 10,
+     "label": "10",
+     "section": "main text",
+     "orientation": "row",
+     "groups": 19,
+     "quadrats": 6,
+     "enclosures": 0,
+     "ops": {
+      "ver": 6,
+      "hor": 3,
+      "ins": 2
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 11,
+     "hor": 3
+    },
+    {
+     "n": 11,
+     "label": "11",
+     "section": "main text",
+     "orientation": "row",
+     "groups": 19,
+     "quadrats": 6,
+     "enclosures": 0,
+     "ops": {
+      "ver": 6
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 6,
+     "hor": 0
+    },
+    {
+     "n": 12,
+     "label": "12",
+     "section": "main text",
+     "orientation": "row",
+     "groups": 18,
+     "quadrats": 9,
+     "enclosures": 0,
+     "ops": {
+      "ver": 9,
+      "hor": 1
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 10,
+     "hor": 1
+    },
+    {
+     "n": 13,
+     "label": "13",
+     "section": "main text",
+     "orientation": "row",
+     "groups": 16,
+     "quadrats": 7,
+     "enclosures": 0,
+     "ops": {
+      "ver": 6,
+      "hor": 2
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 8,
+     "hor": 2
+    },
+    {
+     "n": 14,
+     "label": "14",
+     "section": "main text",
+     "orientation": "row",
+     "groups": 11,
+     "quadrats": 5,
+     "enclosures": 2,
+     "ops": {
+      "hor": 2,
+      "ver": 3,
+      "ins": 2
+     },
+     "opsInsideEnclosure": {
+      "ver": 1
+     },
+     "nodes": 7,
+     "hor": 2
+    },
+    {
+     "n": 15,
+     "label": "15",
+     "section": "main text",
+     "orientation": "row",
+     "groups": 16,
+     "quadrats": 10,
+     "enclosures": 0,
+     "ops": {
+      "ver": 8,
+      "hor": 1,
+      "ins": 1
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 10,
+     "hor": 1
+    }
+   ],
+   "oneSided": "only rows have checked orientation"
+  },
+  {
+   "key": "ea101",
+   "label": "BM EA 101 (Nebipusenusret)",
+   "rows": {
+    "lines": 0,
+    "quadrats": 0,
+    "nodes": 0,
+    "ops": {},
+    "hor": 0,
+    "horShare": null
+   },
+   "cols": {
+    "lines": 9,
+    "quadrats": 56,
+    "nodes": 69,
+    "ops": {
+     "ver": 35,
+     "hor": 30,
+     "ins": 4
+    },
+    "hor": 30,
+    "horShare": 0.4348
+   },
+   "parseFailures": [],
+   "enclosures": 2,
+   "nodesInsideEnclosures": 3,
+   "opsInsideEnclosures": {
+    "ver": 3
+   },
+   "excludedLines": [
+    {
+     "n": 1,
+     "section": "upper register",
+     "note": "top",
+     "label": null
+    },
+    {
+     "n": 2,
+     "section": "upper register",
+     "note": "left half",
+     "label": "1"
+    },
+    {
+     "n": 3,
+     "section": "upper register",
+     "note": "left half",
+     "label": "2"
+    },
+    {
+     "n": 4,
+     "section": "upper register",
+     "note": "left half",
+     "label": "3"
+    },
+    {
+     "n": 5,
+     "section": "upper register",
+     "note": "left half",
+     "label": "4"
+    },
+    {
+     "n": 6,
+     "section": "upper register",
+     "note": "left half",
+     "label": "5"
+    },
+    {
+     "n": 7,
+     "section": "upper register",
+     "note": "right half",
+     "label": "1"
+    },
+    {
+     "n": 8,
+     "section": "upper register",
+     "note": "right half",
+     "label": "2"
+    },
+    {
+     "n": 9,
+     "section": "upper register",
+     "note": "right half",
+     "label": "3"
+    },
+    {
+     "n": 10,
+     "section": "upper register",
+     "note": "right half",
+     "label": "4"
+    },
+    {
+     "n": 11,
+     "section": "upper register",
+     "note": "right half",
+     "label": "5"
+    },
+    {
+     "n": 21,
+     "section": "central register",
+     "note": "text accompanying scene",
+     "label": "1"
+    },
+    {
+     "n": 22,
+     "section": "central register",
+     "note": "text accompanying scene",
+     "label": "2"
+    },
+    {
+     "n": 23,
+     "section": "central register",
+     "note": "text accompanying scene",
+     "label": "3"
+    },
+    {
+     "n": 24,
+     "section": "central register",
+     "note": "text accompanying scene",
+     "label": "4"
+    },
+    {
+     "n": 25,
+     "section": "central register",
+     "note": "text accompanying scene",
+     "label": "5"
+    },
+    {
+     "n": 26,
+     "section": "central register",
+     "note": "text accompanying scene",
+     "label": "6"
+    },
+    {
+     "n": 27,
+     "section": "central register",
+     "note": "text accompanying scene",
+     "label": "7"
+    },
+    {
+     "n": 28,
+     "section": "central register",
+     "note": "text accompanying scene",
+     "label": "8"
+    },
+    {
+     "n": 29,
+     "section": "central register",
+     "note": "text accompanying scene",
+     "label": "9"
+    },
+    {
+     "n": 30,
+     "section": "central register",
+     "note": "text accompanying scene",
+     "label": "10"
+    },
+    {
+     "n": 31,
+     "section": "central register",
+     "note": "text accompanying scene",
+     "label": "11"
+    },
+    {
+     "n": 32,
+     "section": "lower register",
+     "note": null,
+     "label": "1"
+    },
+    {
+     "n": 33,
+     "section": "lower register",
+     "note": null,
+     "label": "2"
+    },
+    {
+     "n": 34,
+     "section": "lower register",
+     "note": null,
+     "label": "3"
+    },
+    {
+     "n": 35,
+     "section": "lower register",
+     "note": null,
+     "label": "4"
+    },
+    {
+     "n": 36,
+     "section": "lower register",
+     "note": null,
+     "label": "5"
+    },
+    {
+     "n": 37,
+     "section": "lower register",
+     "note": null,
+     "label": "6"
+    },
+    {
+     "n": 38,
+     "section": "lower register",
+     "note": null,
+     "label": "7"
+    }
+   ],
+   "lines": [
+    {
+     "n": 12,
+     "label": "1",
+     "section": "central register",
+     "orientation": "col",
+     "groups": 8,
+     "quadrats": 7,
+     "enclosures": 0,
+     "ops": {
+      "ins": 2,
+      "ver": 3,
+      "hor": 3
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 8,
+     "hor": 3
+    },
+    {
+     "n": 13,
+     "label": "2",
+     "section": "central register",
+     "orientation": "col",
+     "groups": 10,
+     "quadrats": 8,
+     "enclosures": 0,
+     "ops": {
+      "ver": 5,
+      "hor": 4
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 9,
+     "hor": 4
+    },
+    {
+     "n": 14,
+     "label": "3",
+     "section": "central register",
+     "orientation": "col",
+     "groups": 8,
+     "quadrats": 6,
+     "enclosures": 0,
+     "ops": {
+      "ver": 4,
+      "hor": 2
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 6,
+     "hor": 2
+    },
+    {
+     "n": 15,
+     "label": "4",
+     "section": "central register",
+     "orientation": "col",
+     "groups": 9,
+     "quadrats": 6,
+     "enclosures": 0,
+     "ops": {
+      "hor": 4,
+      "ver": 3
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 7,
+     "hor": 4
+    },
+    {
+     "n": 16,
+     "label": "5",
+     "section": "central register",
+     "orientation": "col",
+     "groups": 8,
+     "quadrats": 5,
+     "enclosures": 1,
+     "ops": {
+      "hor": 3,
+      "ver": 2
+     },
+     "opsInsideEnclosure": {
+      "ver": 1
+     },
+     "nodes": 5,
+     "hor": 3
+    },
+    {
+     "n": 17,
+     "label": "6",
+     "section": "central register",
+     "orientation": "col",
+     "groups": 8,
+     "quadrats": 5,
+     "enclosures": 0,
+     "ops": {
+      "ver": 5,
+      "hor": 2
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 7,
+     "hor": 2
+    },
+    {
+     "n": 18,
+     "label": "7",
+     "section": "central register",
+     "orientation": "col",
+     "groups": 8,
+     "quadrats": 5,
+     "enclosures": 1,
+     "ops": {
+      "hor": 2,
+      "ins": 1,
+      "ver": 4
+     },
+     "opsInsideEnclosure": {
+      "ver": 2
+     },
+     "nodes": 7,
+     "hor": 2
+    },
+    {
+     "n": 19,
+     "label": "8",
+     "section": "central register",
+     "orientation": "col",
+     "groups": 9,
+     "quadrats": 7,
+     "enclosures": 0,
+     "ops": {
+      "hor": 6,
+      "ver": 3
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 9,
+     "hor": 6
+    },
+    {
+     "n": 20,
+     "label": "9",
+     "section": "central register",
+     "orientation": "col",
+     "groups": 9,
+     "quadrats": 7,
+     "enclosures": 0,
+     "ops": {
+      "ver": 6,
+      "hor": 4,
+      "ins": 1
+     },
+     "opsInsideEnclosure": {},
+     "nodes": 11,
+     "hor": 4
+    }
+   ],
+   "oneSided": "only columns have checked orientation"
+  }
+ ],
+ "pooledSecondTexts": {
+  "texts": [
+   "ea614",
+   "ea567",
+   "ea162"
+  ],
+  "rows": {
+   "lines": 43,
+   "quadrats": 625,
+   "nodes": 797,
+   "ops": {
+    "ver": 576,
+    "hor": 170,
+    "ins": 51
+   },
+   "hor": 170,
+   "horShare": 0.2133
+  },
+  "cols": {
+   "lines": 12,
+   "quadrats": 162,
+   "nodes": 234,
+   "ops": {
+    "ver": 120,
+    "hor": 97,
+    "ins": 17
+   },
+   "hor": 97,
+   "horShare": 0.4145
+  },
+  "stratifiedPermutation": {
+   "p": 4.9999750001249995e-06,
+   "atLeastAsExtreme": 0,
+   "iterations": 200000,
+   "seed": 20261123,
+   "observedSumDiff": 0.4544
+  }
+ }
+}
