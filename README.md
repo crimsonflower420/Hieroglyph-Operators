@@ -19,10 +19,11 @@ This repository holds a research-notes website that reads Egyptian hieroglyphs t
 | `site/` | Static site deployed to Cloudflare Pages (project `hieroglyph-operators`) |
 | `site/js/quadrat.js` | Unicode quadrat parser and schematic SVG layout. Noto has no quadrat shaping. |
 | `tools/quadrat_census.py` | Parses the pilot text into operator trees and writes `data/pilot-census.json` and `site/js/pilot-data.js` |
-| `tools/build_pages.py` | Builds the five pages from the census data and the JA/EN texts |
+| `tools/build_pages.py` | Builds the static pages from the census data and the JA/EN texts |
 | `data/ea581-lines.json` | BM EA 581, Unicode encoding by M.-J. Nederhof (HieroJax, GPL-3.0), with line direction from his RES encoding |
 | `tools/kanji_heights.py` | Per-character tree height of the 2,136 jōyō kanji from the pinned KanjiVG snapshot, using the Kanji-Morphology composition rule (needs that repo checked out); writes `data/kanji-height-reference.json` |
 | `tools/depth_compare.py` | Layout height vs function height for the Rahman derivations, with EA 581 and kanji beside them; writes `data/depth-compare.json` (page `depth`) |
+| `tools/second_text.py` | Horizontal-join share by line orientation on EA 581, 614, 567, 162 and 101 (HieroJax, pinned commit); `--fetch` rebuilds `data/second-text-lines.json`; writes `data/second-text.json` (page `second-text`) |
 | `tools/quadrat_word_align.py` | Aligns TLA word division (via AES, CC BY-SA 4.0) with Nederhof's quadrats for EA 581 and EA 162; `--fetch` rebuilds `data/ea581-tla-words.json`, `data/ea162-tla-words.json`, `data/ea162-lines.json` from pinned commits; writes `data/quadrat-word.json` (page `boundaries`) |
 | `data/kanji-arity-reference.json` | Kanji arity census numbers, pinned to Kanji-Morphology 3e3ba46 and KanjiVG 70a0b7ae |
 | `notes/` | Research notes with sources |
@@ -35,6 +36,7 @@ python3 tools/quadrat_census.py
 # python3 tools/kanji_heights.py --kanji-repo /path/to/Kanji-Morphology
 python3 tools/depth_compare.py
 python3 tools/quadrat_word_align.py   # add --fetch to rebuild its inputs
+python3 tools/second_text.py         # add --fetch to rebuild data/second-text-lines.json
 python3 tools/build_pages.py
 WRANGLER_CACHE_DIR=/tmp/wrangler-cache npx wrangler pages deploy site --project-name hieroglyph-operators --branch main --commit-hash "$(git rev-parse HEAD)"
 ```

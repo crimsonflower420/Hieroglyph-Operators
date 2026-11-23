@@ -1,0 +1,1148 @@
+{
+ "source": {
+  "encoding": "Mark-Jan Nederhof, HieroJax text pages, repository nederhof/hierojax commit da318801e00b10b4b5c5ec8d9cc6f8fddcc9eb5a (GPL-3.0). This file keeps that licence.",
+  "note": "Encoding of relative positions is the editor's; it is not a facsimile. orientation: row / col where the evidence field says so, otherwise null (excluded)."
+ },
+ "texts": [
+  {
+   "key": "ea614",
+   "label": "BM EA 614 (Tjetji)",
+   "title": "Stela of Tjetji",
+   "hierojax": "https://nederhof.github.io/hierojax/texts/BritishMuseumEA614.html",
+   "raw": "https://raw.githubusercontent.com/nederhof/hierojax/da318801e00b10b4b5c5ec8d9cc6f8fddcc9eb5a/docs/texts/BritishMuseumEA614.html",
+   "bm": "https://www.britishmuseum.org/collection/object/Y_EA614",
+   "evidence": [
+    {
+     "section": "rows",
+     "note": null,
+     "orientation": "row",
+     "evidence": "HieroJax heading \"rows\" (14 lines); BM record: \"a fourteen-line autobiographical inscription reading from right to left\""
+    },
+    {
+     "section": "columns",
+     "note": null,
+     "orientation": "col",
+     "evidence": "HieroJax heading \"columns\" (5 lines); BM record: \"an elaborate offering prayer written in five vertical rows\" / \"The vertical columns of the offering prayer\""
+    }
+   ],
+   "lines": [
+    {
+     "n": 1,
+     "section": "rows",
+     "note": null,
+     "label": "1",
+     "orientation": "row",
+     "unicode": "𓅃𓎝𓐱𓋹𓇓𓐰𓏏𓆤𓐰𓏏𓍹𓐼𓅭𓐴𓇳𓏎𓈖𓐰𓏏𓐰𓆑𓐽𓍺𓄠𓄤𓐱𓄤𓐱𓄤𓋹𓇳𓏇𓆓𓐻𓏏𓐰𓇿𓰴𓐰𓎡𓀀𓐱𓌳𓐰𓆑𓐙𓐰𓂝𓐰𓈖𓊨𓐱𓐷𓏏𓐰𓄣𓐱𓏤𓐸𓐰𓆑𓏅𓊨𓐰𓏏𓅓𓉐𓐱𓏤𓐰𓎟𓐰𓆑𓋴𓂋𓐰𓀙𓉼𓈖𓐰𓄣𓐱𓏤𓐰𓆑𓂋𓐰𓐍𓐰𓏝𓐍𓐰𓂋𓐰𓏏𓄣𓐱𓏤𓐰𓎟𓐰𓆑𓌞𓐱𓋴𓂻𓇓𓅱𓂋𓐰𓌱𓐱𓐷𓏏𓐰𓏏𓐰𓂻𓐸𓏥𓐰𓆑𓐰𓎟𓌡𓐰𓂝𓐺𓏤𓄣𓐰𓏤"
+    },
+    {
+     "n": 2,
+     "section": "rows",
+     "note": null,
+     "label": "2",
+     "orientation": "row",
+     "unicode": "𓑄︀𓐱𓏤𓐰𓆑𓐰𓈖𓇬𓌳𓐰𓐙𓄂𓐰𓏏𓐱𓏤𓅨𓐰𓂋𓀀𓐰𓏥𓏌𓐰𓉐𓏤𓐰𓏤𓇓𓏏𓐰𓈖𓏅𓋨𓐰𓏏𓅓𓐴𓏏𓊨𓈙𓐰𓏏𓐱𓍔𓏏𓐰𓏝︂𓎛𓄿𓐴𓐷𓊪𓐰𓏏𓐸𓋳𓐰𓈖𓎟𓐰𓆑𓐰𓂋𓅨𓐰𓂋𓀀𓐰𓏥𓋴𓐍𓐰𓅓𓐍𓐰𓄣𓅃𓐳𓏤𓅓𓌸𓐰𓂋𓏏𓐰𓈖𓐰𓆑𓇋𓐱𓏶𓄣𓐰𓏤𓎟𓐰𓆑𓌸𓇋𓐱𓇋𓐰𓆑𓅓𓂋𓐰𓏤𓈖𓐰𓋨𓐻𓏏𓏅𓏏𓐰𓏏"
+    },
+    {
+     "n": 3,
+     "section": "rows",
+     "note": null,
+     "label": "3",
+     "orientation": "row",
+     "unicode": "𓊨𓐰𓏏𓈙𓐰𓏏𓐱𓍔𓏏𓐰𓏝︂𓌸𓂋𓐰𓂋𓐰𓏏𓎟𓐰𓆑𓅓𓐴𓐷𓂋𓐰𓏤𓐸𓋨𓐰𓏏𓇓𓏏𓐰𓌨𓐰𓁶𓇋𓌳𓄪𓐻𓐍𓅱𓎀𓐰𓎀𓇋𓆓𓐻𓂧𓏌𓐱𓎡𓐰𓌸𓇋𓐱𓇋𓎟𓐰𓆑𓎿𓇋𓐱𓇋𓐰𓆑𓅓𓌨𓐰𓏏𓇳𓐰𓏤𓈖𓐰𓏏𓐱𓇳𓐰𓎟𓇋𓐱𓅱𓁹𓐰𓈖𔂌𓐱𓅱𓇳𓐰𓈘𓉼𓐱𓅓𓆳𓏏𓐰𓏤𓐰𓏥𓐍𓐰𓂋𓍛𓏤𓐰𓈖𓐰𓎟𓅃𓎝𓐱𓋹𓇓𓐰𓏏𓆤𓐰𓏏"
+    },
+    {
+     "n": 4,
+     "section": "rows",
+     "note": null,
+     "label": "4",
+     "orientation": "row",
+     "unicode": "𓍹𓐼𓅭𓐴𓇳𓏎𓈖𓐰𓏏𓐰𓆑𓐽𓍺𓇋𓐱𓋴𓍿𓐰𓇿𓐰𓊪𓐰𓈖𓌨𓐰𓂋𓊨𓐰𓏏𓁷𓐱𓏤𓐰𓆑𓏅𓈖𓐰𓏏𓐱𓏏𓐰𓂋𔍉𓐰𓊖𓄖𓐰𓏏𓐰𓂋𓋄𓍿𓐰𓈖𓐰𓊖︃𓋴𓍿𓐰𓅱𓅓𓰴𓐰𓎡𓀀𓐰𓆑𓈖𓐰𓆓𓐻𓏏𓐰𓆑𓌨𓐰𓂋𓁶𓐱𓏤𓐰𓆑𓐰𓈖𓇬𓌳𓐰𓐙𓇋𓐱𓅱𓋴𓉻𓐰𓂝𓐰𓈖𓐰𓆑𓅱𓐱𓋴𓏅𓈖𓐰𓏏𓐰𓈖𓐰𓆑𓊨𓏏𓐰𓉐𓂞𓐰𓈖𓐰𓆑𓅱𓅓𓐴𓏏𓊨𓐰𓈘"
+    },
+    {
+     "n": 5,
+     "section": "rows",
+     "note": null,
+     "label": "5",
+     "orientation": "row",
+     "unicode": "𓐍𓐰𓂋𓐰𓏏𓄣𓐱𓏤𓐰𓆑𓅓𓉥𓐰𓏤𓂝𓐰𓉐𓐰𓆑𓈖𓐰𓌡𓐰𓂝𓐺𓏤𓂝𓐰𓅱𓋨𓐰𓏏𓅓𓂝𓐰𓌨𓐰𓏤𓂭𓏏𓐰𔆩𓅓𓋴𓏏𓐰𓊪𓐰𓍉𓅱𓈖𓐰𓄤𓂋𓐰𓏏𓐰𓎟𓐰𓏏𓏎𓈖𓐰𓈖𓐰𓏏𓐰𓈖𓍛𓏤𓐰𓈖𓎟𓐰𓀀𓅓𓇗𓅓𓻻𓐰𓎔𓐻𓊖𓅱𓅓𓎤𓐱𓏤𓐰𓎟𓐰𓈖𓋴𓐍𓐰𓅓𓐍𓐰𓄣𓐱𓏤𓅓𓏎𓈖𓐰𓏌𓐱𓅱𓈖𓐰𓇿𓐰𓊪𓐰𓈖𓏇𓐱𓐪𓂧𓐰𓏝𓐰𓆑𓈖𓐰𓅾𓐰𓆑𓏨𓆱𓐰𓏏𓐰𓆱𓐰𓏏"
+    },
+    {
+     "n": 6,
+     "section": "rows",
+     "note": null,
+     "label": "6",
+     "orientation": "row",
+     "unicode": "𓇿𓐰𓊪𓐰𓈖𓏎𓈖𓐰𓈖𓐰𓏏𓈖𓐰𓍛𓐱𓏤𓈖𓐰𓎟𓅓𓂝𓋾𓐱𓀀𓐱𓏪𓁷𓐰𓂋𓅱𓁶𓐰𓏤𓅟𓐰𓏏𓐱𓈉𓈖𓐰𓅾𓏨𓐰𓆑𓆱𓐰𓏏𓐰𓆱𓐰𓏏𓈉𓐰𓏏𓐱𓏥𔂌𓂞𓐰𓈖𓂋𓐰𓂞𓐰𓈖𓆑𓐰𓈖𓇑𓐱𓇑𓂋𓐰𓐍𓏝𓐰𓈖𓐰𓆑𓇋𓈎𓐰𓂋𓊨𓏏𓐰𓂝𓐰𓏤𔂌𓂝𓐰𓈖𓋴𓐱𓏇𓏝𓐰𓈖𓐰𓈖𓐰𓆑𓋴𓐵𓏏𓧂𓐰𓊃𓐰𓊪𓐱𓊗𓂻𓐰𓏏𓅱𓐍𓐱𓏏𓐰𓎟"
+    },
+    {
+     "n": 7,
+     "section": "rows",
+     "note": null,
+     "label": "7",
+     "orientation": "row",
+     "unicode": "𓇋𓅓𓈖𓐰𓏏𓍚𓀜𓈖𓐰𓉻𓐰𓏏𓈖𓐰𓏏𓐰𓂋𓐰𓐍𓐍𓐰𓏏𓐰𓏝𓏌𓐱𓎡𓐰𓃹𓈖𓐰𓈖𓐰𓏏𓇋𓐱𓏶𓄣𓐰𓏤𓈖𓐰𓎟𓐰𓆑𓌳𓐙𓐰𓂝𓋴𓂋𓐰𓀙𓉼𓈖𓐰𓄣𓐱𓏤𓐰𓆑𓃀𓐳𓈎𓎿𓋴𓂋𓐰𓆑𓊮𓅓𓉐𓐱𓏤𓐰𓎟𓐰𓆑𓆼𓄿𓅓𓂘𓂋𓐰𓈖𓐰𓂢𓅓𓅓𓅨𓐰𓂋𓀀𓐱𓏨𓐰𓧂𓅱𓂧𓐰𓀜𓈖𓐰𓅓𓐟𓐱𓏤"
+    },
+    {
+     "n": 8,
+     "section": "rows",
+     "note": null,
+     "label": "8",
+     "orientation": "row",
+     "unicode": "𓑃︀𓅱𓈋𓐰𓈋𓄠𓆓𓐻𓅱𓂋𓐰𓍿𓀀𓐰𓏥𓁷𓐰𓂋𓋴𓏌𓐰𓎡𓌸𓂋𓐰𓈘𓐰𓆑𓄤𓂋𓐰𓏏𓄠𓆓𓐰𓆑𓈋𓐰𓏏𓐪𓂧𓐰𓈒𓐰𓏝𓌻𓐰𓂋𓐰𓂋𓅱𓅓𓉐𓐱𓏤𓐰𓎟𓐰𓆑𓁹𓐰𓂋𓐰𓈙𓅓𓐴𓏏𓂻𓐰𓎟𓂋𓐰𓐥𓂧𓐰𓅱𓈖𓐰𓄣𓐱𓏤𓐰𓈖𓎟𓐰𓀀𓇋𓂋𓐰𓎼𓐰𓂋𓏏𓈙𓐰𓅓𓐴𓏏𓂻𓐰𓎟𓐰𓏏𓎗𓐱𓅱𓏏𓐰𓈖𓐰𓆑𓐰𓈖𓂝𓐰𓊣𓀙𓁷𓐰𓂋𓋴"
+    },
+    {
+     "n": 9,
+     "section": "rows",
+     "note": null,
+     "label": "9",
+     "orientation": "row",
+     "unicode": "𓅓𓑉𓌳𓐚𓐰𓂝𓐰𓐍𓐱𓏏𓈖𓐰𓋴𓐱𓐷𓊪𓐰𓂋𓐸𓅱𓀒𓐰𓀀𓅓𓂝𓐰𓊣𓁷𓌃𓐱𓐷𓂧𓐰𓅱𓐸𓋴𓐟𓄿𓂋𓐰𓌗𓇋𓐱𓇋𓁹𓐰𓂋𓋴𓏏𓐰𓂋𓇬𓌳𓐰𓐙𓧂𓐰𓏏𓐰𓉔𓅪𓐰𓈖𓎛𓐱𓋴𓃀𓐱𓅱𓐎𓐰𓏝𓎗𓅱𓏝𓐰𓈖𓐰𓆑𓐰𓈖𓧂𓐰𓂋𓐰𓂞𓈖𓐰𓎡𓐰𓏏𓐰𓏝𓅓𓊨𓐰𓏏𓎡𓐰𓏏𓐰𓏝𓧂𓐰𓈎𓐱𓄿𓀠𓋴𓂋𓐰𓆑𓐰𓊮𓐍𓐰𓏏𓐰𓆑"
+    },
+    {
+     "n": 10,
+     "section": "rows",
+     "note": null,
+     "label": "10",
+     "orientation": "row",
+     "unicode": "𓄊𓋴𓐰𓂋𓧂𓐰𓍿𓐰𓏏𓐱𓂻𓐍𓐰𓏏𓐰𓏝𓅓𓃛𓐰𓏏𓅱𓂋𓐰𓁹𓐰𓈙𓅓𓐴𓏏𓂻𓐰𓎟𓐰𓏏𓇋𓂋𓐰𓎼𓐰𓂋𓐰𓏏𓇓𓏏𓐰𓇋𓅮𓐰𓏏𓉐𓐰𓎟𓐰𓏏𓎗𓅱𓏏𓐰𓈖𓐰𓈖𓎛𓐱𓏤𓐰𓈖𓎟𓐰𓀀𓂋𓐰𓂞𓐰𓏏𓐰𓈖𓆑𓐰𓁹𓇋𓐱𓇋𓈖𓐰𓋴𓄋𓐰𓊪𓐱𓏏𓐰𓏝𓅓𓌸𓂋𓐰𓏏𓐰𓈖𓐰𓎟𓂓𓐱𓏤𓐱𓊢𓐰𓆑𓂝𓐰𓂝𓐰𓈖𓁹𓐰𓈖𓐰𓈖𓐰𓆑𓋴𓐰𓏏𓋴𓐱𓄤𓆑𓐰𓂋𓐰𓈖𓋴𓌫𓐰𓅓𓋴𓈖𓐰𓏥𓐰𓎟𓧂𓐰𓊃𓐰𓊪𓐱𓊗"
+    },
+    {
+     "n": 11,
+     "section": "rows",
+     "note": null,
+     "label": "11",
+     "orientation": "row",
+     "unicode": "𓂻𓐰𓏏𓅱𓐍𓐰𓏏𓇋𓅓𓈖𓐰𓉻𓐰𓏏𓐰𓈖𓐰𓏏𓂋𓐰𓐷𓐍𓐰𓏏𓐸𓐱𓐷𓐍𓐰𓏝𓐸𓇋𓐱𓅱𓁹𓐰𓈖𓅓𓆞𓐰𓄿𓊛𓐰𓈖𓊖︃𓐰𓏏𓐱𓏤𓊃𓐰𓎛𓐱𓇋𓐱𓇋𓏏𓐰𔀨𓐰𓂋𓌞𓐱𓋴𓂻𓐰𓎟𓇋𓊪𓐰𓏏𓐰𓏝𓎛𓈖𓐰𓂝𓅨𓑉𓐰𓂋𓀀𓐰𓏥𓆵𓏤𓐱𓐷𓎟𓐰𓈖𓐸𓋴𓌫𓐰𓅓𓏝𓐰𓉔𓄿𓃀𓀼𓋴𓐱𓋴𓎡𓐰𓅱𓉼𓎡𓐰𓅱𓂝𓐰𓊪𓐰𓂋𓐢𓈖𓐰𓅱𓇋𓐱𓀀"
+    },
+    {
+     "n": 12,
+     "section": "rows",
+     "note": null,
+     "label": "12",
+     "orientation": "row",
+     "unicode": "𓄊𓋴𓐰𓂋𓧂𓐰𓍿𓐰𓏏𓐱𓂻𓐍𓐰𓏏𓐰𓏝𓅓𓃛𓐰𓏏𓅱𓂋𓐰𓁹𓐰𓈙𓅓𓐴𓏏𓂻𓐰𓎟𓐰𓏏𓇋𓂋𓐰𓎼𓐰𓂋𓐰𓏏𓇓𓏏𓐰𓇋𓅮𓐰𓏏𓉐𓐰𓎟𓐰𓏏𓎗𓅱𓏏𓐰𓈖𓐰𓈖𓎛𓐱𓏤𓐰𓈖𓎟𓐰𓀀𓂋𓐰𓂞𓐰𓏏𓐰𓈖𓆑𓐰𓁹𓇋𓐱𓇋𓈖𓐰𓋴𓄋𓐰𓊪𓐱𓏏𓐰𓏝𓅓𓌸𓂋𓐰𓏏𓐰𓈖𓐰𓎟𓂓𓐱𓏤𓐱𓊢𓐰𓆑𓂝𓐰𓂝𓐰𓈖𓁹𓐰𓈖𓐰𓈖𓐰𓆑𓋴𓐰𓏏𓋴𓐱𓄤𓆑𓐰𓂋𓐰𓈖𓋴𓌫𓐰𓅓𓋴𓈖𓐰𓏥𓐰𓎟𓧂𓐰𓊃𓐰𓊪𓐱𓊗"
+    },
+    {
+     "n": 13,
+     "section": "rows",
+     "note": null,
+     "label": "13",
+     "orientation": "row",
+     "unicode": "𓅃𓈖𓐰𓆱𓐰𓏏𓎟𓐰𓁶𓐱𓏤𓄤𓇓𓐰𓏏𓆤𓐰𓏏𓍹𓐼𓅭𓐴𓇳𓏎𓈖𓐰𓏏𓐰𓆑𓐽𓍺𓄠𓄤𓐱𓄤𓐱𓄤𓋹𓇳𓐱𓏇𓆓𓐻𓏏𓐰𓇿𓇋𓐱𓅱𓌞𓐱𓋴𓂻𓐰𓈖𓇓𓅱𓂋𓐰𓊨𓏏𓐱𓐷𓏥𓐰𓆑𓐸𓐰𓎟𓐱𓏏𓄤𓂋𓐰𓏏𓐰𓈖𓐰𓏏𓋴𓐍𓐰𓅓𓐍𓐰𓄣𓏤𓧂𓐰𓊃𓐰𓊪𓐱𓊗𓐷𓎀𓐰𓊃𓐸𓐱𓂭𓐰𓆑𓐍𓐰𓏏𓐰𓏝𓇋𓐱𓅓𓈖𓐰𓉻𓐰𓏏𓐰𓈖𓐰𓏏𓂋𓐰𓐷𓐍𓐰𓏏𓐸𓐱𓐷𓐍𓐰𓏝𓐸𓂞𓐰𓈖𓐰𓆑𓈖𓐰𓈝𓅓𓐴𓏏𓂻𓐰𓑃︀"
+    },
+    {
+     "n": 14,
+     "section": "rows",
+     "note": null,
+     "label": "14",
+     "orientation": "row",
+     "unicode": "𓃹𓐰𓈖𓐰𓏏𓅓𓂝𓐰𓅓𓂋𓐰𓎡𓐰𓇳𓐷𓏏𓐰𓆑𓐸𓐱𓀀𓐰𓆑𓁷𓐰𓏤𓋴𓑐𓍑𓑐𓄿𓑐𓋴𓑐𓐍𓑎𓐰𓂋𓑕𓍛𓑐𓏤𓐰𓆑𓐰𓧂𓑐𓇍𓑐𓅱𓐍𓐰𓏏𓐰𓎟𓇋𓐱𓅓𓋴𓁹𓐰𓈖𓐰𓉔𓄿𓅱𓇳𓐱𓏥𓐰𓎟𓅱𓁶𓐰𓇿𓅓𓇓𓏏𓐰𓌨𓐰𓁶𓈖𓐰𓆓𓐻𓏏𓐰𓆑𓄊𓎡𓐰𓅱𓉼𓎡𓐰𓅱𓐍𓐰𓂋𓍛𓐱𓏤𓐰𓆑𓏌𓐱𓎡𓐰𓁹𓐪𓂧𓐰𓏌𓐰𓏝𓐰𓆑𓎿𓊃𓐰𓈖𓐰𓎟𓐰𓆑𓅓𓐴𓐷𓌨𓐰𓏏𓐸𓇳𓐰𓑃︀"
+    },
+    {
+     "n": 15,
+     "section": "columns",
+     "note": null,
+     "label": "1",
+     "orientation": "col",
+     "unicode": "𓇓𓐱𓏙𓊵𓐰𓁹𓊨𓐱𓀭𓎟𓊽𓐱𓐷𓂧𓐰𓅱𓐸𓊖𓏅𓋀𓐱𓅂𓀭𓎟𓍋𓐱𓃀𓈋𓐱𓊖𓅓𓊨𓐱𓊨𓐱𓊨𓆑𓐰𓎟𓐰𓏏𓉓𓆼𓐱𓐷𓏐𓐰𓏊𓐸𓆼𓐱𓐷𓃿𓐰𓅿𓑀𓐸𓆼𓐱𓐷𓏋𓐰𔆳𓐸𓆼𓐱𓐷𓐍𓐰𓏏𓐰𓎟𓐸𓄤𓐱𓃂𓆞𓐰𓅓𓐱𓂘𓐍𓐱𓏏𓐰𓏝𓂧𓐰𓄑𓃀𓐱𓎛𓐱𓐷𓏏𓐰𓏖𓐸𓊵𓐰𓏏𓐱𓊪𓑃︀"
+    },
+    {
+     "n": 16,
+     "section": "columns",
+     "note": null,
+     "label": "2",
+     "orientation": "col",
+     "unicode": "𓆓𓑒𓐻𓆑𓄿𓐱𓐷𔏅𓐰𓏩𓐸𓏌𓐱𓏤𓐰𓎟𓍋𓐱𓃀𓈋𓐱𓊖𓐷𓏏𓐰𓏐𓐸𓐱𓃂𓈖𓐰𓉐𓐱𓏤𓏠𓐰𓈖𓐰𓍿𓅱𓐱𓀭𓏁𓐱𓅱𓊵𓐰𓐷𓏏𓐰𓊪𓐸𓐱𓐷𓏏𓐰𓏥𓐸𓆓𓐻𓆑𓄿𓐴𓐷𔏅𓐰𓏥𓐸𓌸𓂋𓐰𓂋𓐰𓏏𓅜𓐳𓐍𓀭𓐱𓏨𓋹𓐱𓀀𓇋𓐱𓅓𓐰𓈖𓅓𓐴𓂋𓐱𓏤𓋨𓐻𓏏𓇓𓐱𓐷𓏏𓐰𓌨𓐰𓁶𓐸𓄪𓐻𓐍𓅱𓐷𓎀𓐰𓎀𓐸𓐱𓇋𓑃︀"
+    },
+    {
+     "n": 17,
+     "section": "columns",
+     "note": null,
+     "label": "3",
+     "orientation": "col",
+     "unicode": "𓍑𓑋𓐱𓄿𓑋𓊛𓐰𓆑𓃀𓐱𓐷𓈟𓐰𓊌𓐸𓈖𓐰𓌱𓐱𓅓𓇋𓐱𓐷𓂻𓐰𓆑𓐸𓎛𓐱𓐷𓁷𓐰𓂋𓐰𓏏𓐸𓼮𓇋𓐱𓐷𓂝𓐰𓂋𓐰𓼮𓐸𓆑𓐰𓈖𓊹𓐱𓉼𓊃𓐰𓌳𓐱𓄥𓆑𓐰𓻻𓐰𓎟𓅓𓊵𓐰𓏏𓐱𓊪𓐰𓂋𓋀𓐱𓐷𓏏𓐰𓈉𓐸𓄤𓐱𓐷𓆑𓐰𓂋𓐰𓏏𓐸𓃹𓐰𓈖𓉿𓐰𓈖𓆑𓐰𓊃𓏏𓐱𓈉𓐰𓂋𓈖𓐰𓂢𓋴𓐱𓏙𓱿𓐰𓏏𓐰𓈉𓐷𓂝𓐰𓂝𓐸𓐱𓋴𓂋𓐰𓆑𓋴𓐱𓐷𓊪𓐰𓂋𓐸"
+    },
+    {
+     "n": 18,
+     "section": "columns",
+     "note": null,
+     "label": "4",
+     "orientation": "col",
+     "unicode": "𓂋𓊹𓐱𓍑𓆓𓐻𓐷𓏌𓐱𓏏𓐸𓀭𓐱𓏨𓆓𓐳𓂧𓐰𓏏𓈖𓐰𓆑𓇍𓐱𓅱𓅓𓊵𓐷𓏏𓐰𓊪𓐸𓐱𓇋𓈖𓐰𓅨𓐰𓂋𓀭𓐱𓏨𓐰𓏌𓐱𓏤𓍋𓐱𓃀𓈋𓐱𓊖︃𓂝𓐰𓏏𓐰𓈖𓐰𓆑𓂝𓐱𓏤𓐰𓂝𓐱𓏤𓅓𓈖𓐰𓈙𓅓𓐴𓏏𔀟𓐰𓐷𓁷𓐰𓏤𓐸𓐱𓐷𓍯𓐰𓏏𓐸𓼮𓐰𓏥𓱿𓐰𓏏𓐷𓐍𓐰𓊪𓐸𓐱𓐷𓂻𓐰𓆑𓐸𓄤𓐱𓅓𓊵𓐰𓏏𓐱𓊪𓂋𓐰𓈌𓑐"
+    },
+    {
+     "n": 19,
+     "section": "columns",
+     "note": null,
+     "label": "5",
+     "orientation": "col",
+     "unicode": "𓂋𓐰𓃀𓐱𓅱𓈖𓐰𓏏𓐰𓁹𓊨𓐱𓀭𓇋𓐱𓅓𓄌𓐰𓊪𓐰𓆑𓍯𓐱𓏏𓐰𓼮𓐰𓏥𓌸𓐱𓐷𓂋𓐰𓂋𓐰𓏏𓐸𓆑𓐰𓂋𓋴𓐱𓃀𓐱𓐷𓐍𓐰𓏏𓐸𓉐𓐱𓏥𓇋𓐱𓏶𓐵𓏏𓻻𓐰𓂦𓐰𓈉𓂞𓐰𓈖𓐰𓆑𓏶𓐱𓅱𓐷𓃀𓐰𓂝𓐸𓐱𓎛𓱑𓐷𓂝𓐰𓏤𓐰𓏝𓐸𓐱𓋴𓋴𓐱𓐷𓈖𓐰𓏥𓐸𓁷𓐱𓅱𓐰𓂝𓐷𓂋𓐰𓏏𓐸𓐱𓂾𓂋𓐰𓂞𓐰𓏏𓊵𓐰𓏏𓐱𓊪𓐱𓏏𓐰𓏔𓐱𓏥𓂓𓐱𓏤𓐰𓆑𓎛𓐱𓐷𓈖𓐰𓂝𓐰𓆑𓐸𓊵𓐱𓐷𓏏𓐰𓊪𓐸𓏏𓐱𓏥𓐰𓆑𓅓𓐴𓐷𓂸𓐰𓏤𓐸𓆑𓄪𓑐𓐻𓐍𓑃︀"
+    },
+    {
+     "n": 20,
+     "section": "next to deceased",
+     "note": null,
+     "label": null,
+     "orientation": null,
+     "unicode": "𓅓𓐴𓐷𓂋𓐰𓏤𓐸𓋨𓐻𓏏𓄪𓐻𓐍𓅱𓐰𓎀𓐰𓎀"
+    },
+    {
+     "n": 21,
+     "section": "next to upper dignitary",
+     "note": null,
+     "label": null,
+     "orientation": null,
+     "unicode": "𓋨𓅱𓐱𓀀𓆑𓐰𓈖𓊨𓐱𓐷𓏏𓐰𓄣𓐱𓏤𓐸𓆑𓅓𓎤𓐱𓎤𓇋"
+    },
+    {
+     "n": 22,
+     "section": "next to lower dignitary",
+     "note": null,
+     "label": null,
+     "orientation": null,
+     "unicode": "𓌞𓅱𓐰𓆑𓎀𓐰𓂋𓃭𓐰𓏤"
+    },
+    {
+     "n": 23,
+     "section": "text accompanying scene",
+     "note": null,
+     "label": "1",
+     "orientation": null,
+     "unicode": "𓃹𓐰𓈖𓐰𓉿𓌸𓎛𓐱𔍙𓐍𓐰𓏏𓐰𓆑𓁷𓐱𓏤𓐰𓈖𓂓𓐱𓏤𓐰𓈖𓄪𓐻𓐍𓅱𓎀𓐰𓎀𓇋"
+    },
+    {
+     "n": 24,
+     "section": "text accompanying scene",
+     "note": null,
+     "label": "2",
+     "orientation": null,
+     "unicode": "𓐎𓐰𓉲𓐰𓎱𓎛𓐰𓎡𓐰𓏌𓐱𓏤𓋴𓑀𓐰𓆑𓐰𓍿𓈖𓐰𓎸𓐰𓐎𓏏𓐰𓍯𓐰𓏏𓄂𓐰𓏏𓐰𓏏𓂝𓐰𓈙𓐰𓆱𓐷𓍿𓐰𓏌𓐸𓐱𓎛𓐰𓇠"
+    },
+    {
+     "n": 25,
+     "section": "text accompanying scene",
+     "note": null,
+     "label": "3",
+     "orientation": null,
+     "unicode": "𓉓𓏔𓐰𓈖𓐰𓆑𓂞𓐰𓈖𓐰𓆑𓂧𓐰𓃀𓐱𓎛𓏏𓐰𓏔𓐰𓏥𓊵𓐰𓏏𓐱𓊪𓐢𓂝𓐰𓂋𓐰𓏏𓍘"
+    },
+    {
+     "n": 26,
+     "section": "text accompanying scene",
+     "note": null,
+     "label": "4",
+     "orientation": null,
+     "unicode": "𓅓𓻶𓐰𓎱𓅓𓇻𓐰𓎱𓅓𓎛𓐱𓃀𓉲𓐰𓎱𓏥𓐰𓎟𓅱"
+    },
+    {
+     "n": 27,
+     "section": "text accompanying scene",
+     "note": null,
+     "label": "5",
+     "orientation": null,
+     "unicode": "𓈖𓐰𓂓𓐱𓏤𓈖𓐰𓄪𓐻𓐍𓅱𓐱𓇓𓐷𓏏𓐰𓌨𓐰𓁶𓐸𓐱𓇋𓏶𓐱𓐷𓄣𓐰𓏤𓐸𓈖𓐰𓎟𓐰𓆑𓎀𓐰𓎀"
+    },
+    {
+     "n": 28,
+     "section": "text accompanying scene",
+     "note": null,
+     "label": "6",
+     "orientation": null,
+     "unicode": "𓋹𓈖𓐰𓐍𓇋"
+    },
+    {
+     "n": 29,
+     "section": "text accompanying scene",
+     "note": null,
+     "label": "7",
+     "orientation": null,
+     "unicode": "𓂋𓐰𓂞𓐰𓏏𓂝𓐰𓏤𓐰𓂋𓋴𓑀𓐱𓐷𓏏𓐰𓊪𓐰𓏏𓐸𓅨𓐰𓏏𓈖𓐰𓂓𓐱𓏤𓈖𓐰𓄪𓐻𓐍𓎀𓐰𓎀𓇋"
+    }
+   ]
+  },
+  {
+   "key": "ea567",
+   "label": "BM EA 567 (Amenemhat)",
+   "title": "Stela of Amenemhat",
+   "hierojax": "https://nederhof.github.io/hierojax/texts/BritishMuseumEA567.html",
+   "raw": "https://raw.githubusercontent.com/nederhof/hierojax/da318801e00b10b4b5c5ec8d9cc6f8fddcc9eb5a/docs/texts/BritishMuseumEA567.html",
+   "bm": "https://www.britishmuseum.org/collection/object/Y_EA567",
+   "evidence": [
+    {
+     "section": "rows",
+     "note": null,
+     "orientation": "row",
+     "evidence": "HieroJax heading \"rows\" (24 lines); the BM record does not state the layout"
+    },
+    {
+     "section": "columns",
+     "note": null,
+     "orientation": "col",
+     "evidence": "HieroJax heading \"columns\" (4 lines); the BM record does not state the layout"
+    }
+   ],
+   "lines": [
+    {
+     "n": 1,
+     "section": "rows",
+     "note": null,
+     "label": "1",
+     "orientation": "row",
+     "unicode": "𓆳𓏏𓐰𓊗𓎆𓐰𓏦𓐍𓐰𓂋𓍛𓈖𓐰𓇓𓆤𓏏𓏏"
+    },
+    {
+     "n": 2,
+     "section": "rows",
+     "note": null,
+     "label": "2",
+     "orientation": "row",
+     "unicode": "𓍹𓐼𓇳𓋞𓐰𓂓𓂓𓐰𓂓𓐽𓍺𓏙𓋹𓆓𓐳𓐷𓏏𓐰𓇿𓐸𓂋𓐰𓈖𓳲𓎛𓎛𓇓𓏏𓐰𓊵𓏙𓊨𓁹𓐰𓎟"
+    },
+    {
+     "n": 3,
+     "section": "rows",
+     "note": null,
+     "label": "3",
+     "orientation": "row",
+     "unicode": "𓊽𓅱𓊖𓐰𓏏𓐰𓏤𓏃𓈖𓐰𓏏𓐱𓋀𓅂𓀭𓎟𓐰𓍋𓐱𓃀𓈋𓐰𓊖𓐰𓏏𓐱𓏤𓄋𓐰𓈐𓪏𓏃𓈖𓐰𓏏𓐰𓏭𓍋𓃀𓈋𓐰𓊖𓏏𓐰𓏤"
+    },
+    {
+     "n": 4,
+     "section": "rows",
+     "note": null,
+     "label": "4",
+     "orientation": "row",
+     "unicode": "𓎛𓈎𓐰𓏏𓆏𓎛𓈖𓐰𓂝𓎸𓅱𓃝𔃼𓎟𓐰𓍋𓐱𓃀𓈋𓐰𓊖𓐰𓏏𓐱𓏤𓏙𓋴𓐰𓈖𓉓𓃾𓐰𓅿𓋲𓐺𓍱𓐍𓐱𓏏𓐰𓏝𓐰𓎟𓐰𓏏𓄤𓉐𓐰𓂋𓐰𓏏𓐱𓂻𓅓"
+    },
+    {
+     "n": 5,
+     "section": "rows",
+     "note": null,
+     "label": "5",
+     "orientation": "row",
+     "unicode": "𓂸𓐻𓏤𓐰𓊹𓐱𓉼𓅓𓊄𓐵𓏏𓐰𓈖𓐰𓆑𓂝𓐱𓏤𓐰𓅱𓐱𓏭𓌨𓐰𓊵𓐰𓏏𓐱𓊪𓅓𓎳𓐰𓏥𓏌𓐰𓏤𓊼𓎛𓈖𓐰𓂝𓐱𓌞𓈙𓐰𓋴𓐱𓂻𓀭𓏥𓐰𓈖𓊨𓁹𓐰𓁶𓂝𓐰𓏤𓆣𓅱𓌨𓐰𓂋𓄂𓐰𓏏𓐱𓏤𓋴𓅜𓐳𓐍𓍿𓐰𓅱"
+    },
+    {
+     "n": 6,
+     "section": "rows",
+     "note": null,
+     "label": "6",
+     "orientation": "row",
+     "unicode": "𓅨𓐰𓂋𓀭𓏪𓏌𓐰𓏤𓊽𓅱𓊖𓐰𓏏𓐱𓏤𓍲𓐰𓈖𓇋𓇋𓀭𓐲𓏏𓏪𓇋𓏶𓐵𓏏𓍋𓃀𓈋𓐰𓊖𓐰𓏏𓐱𓏤𓄋𓐰𓊪𓏴𓐰𓆑𓍯𓄿𓈐𓐺𓏏𓐰𓏥𓌻𓐰𓂋𓂋𓐰𓏏𓐰𓆑𓅓𓊵𓐰𓏏𓐱𓊪𓐰𓏏"
+    },
+    {
+     "n": 7,
+     "section": "rows",
+     "note": null,
+     "label": "7",
+     "orientation": "row",
+     "unicode": "𓎛𓈖𓐰𓂝𓆓𓐰𓆑𓏐𓐰𓏊𓋴𓀠𓇓𓅱𓇋𓏶𓅱𓋅𓀆𓏪𓏌𓐰𓏤𓊹𓂋𓐰𓉼𓐱𓏙𓐴𓏏𓈖𓐰𓆑𓐰𓂝𓐰𓂝𓅓𓈖𓐰𓈙𓐰𓏏𔀭𓐰𓏤𓁷𓐰𓍯𓐰𓏏𓄿𓏏𓐰𓈐𓐰𓏥𓋀𓏏𓐰𓈉𓆓𓐳𓐷𓂋𓐰𓂝𓐸𓆑𓐰𔂕𓐰𓏥𓅓"
+    },
+    {
+     "n": 8,
+     "section": "rows",
+     "note": null,
+     "label": "8",
+     "orientation": "row",
+     "unicode": "𓎝𓎡𓐰𓏏𓐱𓏏𓐰𔀫𓋴𓐪𓂧𓐰𓊛𓐰𓆑𓅓𓎚︀𓅱𓏏𓐰𔀭𓵔𓐰𓂧𓏏𓐰𓈖𓐰𓆑𓇍𓇋𓅱𓅓𓊵𓐰𓏏𓐱𓊪𓇋𓈖𓐰𓅨𓀀𓏪𓏌𓐰𓏤𓍋𓃀𓈋𓐰𓊖𓋴𓍒𓄿𓆑𓐰𓎛𓐱𓐷𓈖𓐰𓂝𓐸𓊹𓉼𓅓"
+    },
+    {
+     "n": 9,
+     "section": "rows",
+     "note": null,
+     "label": "9",
+     "orientation": "row",
+     "unicode": "𓍒𓄿𓏏𓐰𓊛𓊹𓂋𓐰𓂋𓐰𓏤𓊪𓐰𓈎𓂋𓐰𓆱𓈖𓐰𓈙𓅓𓏏𓐰𔀭𓅨𓏏𓐰𓂋𓌰𓅓𓐴𓏏𓏏𓐰𓂻𓏪𓋴𓅓𓎳𓏥𓐰𓏌𓐱𓏤𓊼𓋴𓅜𓐳𓐍𓇓"
+    },
+    {
+     "n": 10,
+     "section": "rows",
+     "note": null,
+     "label": "10",
+     "orientation": "row",
+     "unicode": "𓅱𓂓𓐱𓏤𓐰𓂸𓋀𓏏𓐰𓈉𓎛𓎡𓐰𓈖𓐰𓆑𓎛𓈖𓐰𓂝𓐰𓆑𓅓𔂕𓐵𓏤𓐱𓐷𓏤𓐰𓏤𓐸𓐰𓆑𓋴𓂧𓐰𓄔𓅓𓆑𓐰𓉔𓐱𓏌𓀊𓅓𓂋𓐱𓏤𓐰𓈖𓋅𓉔𓄿𓎡𓐰𓂋𓐰𓆱𓎼𓐰𓂋𓎛𓄛𓈖𓐰𓊃𓐰𓇥"
+    },
+    {
+     "n": 11,
+     "section": "rows",
+     "note": null,
+     "label": "11",
+     "orientation": "row",
+     "unicode": "𓂋𓐰𓏏𓁀𓅓𓋴𓇥𓐰𓂋𓇋𓇋𓏏𓐰𓈖𓐰𓏏𓅃𓍲𓐰𓈖𓎳𓂧𓐰𓈖𓐰𓂧𓈖𓐰𓆑𓐰𓍯𓄿𓏏𓐰𓈐𓐰𓏥𓄤𓏏𓐰𓁷𓊪𓐰𓎼𓄿𓅱𓈌𓐰𓏏𓐱𓏤𓋀𓏏𓐰𓏏𓋴𓅜𓐳𓐍𓇓𓅱"
+    },
+    {
+     "n": 12,
+     "section": "rows",
+     "note": null,
+     "label": "12",
+     "orientation": "row",
+     "unicode": "𓎸𓅱𓁠𓎛𓈎𓐰𓏏𓆏𓁶𓐱𓊪𓐰𓂝𓐱𓏤𓆣𓌨𓐰𓂋𓄂𓐰𓏏𓐱𓏤𓁷𓐰𓏤𓄟𓐍𓐰𓈖𓐰𓏏𓀭𓈖𓐰𓏏𓍋𓃀𓈋𓐰𓊖𓉐𓐰𓂋𓂻𓅓𓂋𓐱𓏤𓐰𓈖𓐰𓇳𓐱𓏤𓀭𓆓𓐳𓋴𓆑𓐰𓅓𓐱𓋴𓆓𓐳𓐷𓂋𓐰𓂝𓐸𓍋"
+    },
+    {
+     "n": 13,
+     "section": "rows",
+     "note": null,
+     "label": "13",
+     "orientation": "row",
+     "unicode": "𓃀𓈋𓐰𓊖𓂞𓐰𓋴𓐱𓐷𓈖𓐰𓈖𓐰𓆑𓐸𓊵𓐰𓐷𓏏𓐰𓏐𓐸𓐱𓊪𓏏𓐰𓏓𓀆𓈗𓍘𓇋𓎛𓈖𓐰𓂝𓐰𓈙𓌞𓐱𓋴𓂻𓐱𓏨𓐰𓈖𓊨𓁹𓀭𓋴𓀠𓇓𓅱𓇋𓏶𓐱𓋅𓋴𓏃𓈖𓐰𓏏𓊨𓁹𓀭"
+    },
+    {
+     "n": 14,
+     "section": "rows",
+     "note": null,
+     "label": "14",
+     "orientation": "row",
+     "unicode": "𓊨𓏏𓐰𓉐𓆑𓐰𓂋𓅨𓀭𓏪𓇋𓏶𓅱𓇾𓐰𓂦𓐰𓈉𓃀𓂝𓐰𓎛𓐱𓆑𓅓𓊵𓐰𓐷𓏏𓐰𓏐𓐸𓐱𓐷𓊪𓐰𓏓𓐸𓵔𓐰𓆑𓐰𓵔𓆑𓐰𓵔𓐰𓆑𓏐𓐰𓏊𓆞𓄿𓅓𓏏𓐰𓐍𓐱𓏏𓐰𓏛𓐰𓏥𓇋𓅓𓈖𓐰𓊨𓁹𓅓𓍯"
+    },
+    {
+     "n": 15,
+     "section": "rows",
+     "note": null,
+     "label": "15",
+     "orientation": "row",
+     "unicode": "𓄿𓎼𓎳𓅓𓅞𓏏𓐱𓏏𓐰𓎳𓅓𓂋𓐰𓎡𓎛𓎳𓅓𓁶𓐰𓏤𓆳𓏏𓐰𓏤𓅓𓎳𓏥𓐰𓎟𓅱𓁹𓐰𓂋𓅱𓈖𓐰𓊹𓐱𓉼𓅓𓊄𓐰𓈖𓐰𓆑𓅓𓎛𓇬𓐱𓏌𓐰𓈖"
+    },
+    {
+     "n": 16,
+     "section": "rows",
+     "note": null,
+     "label": "16",
+     "orientation": "row",
+     "unicode": "𓅱𓀭𓂝𓐰𓏤𓐰𓆑𓌨𓐰𓂋𓊵𓐰𓏏𓐱𓊪𓏐𓐰𓏓𓈖𓐰𓏏𓊹𓉼𓈟𓐰𓋴𓑴𓆑𓐰𓁷𓐱𓏤𓲖𓈖𓐰𓊨𓐱𓁹𓀭𓅓𓄂𓐰𓏏𓐱𓏤𓋴𓂝𓐰𓎛𓃶𓙌𓏪𓋴𓊪𓐰𓂋𓂻𓐱𓂋𓐰𓆑𓊹𓉼"
+    },
+    {
+     "n": 17,
+     "section": "rows",
+     "note": null,
+     "label": "17",
+     "orientation": "row",
+     "unicode": "𓈙𓐰𓌞𓐱𓋴𓂻𓐰𓆑𓇓𓅱𓅓𓍯𓄿𓈐𓐺𓏏𓐰𓏥𓐰𓆑𓎟𓐰𓏏𓃂𓈗𓐰𓏏𓊏𓐱𓊪𓐰𓆑𓐍𓐱𓏏𓐰𓏛𓐰𓏥𓁷𓐰𓏤"
+    },
+    {
+     "n": 18,
+     "section": "rows",
+     "note": null,
+     "label": "18",
+     "orientation": "row",
+     "unicode": "𓊵𓐰𓏏𓐱𓏤𓉼𓅓𓌨𓐰𓏏𓇳𓐱𓏤𓐰𓎟𓄓𓐻𓈙𓐰𓈖𓂝𓐰𓎩𓐱𓏩𓇋𓏠𓐰𓈖𓅓𓄂𓐰𓏏𓐱𓏤𓀀𓎟𓐰𓄪𓐻𓏤𓵔𓐰𓂧𓐰𓆑𓁹𓐰𓈖"
+    },
+    {
+     "n": 19,
+     "section": "rows",
+     "note": null,
+     "label": "19",
+     "orientation": "row",
+     "unicode": "𓀀𓎼𓐰𓏏𓀀𓅓𓊣𓏏𓐰𓉐𓐰𓏏𓈖𓐰𓁷𓐱𓏤𓄠𓐍𓐰𓈖𓐰𓏏𓀭𓈖𓐰𓏏𓍋𓃀𓈋𓐰𓊖𓇾𓐰𓈇𓐱𓏤𓐰𓵔𓋴"
+    },
+    {
+     "n": 20,
+     "section": "rows",
+     "note": null,
+     "label": "20",
+     "orientation": "row",
+     "unicode": "𓂋𓐰𓂝𓐰𓈉𓈌𓐰𓏏𓐱𓏤𓋀𓏏𓐰𓏏𓅱𓂝𓐰𓂋𓐰𓏏𓂾𓉼𓏏𓐰𓉔𓅓𓐴𓉔𓅓𓐴𓏏𓋴𓅜𓐳𓐍𓐴𓍿𓅱𓑂"
+    },
+    {
+     "n": 21,
+     "section": "rows",
+     "note": null,
+     "label": "21",
+     "orientation": "row",
+     "unicode": "𓏃𓈖𓐰𓏏𓇋𓇩𓑀𓉐𓐰𓏥𓋴𓈖𓐰𓏥𓐰𓈖𓌻𓐴𓏏𓐰𓂋𓅱𓄊𓋴𓅜𓅓𓌞𓋴𓂻𓐱𓏨𓐰𓈖"
+    },
+    {
+     "n": 22,
+     "section": "rows",
+     "note": null,
+     "label": "22",
+     "orientation": "row",
+     "unicode": "𓏃𓈖𓐰𓋀𓐱𓅂𓎟𓐰𓂧𓐰𓂧𓅱𓊖𓐰𓏏𓐱𓏤𓋾𓈎𓄿𓍋𓃀𓈋𓐰𓊖𓂻𓅱𓈖𓐰𓆑𓐰𓈖𓐰𓏏𓐱𓏏𓧂𓐰𓏏𓐰𓏏"
+    },
+    {
+     "n": 23,
+     "section": "rows",
+     "note": null,
+     "label": "23",
+     "orientation": "row",
+     "unicode": "𓅓𓅓𓊄𓐰𓂝𓅱𓐴𓏭𓌨𓐰𓂋𓊵𓐰𓏏𓐱𓊪𓏐𓐰𓏓𓉐𓐰𓂋𓏏𓐰𓂻𓅓𓂸𓐰𓏤𓊹𓉼𓅓𓌨𓐰𓏏𓇳𓐰𓏤"
+    },
+    {
+     "n": 24,
+     "section": "rows",
+     "note": null,
+     "label": "24",
+     "orientation": "row",
+     "unicode": "𓈖𓐰𓏏𓇳𓐱𓏤𓐰𓎟𓇋𓑰𓋹𓅱𓀀𓏪𓌑𓇿𓐰𓈇𓐱𓏤𓌻𓂋𓐰𓂋𓅱𓋹𓄠𓅱𓀀𓏪𓋴"
+    },
+    {
+     "n": 25,
+     "section": "columns",
+     "note": null,
+     "label": "1",
+     "orientation": "col",
+     "unicode": "𓌢𓐰𓈖𓂉𓐰𓇿𓐰𓈇𓐱𓏤𓈖𓏃𓈖𓐰𓏏𓲖𓀭𓅓𓉐𓐰𓂋𓂻𓐲𓏏𓐰𓉻𓐰𓏏"
+    },
+    {
+     "n": 26,
+     "section": "columns",
+     "note": null,
+     "label": "2",
+     "orientation": "col",
+     "unicode": "𓂋𓐰𓂝𓇋𓐱𓄿𓐴𓏏𓀢𓈖𓉡𓁷𓐰𓂋𓏏𓐰𓁶𓊃𓐰𓏏𓈉𓐰𓏥𓎺𓐱𓏏𓎟𓐰𓏏𓉐"
+    },
+    {
+     "n": 27,
+     "section": "columns",
+     "note": null,
+     "label": "3",
+     "orientation": "col",
+     "unicode": "𓏥𓐰𓁷𓐰𓂋𓅱𓇋𓐱𓈖︂𓄪𓐻𓐍𓄓𓐰𓈙𓐰𓈖𓂝𓐰𓎩𓐱𓏩𓇋𓐱𓐷𓏠𓐰𓈖𓐸𓅓"
+    },
+    {
+     "n": 28,
+     "section": "columns",
+     "note": null,
+     "label": "4",
+     "orientation": "col",
+     "unicode": "𓄂𓐰𓏏𓐱𓏤"
+    }
+   ]
+  },
+  {
+   "key": "ea162",
+   "label": "BM EA 162 (Imeny)",
+   "title": "Stela of Imeny",
+   "hierojax": "https://nederhof.github.io/hierojax/texts/BritishMuseumEA162.html",
+   "raw": "https://raw.githubusercontent.com/nederhof/hierojax/da318801e00b10b4b5c5ec8d9cc6f8fddcc9eb5a/docs/texts/BritishMuseumEA162.html",
+   "bm": "https://www.britishmuseum.org/collection/object/Y_EA162",
+   "evidence": [
+    {
+     "section": "upper register",
+     "note": null,
+     "orientation": "row",
+     "evidence": "BM record: \"five rows of recessed Hieroglyphic text above two sunk relief figured scenes\" (HieroJax upper register: 5 lines)"
+    },
+    {
+     "section": "middle register",
+     "note": "continuation of the text in the rightmost three columns",
+     "orientation": "col",
+     "evidence": "HieroJax note: \"continuation of the text in the rightmost three columns\" (lines 6-8)"
+    }
+   ],
+   "lines": [
+    {
+     "n": 1,
+     "section": "upper register",
+     "note": null,
+     "label": "1",
+     "orientation": "row",
+     "unicode": "𓇓𓑋𓏏𓐰𓊵𓏙𓐍𓐰𓂋𓁹𓐰𓊨𓏅𓑋𓅂𓋀𓅂𓑋𓑃︀𓑃︀𓍋𓃀𓈋𓐰𓊖𓅓𓊨𓏏𓐰𓉐𓏥𓐰𓆑𓎟𓐰𓏏𓄤𓂋𓐰𓏏"
+    },
+    {
+     "n": 2,
+     "section": "upper register",
+     "note": null,
+     "label": "2",
+     "orientation": "row",
+     "unicode": "𓃂𓏏𓐰𓈗𓂞𓐰𓆑𓉐𓂋𓐰𓏏𓊤𓅱𓅓𓏏𓐰𓏑𓏔𓐰𓏥𓅓𓎛𓑎𓈎𓐰𓏏𓏊𓏪𓅓𓃾𓑋𓐱𓅿𓐰𓏧𓅓𓐍𓐱𓏏𓐰𓎟"
+    },
+    {
+     "n": 3,
+     "section": "upper register",
+     "note": null,
+     "label": "3",
+     "orientation": "row",
+     "unicode": "𓄤𓑋𓂋𓐰𓏏𓈖𓐰𓂓𓐱𓏤𓐰𓈖𓇋𓄪𓐻𓐍𓅱𓐍𓐰𓂋𓊹𓉼𓅓𓂋𓐰𓏤𓀎𓏪𓅨𓐰𓂋𓇋𓏠𓐰𓈖𓇋𓇋𓁹𓐰𓈖𓈎𓐱𓃀𓅱𓑊𓆰𓑇𓌳𓐴𓐚𓐰𓂝𓊤"
+    },
+    {
+     "n": 4,
+     "section": "upper register",
+     "note": null,
+     "label": "4",
+     "orientation": "row",
+     "unicode": "𓂞𓐰𓏏𓈖𓐰𓆑𓂣𓐰𓂣𓅓𓈖𓐰𓈙𓅓𓏏𓐰𔀯𓁷𓑒𓍯𓑈𓄿𓏏𓐰𓈐𓏪𓋀𓏏𓐰𓈉𓊏𓐱𓊪𓐰𓆑𓊵𓐰𓏏𓐱𓊪𓏏𓐰𓏔𓏪𓁷"
+    },
+    {
+     "n": 5,
+     "section": "upper register",
+     "note": null,
+     "label": "5",
+     "orientation": "row",
+     "unicode": "𓊵𓐰𓉻𓅓𓉲𓐰𓎱𓏥𓐰𓈖𔄋𓆓𓐳𓂧𓏏𓐰𓈖𓐰𓆑𓂻𓅱𓅓𓊵𓐰𓏏𓐱𓊪𓇋𓈖𓐰𓅨𓏥𓐰𓈖𓍋𓃀𓈋𓑐𓐰𓊖𓑋𓅓𓍯𓎼𓉲𓐰𓎱"
+    },
+    {
+     "n": 6,
+     "section": "middle register",
+     "note": "continuation of the text in the rightmost three columns",
+     "label": "6",
+     "orientation": "col",
+     "unicode": "𓅓𓅝𓑐𓐰𓏏𓐱𓏏𓑉𓉲𓐰𓎱𓅓𓎛𓐱𓃀𓉲𓐰𓎱𓊃𓐰𓎡𓐰𓂋𔁪𓅓𓉐𓐰𓂋𓏏𓐰𓂻𔅇𓉲𓐰𓎱"
+    },
+    {
+     "n": 7,
+     "section": "middle register",
+     "note": "continuation of the text in the rightmost three columns",
+     "label": "7",
+     "orientation": "col",
+     "unicode": "𓅓𓉐𓐰𓂋𓏏𓐰𓂻𓇮𓐱𓏏𓉲𓐰𓎱𓅓𓁶𓐱𓆴𓉲𓐰𓎱𓅓𓎛𓐱𓃀𓉲𓐰𓎱𓎟𓐰𓉻𓁹𓐰𓂋𓅱"
+    },
+    {
+     "n": 8,
+     "section": "middle register",
+     "note": "continuation of the text in the rightmost three columns",
+     "label": "8",
+     "orientation": "col",
+     "unicode": "𓈖𓐰𓁹𓐰𓊨𓏅𓑐𓋀𓑀𓐲𓏏𓑀𓅂𓊹𓑀𓐱𓉼𓈖𓐰𓂓𓐱𓏤𓐰𓈖𓅓𓐰𓂋𓀎𓐰𓏥𓅨𓐰𓂋𓇋𓐱𓐷𓏠𓐰𓈖𓐸𓇋𓐱𓇋𓘾"
+    },
+    {
+     "n": 9,
+     "section": "middle register",
+     "note": "text accompanying scenes, from left to right",
+     "label": "1",
+     "orientation": null,
+     "unicode": "𓈞𓑉𓐱𓏏𓐰𓆑𓑉𓌻𓐰𓂋𓏏𓐰𓆑𓁹𓐰𓂋𓐰𓏏𓎛𓐱𓎿𓊃𓐰𓊃𓏏𓐰𓆑𓇳𓐱𓏤𓐰𓎟𓉡𓑋𓊹𓐱𓍛"
+    },
+    {
+     "n": 10,
+     "section": "middle register",
+     "note": "text accompanying scenes, from left to right",
+     "label": "2",
+     "orientation": null,
+     "unicode": "𓅓𓂧𓎛𓐱𓅱𓄠𓐱𓋴𓏏𓐰𓈖𓇋𓐱𓐷𓏠𓐰𓈖𓐸𓇋𓐱𓇋𓐚𓐱𓏏𓐰𓊤︂"
+    },
+    {
+     "n": 11,
+     "section": "middle register",
+     "note": "text accompanying scenes, from left to right",
+     "label": "3",
+     "orientation": null,
+     "unicode": "𓍏𓐱𓐷𓅡𓐰𓏏𓐸𓅭𓐴𓏏𓏃𓈖𓐰𓏏𓄡𓐰𓏏𓍘"
+    },
+    {
+     "n": 12,
+     "section": "middle register",
+     "note": "text accompanying scenes, from left to right",
+     "label": "4",
+     "orientation": null,
+     "unicode": "𓅡𓎡𓐰𓆑𓌳𓐴𓐙𓑀𓂝𓐰𓈖𓊨𓐱𓐷𓏏𓐰𓄣𓐸𓆑𓁹𓐰𓂋𓎛𓐱𓎿𓊃𓐰𓊃𓏏𓐰𓆑𓇳𓐱𓏤𓐰𓎟𓅓𓐰𓂋𓋨𓐰𓏏𓉡𓅭𓎟𓄪𓐻𓏤𓐚𓐰𓊤︂"
+    },
+    {
+     "n": 13,
+     "section": "middle register",
+     "note": "text accompanying scenes, from left to right",
+     "label": "5",
+     "orientation": null,
+     "unicode": "𓌢𓐰𓈖𓆑𓐰𓌻𓑀𓂋𓐰𓆑𓏃𓈖𓐰𓏏𓄡𓐰𓏏𓐱𓏮𓊵𓐰𓏏𓐱𓊪𓁹𓐰𓈖𓅭𓐴𓏏𓏏𓋴𓐱𓃀𓎡𓐰𓏥𓌳𓐴𓐚𓑀𓐰𓂝𓊤𓐱𓅱"
+    },
+    {
+     "n": 14,
+     "section": "lower register",
+     "note": null,
+     "label": "1",
+     "orientation": null,
+     "unicode": "𓅭𓏃𓈖𓐰𓏏𓄡𓐰𓏏𓇋𓐱𓇋"
+    },
+    {
+     "n": 15,
+     "section": "lower register",
+     "note": null,
+     "label": "2",
+     "orientation": null,
+     "unicode": "𓂖𓆓𓐳𓆑𓄿𓏔𓎛𓐱𓐷𓊪𓐰𓈘𓐸"
+    },
+    {
+     "n": 16,
+     "section": "lower register",
+     "note": null,
+     "label": "3",
+     "orientation": null,
+     "unicode": "𓈖𓐰𓈙𓐰𓏏𓁸𓐍𓐰𓂤𓇋𓐱𓇋𓏏𓐰𓏥"
+    },
+    {
+     "n": 17,
+     "section": "lower register",
+     "note": null,
+     "label": "4",
+     "orientation": null,
+     "unicode": "𓁷𓐰𓂋𓉐𓇋𓐱𓐷𓏠𓐰𓈖𓐸𓇋𓐱𓇋"
+    },
+    {
+     "n": 18,
+     "section": "lower register",
+     "note": null,
+     "label": "5",
+     "orientation": null,
+     "unicode": "𓁷𓐰𓂋𓉐𓅭𓅱𓐰𓏏𓇋𓐱𓇋𓐱𓏏"
+    }
+   ]
+  },
+  {
+   "key": "ea562",
+   "label": "BM EA 562 (Intef)",
+   "title": "Stela of Intef",
+   "hierojax": "https://nederhof.github.io/hierojax/texts/BritishMuseumEA562.html",
+   "raw": "https://raw.githubusercontent.com/nederhof/hierojax/da318801e00b10b4b5c5ec8d9cc6f8fddcc9eb5a/docs/texts/BritishMuseumEA562.html",
+   "bm": "https://www.britishmuseum.org/collection/object/Y_EA562",
+   "evidence": [
+    {
+     "section": "main text",
+     "note": null,
+     "orientation": "row",
+     "evidence": "BM record: \"fifteen rows of Hieroglyphic text including the cartouches of Senusret I\" (HieroJax main text: 15 lines)"
+    }
+   ],
+   "lines": [
+    {
+     "n": 1,
+     "section": "main text",
+     "note": null,
+     "label": "1",
+     "orientation": "row",
+     "unicode": "𓁷𓐰𓏤𓀀𓐍𓐰𓏏𓐰𓂡𓈖𓀀𓑅︀𓑆︀𓐰𓏥𓀀𓁷𓐰𓏤𓂣𓃀𓅡𓊌𓐰𓏨𓀀𓇋𓐍𓐰𔏏𓆓𓐻𓂧𓑅︀𓂋𓑉𓐰𓅱𓑇𓓆𓏪𓋴𓑀𓍯𓄿𓏏𓐰𓈐𓑊"
+    },
+    {
+     "n": 2,
+     "section": "main text",
+     "note": null,
+     "label": "2",
+     "orientation": "row",
+     "unicode": "𓋴𓑀𓈖𓐰𓏥𓇋𓐍𓐰𓂞𓋴𓑀𓈖𓐰𓏥𓐰𓈖𓀀𓅜𓐳𓐍𓋹𓈖𓐰𓐍𓀀𓅓𔁽𓅱𓈒𓐰𓏨𓈖𓐰𓂞𓐰𓂞𓂋𓐰𓍿𓀀𓁐𓏪𓋴𓑀𓋹𓈖𓐰𓐍𓋴𓑀"
+    },
+    {
+     "n": 3,
+     "section": "main text",
+     "note": null,
+     "label": "3",
+     "orientation": "row",
+     "unicode": "𓈖𓐰𓏥𓐰𓂋𓐰𓈖𓀀𓊹𓐱𓏪𓊪𓅱𓈖𓐰𓅓𓆱𓐰𓐍𓐱𓏏𓌀𓏤𓊵𓐰𓏏𓐱𓊪𓅡𓐳𓊸𓐵𓏤𓂞𓐰𓈖𓋴𓑀𓈖𓐰𓏥𓋴𓑀𓐍𓹟𓄿𔏏𓐰𓆑𓋴𓑀𓏠𓐰𓈖𓐰𓐍𓐱𓍊𓈖𓐰𓅱"
+    },
+    {
+     "n": 4,
+     "section": "main text",
+     "note": null,
+     "label": "4",
+     "orientation": "row",
+     "unicode": "𓀀𓈖𓐰𓅓𓆱𓐰𓐍𓐱𓏏𓆳𓏏𓐰𓏨𓅡𓎡𓐰𔏏𓐰𓈖𓀀𓅓𓅜𓐍𓐱𓏏𓐰𔏏𓋴𓑀𓈖𓐰𓀀𓊃𓐰𓈖𓐰𓏕𓈎𓐰𓈖𓀜𓂋𓐰𓁹𓐰𓈖𓀀𓈖𓐰𓀀"
+    },
+    {
+     "n": 5,
+     "section": "main text",
+     "note": null,
+     "label": "5",
+     "orientation": "row",
+     "unicode": "𓏎𓈖𓐰𓇥𓂋𓐰𓅱𓂋𓐰𓐍𓐰𔏏𓅓𓇋𓐍𓐱𓏏𓐰𔏏𓐰𓏥𓂞𓐰𓈖𓀀𓄤𓆑𓐰𓂋𓀀𓐍𓐰𓂋𓐰𔏏𓉐𓐰𓏤𓀀𓌻𓐰𓂋𓐰𓏏𓀀𓆱𓐰𓐍𓐰𓏏𓇾𓐰𓈇𓐰𓂋𓇥𓐰𓂋𓐰𓆑"
+    },
+    {
+     "n": 6,
+     "section": "main text",
+     "note": null,
+     "label": "6",
+     "orientation": "row",
+     "unicode": "𓂜𓐰𓈎𓐰𓂋𓊃𓐰𓀀𓐱𓏤𓈖𓐰𓁷𓐱𓁶𓆑𓐰𓈖𓐰𓆑𓐰𓂣𓂋𓐰𓂻𓀀𓈖𓐰𓌂𓐱𓅓𓁹𓐰𓆑𓂋𓐰𓂞𓐰𓈖𓀀𓏏𓐰𓏑𓐰𓏔𓏪𓈖𓐰𓎛𓐱𓐷𓈎𓐰𓂋𓐸𓑰𓎛𓈎𓐰𓏏𓏊𓐰𓏨𓈖𓐰𓇋𓐱𓃀𓏊𓐰𓏤"
+    },
+    {
+     "n": 7,
+     "section": "main text",
+     "note": null,
+     "label": "7",
+     "orientation": "row",
+     "unicode": "𓍒𓄿𓊛𓐰𓏤𓈖𓐰𓀀𓅞𓈖𓐰𓀀𓃛𓐰𓈗𓊛𓐰𓏤𓎀𓐰𓊃𓐰𓂻𓈖𓐰𓀀𓐱𓇛𓏏𓐰𓏏𓐰𓂻𓏪𓌨𓐰𓂋𓌉𓆓𓐻𔏏𓇓𓏏𓐰𓈖𓊃𓐰𓌳𓄥𓈖𓐰𓀀"
+    },
+    {
+     "n": 8,
+     "section": "main text",
+     "note": null,
+     "label": "8",
+     "orientation": "row",
+     "unicode": "𓅓𓎛𓐱𓎿𓊃𓐰𓅱𓐱𓅱𓏪𓊃𓐰𓀀𓐱𓏤𓈖𓐰𓂸𓐰𓏏𓂭𓂭𓂋𓐰𓐜𓐰𓏤𓂋𓐰𓍿𓀀𓁐𓏪𓂣𓐰𓈎𓐱𓄿𓂭𓂭𓅓𓊄𓐰𓂝𓈖𓐰𓋴𓐱𓃀𓇼𓆓𓐻𓂧𓅱"
+    },
+    {
+     "n": 9,
+     "section": "main text",
+     "note": null,
+     "label": "9",
+     "orientation": "row",
+     "unicode": "𓂋𓐰𓆑𓂋𓐰𓍿𓀀𓁐𓏪𓇋𓂋𓐰𓆑𓎛𓄿𓻻𓐰𓈇𓎔𓐰𔏏𓅓𓏇𓏏𓐰𓏦𓐰𓆑𓆓𓐻𓂧𓐰𓈖𓀀"
+    },
+    {
+     "n": 10,
+     "section": "main text",
+     "note": null,
+     "label": "10",
+     "orientation": "row",
+     "unicode": "𓈖𓐰𔊫𓐴𓏌𓐱𓏤𓈖𓐰𓌢𓐱𓏨𓀀𓀀𓈖𓐰𓉐𓐱𓏤𓈖𓐰𓆓𓐻𓏏𓀀𓇋𓅱𓈎𓐰𓂋𓋴𓑀𓊬𓐰𓈖𓀀𓇋𓄿𓀗𓎛𓃀𓋴𓑀"
+    },
+    {
+     "n": 11,
+     "section": "main text",
+     "note": null,
+     "label": "11",
+     "orientation": "row",
+     "unicode": "𓋳𓐰𓈖𓀀𓎛𓇉𓄿𓇋𓇋𓋳𓂜𓐰𓁹𓀀𓃛𓐰𓅱𓇋𓏏𓐰𓅪𓂋𓐰𓂋𓐰𓍿𓀀𓁐𓏪𓄠𓆓𓐰𓆓𓐰𓏏"
+    },
+    {
+     "n": 12,
+     "section": "main text",
+     "note": null,
+     "label": "12",
+     "orientation": "row",
+     "unicode": "𓊹𓏤𓐰𓊪𓅱𓁹𓐰𓈖𓀀𓌳𓐰𓐙𓏏𓐰𔏏𓌻𓐰𓂋𓐰𓏏𓈖︂𓇓𓏏𓐰𓈖𓇍𓇋𓂻𓐰𓈖𓀀𓂋𓐰𓊖𓐰𓏏𓐱𓏤𓀀𓉔𓐰𓏤"
+    },
+    {
+     "n": 13,
+     "section": "main text",
+     "note": null,
+     "label": "13",
+     "orientation": "row",
+     "unicode": "𓄿𓂻𓐰𓈖𓀀𓅓𓈈𓐰𓏏𓐱𓏤𓀀𓁹𓐰𓈖𓀀𓌻𓐰𓂋𓐰𓏏𓂋𓐰𓍿𓀀𓁐𓏪𓎛𓐱𓎿𓊃𓐰𓊃𓐰𓏏𔏏︂"
+    },
+    {
+     "n": 14,
+     "section": "main text",
+     "note": null,
+     "label": "14",
+     "orientation": "row",
+     "unicode": "𓊹𓐱𓏪𓇋𓈖𓐰𓍛𓐱𓏤𓐰𓈖𓇓𓐰𓏏𓆤𓐻𓏏𓍹𓐼𓇳𓆣𓂓𓐽𓍺𓇳𓅭𓍹𓐼𓄊𓋴𓑐𓂋𓐰𓏏𓐰𓊃𓐰𓈖𓐽𓍺𓋹𓆓𓐻𓐷𓏏𓐰𓇿𓐸"
+    },
+    {
+     "n": 15,
+     "section": "main text",
+     "note": null,
+     "label": "15",
+     "orientation": "row",
+     "unicode": "𓂋𓐰𓂞𓅱𓀀𓅓𓅓𓋴𓐱𓍋𓅓𓐴𓂋𓀀𓏥𓐰𓆑𓑒𓄪𓑒𓐰𓏤𓑋𓄓𓑐𓐰𓑆︀𓂣𓑉𓐰𓐍𓐰𓑆︀𓏌𓑉𓐰𓏏𓑉𓏰𓐰𓏰𓏎𓈖𓐰𓏏𓐰𓆑"
+    },
+    {
+     "n": 16,
+     "section": "next to deceased",
+     "note": null,
+     "label": null,
+     "orientation": null,
+     "unicode": "𓁹𓐰𓈖𓐰𓊃𓈖𓐰𓏏𓐰𓏕"
+    }
+   ]
+  },
+  {
+   "key": "ea101",
+   "label": "BM EA 101 (Nebipusenusret)",
+   "title": "Stela of Nebipusenusret",
+   "hierojax": "https://nederhof.github.io/hierojax/texts/BritishMuseumEA101.html",
+   "raw": "https://raw.githubusercontent.com/nederhof/hierojax/da318801e00b10b4b5c5ec8d9cc6f8fddcc9eb5a/docs/texts/BritishMuseumEA101.html",
+   "bm": "https://www.britishmuseum.org/collection/object/Y_EA101",
+   "evidence": [
+    {
+     "section": "central register",
+     "note": "rightmost columns",
+     "orientation": "col",
+     "evidence": "HieroJax note: \"rightmost columns\" (9 lines); BM record: \"columns and rows of Hieroglyphic text\""
+    }
+   ],
+   "lines": [
+    {
+     "n": 1,
+     "section": "upper register",
+     "note": "top",
+     "label": null,
+     "orientation": null,
+     "unicode": "𓂀𓄤𓐱𓄤𓐱𓄤𓊹𓄤𓍹𓐼𓇳𓐰𓈍𓂓𓐱𓂓𓐰𓂓𓐽𓍺𓐙︂𓊤"
+    },
+    {
+     "n": 2,
+     "section": "upper register",
+     "note": "left half",
+     "label": "1",
+     "orientation": null,
+     "unicode": "𓁹𓐱𓊨𓃹𓐷𓈖𓐰𓈖𓐰𓎟𓐸𓐱𓄤𓍋𓐱𓃀𓈋𓐱𓊖𓌸𓐱𓇋𓐱𓇋"
+    },
+    {
+     "n": 3,
+     "section": "upper register",
+     "note": "left half",
+     "label": "2",
+     "orientation": null,
+     "unicode": "𓃹𓐰𓈖𓐰𓉿𓁷𓐰𓈖𓀹𓐱𓄤𓄂𓐰𓏏𓌞𓐱𓅱𓉐𓐰𓉻𓉐𓐰𓎟𓅱𓐳𓊪𓄊𓐱𓋴𓂋𓐰𓏏𓐰𓊃𓐰𓈖𓌴𓐰𓁹"
+    },
+    {
+     "n": 4,
+     "section": "upper register",
+     "note": "left half",
+     "label": "3",
+     "orientation": null,
+     "unicode": "𓄿𓐰𓆑𓊨𓁹𓐰𓀭𓌷𓐰𓂝𓐷𓐍𓐰𓂋𓐸𓐱𓊤𓆑𓅓𓂸𓐻𓏤𓐰𓇷𓐱𓏏𔃼𓏏𓐱𓏭𓊵𓐰𓏏𓐱𓊪𓆑"
+    },
+    {
+     "n": 5,
+     "section": "upper register",
+     "note": "left half",
+     "label": "4",
+     "orientation": null,
+     "unicode": "𓅓𓉥𓆑𓐰𓄫𓅱𓄣𓐱𓏤𓐰𓆑𓆓𓐻𓐷𓏏𓐰𓇿𓐸𓊵𓐰𓎡𓅱𓐷𓁷𓐰𓂋𓐸𓐱𓋴𓇋𓐱𓐷𓈖𓐰𓊃𓐸𓏏𓐰𓈉"
+    },
+    {
+     "n": 6,
+     "section": "upper register",
+     "note": "left half",
+     "label": "5",
+     "orientation": null,
+     "unicode": "𓇼𓀢𓊨𓐰𓁹𓀭𓅓𓉲𓎱𓐰𓏥𓆑𓄤𓐱𓅱𓆓𓐻𓐷𓏏𓐰𓇿𓐸𓂋𓎛𓐱𓎛𓇳"
+    },
+    {
+     "n": 7,
+     "section": "upper register",
+     "note": "right half",
+     "label": "1",
+     "orientation": null,
+     "unicode": "𓄋𓈐𓐰𓈐𓐰𓈐𓎟𓐰𓇿𓐰𓏤𓐱𓈅𓑀𓂦𓐰𓂋𓈉𓌸𓐱𓇋𓐱𓇋"
+    },
+    {
+     "n": 8,
+     "section": "upper register",
+     "note": "right half",
+     "label": "2",
+     "orientation": null,
+     "unicode": "𓃹𓐰𓈖𓐰𓉿𓁷𓐰𓈖𓀹𓐱𓄤𓄂𓐰𓏏𓌞𓐱𓅱𓉐𓐰𓉻𓉐𓐰𓎟𓅱𓐳𓊪𓄊𓐱𓋴𓂋𓐰𓏏𓐰𓊃𓐰𓈖𓌴𓐰𓁹"
+    },
+    {
+     "n": 9,
+     "section": "upper register",
+     "note": "right half",
+     "label": "3",
+     "orientation": null,
+     "unicode": "𓆑𓄤𓐱𓄤𓐱𓄤𓄋𓈐𓐰𓏏𓐱𓏦𓪄𓅓𓉐𓐰𓂋𓏏𓐱𓂻𓐰𓆑𓄤𓐱𓐷𓂋𓐰𓏏𓐸𓂻𓅱𓐰𓆑𓅓𓐰𓊵"
+    },
+    {
+     "n": 10,
+     "section": "upper register",
+     "note": "right half",
+     "label": "4",
+     "orientation": null,
+     "unicode": "𓂋𓐰𓉥𓆑𓐰𓈖𓇛𓐱𓅓𓄣𓐰𓃹𓈖𓐰𓏏𓐱𓇼𓊹𓐱𓉞𓉐𓅓𓎛𓐱𓐷𓂝𓐰𓂝𓐸𓀠𓅱𓐰𓏏"
+    },
+    {
+     "n": 11,
+     "section": "upper register",
+     "note": "right half",
+     "label": "5",
+     "orientation": null,
+     "unicode": "𓇼𓀢𓄋𓈐𓐰𓏏𓐰𓏥𓃧𓅓𓉐𓐰𓂋𓏏𓐰𓂻𓆑𓄤𓐱𓐷𓂋𓐰𓏏𓐸𓆓𓐻𓐷𓏏𓐰𓇿𓐸𓂋𓎛𓐱𓎛𓇳"
+    },
+    {
+     "n": 12,
+     "section": "central register",
+     "note": "rightmost columns",
+     "label": "1",
+     "orientation": "col",
+     "unicode": "𓆓𓐳𓌃𓐻𓐷𓇋𓐰𓈖𓐸𓀹𓐱𓄤𓄂𓐰𓏏𓌞𓐱𓅱𓉐𓐰𓉻𓎟𓅱𓐳𓊪𓄊𓐱𓋴"
+    },
+    {
+     "n": 13,
+     "section": "central register",
+     "note": "rightmost columns",
+     "label": "2",
+     "orientation": "col",
+     "unicode": "𓂋𓐰𓏏𓊃𓐰𓈖𓐚𓐰𓊤︂𓆣𓐰𓂋𓊪𓐱𓀔𓌨𓐱𓂾𓐱𓂾𓈖𓇓𓐱𓐷𓏏𓐰𓈖𓐸𓋴𓐱𓃀𓇼"
+    },
+    {
+     "n": 14,
+     "section": "central register",
+     "note": "rightmost columns",
+     "label": "3",
+     "orientation": "col",
+     "unicode": "𓅃𓐰𓎟𓉦𓐰𓉐𓇋𓐱𓅱𓁹𓐰𓈖𓀀𓋴𓐱𓍋𓌨𓐰𓂋𓃀"
+    },
+    {
+     "n": 15,
+     "section": "central register",
+     "note": "rightmost columns",
+     "label": "4",
+     "orientation": "col",
+     "unicode": "𓅡𓇋𓐱𓇋𓐱𔎐𓇓𓐱𓐷𓏏𓐰𓈖𓐸𓅓𓉲𓐰𓎱𓆳𓐱𓆳𓐱𓆳𓐍𓐰𓂋𓍛𓐱𓏤𓈖"
+    },
+    {
+     "n": 16,
+     "section": "central register",
+     "note": "rightmost columns",
+     "label": "5",
+     "orientation": "col",
+     "unicode": "𓅃𓉘𓐼𓉻𓐰𓂝𓅢𓐽𓊂𓇋𓐱𓅱𓁹𓐰𓈖𓀀𓅨𓐰𓂋𓎆𓐱𓇗𓊹𓐱𓍛"
+    },
+    {
+     "n": 17,
+     "section": "central register",
+     "note": "rightmost columns",
+     "label": "6",
+     "orientation": "col",
+     "unicode": "𓇼𓐰𓅨𓅓𓉲𓐰𓎱𓋴𓐱𓐷𓂧𓐰𓈄𓐸𓉳𓐍𓐰𓂋𓍛𓐱𓐷𓏤𓐰𓈖𓐸𓆥"
+    },
+    {
+     "n": 18,
+     "section": "central register",
+     "note": "rightmost columns",
+     "label": "7",
+     "orientation": "col",
+     "unicode": "𓍹𓐼𓇳𓐰𓈖𓌶𓂝𓐰𓏏𓐽𓍺𓋹𓐱𓆓𓐻𓐷𓏏𓐰𓇿𓐸𓏃𓈖𓐰𓏏𓊛𓌂𓐱𓾋𓊪𓐰𓈖𓅓𓐰𓂞"
+    },
+    {
+     "n": 19,
+     "section": "central register",
+     "note": "rightmost columns",
+     "label": "8",
+     "orientation": "col",
+     "unicode": "𓎛𓐱𓌨𓐱𓃀𓀗𓇋𓐱𓃀𓃙𓇋𓐱𓀀𓐍𓐱𓏏𓐰𓆑𓇍𓐱𓏏𓐱𓇋𓂻𓐰𓃹𓈖𓐰𓏌𓐱𓏏"
+    },
+    {
+     "n": 20,
+     "section": "central register",
+     "note": "rightmost columns",
+     "label": "9",
+     "orientation": "col",
+     "unicode": "𓇼𓐰𓏥𓊹𓐱𓉗𓏏𓐱𓉐𓐰𓂋𓌴𓐰𓁹𓇓𓐱𓐷𓏏𓐰𓈖𓐸𓅓𓉲𓐰𓎱𓆑𓄤𓐱𓆓𓐻𓐷𓏏𓐰𓇿𓐸"
+    },
+    {
+     "n": 21,
+     "section": "central register",
+     "note": "text accompanying scene",
+     "label": "1",
+     "orientation": null,
+     "unicode": "𓊨𓐱𓁹𓃧𔃼𓍋𓐱𓃀𓈋𓐰𓊖𓂞𓐰𓆑"
+    },
+    {
+     "n": 22,
+     "section": "central register",
+     "note": "text accompanying scene",
+     "label": "2",
+     "orientation": null,
+     "unicode": "𓐷𓐍𓐱𓏏𓐰𓎟𓐰𓏏𓐸𓐱𓄤𓈖𓐰𓂓𓐰𓈖𓀹𓐱𓄤𓄂𓐰𓎟𓊪𓐰𓅱𓐚𓐰𓊤︂"
+    },
+    {
+     "n": 23,
+     "section": "central register",
+     "note": "text accompanying scene",
+     "label": "3",
+     "orientation": null,
+     "unicode": "𓉓𓅓𓂞𓐰𓂞"
+    },
+    {
+     "n": 24,
+     "section": "central register",
+     "note": "text accompanying scene",
+     "label": "4",
+     "orientation": null,
+     "unicode": "𓊨𓁹𓐰𓈖𓂓𓐰𓏤𓈖"
+    },
+    {
+     "n": 25,
+     "section": "central register",
+     "note": "text accompanying scene",
+     "label": "5",
+     "orientation": null,
+     "unicode": "𓇋𓐱𓄪𓐻𓐍𓎟𓐰𓊪𓅱"
+    },
+    {
+     "n": 26,
+     "section": "central register",
+     "note": "text accompanying scene",
+     "label": "6",
+     "orientation": null,
+     "unicode": "𓄊𓐱𓋴𓂋𓐰𓏏𓊃𓐰𓈖"
+    },
+    {
+     "n": 27,
+     "section": "central register",
+     "note": "text accompanying scene",
+     "label": "7",
+     "orientation": null,
+     "unicode": "𓆼𓏊"
+    },
+    {
+     "n": 28,
+     "section": "central register",
+     "note": "text accompanying scene",
+     "label": "8",
+     "orientation": null,
+     "unicode": "𓆼𓏐"
+    },
+    {
+     "n": 29,
+     "section": "central register",
+     "note": "text accompanying scene",
+     "label": "9",
+     "orientation": null,
+     "unicode": "𓊵𓐰𓏏𓐱𓊪𓆓𓐻𓆑𓏔𓐰𓏥"
+    },
+    {
+     "n": 30,
+     "section": "central register",
+     "note": "text accompanying scene",
+     "label": "10",
+     "orientation": null,
+     "unicode": "𓂋𓐰𓈖𓐰𓈖𓇋𓐱𓍯𓂋𓐰𓈖𓐰𓈖𓎼𓐱𓅱"
+    },
+    {
+     "n": 31,
+     "section": "central register",
+     "note": "text accompanying scene",
+     "label": "11",
+     "orientation": null,
+     "unicode": "𓌢𓐱𓐷𓈖𓐰𓆑𓐸𓈘𓐰𓆑𓇋𓐱𓊪𓐱𓊪𓀀𓐚𓐰𓊤︂"
+    },
+    {
+     "n": 32,
+     "section": "lower register",
+     "note": null,
+     "label": "1",
+     "orientation": null,
+     "unicode": "𓀹𓐱𓄤𓄂𓐰𓏏𓌞𓐱𓅱𓉐𓐰𓉻𓐰𓉐𓎟𓐰𓊪𓅱𓄊𓐱𓋴𓂋𓐰𓏏𓐰𓊃𓐰𓈖𓆓𓐻𓐷𓂧𓐰𓆑𓐸𓈖𓐰𓃹𓈖𓐰𓇼𓐰𓏏𓊹𓐱𓉞𓈖𓐰𓏏𓍋𓐱𓃀𓈋𓐰𓊖𓉞𓏏𓐰𓉐𓐰𓏥𓆑𓐰𓈖𓐰𓏏𓆥𓎛𓇬𓐰𓈖𓇓𓏏𓐰𓈖𓀴"
+    },
+    {
+     "n": 33,
+     "section": "lower register",
+     "note": null,
+     "label": "2",
+     "orientation": null,
+     "unicode": "𓅓𓐱𓋹𓍿𓐰𓈖𓏠𓐰𓈖𓐰𓏝𓈖𓐰𓍿𓐰𓈖𓏠𓐰𓏌𓐱𓏌𓐱𓏌𓐰𓈖𔃼𓍿𓐰𓈖𓊖𓐱𓅂𓃹𓐰𓈖𓐰𓈖𓍿𓐰𓈖𓌨𓐰𓂋𓎿𓐱𓅱𓏏𓐰𓏦𓈖𓐰𓏏𓇋𓐱𓍘𓇋𓐱𓇋𓀚𓍿𓐰𓈖𓋴𓐱𓎗𓅱𓀁𓍿𓐰𓈖"
+    },
+    {
+     "n": 34,
+     "section": "lower register",
+     "note": null,
+     "label": "3",
+     "orientation": null,
+     "unicode": "𓊑𓏏𓐰𓏦𓍿𓐰𓈖𓈖𓐰𓄡𓐰𓂧𓀔𓏥𓐰𓍿𓐰𓈖𓃹𓐰𓈖𓐰𓈖𓄠𓐱𓅱𓀔𓏥𓐰𓍿𓐰𓈖𓏠𓐰𓈖𓁷𓐰𓎼𓎼𓐰𓎼𓍿𓐰𓈖𓅓𓊑𓏏𓐰𓏦𓍿𓐰𓈖𓈖𓐰𓏏𓆓𓐻𓐷𓏏𓐰𓇿𓐸𓂜𓐰𓈖𓎛𓐱𓐷𓈎𓐰𓂋𓐸𓀁"
+    },
+    {
+     "n": 35,
+     "section": "lower register",
+     "note": null,
+     "label": "4",
+     "orientation": null,
+     "unicode": "𓍿𓐰𓈖𓂜𓐰𓈖𓇋𓐱𓃀𓇋𓐱𓈗𓍿𓐰𓈖𓇋𓐱𓅱𓎗𓐱𓅱𓏛𓐰𓈖𓊹𓐱𓉼𓃹𓐰𓈖𓐰𓈖𓍿𓐰𓈖𓁶𓐰𓇾𓌨𓐰𓂋𓎿𓐱𓅱𓏏𓐰𓏥𓐰𓆑𓂜𓐰𓈖𓍵𓈖𓐰𓂝𓍕𓐰𓉐𓅱𓐳𓏏𓍿𓐰𓈖𓅓"
+    },
+    {
+     "n": 36,
+     "section": "lower register",
+     "note": null,
+     "label": "5",
+     "orientation": null,
+     "unicode": "𓊨𓐱𓐷𓏏𓐰𓉐𓐸𓌟𓐱𓋴𓈖𓐰𓏏𓐰𓉐𓌨𓐰𓂋𓎿𓏏𓐰𓏛𓐰𓏥𓈖𓐰𓏏𔃼𓍿𓐰𓈖𓊖𓐱𓅂𓆓𓐻𓂧𓍿𓐰𓈖𓇓𓏏𓐰𓊵𓏙𓐱𓊨𓁹𓐰𓎟𓍋𓐱𓃀𓈋𓐰𓊖𓊹𓐱𓉼𓃹𓐰𓈖𓐰𓈖𓄤𓐱𓆼𓅓"
+    },
+    {
+     "n": 37,
+     "section": "lower register",
+     "note": null,
+     "label": "6",
+     "orientation": null,
+     "unicode": "𓏑𓐱𓏊𓃾𓐱𓅿𓐰𓏔𓉓𓅓𓉲𓐰𓎱𓈖𓐰𓂓𓐰𓈖𓀹𓐱𓄤𓄂𓐰𓏏𓌞𓐱𓅱𓉐𓐰𓉻𓐰𓉐𓎟𓐰𓊪𓅱𓄊𓐱𓋴𓂋𓐰𓏏𓐰𓊃𓐰𓈖𓁹𓐰𓈖𓇋𓏏𓐰𓏐𓁐𓊡𓅱𓈖𓐰𓂋𓐰𓏤𓅜𓐍𓐰𓏛𓐰𓈖"
+    },
+    {
+     "n": 38,
+     "section": "lower register",
+     "note": null,
+     "label": "7",
+     "orientation": null,
+     "unicode": "𓃶𓂜𓐰𓈖𓍇𓐰𓏌𓅱𓅓𓅨𓐰𓂋𓂧𓐰𓏏𓀉𓌨𓐰𓂋𓋴𓃹𓐰𓈖𓐰𓈖𓍿𓐰𓈖𓅓𓇋𓐱𓐍𓅓𓋴𓐱𓎝𓎡𓐰𓇼𓅓𓇼𓇋𓐱𓏶𓆼𓅡𓋴"
+    }
+   ]
+  }
+ ]
+}

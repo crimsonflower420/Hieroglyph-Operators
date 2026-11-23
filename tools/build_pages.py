@@ -11,10 +11,11 @@ REPO = 'https://github.com/crimsonflower420/Hieroglyph-Operators'
 import pages_two_layer as TL
 import page_depth as PD
 import page_boundaries as PB
+import page_second_text as PS
 
 NAV = [('index', 'トップ', 'Top'), ('concept', '考え方', 'Concept'), ('operators', '演算子', 'Operators'),
        ('derivations', '二層の導出', 'Derivations'), ('notation', '記法', 'Notation'),
-       ('pilot', 'パイロット調査', 'Pilot'), ('rahman', 'ラフマン再読', 'Rahman'), ('depth', '深さの在りか', 'Depth'), ('boundaries', '方形と語', 'Boundaries'), ('sources', '出典', 'Sources')]
+       ('pilot', 'パイロット調査', 'Pilot'), ('rahman', 'ラフマン再読', 'Rahman'), ('depth', '深さの在りか', 'Depth'), ('boundaries', '方形と語', 'Boundaries'), ('second-text', '二つ目のテキスト', 'Second texts'), ('sources', '出典', 'Sources')]
 
 def bi(ja, en, tag='span', cls=''):
     c = f' {cls}' if cls else ''
@@ -129,6 +130,7 @@ index = f'''
 <a class="card" href="rahman"><strong>{bi("ラフマン再読", "Rahman re-read")}</strong><span>{bi("本書の組み合わせを二層の導出で書き、標準と照らす。", "The book's combinations as two-layer derivations, checked against the standard.")}</span></a>
 <a class="card" href="depth"><strong>{bi("深さの在りか", "Where the depth sits")}</strong><span>{bi("同じ語の配置の木と機能の木の高さ、漢字の字の中の木との比較。", "Layout height against function height for the same words, beside the tree inside a kanji.")}</span></a>
 <a class="card" href="boundaries"><strong>{bi("方形の境目と語の境目", "Quadrat and word boundaries")}</strong><span>{bi("EA 581 と EA 162 で、方形が TLA の語の境目をまたぐ頻度。", "How often a quadrat crosses a TLA word boundary, in EA 581 and EA 162.")}</span></a>
+<a class="card" href="second-text"><strong>{bi("二つ目のテキスト", "Second texts")}</strong><span>{bi("列で横の結合が増えるか：EA 614・EA 567・EA 162 で EA 581 の観察を確かめる。", "Do horizontal joins rise in columns? The EA 581 observation checked on EA 614, EA 567 and EA 162.")}</span></a>
 <a class="card" href="sources"><strong>{bi("出典", "Sources")}</strong><span>{bi("一次資料、コーパス、ライセンス。", "Primary sources, corpora, licences.")}</span></a>
 </div>
 <div class="flag spec">{bi(
@@ -443,6 +445,7 @@ SRC = [
 SRC.append((bi('二層の導出とラフマン再読', 'Two-layer derivations and the Rahman re-read'), TL.SOURCES_EXTRA))
 SRC.append((bi('深さの在りか（漢字の木）', 'Where the depth sits (kanji trees)'), PD.SOURCES))
 SRC.append((bi('方形の境目と語の境目（語の区切り）', 'Quadrat and word boundaries (word division)'), PB.SOURCES))
+SRC.append((bi('二つ目のテキスト（行と列）', 'Second texts (rows and columns)'), PS.SOURCES))
 src_html = ''
 for head, items in SRC:
     src_html += f'<h2>{head}</h2><ul>' + ''.join(f'<li>{t}' + (f' <a href="{u}">{u}</a>' if u else '') + '</li>' for t, u in items) + '</ul>'
@@ -454,8 +457,8 @@ sources = f'''
 {src_html}
 <h2>{bi("このサイトのライセンス", "Licences of this site")}</h2>
 <p>{bi(
- "EA 581 と EA 162 の Unicode 符号列（data/ea581-lines.json、data/ea162-lines.json）は HieroJax（GPL-3.0）から取ったもので、GPL-3.0 の下にある。TLA の語の区切りの抜粋（data/ea581-tla-words.json、data/ea162-tla-words.json）は AES から取ったもので、CC BY-SA 4.0 の下にある。字形は Noto Sans Egyptian Hieroglyphs（OFL 1.1）。漢字側の数字は「順序の漢字」の項数調査（KanjiVG、CC BY-SA 3.0）による。",
- "The EA 581 and EA 162 Unicode strings (data/ea581-lines.json, data/ea162-lines.json) come from HieroJax (GPL-3.0) and stay under GPL-3.0. The TLA word-division extracts (data/ea581-tla-words.json, data/ea162-tla-words.json) come from AES and stay under CC BY-SA 4.0. Glyphs are Noto Sans Egyptian Hieroglyphs (OFL 1.1). Kanji numbers come from the Kanji in Order arity census (KanjiVG, CC BY-SA 3.0).")}</p>
+ "EA 581 と EA 162 の Unicode 符号列（data/ea581-lines.json、data/ea162-lines.json）は HieroJax（GPL-3.0）から取ったもので、GPL-3.0 の下にある。EA 614・EA 567・EA 162・EA 101 の符号列と行の向きの根拠（data/second-text-lines.json）も HieroJax から取り、GPL-3.0 の下にある。TLA の語の区切りの抜粋（data/ea581-tla-words.json、data/ea162-tla-words.json）は AES から取ったもので、CC BY-SA 4.0 の下にある。字形は Noto Sans Egyptian Hieroglyphs（OFL 1.1）。漢字側の数字は「順序の漢字」の項数調査（KanjiVG、CC BY-SA 3.0）による。",
+ "The EA 581 and EA 162 Unicode strings (data/ea581-lines.json, data/ea162-lines.json) come from HieroJax (GPL-3.0) and stay under GPL-3.0, as do the EA 614, EA 567, EA 162 and EA 101 strings with their orientation evidence (data/second-text-lines.json). The TLA word-division extracts (data/ea581-tla-words.json, data/ea162-tla-words.json) come from AES and stay under CC BY-SA 4.0. Glyphs are Noto Sans Egyptian Hieroglyphs (OFL 1.1). Kanji numbers come from the Kanji in Order arity census (KanjiVG, CC BY-SA 3.0).")}</p>
 '''
 
 PAGES = [('index', 'トップ', 'Top', index), ('concept', '考え方', 'Concept', concept),
@@ -464,7 +467,8 @@ PAGES = [('index', 'トップ', 'Top', index), ('concept', '考え方', 'Concept
 _der, _nota, _rah = TL.pages(bi)
 PAGES += [('derivations', '二層の導出', 'Two-layer derivations', _der), ('notation', '記法', 'Notation', _nota),
           ('rahman', 'ラフマン再読', 'Rahman re-read', _rah), ('depth', '深さの在りか', 'Where the depth sits', PD.pages(bi)),
-          ('boundaries', '方形の境目と語の境目', 'Quadrat and word boundaries', PB.pages(bi))]
+          ('boundaries', '方形の境目と語の境目', 'Quadrat and word boundaries', PB.pages(bi)),
+          ('second-text', '二つ目のテキスト', 'Second texts', PS.pages(bi))]
 for slug, tj, te, body in PAGES:
     (ROOT / 'site' / f'{slug}.html').write_text(page(slug, tj, te, body), encoding='utf8')
 print('built', [p[0] for p in PAGES])
