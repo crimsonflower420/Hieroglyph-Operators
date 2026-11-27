@@ -114,10 +114,10 @@
   },
   {
    "id": "d03",
-   "title.ja": "ḥb「祭り」：W3 を補音の先に置く綴り",
-   "title.en": "ḥb 'festival': W3 after its complements",
+   "title.ja": "ḥb「祭り」：ḥ と b で綴り、限定符 W3 で閉じる",
+   "title.en": "ḥb 'festival': spelled ḥ, b and closed by the determinative W3",
    "book": "37",
-   "cat": "COMPL",
+   "cat": "DET",
    "signs_list": [
     {
      "id": "n1",
@@ -139,8 +139,8 @@
     }
    ],
    "A": "[LINE3 n1 n2 n3]",
-   "B": "[CMPL3 n1:COMPL n2:COMPL n3:PHON2]",
-   "B_alt": "[CLOSE [SPELL2 n1:PHON1 n2:PHON1] n3:DET_H]",
+   "B": "[CLOSE [SPELL2 n1:PHON1 n2:PHON1] n3:DET_H]",
+   "B_alt": null,
    "read_list": [
     "n1",
     "n2",
@@ -152,17 +152,18 @@
     "n3"
    ],
    "reorder": "-",
-   "status": "HYPOTHESIS; choice between B and B_alt OPEN",
+   "status": "HYPOTHESIS; layer B decided 2026-11-27 from Gardiner 1957 p. 527 and Allen 2010 p. 448 (complement tree rejected)",
    "mismatch": [],
    "mismatch_alt": [],
    "claim.ja": "本書は本来の発音を /hb-hb/、書物上の発音を /hb/ とする（p. 37）。",
    "claim.en": "The book gives /hb-hb/ as authentic and /hb/ as bookish (p. 37).",
-   "std.ja": "Gardiner は W3（雪花石膏の鉢）を ḥb の表語・限定符・音価 ḥb として挙げる（記号表 W3）。V28 と D58 はその補音とも、W3 を限定符とする綴りとも読める。",
-   "std.en": "Gardiner lists W3 (alabaster basin) as ideogram, determinative and phonogram ḥb (sign list W3). V28 and D58 can be read as its complements, or as a spelling closed by W3 as determinative.",
-   "note.ja": "配置は一つでも、機能の層には二つの木が立つ。どちらを採るかは未決（OPEN）である。二重の音は、どちらの木からも出てこない。",
-   "note.en": "One layout, two candidate function trees; which one holds is OPEN. Neither tree yields a doubled sound.",
+   "std.ja": "Gardiner の記号表は、W3（清めに使う雪花石膏の鉢）を ḥb「祭り」の限定符とし、まさにこの綴り（V28・D58・W3）を第18王朝の異体として挙げる。音価 ḥb は、ḥb「嘆く」などでの半表語・表音としてだけ挙げる（Gardiner 1957, p. 527, W3）。Allen の記号表も W3 を「祭り」の限定符、ḥ3b「祭り」の表語とし、音価は挙げない（Allen 2010, p. 448, W3）。",
+   "std.en": "Gardiner's sign list makes W3 (alabaster basin used in purifications) the determinative of ḥb 'feast' and cites exactly this spelling (V28, D58, W3) as a Dyn. XVIII variant; it gives the value ḥb only as semi-ideogram or phonogram in words such as ḥb 'mourn' (Gardiner 1957, p. 527, W3). Allen's sign list likewise has W3 as determinative FEAST and ideogram for ḥ3b 'feast', with no phonetic value (Allen 2010, p. 448, W3).",
+   "note.ja": "2026年11月27日に、二つの候補のうち、限定符で閉じる木をとった（「未決の解決」のページ）。補音の木（W3 を二子音記号 ḥb とし、V28・D58 をその補音とする）は、二つの文法書の記号表がどちらも、この語での W3 に音価を与えていないので退けた。語の音写は Gardiner では ḥb、Allen では ḥ3b で、ꜣ は書かれない。二重の音は、どちらの木からも出てこない。",
+   "note.en": "Decided on 27 Nov 2026 (see the Resolutions page): of the two candidates, the tree closed by a determinative is kept. The complement tree (W3 as the biliteral ḥb with V28 and D58 as its complements) is rejected, because neither grammar's sign list gives W3 a sound value in this word. The word is ḥb in Gardiner and ḥ3b in Allen; the ꜣ is not written. Neither tree yields a doubled sound.",
    "refs_list": [
-    "Gardiner 1957"
+    "Gardiner 1957",
+    "Allen 2010"
    ],
    "quadrats": [
     "𓎛",
@@ -1382,17 +1383,18 @@
     "n18"
    ],
    "reorder": "TRANSPOSE(honorific)",
-   "status": "HYPOTHESIS; N16 vs N17 in ḏt not distinguishable in the figure (OPEN); figure orientation OPEN",
+   "status": "HYPOTHESIS; figure orientation settled 2026-11-27 (right to left, signs facing right; Gardiner 1957 §16); N16 vs N17 in ḏt not distinguishable in the figure (OPEN)",
    "mismatch": [],
    "mismatch_alt": [],
    "claim.ja": "本書は Loy を引き、ロゼッタ・ストーンのカルトゥーシュを /ptwlmjs-ɑnx-ʤttɑ:-pth-mrj/「プトレマイオス、永遠に生きる、プタハに愛された」と読む（pp. 65–66, 84）。",
    "claim.en": "Citing Loy, the book reads the Rosetta Stone cartouche as /ptwlmjs-ɑnx-ʤttɑ:-pth-mrj/, 'Ptolemy, the ever-living, beloved of Ptah' (pp. 65–66, 84).",
-   "std.ja": "書き順では Ptḥ が mry の前に来るが、読みは mry Ptḥ「プタハに愛された」である。神名を前に書く敬意の転置で、Gardiner は mry Imn を例に挙げる（Gardiner 1957 §57）。",
-   "std.en": "Ptḥ is written before mry but read mry Ptḥ 'beloved of Ptah': honorific transposition of the god's name; Gardiner gives mry Imn as an example (Gardiner 1957, §57).",
-   "note.ja": "本書の音写は書き順の pth-mrj を保ち、訳は話し言葉の順になっている。書き順と読み順の差は、まさに WALK_write ≠ WALK_read で記すものである。別の点として、本書の図では記号列は右から左に読まねばならないのに、動物の記号は左を向いている。ここでは標準の読みにしたがって並べ直し、向きの不一致は未決（OPEN）として記す。",
-   "note.en": "The book's transcription keeps the written order pth-mrj while its translation follows spoken order; that gap is exactly what WALK_write ≠ WALK_read records. Separately, in the book's figure the sequence must be read right to left while the animal signs face left; we follow the standard reading and record the orientation mismatch as OPEN.",
+   "std.ja": "書き順では Ptḥ が mry の前に来るが、読みは mry Ptḥ「プタハに愛された」である。神名を前に書く敬意の転置で、Gardiner は mry Imn を例に挙げ（Gardiner 1957 §57, p. 51）、Allen も mry-jmn「アメンに愛された」を挙げる（Allen 2010 §4.15, p. 44）。",
+   "std.en": "Ptḥ is written before mry but read mry Ptḥ 'beloved of Ptah': honorific transposition of the god's name. Gardiner gives mry Imn as an example (Gardiner 1957, §57, p. 51), and Allen gives mry-jmn 'beloved of Amun' (Allen 2010, §4.15, p. 44).",
+   "note.ja": "本書の音写は書き順の pth-mrj を保ち、訳は話し言葉の順になっている。書き順と読み順の差は、まさに WALK_write ≠ WALK_read で記すものである。図の向きは2026年11月27日に決めた（「未決の解決」のページ）。本書の図（pp. 65 と 84 に同じ画像）は右から左に読む。右端から p・t・wꜣ・l・m・i・i・s と名の綴りが並び、ライオン E23 とコブラ I10 は右、つまり行の始まりを向く。人や動物の記号は行の始まりを向くという規則（Gardiner 1957 §16, p. 25）と合うので、向きの食い違いはない。以前この注に「動物の記号は左を向く」と書いたのは、小さな図の読み誤りであった。",
+   "note.en": "The book's transcription keeps the written order pth-mrj while its translation follows spoken order; that gap is exactly what WALK_write ≠ WALK_read records. The figure's orientation was settled on 27 Nov 2026 (see the Resolutions page). The book's figure (the same image on pp. 65 and 84) reads right to left: from the right end the name runs p, t, wꜣ, l, m, i, i, s, and the lion E23 and the cobra I10 face right, towards the start of the line. That agrees with the rule that signs of people and animals face the beginning of the inscription (Gardiner 1957, §16, p. 25), so there is no mismatch. The earlier note here, that the animal signs face left, was a misreading of the small figure.",
    "refs_list": [
     "Gardiner 1957",
+    "Allen 2010",
     "Rosetta Stone (BM EA 24)"
    ],
    "quadrats": [
@@ -1526,7 +1528,7 @@
     "n4"
    ],
    "reorder": "TRANSPOSE(graphic)",
-   "status": "HYPOTHESIS; reorder type OPEN",
+   "status": "HYPOTHESIS; reorder type graphic, decided 2026-11-27 (Gardiner 1957 §§55–57; Allen 2010 §4.15; Poe 2010 pp. 6, 63); row vs column walk of the 2×2 quadrat OPEN",
    "mismatch": [
     {
      "op": "INFL2",
@@ -1546,15 +1548,15 @@
    "mismatch_alt": [],
    "claim.ja": "本書はこの組を /swtnt-nt/「南と北の王」と読む（p. 81）。",
    "claim.en": "The book reads the group as /swtnt-nt/, 'King of the South and North' (p. 81).",
-   "std.ja": "標準の読みは nswt-bjtj である。nswt は n(y)-swt「スゲに属する者」から来ると説明され、スゲ M23 を n より先に書く。この並びを Allen は転置とみなしうるとし、Poe は書記上の転置と呼ぶ（Allen 2010、Poe）。",
-   "std.en": "The standard reading is nswt-bjtj. nswt is explained from n(y)-swt 'he of the sedge', with the sedge M23 written before n; Allen suggests this may be a transposition, Poe calls it graphic (Allen 2010; Poe).",
-   "note.ja": "方形の書き順（上段の左右、次に下段の左右）では M23・L2・X1・X1 となるが、読みは M23・X1（nswt）、L2・X1（bjtj）である。配置の構成素［M23 ⿰ L2］と機能の構成素｛M23, X1｝は交差する。転置の種類は、敬意か書記上かが未決（OPEN）なので graphic とした。",
-   "note.en": "The quadrat's writing walk (top row left to right, then bottom row) gives M23, L2, X1, X1; the reading is M23·X1 (nswt), L2·X1 (bjtj). The layout constituent [M23 ⿰ L2] crosses the function constituent {M23, X1}. Whether the reorder is honorific or graphic is OPEN; it is labelled graphic here.",
+   "std.ja": "標準の読みは nswt-bjtj である。Gardiner はこの 2×2 の組（スゲとハチの下に t と t）を略記の例に挙げ、n-sw-bit と読む（Gardiner 1957 §55, p. 51）。nswt は n(j)-swt「スゲに属する者」から来ると説明され（Gardiner 1957 §54 注1, p. 50; Allen 2010 §4.15, p. 44）、n を書くときもスゲを先に書く。この並びについて Allen は、敬意による転置かもしれないとしつつ、語義が「スゲをもつ者」であれば、まとまった組を作るためだけの並びだと述べる（Allen 2010, p. 44）。Poe は書記上の転置と呼ぶ（Poe 2010, p. 63）。",
+   "std.en": "The standard reading is nswt-bjtj. Gardiner lists this 2×2 group (sedge and bee over t and t) among abbreviations and reads it n-sw-bit (Gardiner 1957, §55, p. 51). nswt is explained from n(j)-swt 'he who belongs to the sedge' (Gardiner 1957, §54 n. 1, p. 50; Allen 2010, §4.15, p. 44), and even when the n is written the sedge comes first. Allen says this order may involve honorific transposition, but that if the phrase means 'he to whom the sedge belongs' the order just reflects the wish to make a compact group (Allen 2010, p. 44). Poe calls it graphic transposition (Poe 2010, p. 63).",
+   "note.ja": "方形の書き順（上段の左右、次に下段の左右）では M23・L2・X1・X1 となるが、読みは M23・X1（nswt）、L2・X1（bjtj）である。配置の構成素［M23 ⿰ L2］と機能の構成素｛M23, X1｝は交差する。2026年11月27日に、転置の種類を書記上（graphic）と決めた（「未決の解決」のページ）。敬意による転置は、神や王を表す語を、それと結びつく語より前に書くことである（Gardiner 1957 §57; Allen 2010 §4.15）。この組では、そのように前に出た語はない。食い違いは、ハチ L2 が nswt の t より先に来ることだけで、これは方形を埋めるための並び、つまり書記上の転置にあたる（Gardiner 1957 §56; Poe 2010, p. 6）。「Allen 対 Poe」は対立ではなかった。Allen も、自分の推す語義のもとでは、組をまとめるための並びとみる。本書の図には n が書かれていないので、n とスゲの順の問題はこの導出には現れない。残る未決は、2×2 の方形を行ごとに辿るか列ごとに辿るかである。列ごとの木をとれば、二つの歩きは一致し、並べ替えは消える。",
+   "note.en": "The quadrat's writing walk (top row left to right, then bottom row) gives M23, L2, X1, X1; the reading is M23·X1 (nswt), L2·X1 (bjtj). The layout constituent [M23 ⿰ L2] crosses the function constituent {M23, X1}. On 27 Nov 2026 the reorder type was decided as graphic (see the Resolutions page). Honorific transposition writes a word for a god or king ahead of a word it is bound to (Gardiner 1957, §57; Allen 2010, §4.15); no word in this group is brought forward in that way. The only difference is that the bee L2 comes before the t of nswt, an arrangement that fills the square, i.e. graphic transposition (Gardiner 1957, §56; Poe 2010, p. 6). 'Allen against Poe' was not a real disagreement: Allen too takes the order as a compact grouping under the meaning he prefers. The book's figure has no n, so the order of n and sedge does not arise in this derivation. What stays OPEN is whether the 2×2 quadrat is walked by rows or by columns; with the column tree the two walks coincide and the reorder disappears.",
    "refs_list": [
+    "Gardiner 1957",
     "Allen 2010",
     "Poe",
-    "Gardiner 1957",
-    "Hierolyte"
+    "Peust 2007"
    ],
    "quadrats": [
     "𓇓𓐱𓆤𓐰𓏏𓐱𓏏"
@@ -1585,18 +1587,17 @@
     "n1"
    ],
    "reorder": "-",
-   "status": "HYPOTHESIS; section reference for Gardiner's remark not re-checked",
+   "status": "HYPOTHESIS; Gardiner references checked 2026-11-27 (§54 p. 50, §57 p. 51)",
    "mismatch": [],
    "mismatch_alt": [],
    "claim.ja": "本書は、/swtn/ が /sw/ になるのを形態論の「切り詰め（clipping）」の例とし、英語の doctor → doc になぞらえる（p. 53）。",
    "claim.en": "The book treats /swtn/ becoming /sw/ as morphological clipping, comparing English doctor → doc (p. 53).",
-   "std.ja": "Gardiner は、王にかかわる句で略した書き方がよく見られると述べ、スゲ一つで nsw を書く例を挙げる（Gardiner 1957 §57 の周辺）。語そのものは nswt のままで、短くなるのは書き方である。",
-   "std.en": "Gardiner notes that abbreviated writings are frequent in royal phrases, with a single sedge for nsw (Gardiner 1957, around §57). The word stays nswt; only the writing is shorter.",
+   "std.ja": "Gardiner は、nsw「王」や nṯr「神」を前に書く例について、略した書き方がよく見られると述べる（Gardiner 1957 §57, p. 51）。また、「王」は nsw と読み、swtn とは読まないと書く（Gardiner 1957 §54, p. 50）。本書の /swtn/ は、まさにこの退けられた読みである。語そのものは nswt のままで、短くなるのは書き方である。",
+   "std.en": "Gardiner notes that abbreviated writings are frequent among the examples where nsw 'king' and nṯr 'god' are written first (Gardiner 1957, §57, p. 51), and says that 'king' is to be read nsw and not swtn (Gardiner 1957, §54, p. 50). The book's /swtn/ is exactly the reading he rejects. The word stays nswt; only the writing is shorter.",
    "note.ja": "層 B に一項の演算子 ABBR を置き、記号一つから語全体を指す。本書は語の切り詰めと見るが、標準の見方では切り詰められるのは書き方である。この違いは二層に分けると書き分けられる。",
    "note.en": "Layer B uses a one-place operator ABBR that maps one sign to the whole word. The book sees clipping of the word; on the standard view what is clipped is the writing. Two layers keep the difference visible.",
    "refs_list": [
-    "Gardiner 1957",
-    "Hierolyte"
+    "Gardiner 1957"
    ],
    "quadrats": [
     "𓇓"

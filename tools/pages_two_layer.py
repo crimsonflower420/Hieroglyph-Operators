@@ -17,7 +17,7 @@ REFS = {
  'Peust 2007': ('Peust, C. “Die honorative Transposition in der ägyptischen Schrift.” <i>Lingua Aegyptia</i> 15 (2007): 93–135.', 'https://doi.org/10.11588/propylaeumdok.00003221'),
  'Callimahos': ('Callimahos, L. D. “The Rosetta Stone and Its Decipherment.” NSA, declassified (PDF).', 'https://media.defense.gov/2021/Jul/02/2002755845/-1/-1/0/ROSETTA-STONE.PDF'),
  'Champollion 1822': ('Champollion, J.-F. <i>Lettre à M. Dacier relative à l’alphabet des hiéroglyphes phonétiques</i>. Paris, 1822.', ''),
- 'Poe': ('Poe, A. “The Writing of a Skillful Scribe: An Introduction to Middle Egyptian” (PDF, Egyptology Forum).', 'https://egyptologyforum.org/bbs/Stableford/Poe%2C%20The_Writing_of_a_Skillful_Scribe_An_intr.pdf'),
+ 'Poe': ('Poe, W. C. <i>The Writing of a Skillful Scribe: An Introduction to Hieratic Middle Egyptian through the Text of The Shipwrecked Sailor</i>. Santa Rosa, CA, 2010 (PDF, Egyptology Forum).', 'https://egyptologyforum.org/bbs/Stableford/Poe%2C%20The_Writing_of_a_Skillful_Scribe_An_intr.pdf'),
  'Hierolyte': ('Hierolyte. “Why the god comes first: honorific transposition in hieroglyphs” (secondary summary of Gardiner and Allen; used only as a pointer).', 'https://hierolyte.app/discoveries/why-the-god-comes-first-honorific-transposition-in-hieroglyphs'),
  'Rosetta Stone (BM EA 24)': ('British Museum, EA 24, the Rosetta Stone (collection record).', 'https://www.britishmuseum.org/collection/object/Y_EA24'),
 }
@@ -256,7 +256,7 @@ read: n1 n2 n3</pre>
 
 <h2>{bi("標準の参考書との食い違い", "Discrepancies with the standard references")}</h2>
 <div class="table-scroll"><table><tr><th>{bi("導出", "Deriv.")}</th><th>{bi("本書", "Book")}</th><th>{bi("標準", "Standard")}</th></tr>
-<tr><td><a href="#d01">d01</a>–<a href="#d07">d07</a>, <a href="#d13">d13</a></td><td>{bi("補音も発音する", "complements are sounded")}</td><td>{bi("補音は音を足さない（Gardiner 1957）", "complements add no sound (Gardiner 1957)")}</td></tr>
+<tr><td><a href="#d01">d01</a>–<a href="#d07">d07</a>, <a href="#d13">d13</a></td><td>{bi("補音も発音する（d03 では限定符も）", "complements are sounded (in d03, the determinative too)")}</td><td>{bi("補音も限定符も音を足さない（Gardiner 1957）", "complements and determinatives add no sound (Gardiner 1957)")}</td></tr>
 <tr><td><a href="#d04">d04</a></td><td>{bi("Šw を「神」と訳す", "Šw glossed 'god'")}</td><td>{bi("神名シュー。A40 は限定符", "the god Shu; A40 is the determinative")}</td></tr>
 <tr><td><a href="#d11">d11</a>, <a href="#d12">d12</a></td><td>{bi("表音＋表語の複合語", "phonogram + ideogram compound")}</td><td>{bi("限定符で閉じた語", "a word closed by a determinative")}</td></tr>
 <tr><td><a href="#d18">d18</a></td><td>{bi("sḏm を「考える」", "sḏm glossed 'to think'")}</td><td>{bi("sḏm は「聞く」（Gardiner 1957、Allen 2010）", "sḏm 'hear' (Gardiner 1957; Allen 2010)")}</td></tr>
@@ -270,9 +270,9 @@ read: n1 n2 n3</pre>
 
 <h2>{bi("未決の問い", "Open questions")}</h2>
 <ul>
-<li>{bi("d03 ḥb：W3 は補音を伴う二子音記号か、綴りを閉じる限定符か。どちらの木も検査を通る。", "d03 ḥb: is W3 a biliteral with complements, or a determinative closing the spelling? Both trees pass the checker.")}</li>
-<li>{bi("d22 nswt（-bjtj）：敬意による転置か、書記上の転置か。", "d22 nswt(-bjtj): honorific or graphic transposition?")}</li>
-<li>{bi("d20：本書の図の記号の向き。", "d20: orientation of the signs in the book's figure.")}</li>
+<li>{bi("解決（2026年11月27日）：d03 ḥb の W3 は綴りを閉じる限定符とした（Gardiner 1957, p. 527; Allen 2010, p. 448）。<a href=\"resolutions#d03\">未決の解決</a>を見よ。", "Resolved (27 Nov 2026): in d03 ḥb, W3 is the determinative closing the spelling (Gardiner 1957, p. 527; Allen 2010, p. 448). See <a href=\"resolutions#d03\">Resolutions</a>.")}</li>
+<li>{bi("解決（2026年11月27日）：d22 の転置は書記上のもの（graphic）とした。2×2 の方形を行ごとに辿るか列ごとに辿るかは OPEN のまま。<a href=\"resolutions#d22\">未決の解決</a>を見よ。", "Resolved (27 Nov 2026): the d22 reorder is graphic. Whether the 2×2 quadrat is walked by rows or by columns stays OPEN. See <a href=\"resolutions#d22\">Resolutions</a>.")}</li>
+<li>{bi("解決（2026年11月27日）：d20 の図は右から左に読み、記号は右を向く。向きの食い違いはなかった。<a href=\"resolutions#d20\">未決の解決</a>を見よ。", "Resolved (27 Nov 2026): the d20 figure reads right to left and its signs face right; there was no mismatch. See <a href=\"resolutions#d20\">Resolutions</a>.")}</li>
 <li>{bi("方形の中で列ごとに読む並べ替え（d22）に、規格 v1 で専用のラベルを設けるべきか。", "Should v1 add a label for column-wise reading inside a quadrat (d22)?")}</li>
 </ul>
 '''

@@ -17,16 +17,16 @@
    },
    "hB": {
     "0": 1,
-    "1": 7,
-    "2": 9,
+    "1": 6,
+    "2": 10,
     "3": 6,
     "4": 2
    },
    "meanHQ": 0.6,
    "meanHA": 1.44,
-   "meanHB": 2.04,
-   "B_gt_A": 12,
-   "B_eq_A": 13,
+   "meanHB": 2.08,
+   "B_gt_A": 13,
+   "B_eq_A": 12,
    "B_lt_A": 0,
    "B_gt_Q": 21,
    "B_eq_Q": 4,
@@ -34,8 +34,8 @@
    "multiQuadrat": 21,
    "hBx": {
     "0": 4,
-    "1": 8,
-    "2": 6,
+    "1": 7,
+    "2": 7,
     "3": 7
    },
    "hBin": {
@@ -43,7 +43,7 @@
     "1": 7,
     "2": 2
    },
-   "meanHBx": 1.64,
+   "meanHBx": 1.68,
    "meanHBin": 0.44,
    "Bx_gt_in": 18,
    "Bx_eq_in": 4,
@@ -62,16 +62,16 @@
    },
    "hB": {
     "0": 1,
-    "1": 6,
-    "2": 7,
+    "1": 5,
+    "2": 8,
     "3": 5,
     "4": 1
    },
    "meanHQ": 0.5,
    "meanHA": 1.4,
-   "meanHB": 1.95,
-   "B_gt_A": 9,
-   "B_eq_A": 11,
+   "meanHB": 2.0,
+   "B_gt_A": 10,
+   "B_eq_A": 10,
    "B_lt_A": 0,
    "B_gt_Q": 18,
    "B_eq_Q": 2,
@@ -79,15 +79,15 @@
    "multiQuadrat": 18,
    "hBx": {
     "0": 2,
-    "1": 8,
-    "2": 5,
+    "1": 7,
+    "2": 6,
     "3": 5
    },
    "hBin": {
     "0": 14,
     "1": 6
    },
-   "meanHBx": 1.65,
+   "meanHBx": 1.7,
    "meanHBin": 0.3,
    "Bx_gt_in": 15,
    "Bx_eq_in": 4,
@@ -136,7 +136,7 @@
    },
    {
     "id": "d03",
-    "cat": "COMPL",
+    "cat": "DET",
     "signs": 3,
     "quadrats": 3,
     "hQ": 0,
@@ -144,13 +144,10 @@
     "cartouche": false,
     "reorder": "-",
     "mismatch": 0,
-    "hB": 1,
-    "hBx": 1,
+    "hB": 2,
+    "hBx": 2,
     "hBin": 0,
-    "unit": "word",
-    "hB_alt": 2,
-    "hBx_alt": 2,
-    "hBin_alt": 0
+    "unit": "word"
    },
    {
     "id": "d04",
