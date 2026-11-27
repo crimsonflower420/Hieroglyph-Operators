@@ -12,10 +12,11 @@ import pages_two_layer as TL
 import page_depth as PD
 import page_boundaries as PB
 import page_second_text as PS
+import page_resolutions as PR
 
 NAV = [('index', 'トップ', 'Top'), ('concept', '考え方', 'Concept'), ('operators', '演算子', 'Operators'),
        ('derivations', '二層の導出', 'Derivations'), ('notation', '記法', 'Notation'),
-       ('pilot', 'パイロット調査', 'Pilot'), ('rahman', 'ラフマン再読', 'Rahman'), ('depth', '深さの在りか', 'Depth'), ('boundaries', '方形と語', 'Boundaries'), ('second-text', '二つ目のテキスト', 'Second texts'), ('sources', '出典', 'Sources')]
+       ('pilot', 'パイロット調査', 'Pilot'), ('rahman', 'ラフマン再読', 'Rahman'), ('depth', '深さの在りか', 'Depth'), ('boundaries', '方形と語', 'Boundaries'), ('second-text', '二つ目のテキスト', 'Second texts'), ('resolutions', '未決の解決', 'Resolutions'), ('sources', '出典', 'Sources')]
 
 def bi(ja, en, tag='span', cls=''):
     c = f' {cls}' if cls else ''
@@ -131,6 +132,7 @@ index = f'''
 <a class="card" href="depth"><strong>{bi("深さの在りか", "Where the depth sits")}</strong><span>{bi("同じ語の配置の木と機能の木の高さ、漢字の字の中の木との比較。", "Layout height against function height for the same words, beside the tree inside a kanji.")}</span></a>
 <a class="card" href="boundaries"><strong>{bi("方形の境目と語の境目", "Quadrat and word boundaries")}</strong><span>{bi("EA 581 と EA 162 で、方形が TLA の語の境目をまたぐ頻度。", "How often a quadrat crosses a TLA word boundary, in EA 581 and EA 162.")}</span></a>
 <a class="card" href="second-text"><strong>{bi("二つ目のテキスト", "Second texts")}</strong><span>{bi("列で横の結合が増えるか：EA 614・EA 567・EA 162 で EA 581 の観察を確かめる。", "Do horizontal joins rise in columns? The EA 581 observation checked on EA 614, EA 567 and EA 162.")}</span></a>
+<a class="card" href="resolutions"><strong>{bi("未決の解決", "Resolutions")}</strong><span>{bi("d03・d20・d22 の未決を文法書のページで決める：限定符の木、図の向き、書記上の転置。", "The open points of d03, d20 and d22 settled from the grammars: the determinative tree, the figure's orientation, graphic transposition.")}</span></a>
 <a class="card" href="sources"><strong>{bi("出典", "Sources")}</strong><span>{bi("一次資料、コーパス、ライセンス。", "Primary sources, corpora, licences.")}</span></a>
 </div>
 <div class="flag spec">{bi(
@@ -446,6 +448,7 @@ SRC.append((bi('二層の導出とラフマン再読', 'Two-layer derivations an
 SRC.append((bi('深さの在りか（漢字の木）', 'Where the depth sits (kanji trees)'), PD.SOURCES))
 SRC.append((bi('方形の境目と語の境目（語の区切り）', 'Quadrat and word boundaries (word division)'), PB.SOURCES))
 SRC.append((bi('二つ目のテキスト（行と列）', 'Second texts (rows and columns)'), PS.SOURCES))
+SRC.append((bi('未決の解決（d03・d20・d22）', 'Resolutions (d03, d20, d22)'), PR.SOURCES))
 src_html = ''
 for head, items in SRC:
     src_html += f'<h2>{head}</h2><ul>' + ''.join(f'<li>{t}' + (f' <a href="{u}">{u}</a>' if u else '') + '</li>' for t, u in items) + '</ul>'
@@ -468,7 +471,8 @@ _der, _nota, _rah = TL.pages(bi)
 PAGES += [('derivations', '二層の導出', 'Two-layer derivations', _der), ('notation', '記法', 'Notation', _nota),
           ('rahman', 'ラフマン再読', 'Rahman re-read', _rah), ('depth', '深さの在りか', 'Where the depth sits', PD.pages(bi)),
           ('boundaries', '方形の境目と語の境目', 'Quadrat and word boundaries', PB.pages(bi)),
-          ('second-text', '二つ目のテキスト', 'Second texts', PS.pages(bi))]
+          ('second-text', '二つ目のテキスト', 'Second texts', PS.pages(bi)),
+          ('resolutions', '未決の解決', 'Resolutions', PR.pages(bi))]
 for slug, tj, te, body in PAGES:
     (ROOT / 'site' / f'{slug}.html').write_text(page(slug, tj, te, body), encoding='utf8')
 print('built', [p[0] for p in PAGES])

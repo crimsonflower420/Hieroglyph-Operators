@@ -1,0 +1,337 @@
+{
+ "date": "2026-11-27",
+ "item": "EXPLORATION backlog 4",
+ "sources": {
+  "Gardiner 1957": "Gardiner, A. H. Egyptian Grammar. 3rd ed., revised. Oxford: Griffith Institute, 1957 (reprint 2001). Pages checked on scans.",
+  "Allen 2010": "Allen, J. P. Middle Egyptian: An Introduction to the Language and Culture of Hieroglyphs. 2nd ed., revised. Cambridge University Press, 2010. Pages checked on scans.",
+  "Poe 2010": "Poe, W. C. The Writing of a Skillful Scribe: An Introduction to Hieratic Middle Egyptian through the Text of The Shipwrecked Sailor. Santa Rosa, CA, 2010. PDF: https://egyptologyforum.org/bbs/Stableford/Poe%2C%20The_Writing_of_a_Skillful_Scribe_An_intr.pdf",
+  "Peust 2007": "Peust, C. Die honorative Transposition in der ägyptischen Schrift. Lingua Aegyptia 15 (2007): 93–135. https://doi.org/10.11588/propylaeumdok.00003221",
+  "Unicode 16 ch. 11": "The Unicode Standard 16.0, ch. 11, §11.4 Egyptian Hieroglyphs, \"Directionality\".",
+  "Rahman": "Rahman, Md. R. Ancient Egyptian Hieroglyph as the Pictorial Scrutiny of Modern Linguistics. ILIM Press, 2023 (all rights reserved; paraphrased, figures not reproduced).",
+  "HieroJax": "Nederhof, M.-J. HieroJax text pages, commit da318801 (GPL-3.0); strings in data/second-text-lines.json and data/ea581-lines.json.",
+  "AES": "Schweitzer, S. D. AES - Ancient Egyptian Sentences (TLA excerpt Jan 2018), commit 35276d25, CC BY-SA 4.0; extract in data/nswt-aes.json."
+ },
+ "decisions": [
+  {
+   "id": "d03",
+   "question": "ḥb \"festival\" written V28 D58 W3: is W3 a biliteral ḥb with V28 and D58 as complements (B: CMPL3), or does W3 close a spelling ḥ-b as determinative (B_alt: CLOSE)?",
+   "decision": "CLOSE: [CLOSE [SPELL2 n1:PHON1 n2:PHON1] n3:DET_H] is now layer B; the complement tree is rejected.",
+   "rejected": "[CMPL3 n1:COMPL n2:COMPL n3:PHON2]",
+   "outcome": "DECIDED",
+   "evidence": [
+    {
+     "source": "Gardiner 1957",
+     "locus": "sign list W3, p. 527",
+     "label": "source",
+     "finding": "W3 (basin of alabaster as used in purifications) is \"det.\" in ḥb \"feast\", with this spelling (V28 D58 W3) given as the Dyn. XVIII variant; \"hence semi-ideo. or phon. ḥb\" only in ḥb \"mourn\"; also \"Det. feast\"."
+    },
+    {
+     "source": "Allen 2010",
+     "locus": "sign list W3, p. 448",
+     "label": "source",
+     "finding": "W3: variant W4; determinative FEAST; ideogram for ḥ3b \"feast\". No phonetic value is listed."
+    },
+    {
+     "source": "Rahman",
+     "locus": "p. 37",
+     "label": "source",
+     "finding": "The book gives /hb-hb/ as the \"authentic\" and /hb/ as the \"bookish\" pronunciation; neither candidate tree yields a doubled sound."
+    }
+   ],
+   "status": "HYPOTHESIS (the tree); the choice of B rests on Gardiner 1957 p. 527 and Allen 2010 p. 448.",
+   "open": [],
+   "would_decide": null
+  },
+  {
+   "id": "d20",
+   "question": "Orientation of the book's figure of the Rosetta cartouche (Ptolemy, ever-living, beloved of Ptah): the earlier note said the sequence runs right to left while the animal signs face left.",
+   "decision": "No mismatch. The figure reads right to left and its animal signs face right, towards the start of the line. The earlier note misread the small figure. Layer A, the walks and TRANSPOSE(honorific) are unchanged.",
+   "outcome": "DECIDED",
+   "evidence": [
+    {
+     "source": "Gardiner 1957",
+     "locus": "§16, p. 25",
+     "label": "source",
+     "finding": "Signs of persons, animals and birds, and others with fronts and backs, \"almost always face the beginning of the inscription\"; upper has precedence over lower."
+    },
+    {
+     "source": "Unicode 16 ch. 11",
+     "locus": "§11.4, Directionality",
+     "label": "source",
+     "finding": "\"one reads a line facing into the glyphs depicting the faces of people or animals\" (already cited on this site)."
+    },
+    {
+     "source": "Rahman",
+     "locus": "pp. 65 and 84 (one embedded image used on both pages, 265×49 px)",
+     "label": "observation (this site)",
+     "finding": "The vertical line of the cartouche is at the left end. From the right end the signs run Q3/X1, V4, E23/Aa15, M17 M17, S29 (p-t-wꜣ-l-m-i-i-s), then S34, I10/X1/land, Q3/X1, V28, U7, M17 M17. The lion E23 and the cobra I10 face right."
+    },
+    {
+     "source": "Rahman",
+     "locus": "p. 84, short cartouche (ptwlmjs)",
+     "label": "observation (this site)",
+     "finding": "The short cartouche runs left to right: vertical line at the right end, Q3/X1 at the left, lion facing left."
+    },
+    {
+     "source": "Gardiner 1957",
+     "locus": "§57, p. 51",
+     "label": "source",
+     "finding": "Honorific transposition: mry Imn \"beloved of Amun\" among the examples."
+    },
+    {
+     "source": "Allen 2010",
+     "locus": "§4.15, p. 44",
+     "label": "source",
+     "finding": "mry-jmn \"beloved of Amun\": the god's name is often put first."
+    }
+   ],
+   "status": "HYPOTHESIS (the tree); orientation settled from the figure and Gardiner 1957 §16.",
+   "open": [
+    "N16 vs N17 under ḏt cannot be told apart in the figure.",
+    "The layout on the Rosetta Stone itself (BM EA 24) was not checked; the derivation follows the book's figure."
+   ],
+   "would_decide": "N16/N17: a larger image of the same cartouche, or a facsimile of the stone (the BM record lists Quirke & Andrews 1988, \"The Rosetta Stone: facsimile drawing\")."
+  },
+  {
+   "id": "d22",
+   "question": "nswt-bjtj written as a 2×2 group (M23 L2 over X1 X1): is the order difference honorific or graphic transposition (\"Allen against Poe\")?",
+   "decision": "Graphic. TRANSPOSE(graphic) stays, now decided. Allen and Poe do not disagree: Allen too reads the sedge-first order of nswt as making a compact group under the meaning he prefers.",
+   "outcome": "DECIDED (type); OPEN (whether there is a reorder at all)",
+   "evidence": [
+    {
+     "source": "Gardiner 1957",
+     "locus": "§55, p. 51",
+     "label": "source",
+     "finding": "This very group (sedge and bee over two t) is listed among abbreviations as n-sw-bit \"king of Upper and Lower Egypt\", literally \"he who belongs to the sedge of Upper Egypt and the bee of Lower Egypt\"."
+    },
+    {
+     "source": "Gardiner 1957",
+     "locus": "§56, p. 51",
+     "label": "source",
+     "finding": "Graphic transpositions: signs are sometimes transposed \"in order to give a more pleasing appearance or for some less assignable reason\"; economy of space is one reason."
+    },
+    {
+     "source": "Gardiner 1957",
+     "locus": "§57, p. 51",
+     "label": "source",
+     "finding": "Honorific transposition: nsw \"king\", nṯr \"god\" and names of kings and gods are written before closely connected words that were spoken first (sš nsw, ḥm-nṯr, mry Imn)."
+    },
+    {
+     "source": "Gardiner 1957",
+     "locus": "§54 with n. 1, p. 50",
+     "label": "source",
+     "finding": "\"king\" is to be read nsw and not swtn; the note derives it from ni \"belonging to\" + swt \"sedge\". No transposition label is given."
+    },
+    {
+     "source": "Allen 2010",
+     "locus": "§4.15, p. 44",
+     "label": "source",
+     "finding": "Honorific transposition is defined on the direct genitive (possessor nṯr or nswt written first). nswt \"itself may involve honorific transposition\"; it is n(j) + swt, probably \"he to whom the sedge belongs\", \"in which case the unusual order of the hieroglyphs just reflects the desire to make a compact group\"."
+    },
+    {
+     "source": "Poe 2010",
+     "locus": "p. 6",
+     "label": "source",
+     "finding": "Two kinds of transposition: honorific (order changed by the status of what is represented) and graphic (order changed for balance or symmetry, e.g. two small glyphs grouped to fill an imaginary square)."
+    },
+    {
+     "source": "Poe 2010",
+     "locus": "p. 63",
+     "label": "source",
+     "finding": "n(y)-swt: \"The arrangement of the glyphs is an example of graphic transposition.\" The placing of nsw before sꜣ in sꜣ nsw is \"because of honorific transposition\"."
+    },
+    {
+     "source": "Peust 2007",
+     "locus": "pp. 93–94 (§0)",
+     "label": "source",
+     "finding": "Honorific transposition is to be kept apart from purely calligraphic transposition against spoken order whose aim is to form quadrats."
+    },
+    {
+     "source": "Rahman",
+     "locus": "p. 81",
+     "label": "observation (this site)",
+     "finding": "The figure shows sedge and bee over two t; no n (N35) is written."
+    }
+   ],
+   "status": "HYPOTHESIS (the tree); reorder type graphic from Gardiner 1957 §§55–57, Allen 2010 §4.15, Poe 2010 pp. 6, 63; row vs column walk OPEN.",
+   "open": [
+    "Whether the 2×2 quadrat is walked by rows (sedge, bee, t, t: a graphic reorder) or by columns (sedge, t, bee, t: no reorder). The book's figure fits both trees."
+   ],
+   "would_decide": "A rule for walking a 2×2 quadrat. This is backlog item 5 (a v1 label for column reading order), which needs Grant's approval before anything is added."
+  }
+ ],
+ "heights": {
+  "d03_hB": 2,
+  "d03_hB_rejected": 1,
+  "d22_walk_write": [
+   "n1",
+   "n2",
+   "n3",
+   "n4"
+  ],
+  "d22_walk_read": [
+   "n1",
+   "n3",
+   "n2",
+   "n4"
+  ]
+ },
+ "counts": {
+  "aes": {
+   "nswtWithN35": {
+    "M23_before_N35": 256
+   },
+   "nswtBjtjFourSigns": {
+    "M23-X1-L2-X1": 192,
+    "M23-L2-X1-X1": 15
+   },
+   "byCorpus": [
+    {
+     "corpus": "bbawamarna",
+     "class": "M23-L2-X1-X1",
+     "n": 1
+    },
+    {
+     "corpus": "bbawamarna",
+     "class": "M23-X1-L2-X1",
+     "n": 97
+    },
+    {
+     "corpus": "bbawamarna",
+     "class": "M23_before_N35",
+     "n": 33
+    },
+    {
+     "corpus": "bbawgrabinschriften",
+     "class": "M23-X1-L2-X1",
+     "n": 2
+    },
+    {
+     "corpus": "bbawgrabinschriften",
+     "class": "M23_before_N35",
+     "n": 16
+    },
+    {
+     "corpus": "bbawhistbiospzt",
+     "class": "M23-L2-X1-X1",
+     "n": 1
+    },
+    {
+     "corpus": "bbawhistbiospzt",
+     "class": "M23-X1-L2-X1",
+     "n": 23
+    },
+    {
+     "corpus": "bbawhistbiospzt",
+     "class": "M23_before_N35",
+     "n": 12
+    },
+    {
+     "corpus": "bbawtempelbib",
+     "class": "M23_before_N35",
+     "n": 51
+    },
+    {
+     "corpus": "bbawtotenlit",
+     "class": "M23_before_N35",
+     "n": 11
+    },
+    {
+     "corpus": "sawlit",
+     "class": "M23-L2-X1-X1",
+     "n": 13
+    },
+    {
+     "corpus": "sawlit",
+     "class": "M23-X1-L2-X1",
+     "n": 69
+    },
+    {
+     "corpus": "sawlit",
+     "class": "M23_before_N35",
+     "n": 131
+    },
+    {
+     "corpus": "sawmedizin",
+     "class": "M23_before_N35",
+     "n": 1
+    },
+    {
+     "corpus": "smaek",
+     "class": "M23_before_N35",
+     "n": 1
+    },
+    {
+     "corpus": "tuebingerstelen",
+     "class": "M23-X1-L2-X1",
+     "n": 1
+    }
+   ],
+   "tokens": {
+    "nswt": 580,
+    "nswt-bj.tj": 273
+   }
+  },
+  "hierojaxNswtBjtj": {
+   "groups": [
+    {
+     "text": "ea614",
+     "line": "1",
+     "orientation": "row",
+     "class": "columns",
+     "groups": [
+      "𓇓𓐰𓏏",
+      "𓆤𓐰𓏏"
+     ]
+    },
+    {
+     "text": "ea614",
+     "line": "3",
+     "orientation": "row",
+     "class": "columns",
+     "groups": [
+      "𓇓𓐰𓏏",
+      "𓆤𓐰𓏏"
+     ]
+    },
+    {
+     "text": "ea614",
+     "line": "13",
+     "orientation": "row",
+     "class": "columns",
+     "groups": [
+      "𓇓𓐰𓏏",
+      "𓆤𓐰𓏏"
+     ]
+    },
+    {
+     "text": "ea567",
+     "line": "1",
+     "orientation": "row",
+     "class": "linear",
+     "groups": [
+      "𓈖𓐰𓇓",
+      "𓆤",
+      "𓏏",
+      "𓏏"
+     ]
+    },
+    {
+     "text": "ea562",
+     "line": "14",
+     "orientation": "row",
+     "class": "columns",
+     "groups": [
+      "𓇓𓐰𓏏",
+      "𓆤𓐻𓏏"
+     ]
+    }
+   ],
+   "byClass": {
+    "columns": 4,
+    "linear": 1
+   }
+  }
+ },
+ "note": "Counts are context, not rules. TLA sign sequences are editorial linearizations; HieroJax relative positions are the editor's judgement, not facsimiles."
+}
